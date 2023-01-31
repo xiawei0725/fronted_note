@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>前端笔记</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/bootstrapmin_1645176572503.css" >
+    <style>
+        .page-toc > ul .red {
+            background: #f3f3f3;
+            z-index: 1;
+            border-left: 3px solid #009a61;
+            -webkit-transition: all .2s ease;
+            transition: all .2s ease;
+            color: #000
+        }
+    </style>
+</head>
+<body>
+<div class="nav">
+    <div class="logo">
+        
+                    前端笔记
+                        
+                        </div>
+                        <ul><li><a href="./index.html">0.api</a></li><li><a href="../html/0.Async.html">0.Async</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&NPM.html">7.module&NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li><li><a href="../html/98.websocket.html">98.websocket</a></li><li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li><li><a href="../html/101.1.monitor.html">101.1.monitor</a></li><li><a href="../html/101.2.monitor.html">101.2.monitor</a></li><li><a href="../html/102.java.html">102.java</a></li><li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="../html/103.11.webpack5.html">103.11.webpack5</a></li><li><a href="../html/103.13.splitChunks.html">103.13.splitChunks</a></li><li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="../html/103.16.rollup.1.html">103.16.rollup.1</a></li><li><a href="../html/103.16.rollup.2.html">103.16.rollup.2</a></li><li><a href="../html/103.16.rollup.3.html">103.16.rollup.3</a></li><li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li><li><a href="../html/103.16.vite.plugin.html">103.16.vite.plugin</a></li><li><a href="../html/103.16.vite.1.html">103.16.vite.1</a></li><li><a href="../html/103.16.vite.2.html">103.16.vite.2</a></li><li><a href="../html/103.17.polyfill.html">103.17.polyfill</a></li><li><a href="../html/104.1.binary.html">104.1.binary</a></li><li><a href="../html/104.2.binary.html">104.2.binary</a></li><li><a href="../html/105.skeleton.html">105.skeleton</a></li><li><a href="../html/106.1.react.html">106.1.react</a></li><li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="../html/106.3.react_router.html">106.3.react_router</a></li><li><a href="../html/106.4.redux.html">106.4.redux</a></li><li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="../html/106.6.redux-first-history.html">106.6.redux-first-history</a></li><li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="../html/106.8.dva.html">106.8.dva</a></li><li><a href="../html/106.9.umi.html">106.9.umi</a></li><li><a href="../html/106.10.ketang.html">106.10.ketang</a></li><li><a href="../html/106.11.antdesign.html">106.11.antdesign</a></li><li><a href="../html/106.12.antpro.html">106.12.antpro</a></li><li><a href="../html/106.13.router-6.html">106.13.router-6</a></li><li><a href="../html/106.14.ssr.html">106.14.ssr</a></li><li><a href="../html/106.15.nextjs.html">106.15.nextjs</a></li><li><a href="../html/106.16.1.cms.html">106.16.1.cms</a></li><li><a href="../html/106.16.2.cms.html">106.16.2.cms</a></li><li><a href="../html/106.16.3.cms.html">106.16.3.cms</a></li><li><a href="../html/106.16.4.cms.html">106.16.4.cms</a></li><li><a href="../html/106.16.mobx.html">106.16.mobx</a></li><li><a href="../html/106.17.fomily.html">106.17.fomily</a></li><li><a href="../html/107.fiber.html">107.fiber</a></li><li><a href="../html/108.http.html">108.http</a></li><li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="../html/109.3.dll.html">109.3.dll</a></li><li><a href="../html/110.nest.js.html">110.nest.js</a></li><li><a href="../html/111.xstate.html">111.xstate</a></li><li><a href="../html/112.Form.html">112.Form</a></li><li><a href="../html/113.redux-saga.html">113.redux-saga</a></li><li><a href="../html/114.react+typescript.html">114.react+typescript</a></li><li><a href="../html/115.immer.html">115.immer</a></li><li><a href="../html/116.pro5.html">116.pro5</a></li><li><a href="../html/117.css-loader.html">117.css-loader</a></li><li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li><li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li><li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li><li><a href="../html/120.create-react-app.html">120.create-react-app</a></li><li><a href="../html/121.react-scripts.html">121.react-scripts</a></li><li><a href="../html/122.react-optimize.html">122.react-optimize</a></li><li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="../html/124.next.js.html">124.next.js</a></li><li><a href="../html/125.1.linux.html">125.1.linux</a></li><li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li><li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li><li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li><li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li><li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li><li><a href="../html/125.10.nginx.html">125.10.nginx</a></li><li><a href="../html/125.11.docker.html">125.11.docker</a></li><li><a href="../html/125.12.ci.html">125.12.ci</a></li><li><a href="../html/125.13.k8s.html">125.13.k8s</a></li><li><a href="../html/125.14.k8s.html">125.14.k8s</a></li><li><a href="../html/125.15.k8s.html">125.15.k8s</a></li><li><a href="../html/125.16.k8s.html">125.16.k8s</a></li><li><a href="../html/126.11.react-1.html">126.11.react-1</a></li><li><a href="../html/126.12.react-2.html">126.12.react-2</a></li><li><a href="../html/126.12.react-3.html">126.12.react-3</a></li><li><a href="../html/126.12.react-4.html">126.12.react-4</a></li><li><a href="../html/126.12.react-5.html">126.12.react-5</a></li><li><a href="../html/126.12.react-6.html">126.12.react-6</a></li><li><a href="../html/126.12.react-7.html">126.12.react-7</a></li><li><a href="../html/126.12.react-8.html">126.12.react-8</a></li><li><a href="../html/127.frontend.html">127.frontend</a></li><li><a href="../html/128.rollup.html">128.rollup</a></li><li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="../html/130.health.html">130.health</a></li><li><a href="../html/131.hooks.html">131.hooks</a></li><li><a href="../html/132.keepalive.html">132.keepalive</a></li><li><a href="../html/133.vue-cli.html">133.vue-cli</a></li><li><a href="../html/134.react18.html">134.react18</a></li><li><a href="../html/134.2.react18.html">134.2.react18</a></li><li><a href="../html/134.3.react18.html">134.3.react18</a></li><li><a href="../html/135.function.html">135.function</a></li><li><a href="../html/136.toolkit.html">136.toolkit</a></li><li><a href="../html/137.lerna.html">137.lerna</a></li><li><a href="../html/138.create-vite.html">138.create-vite</a></li><li><a href="../html/139.cli.html">139.cli</a></li><li><a href="../html/140.antd.html">140.antd</a></li><li><a href="../html/141.react-dnd.html">141.react-dnd</a></li><li><a href="../html/142.1.link.html">142.1.link</a></li><li><a href="../html/143.1.gulp.html">143.1.gulp</a></li><li><a href="../html/143.2.stream.html">143.2.stream</a></li><li><a href="../html/143.3.gulp.html">143.3.gulp</a></li><li><a href="../html/144.1.closure.html">144.1.closure</a></li><li><a href="../html/144.2.v8.html">144.2.v8</a></li><li><a href="../html/144.3.gc.html">144.3.gc</a></li><li><a href="../html/145.react-router-v6.html">145.react-router-v6</a></li><li><a href="../html/146.browser.html">146.browser</a></li><li><a href="../html/147.lighthouse.html">147.lighthouse</a></li><li><a href="../html/148.1.basic.html">148.1.basic</a></li><li><a href="../html/148.2.basic .html">148.2.basic </a></li><li><a href="../html/148.3.basic.html">148.3.basic</a></li><li><a href="../html/148.4.basic.html">148.4.basic</a></li><li><a href="../html/148.5.basic.html">148.5.basic</a></li><li><a href="../html/149.1.vite.html">149.1.vite</a></li><li><a href="../html/149.2.vite.html">149.2.vite</a></li><li><a href="../html/149.3.vite.html">149.3.vite</a></li><li><a href="../html/149.4.vite.html">149.4.vite</a></li><li><a href="../html/150.react-window.html">150.react-window</a></li><li><a href="../html/151.react-query.html">151.react-query</a></li><li><a href="../html/152.useRequest.html">152.useRequest</a></li><li><a href="../html/153.transition.html">153.transition</a></li><li class="active"><a href="../html/154.emotion.html">154.emotion</a></li><li><a href="../html/155.1.formily.html">155.1.formily</a></li><li><a href="../html/155.2.formily.html">155.2.formily</a></li><li><a href="../html/155.3.formily.html">155.3.formily</a></li><li><a href="../html/155.3.1.mobx.usage.html">155.3.1.mobx.usage</a></li><li><a href="../html/155.3.2.mobx.source.html">155.3.2.mobx.source</a></li><li><a href="../html/156.vue-loader.html">156.vue-loader</a></li><li><a href="../html/103.11.mf.html">103.11.mf</a></li><li><a href="../html/157.1.react18.html">157.1.react18</a></li><li><a href="../html/158.umi4.html">158.umi4</a></li><li><a href="../html/159.rxjs.html">159.rxjs</a></li><li><a href="../html/159.rxjs2.html">159.rxjs2</a></li><li><a href="../html/160.bff.html">160.bff</a></li></ul>                        </div>
+
+                        
+<div class="warpper">
+    <div class="page-toc">
+        <ul><li><a href="#t01. CSS模块化方案">1. CSS模块化方案</a><ul><li><a href="#t11.1 CSS 命名方法">1.1 CSS 命名方法</a></li><li><a href="#t21.2 CSS Modules">1.2 CSS Modules</a></li><li><a href="#t31.3 CSS-in-JS">1.3 CSS-in-JS</a><ul><li><a href="#t41.3.1 案例">1.3.1 案例</a></li><li><a href="#t51.3.2 CSS-IN-JS优缺点">1.3.2 CSS-IN-JS优缺点</a></li><li><a href="#t61.3.3 选型">1.3.3 选型</a></li></ul></li></ul></li><li><a href="#t72. emotion">2. emotion</a></li><li><a href="#t83.@emotion/css">3.@emotion/css</a><ul><li><a href="#t93.1 模板字符串">3.1 模板字符串</a><ul><li><a href="#t103.1.1  src\main.jsx">3.1.1  src\main.jsx</a></li><li><a href="#t113.1.2 src\App.jsx">3.1.2 src\App.jsx</a></li><li><a href="#t123.1.3 css\index.js">3.1.3 css\index.js</a></li><li><a href="#t133.1.4 css.js">3.1.4 css.js</a></li><li><a href="#t143.1.5 serialize\index.jsx">3.1.5 serialize\index.jsx</a></li><li><a href="#t153.1.6 serializeStyles.jsx">3.1.6 serializeStyles.jsx</a></li><li><a href="#t163.1.7 utils\index.jsx">3.1.7 utils\index.jsx</a></li><li><a href="#t173.1.8 hashString.jsx">3.1.8 hashString.jsx</a></li><li><a href="#t183.1.9 insertStyles.jsx">3.1.9 insertStyles.jsx</a></li></ul></li><li><a href="#t193.2 对象">3.2 对象</a><ul><li><a href="#t203.2.1  src\App.jsx">3.2.1  src\App.jsx</a></li><li><a href="#t213.2.2 serializeStyles.jsx">3.2.2 serializeStyles.jsx</a></li></ul></li></ul></li><li><a href="#t224.@emotion/react">4.@emotion/react</a><ul><li><a href="#t234.1 vite.config.js">4.1 vite.config.js</a></li><li><a href="#t244.2 src\App.jsx">4.2 src\App.jsx</a></li><li><a href="#t254.3 react\index.jsx">4.3 react\index.jsx</a></li><li><a href="#t264.4 css.jsx">4.4 css.jsx</a></li><li><a href="#t274.5 jsx.jsx">4.5 jsx.jsx</a></li><li><a href="#t284.6 serializeStyles.jsx">4.6 serializeStyles.jsx</a></li><li><a href="#t294.7 Insertion.jsx">4.7 Insertion.jsx</a></li><li><a href="#t304.8 utils\index.jsx">4.8 utils\index.jsx</a></li></ul></li><li><a href="#t315. @emotion/styled">5. @emotion/styled</a><ul><li><a href="#t325.1 src\App.jsx">5.1 src\App.jsx</a></li><li><a href="#t335.2 styled\index.jsx">5.2 styled\index.jsx</a></li></ul></li><li><a href="#t346. 根据props属性覆盖样式">6. 根据props属性覆盖样式</a><ul><li><a href="#t356.1 src\App.jsx">6.1 src\App.jsx</a></li><li><a href="#t366.2 styled\index.jsx">6.2 styled\index.jsx</a></li><li><a href="#t376.3 serializeStyles.jsx">6.3 serializeStyles.jsx</a></li></ul></li><li><a href="#t387. 为组件添加样式">7. 为组件添加样式</a><ul><li><a href="#t397.1 src\App.jsx">7.1 src\App.jsx</a></li></ul></li><li><a href="#t408. 父组件设置子组件">8. 父组件设置子组件</a><ul><li><a href="#t418.1 vite.config.js">8.1 vite.config.js</a></li><li><a href="#t428.2 src\App.jsx">8.2 src\App.jsx</a></li></ul></li><li><a href="#t439. 嵌套选择器">9. 嵌套选择器</a><ul><li><a href="#t449.1 src\App.jsx">9.1 src\App.jsx</a></li></ul></li><li><a href="#t4510. as属性">10. as属性</a><ul><li><a href="#t4610.1 src\App.jsx">10.1 src\App.jsx</a></li></ul></li><li><a href="#t4711.组合样式">11.组合样式</a><ul><li><a href="#t4811.1 src\App.jsx">11.1 src\App.jsx</a></li></ul></li><li><a href="#t4912.全局样式">12.全局样式</a><ul><li><a href="#t5012.1 src\App.jsx">12.1 src\App.jsx</a></li></ul></li><li><a href="#t5113.关键帧动画">13.关键帧动画</a><ul><li><a href="#t5213.1 src\App.jsx">13.1 src\App.jsx</a></li></ul></li><li><a href="#t5314.模板字符串">14.模板字符串</a></li></ul>
+    </div>
+    <div class="content markdown-body">
+        <h2 id="t01. CSS&#x6A21;&#x5757;&#x5316;&#x65B9;&#x6848;">1. CSS&#x6A21;&#x5757;&#x5316;&#x65B9;&#x6848; <a href="#t01. CSS&#x6A21;&#x5757;&#x5316;&#x65B9;&#x6848;"> # </a></h2>
+<h3 id="t11.1 CSS &#x547D;&#x540D;&#x65B9;&#x6CD5;">1.1 CSS &#x547D;&#x540D;&#x65B9;&#x6CD5; <a href="#t11.1 CSS &#x547D;&#x540D;&#x65B9;&#x6CD5;"> # </a></h3>
+<ul>
+<li>&#x901A;&#x8FC7;&#x4EBA;&#x5DE5;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x7EA6;&#x5B9A;&#x547D;&#x540D;&#x89C4;&#x5219;</li>
+<li><a href="https://www.bemcss.com/">BEM</a>&#x662F;&#x4E00;&#x79CD;&#x5178;&#x578B;&#x7684; CSS &#x547D;&#x540D;&#x65B9;&#x6CD5;&#x8BBA;,BEM&#x7684;&#x547D;&#x540D;&#x89C4;&#x77E9;&#x5C31;&#x662F;<code>block-name__element-name--modifier-name</code>&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x6A21;&#x5757;&#x540D; + &#x5143;&#x7D20;&#x540D; + &#x4FEE;&#x9970;&#x5668;&#x540D;</li>
+<li><a href="http://oocss.org">OOCSS</a>&#xFF08;Object-Oriented CSS&#xFF09;&#x5373;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684; CSS&#xFF0C;&#x5B83;&#x501F;&#x9274;&#x4E86; OOP&#xFF08;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7F16;&#x7A0B;&#xFF09;&#x7684;&#x62BD;&#x8C61;&#x601D;&#x7EF4;&#xFF0C;&#x4E3B;&#x5F20;&#x5C06;&#x5143;&#x7D20;&#x7684;&#x6837;&#x5F0F;&#x62BD;&#x8C61;&#x6210;&#x591A;&#x4E2A;&#x72EC;&#x7ACB;&#x7684;&#x5C0F;&#x578B;&#x6837;&#x5F0F;&#x7C7B;&#xFF0C;&#x6765;&#x63D0;&#x9AD8;&#x6837;&#x5F0F;&#x7684;&#x7075;&#x6D3B;&#x6027;&#x548C;&#x53EF;&#x91CD;&#x7528;&#x6027;&#x3002;</li>
+<li><a href="https://itcss.io">ITCSS</a>&#xFF08;Inverted Triangle CSS&#xFF0C;&#x5012;&#x4E09;&#x89D2; CSS&#xFF09;&#x662F;&#x4E00;&#x5957;&#x65B9;&#x4FBF;&#x6269;&#x5C55;&#x548C;&#x7BA1;&#x7406;&#x7684; CSS &#x4F53;&#x7CFB;&#x67B6;&#x6784;&#xFF0C;&#x5B83;&#x517C;&#x5BB9; BEM&#x3001;OOCSS&#x3001;SMACSS &#x7B49; CSS &#x547D;&#x540D;&#x65B9;&#x6CD5;&#x8BBA;</li>
+<li><a href="http://smacss.com">SMACSS</a>&#x5373;&#x53EF;&#x4F38;&#x7F29;&#x53CA;&#x6A21;&#x5757;&#x5316;&#x7684; CSS &#x7ED3;&#x6784;</li>
+</ul>
+<h3 id="t21.2 CSS Modules">1.2 CSS Modules <a href="#t21.2 CSS Modules"> # </a></h3>
+<ul>
+<li>CSS Modules&#xFF1A;&#x4E00;&#x4E2A; CSS &#x6587;&#x4EF6;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x72EC;&#x7ACB;&#x7684;&#x6A21;&#x5757;,&#x6838;&#x5FC3;&#x601D;&#x60F3;&#x662F; &#x901A;&#x8FC7;&#x7EC4;&#x4EF6;&#x540D;&#x7684;&#x552F;&#x4E00;&#x6027;&#x6765;&#x4FDD;&#x8BC1;&#x9009;&#x62E9;&#x5668;&#x7684;&#x552F;&#x4E00;&#x6027;&#xFF0C;&#x4ECE;&#x800C;&#x4FDD;&#x8BC1;&#x6837;&#x5F0F;&#x4E0D;&#x4F1A;&#x6C61;&#x67D3;&#x5230;&#x7EC4;&#x4EF6;&#x5916;</li>
+<li><a href="https://github.com/css-modules/css-modules">CSS Modules</a>&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x50CF; import &#x4E00;&#x4E2A; JS Module &#x4E00;&#x6837;&#x53BB; import &#x4E00;&#x4E2A; CSS Module.&#x6BCF;&#x4E00;&#x4E2A; CSS &#x6587;&#x4EF6;&#x90FD;&#x662F;&#x4E00;&#x4E2A;&#x72EC;&#x7ACB;&#x7684;&#x6A21;&#x5757;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;&#x7C7B;&#x540D;&#x90FD;&#x662F;&#x8BE5;&#x6A21;&#x5757;&#x6240;&#x5BFC;&#x51FA;&#x5BF9;&#x8C61;&#x7684;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x3002;&#x901A;&#x8FC7;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#xFF0C;&#x4FBF;&#x53EF;&#x5728;&#x4F7F;&#x7528;&#x65F6;&#x660E;&#x786E;&#x6307;&#x5B9A;&#x6240;&#x5F15;&#x7528;&#x7684; CSS &#x6837;&#x5F0F;&#x3002;&#x5E76;&#x4E14;&#xFF0C;CSS Modules &#x5728;&#x6253;&#x5305;&#x65F6;&#x4F1A;&#x81EA;&#x52A8;&#x5C06; id &#x548C; class &#x6DF7;&#x6DC6;&#x6210;&#x5168;&#x5C40;&#x552F;&#x4E00;&#x7684; hash &#x503C;&#xFF0C;&#x4ECE;&#x800C;&#x907F;&#x514D;&#x53D1;&#x751F;&#x547D;&#x540D;&#x51B2;&#x7A81;&#x95EE;&#x9898;&#x3002;</li>
+<li>&#x4F7F;&#x7528; CSS Modules &#x65F6;&#xFF0C;&#x63A8;&#x8350;&#x914D;&#x5408; CSS &#x9884;&#x5904;&#x7406;&#x5668;&#xFF08;Sass/Less/Stylus&#xFF09;&#x4E00;&#x8D77;&#x4F7F;&#x7528;</li>
+<li>CSS &#x9884;&#x5904;&#x7406;&#x5668;&#x63D0;&#x4F9B;&#x4E86;&#x8BB8;&#x591A;&#x6709;&#x7528;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x5982;&#x5D4C;&#x5957;&#x3001;&#x53D8;&#x91CF;&#x3001;mixins&#x3001;functions &#x7B49;&#xFF0C;&#x540C;&#x65F6;&#x4E5F;&#x8BA9;&#x5B9A;&#x4E49;&#x672C;&#x5730;&#x540D;&#x79F0;&#x6216;&#x5168;&#x5C40;&#x540D;&#x79F0;&#x53D8;&#x5F97;&#x5BB9;&#x6613;</li>
+</ul>
+<h3 id="t31.3 CSS-in-JS">1.3 CSS-in-JS <a href="#t31.3 CSS-in-JS"> # </a></h3>
+<ul>
+<li>React &#x7684;&#x51FA;&#x73B0;&#xFF0C;&#x6253;&#x7834;&#x4E86;&#x4EE5;&#x524D;<code>&#x5173;&#x6CE8;&#x70B9;&#x5206;&#x79BB;</code>&#x7684;&#x7F51;&#x9875;&#x5F00;&#x53D1;&#x539F;&#x5219;&#xFF0C;&#x56E0;&#x5176;&#x91C7;&#x7528;&#x7EC4;&#x4EF6;&#x7ED3;&#x6784;&#xFF0C;&#x800C;&#x7EC4;&#x4EF6;&#x53C8;&#x5F3A;&#x5236;&#x8981;&#x6C42;&#x5C06; HTML&#x3001;CSS &#x548C; JS &#x4EE3;&#x7801;&#x5199;&#x5728;&#x4E00;&#x8D77;&#x3002;&#x8868;&#x9762;&#x4E0A;&#x770B;&#x662F;&#x6280;&#x672F;&#x7684;&#x5012;&#x9000;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x5E76;&#x4E0D;&#x662F;</li>
+<li>React &#x662F;&#x5728;  JS &#x4E2D;&#x5B9E;&#x73B0;&#x4E86;&#x5BF9; HTML &#x548C; CSS &#x7684;&#x5C01;&#x88C5;&#xFF0C;&#x8D4B;&#x4E88;&#x4E86; HTML &#x548C; CSS &#x5168;&#x65B0;&#x7684;<code>&#x7F16;&#x7A0B;&#x80FD;&#x529B;</code>&#x3002;&#x5BF9;&#x4E8E; HTML&#xFF0C;&#x884D;&#x751F;&#x4E86; JSX &#x8FD9;&#x79CD; JS &#x7684;&#x8BED;&#x6CD5;&#x6269;&#x5C55;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5C06;&#x5176;&#x7406;&#x89E3;&#x4E3A; <code>HTML-in-JS</code>&#xFF1B;&#x5BF9;&#x4E8E; CSS&#xFF0C;&#x884D;&#x751F;&#x51FA;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x7B2C;&#x4E09;&#x65B9;&#x5E93;&#xFF0C;&#x7528;&#x6765;&#x52A0;&#x5F3A;&#x5728; JS &#x4E2D;&#x64CD;&#x4F5C; CSS &#x7684;&#x80FD;&#x529B;&#xFF0C;&#x5B83;&#x4EEC;&#x88AB;&#x79F0;&#x4E3A; <code>CSS-in-JS</code></li>
+<li>&#x968F;&#x7740; React &#x7684;&#x6D41;&#x884C;&#x4EE5;&#x53CA;&#x7EC4;&#x4EF6;&#x5316;&#x5F00;&#x53D1;&#x6A21;&#x5F0F;&#x7684;&#x6DF1;&#x5165;&#x4EBA;&#x5FC3;&#xFF0C;&#x8FD9;&#x79CD;<code>&#x5173;&#x6CE8;&#x70B9;&#x6DF7;&#x5408;</code>&#x7684;&#x65B0;&#x5199;&#x6CD5;&#x9010;&#x6E10;&#x6210;&#x4E3A;&#x4E3B;&#x6D41;</li>
+<li>&#x5B9E;&#x73B0;<ul>
+<li><a href="https://github.com/styled-components/styled-components">styled-components</a> 36.7K</li>
+<li><a href="https://github.com/emotion-js/emotion">emotion</a> 15K</li>
+</ul>
+</li>
+</ul>
+<p><img src="./assets/img/b4f4bde16e71545cc258232026ea7d65.png" alt></p>
+<h4 id="t41.3.1 &#x6848;&#x4F8B;">1.3.1 &#x6848;&#x4F8B; <a href="#t41.3.1 &#x6848;&#x4F8B;"> # </a></h4>
+<ul>
+<li><a href="https://github.com/mui-org/material-ui">material-ui</a>&#x4E16;&#x754C;&#x4E0A;&#x6700;&#x53D7;&#x6B22;&#x8FCE;&#x7684; React UI &#x6846;&#x67B6;</li>
+</ul>
+<h4 id="t51.3.2 CSS-IN-JS&#x4F18;&#x7F3A;&#x70B9;">1.3.2 CSS-IN-JS&#x4F18;&#x7F3A;&#x70B9; <a href="#t51.3.2 CSS-IN-JS&#x4F18;&#x7F3A;&#x70B9;"> # </a></h4>
+<ul>
+<li>&#x4F18;&#x70B9;</li>
+<li><code>Scoping Styles</code> &#x53EF;&#x4EE5;&#x8BA9;CSS&#x62E5;&#x6709;&#x72EC;&#x7ACB;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x5B9E;&#x73B0;&#x5C40;&#x90E8;&#x6837;&#x5F0F;&#xFF0C;&#x9632;&#x6B62;&#x6837;&#x5F0F;&#x51B2;&#x7A81;&#x548C;&#x5F71;&#x54CD;&#x7EC4;&#x4EF6;&#x5916;&#x7684;&#x5185;&#x5BB9;</li>
+<li><code>Dead Code Elimination</code> &#x907F;&#x514D;&#x65E0;&#x7528;&#x7684;CSS&#x6837;&#x5F0F;&#x5806;&#x79EF;  </li>
+<li><code>Critical CSS</code> &#x91CD;&#x8981;&#x7684;CSS&#x653E;&#x5728;&#x5934;&#x90E8;&#x7684;<code>style</code>&#x6807;&#x7B7E;&#x5185;&#xFF0C;&#x5176;&#x5B83;&#x7684;CSS&#x5F02;&#x6B65;&#x52A0;&#x8F7D;&#x53EF;&#x4EE5;&#x51CF;&#x5C11;&#x6E32;&#x67D3;&#x963B;&#x585E;</li>
+<li><code>State-based styling</code> &#x6839;&#x636E;&#x7EC4;&#x4EF6;&#x7684;&#x72B6;&#x6001;&#x52A8;&#x6001;&#x5730;&#x751F;&#x6210;&#x6837;&#x5F0F;</li>
+<li><code>&#x66F4;&#x5F7B;&#x5E95;&#x7684;&#x5C01;&#x88C5;</code> &#x8BA9;&#x7EC4;&#x4EF6;&#x62E5;&#x6709;&#x66F4;&#x597D;&#x7684;&#x79FB;&#x690D;&#x6027;&#x548C;&#x91CD;&#x7528;&#x6027;</li>
+<li>&#x7F3A;&#x70B9;</li>
+<li><code>Steep learning curve</code> &#x9661;&#x5CED;&#x7684;&#x5B66;&#x4E60;&#x66F2;&#x7EBF;</li>
+<li><code>Runtime cost</code> &#x8FD0;&#x884C;&#x65F6;&#x6D88;&#x8017;</li>
+<li><code>Unreadable class names</code> &#x4EE3;&#x7801;&#x53EF;&#x8BFB;&#x6027;&#x5DEE; </li>
+<li><code>No interoperability</code>&#x6CA1;&#x6709;&#x7EDF;&#x4E00;&#x7684; <a href="https://github.com/cssinjs/istf-spec">&#x4E1A;&#x754C;&#x6807;&#x51C6;</a></li>
+</ul>
+<h4 id="t61.3.3 &#x9009;&#x578B;">1.3.3 &#x9009;&#x578B; <a href="#t61.3.3 &#x9009;&#x578B;"> # </a></h4>
+<ul>
+<li>&#x6211;&#x4EEC;&#x4E00;&#x5B9A;&#x8981;&#x6839;&#x636E;&#x81EA;&#x5DF1;&#x7684;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x8FDB;&#x884C;&#x8861;&#x91CF;&#x548C;&#x53D6;&#x820D;&#x6765;&#x786E;&#x5B9A;&#x662F;&#x4E0D;&#x662F;&#x8981;&#x5728;&#x81EA;&#x5DF1;&#x7684;&#x9879;&#x76EE;&#x4E2D;&#x4F7F;&#x7528;&#x5B83;<ul>
+<li>&#x524D;&#x7AEF;&#x521D;&#x5B66;&#x8005;&#x3001;&#x9875;&#x9762;&#x529F;&#x80FD;&#x7B80;&#x5355;&#x3001;&#x91CD;&#x89C6;&#x4EE3;&#x7801;&#x53EF;&#x8BFB;&#x6027;&#x548C;&#x53EF;&#x7EF4;&#x62A4;&#x6027;&#x4E0D;&#x8981;&#x9009;&#x62E9;</li>
+<li>&#x5982;&#x679C;&#x7ECF;&#x9A8C;&#x4E30;&#x5BCC;&#x3001;&#x5E94;&#x7528;&#x4EA4;&#x4E92;&#x903B;&#x8F91;&#x590D;&#x6742;&#x3001;&#x91CD;&#x89C6;&#x5C01;&#x88C5;&#x6027;&#x548C;&#x53EF;&#x79FB;&#x690D;&#x6027;&#x53EF;&#x4EE5;&#x5C1D;&#x8BD5;</li>
+</ul>
+</li>
+</ul>
+<h2 id="t72. emotion">2. emotion <a href="#t72. emotion"> # </a></h2>
+<ul>
+<li><a href="https://emotion.sh/docs/introduction">emotion</a>&#x662F;&#x4E00;&#x4E2A;&#x7528;JS&#x7F16;&#x5199;CSS&#x6837;&#x5F0F;&#x7684;&#x5E93;</li>
+<li><code>emotion</code>&#x662F;&#x65B0;&#x4E00;&#x4EE3;&#x7684;<code>CSS-IN-JS</code>&#x89E3;&#x51B3;&#x65B9;&#x6848;</li>
+<li><code>CSS-in-JS</code>&#x5B9E;&#x73B0;&#x662F;&#x901A;&#x8FC7;&#x751F;&#x6210;&#x552F;&#x4E00;&#x7684;CSS&#x9009;&#x62E9;&#x5668;&#x6765;&#x8FBE;&#x5230;CSS&#x5C40;&#x90E8;&#x4F5C;&#x7528;&#x57DF;&#x7684;&#x6548;&#x679C;</li>
+</ul>
+<h2 id="t83.@emotion/css">3.@emotion/css <a href="#t83.@emotion/css"> # </a></h2>
+<ul>
+<li><a href="https://www.npmjs.com/package/@emotion/css">@emotion/css</a>&#x4E0E;&#x6846;&#x67B6;&#x65E0;&#x5173;&#xFF0C;&#x662F;&#x4F7F;&#x7528; Emotion &#x7684;&#x6700;&#x7B80;&#x5355;&#x65B9;&#x6CD5;</li>
+<li>&#x4E0D;&#x9700;&#x8981;&#x989D;&#x5916;&#x7684;&#x8BBE;&#x7F6E;&#x3001;babel&#x63D2;&#x4EF6;&#x6216;&#x5176;&#x4ED6;&#x914D;&#x7F6E;&#x66F4;&#x6539;</li>
+<li>&#x652F;&#x6301;&#x81EA;&#x52A8;&#x4F9B;&#x5E94;&#x5546;&#x524D;&#x7F00;&#x3001;&#x5D4C;&#x5957;&#x9009;&#x62E9;&#x5668;&#x548C;&#x5A92;&#x4F53;&#x67E5;&#x8BE2;</li>
+</ul>
+<h3 id="t93.1 &#x6A21;&#x677F;&#x5B57;&#x7B26;&#x4E32;">3.1 &#x6A21;&#x677F;&#x5B57;&#x7B26;&#x4E32; <a href="#t93.1 &#x6A21;&#x677F;&#x5B57;&#x7B26;&#x4E32;"> # </a></h3>
+<h4 id="t103.1.1  src\main.jsx">3.1.1  src\main.jsx <a href="#t103.1.1  src\main.jsx"> # </a></h4>
+<p>src\main.jsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>
+<span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-dom&apos;</span>
+<span class="hljs-keyword">import</span> App <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./App&apos;</span>
+ReactDOM.render(
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">App</span> /&gt;</span></span>,
+  <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;root&apos;</span>)
+)
+</code></pre>
+<h4 id="t113.1.2 src\App.jsx">3.1.2 src\App.jsx <a href="#t113.1.2 src\App.jsx"> # </a></h4>
+<p>src\App.jsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { css } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./@emotion/css&apos;</span>
+<span class="hljs-keyword">const</span> className = css`<span class="css">
+ <span class="hljs-selector-tag">color</span>: <span class="hljs-selector-tag">red</span>;
+`</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">App</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{className}</span>&gt;</span>
+      App
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  )
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> App
+</code></pre>
+<h4 id="t123.1.3 css\index.js">3.1.3 css\index.js <a href="#t123.1.3 css\index.js"> # </a></h4>
+<p>src\@emotion\css\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> { <span class="hljs-keyword">default</span> <span class="hljs-keyword">as</span> css } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./css&apos;</span>;
+</code></pre>
+<h4 id="t133.1.4 css.js">3.1.4 css.js <a href="#t133.1.4 css.js"> # </a></h4>
+<p>src\@emotion\css\css.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { serializeStyles } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../serialize&apos;</span>;
+<span class="hljs-keyword">import</span> { insertStyles } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../utils&apos;</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">css</span>(<span class="hljs-params">...args</span>) </span>{
+  <span class="hljs-keyword">const</span> serialized = serializeStyles(args);
+  insertStyles(serialized);
+  <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;css&apos;</span> + <span class="hljs-string">&quot;-&quot;</span> + serialized.name;
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> css; 
+</code></pre>
+<h4 id="t143.1.5 serialize\index.jsx">3.1.5 serialize\index.jsx <a href="#t143.1.5 serialize\index.jsx"> # </a></h4>
+<p>src\@emotion\serialize\index.jsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> { <span class="hljs-keyword">default</span> <span class="hljs-keyword">as</span> serializeStyles } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./serializeStyles&apos;</span>;
+</code></pre>
+<h4 id="t153.1.6 serializeStyles.jsx">3.1.6 serializeStyles.jsx <a href="#t153.1.6 serializeStyles.jsx"> # </a></h4>
+<p>src\@emotion\serialize\serializeStyles.jsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { hashString } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../utils&apos;</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">serializeStyles</span>(<span class="hljs-params">args</span>) </span>{
+  <span class="hljs-keyword">let</span> styles = <span class="hljs-string">&apos;&apos;</span>;
+  <span class="hljs-keyword">const</span> strings = args[<span class="hljs-number">0</span>];
+  styles += strings[<span class="hljs-number">0</span>];
+  <span class="hljs-keyword">const</span> name = hashString(styles);
+  <span class="hljs-keyword">return</span> { name, styles }
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> serializeStyles;
+</code></pre>
+<h4 id="t163.1.7 utils\index.jsx">3.1.7 utils\index.jsx <a href="#t163.1.7 utils\index.jsx"> # </a></h4>
+<p>src\@emotion\utils\index.jsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> { <span class="hljs-keyword">default</span> <span class="hljs-keyword">as</span> insertStyles } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./insertStyles&apos;</span>
+<span class="hljs-keyword">export</span> { <span class="hljs-keyword">default</span> <span class="hljs-keyword">as</span> hashString } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./hashString&apos;</span>;
+</code></pre>
+<h4 id="t173.1.8 hashString.jsx">3.1.8 hashString.jsx <a href="#t173.1.8 hashString.jsx"> # </a></h4>
+<p>src\@emotion\utils\hashString.jsx</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">hashString</span>(<span class="hljs-params">keys</span>) </span>{
+  <span class="hljs-keyword">let</span> val = <span class="hljs-number">10000000</span>;
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; keys.length; i++) {
+    val += keys.charCodeAt(i);
+  }
+  <span class="hljs-keyword">return</span> val.toString(<span class="hljs-number">16</span>).slice(<span class="hljs-number">0</span>, <span class="hljs-number">6</span>);
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> hashString;
+</code></pre>
+<h4 id="t183.1.9 insertStyles.jsx">3.1.9 insertStyles.jsx <a href="#t183.1.9 insertStyles.jsx"> # </a></h4>
+<p>src\@emotion\utils\insertStyles.jsx</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">insertStyles</span>(<span class="hljs-params">serialized</span>) </span>{
+  <span class="hljs-keyword">const</span> className = <span class="hljs-string">&apos;css&apos;</span> + <span class="hljs-string">&quot;-&quot;</span> + serialized.name;
+  <span class="hljs-keyword">const</span> rule = <span class="hljs-string">&quot;.&quot;</span> + className + <span class="hljs-string">&quot;{&quot;</span> + serialized.styles + <span class="hljs-string">&quot;}&quot;</span>;
+  <span class="hljs-keyword">const</span> tag = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&apos;style&apos;</span>);
+  tag.setAttribute(<span class="hljs-string">&apos;data-emotion&apos;</span>, <span class="hljs-string">&apos;css&apos;</span>);
+  tag.appendChild(<span class="hljs-built_in">document</span>.createTextNode(rule));
+  <span class="hljs-built_in">document</span>.head.appendChild(tag);
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> insertStyles;
+</code></pre>
+<h3 id="t193.2 &#x5BF9;&#x8C61;">3.2 &#x5BF9;&#x8C61; <a href="#t193.2 &#x5BF9;&#x8C61;"> # </a></h3>
+<h4 id="t203.2.1  src\App.jsx">3.2.1  src\App.jsx <a href="#t203.2.1  src\App.jsx"> # </a></h4>
+<p>src\App.jsx</p>
+<pre><code class="lang-diff">import { css } from &apos;./@emotion/css&apos;
+<span class="hljs-addition">+const className = css(</span>
+<span class="hljs-addition">+  {</span>
+<span class="hljs-addition">+    color: &apos;red&apos;</span>
+<span class="hljs-addition">+  }</span>
+<span class="hljs-addition">+);</span>
+function App() {
+  return (
+    &lt;div className={className}&gt;
+      App
+    &lt;/div&gt;
+  )
+}
+export default App
+</code></pre>
+<h4 id="t213.2.2 serializeStyles.jsx">3.2.2 serializeStyles.jsx <a href="#t213.2.2 serializeStyles.jsx"> # </a></h4>
+<p>src\@emotion\serialize\serializeStyles.jsx</p>
+<pre><code class="lang-diff">import { hashString } from &apos;../utils&apos;;
+function serializeStyles(args) {
+  var styles = &apos;&apos;;
+  var strings = args[0];
+<span class="hljs-addition">+ if (strings.raw === undefined) {</span>
+<span class="hljs-addition">+   styles += handleInterpolation(strings);</span>
+<span class="hljs-addition">+ } else {</span>
+<span class="hljs-addition">+   styles += strings[0];</span>
+<span class="hljs-addition">+ }</span>
+  var name = hashString(styles);
+  return { name, styles }
+}
+
+<span class="hljs-addition">+function handleInterpolation(interpolation) {</span>
+<span class="hljs-addition">+  switch (typeof interpolation) {</span>
+<span class="hljs-addition">+    case &apos;object&apos;: {</span>
+<span class="hljs-addition">+      return createStringFromObject(interpolation);</span>
+<span class="hljs-addition">+    }</span>
+<span class="hljs-addition">+  }</span>
+<span class="hljs-addition">+}</span>
+<span class="hljs-addition">+function createStringFromObject(obj) {</span>
+<span class="hljs-addition">+  var string = &apos;&apos;;</span>
+<span class="hljs-addition">+  for (var key in obj) {</span>
+<span class="hljs-addition">+    var value = obj[key];</span>
+<span class="hljs-addition">+    string += key + &quot;:&quot; + value + &quot;;&quot;;</span>
+<span class="hljs-addition">+  }</span>
+<span class="hljs-addition">+  return string;</span>
+<span class="hljs-addition">+}</span>
+export default serializeStyles;
+</code></pre>
+<h2 id="t224.@emotion/react">4.@emotion/react <a href="#t224.@emotion/react"> # </a></h2>
+<ul>
+<li><a href="https://www.npmjs.com/package/@emotion/react">@emotion/react</a>&#x5305;&#x9700;&#x8981;React</li>
+<li>&#x6700;&#x597D;&#x5C06;React&#x4E0E;&#x53EF;&#x914D;&#x7F6E;&#x7684;&#x6784;&#x5EFA;&#x73AF;&#x5883;&#x4E00;&#x8D77;&#x4F7F;&#x7528;</li>
+<li>css&#x5C5E;&#x6027;&#x652F;&#x6301;<ul>
+<li>&#x7C7B;&#x4F3C;&#x4E8E;<code>style prop</code>&#xFF0C;&#x4F46;&#x4E5F;&#x652F;&#x6301;&#x81EA;&#x52A8;&#x4F9B;&#x5E94;&#x5546;&#x524D;&#x7F00;&#x3001;&#x5D4C;&#x5957;&#x9009;&#x62E9;&#x5668;&#x548C;&#x5A92;&#x4F53;&#x67E5;&#x8BE2;</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-js">npm install @emotion/react --save
+</code></pre>
+<ul>
+<li>pragma(&#x6CE8;&#x89E3;) and pragmaFrag cannot be set when runtime is automatic.</li>
+</ul>
+<h3 id="t234.1 vite.config.js">4.1 vite.config.js <a href="#t234.1 vite.config.js"> # </a></h3>
+<p>vite.config.js</p>
+<pre><code class="lang-diff">import { defineConfig } from &apos;vite&apos;
+import react from &apos;@vitejs/plugin-react&apos;
+export default defineConfig({
+  plugins: [react(
+    {
+<span class="hljs-addition">+     jsxRuntime: &apos;classic&apos;</span>
+    }
+  )]
+})
+
+</code></pre>
+<h3 id="t244.2 src\App.jsx">4.2 src\App.jsx <a href="#t244.2 src\App.jsx"> # </a></h3>
+<p>src\App.jsx</p>
+<pre><code class="lang-diff"><span class="hljs-addition">+/** @jsx jsx */</span>
+<span class="hljs-addition">+import { css, jsx } from &apos;./@emotion/react&apos;</span>
+<span class="hljs-addition">+const styles = css(</span>
+<span class="hljs-addition">+  {</span>
+<span class="hljs-addition">+    color: &apos;red&apos;</span>
+<span class="hljs-addition">+  }</span>
+<span class="hljs-addition">+);</span>
+function App() {
+  return (
+<span class="hljs-addition">+   &lt;div css={styles}&gt;</span>
+      App
+    &lt;/div&gt;
+  )
+}
+export default App
+</code></pre>
+<h3 id="t254.3 react\index.jsx">4.3 react\index.jsx <a href="#t254.3 react\index.jsx"> # </a></h3>
+<p>src\@emotion\react\index.jsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> { <span class="hljs-keyword">default</span> <span class="hljs-keyword">as</span> css } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./css&apos;</span>;
+<span class="hljs-keyword">export</span> { <span class="hljs-keyword">default</span> <span class="hljs-keyword">as</span> jsx } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./jsx&apos;</span>;
+</code></pre>
+<h3 id="t264.4 css.jsx">4.4 css.jsx <a href="#t264.4 css.jsx"> # </a></h3>
+<p>src\@emotion\react\css.jsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { serializeStyles } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../serialize&apos;</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">css</span>(<span class="hljs-params">...args</span>) </span>{
+  <span class="hljs-keyword">return</span> serializeStyles(args);
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> css; 
+</code></pre>
+<h3 id="t274.5 jsx.jsx">4.5 jsx.jsx <a href="#t274.5 jsx.jsx"> # </a></h3>
+<p>src\@emotion\react\jsx.jsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { serializeStyles } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../serialize&apos;</span>;
+<span class="hljs-keyword">import</span> { Insertion } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../utils&apos;</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Emotion</span>(<span class="hljs-params">props</span>) </span>{
+  <span class="hljs-keyword">const</span> serialized = serializeStyles(props.css);
+  <span class="hljs-keyword">const</span> { css, ...newProps } = props
+  newProps.className = <span class="hljs-string">&apos;css&apos;</span> + <span class="hljs-string">&quot;-&quot;</span> + serialized.name;
+  <span class="hljs-keyword">const</span> WrappedComponent = props.type;
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">Insertion</span> <span class="hljs-attr">serialized</span>=<span class="hljs-string">{serialized}</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">WrappedComponent</span> {<span class="hljs-attr">...newProps</span>} /&gt;</span>
+    <span class="hljs-tag">&lt;/&gt;</span></span>
+  )
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">jsx</span>(<span class="hljs-params">type, props, ...children</span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Emotion</span> {<span class="hljs-attr">...props</span>} <span class="hljs-attr">type</span>=<span class="hljs-string">{type}</span>&gt;</span>
+      {children}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Emotion</span> &gt;</span>
+  )
+}
+export default jsx;
+</span></code></pre>
+<h3 id="t284.6 serializeStyles.jsx">4.6 serializeStyles.jsx <a href="#t284.6 serializeStyles.jsx"> # </a></h3>
+<p>src\@emotion\serialize\serializeStyles.jsx</p>
+<pre><code class="lang-diff">import { hashString } from &apos;../utils&apos;;
+function serializeStyles(args) {
+<span class="hljs-addition">+  if (typeof args === &apos;object&apos; &amp;&amp; args.styles !== undefined) {</span>
+<span class="hljs-addition">+    return args;</span>
+<span class="hljs-addition">+  }</span>
+  var styles = &apos;&apos;;
+  var strings = args[0];
+  if (strings == null || strings.raw <span class="hljs-comment">=== undefined) {</span>
+    styles += handleInterpolation(strings);
+  } else {
+    styles += strings[0];
+  }
+  var name = hashString(styles);
+  return { name, styles }
+}
+
+function handleInterpolation(interpolation) {
+  switch (typeof interpolation) {
+    case &apos;object&apos;: {
+      return createStringFromObject(interpolation);
+    }
+  }
+}
+function createStringFromObject(obj) {
+  var string = &apos;&apos;;
+  for (var key in obj) {
+    var value = obj[key];
+    string += key + &quot;:&quot; + value + &quot;;&quot;;
+  }
+  return string;
+}
+export default serializeStyles;
+</code></pre>
+<h3 id="t294.7 Insertion.jsx">4.7 Insertion.jsx <a href="#t294.7 Insertion.jsx"> # </a></h3>
+<p>src\@emotion\utils\Insertion.jsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { useLayoutEffect } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> insertStyles <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./insertStyles&apos;</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Insertion</span>(<span class="hljs-params">{ serialized }</span>) </span>{
+  useLayoutEffect(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    insertStyles(serialized);
+  });
+  <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+};
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> Insertion;
+</code></pre>
+<h3 id="t304.8 utils\index.jsx">4.8 utils\index.jsx <a href="#t304.8 utils\index.jsx"> # </a></h3>
+<p>src\@emotion\utils\index.jsx</p>
+<pre><code class="lang-diff">export { default as insertStyles } from &apos;./insertStyles&apos;;
+export { default as hashString } from &apos;./hashString&apos;;
+<span class="hljs-addition">+export { default as Insertion } from &apos;./Insertion&apos;;</span>
+</code></pre>
+<h2 id="t315. @emotion/styled">5. @emotion/styled <a href="#t315. @emotion/styled"> # </a></h2>
+<ul>
+<li><a href="https://emotion.sh/docs/@emotion/styled">styled</a>&#x662F;&#x4E00;&#x79CD;&#x521B;&#x5EFA;&#x9644;&#x52A0;&#x6837;&#x5F0F;&#x7684;React&#x7EC4;&#x4EF6;&#x7684;&#x65B9;&#x6CD5;</li>
+</ul>
+<pre><code class="lang-js">npm install @emotion/styled --save
+</code></pre>
+<h3 id="t325.1 src\App.jsx">5.1 src\App.jsx <a href="#t325.1 src\App.jsx"> # </a></h3>
+<p>src\App.jsx</p>
+<pre><code class="lang-diff"><span class="hljs-addition">+import styled from &apos;./@emotion/styled&apos;</span>
+<span class="hljs-addition">+const Button = styled.button(</span>
+  {
+    color: &apos;red&apos;
+  }
+<span class="hljs-addition">+);</span>
+function App() {
+  return (
+<span class="hljs-addition">+   &lt;Button&gt;Button&lt;/Button&gt;</span>
+  )
+}
+export default App
+</code></pre>
+<h3 id="t335.2 styled\index.jsx">5.2 styled\index.jsx <a href="#t335.2 styled\index.jsx"> # </a></h3>
+<p>src\@emotion\styled\index.jsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { serializeStyles } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../serialize&apos;</span>;
+<span class="hljs-keyword">import</span> { Insertion } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../utils&apos;</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createStyled</span>(<span class="hljs-params">tag</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">...args</span>) </span>{
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Styled</span>(<span class="hljs-params">props</span>) </span>{
+      <span class="hljs-keyword">const</span> serialized = serializeStyles(args);
+      <span class="hljs-keyword">const</span> className = <span class="hljs-string">&apos;css&apos;</span> + <span class="hljs-string">&quot;-&quot;</span> + serialized.name;
+      <span class="hljs-keyword">const</span> newProps = { ...props };
+      newProps.className = className;
+      <span class="hljs-keyword">const</span> FinalTag = tag;
+      <span class="hljs-keyword">return</span> (
+        <span class="xml"><span class="hljs-tag">&lt;&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">Insertion</span> <span class="hljs-attr">serialized</span>=<span class="hljs-string">{serialized}</span> /&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">FinalTag</span> {<span class="hljs-attr">...newProps</span>} /&gt;</span>
+        <span class="hljs-tag">&lt;/&gt;</span></span>
+      )
+    }
+    <span class="hljs-keyword">return</span> Styled;
+  }
+}
+<span class="hljs-keyword">const</span> newStyled = createStyled.bind();
+<span class="hljs-keyword">const</span> tags = [<span class="hljs-string">&apos;button&apos;</span>, <span class="hljs-string">&apos;div&apos;</span>];
+tags.forEach(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">tagName</span>) </span>{
+  newStyled[tagName] = newStyled(tagName);
+});
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> newStyled;
+</code></pre>
+<h2 id="t346. &#x6839;&#x636E;props&#x5C5E;&#x6027;&#x8986;&#x76D6;&#x6837;&#x5F0F;">6. &#x6839;&#x636E;props&#x5C5E;&#x6027;&#x8986;&#x76D6;&#x6837;&#x5F0F; <a href="#t346. &#x6839;&#x636E;props&#x5C5E;&#x6027;&#x8986;&#x76D6;&#x6837;&#x5F0F;"> # </a></h2>
+<h3 id="t356.1 src\App.jsx">6.1 src\App.jsx <a href="#t356.1 src\App.jsx"> # </a></h3>
+<p>src\App.jsx</p>
+<pre><code class="lang-diff">import styled from &apos;./@emotion/styled&apos;
+const Button = styled.button(
+  {
+    background: &apos;green&apos;,
+    color: &apos;red&apos;
+<span class="hljs-addition">+ }, props =&gt; ({</span>
+<span class="hljs-addition">+   color: props.color</span>
+<span class="hljs-addition">+ })</span>
+);
+function App() {
+  return (
+<span class="hljs-addition">+   &lt;Button color=&quot;white&quot;&gt;Button&lt;/Button&gt;</span>
+  )
+}
+export default App
+</code></pre>
+<h3 id="t366.2 styled\index.jsx">6.2 styled\index.jsx <a href="#t366.2 styled\index.jsx"> # </a></h3>
+<p>src\@emotion\styled\index.jsx</p>
+<pre><code class="lang-diff">import { serializeStyles } from &apos;../serialize&apos;;
+import { Insertion } from &apos;../utils&apos;;
+function createStyled(tag) {
+  return function (...args) {
+    function Styled(props) {
+<span class="hljs-addition">+     const serialized = serializeStyles(args, props);</span>
+      const className = &apos;css&apos; + &quot;-&quot; + serialized.name;
+      const newProps = { ...props };
+      newProps.className = className;
+      const FinalTag = tag;
+      return (
+        &lt;&gt;
+          &lt;Insertion serialized={serialized} /&gt;
+          &lt;FinalTag {...newProps} /&gt;
+        &lt;/&gt;
+      )
+    }
+    return Styled;
+  }
+}
+const newStyled = createStyled.bind();
+const tags = [&apos;button&apos;, &apos;div&apos;];
+tags.forEach(function (tagName) {
+  newStyled[tagName] = newStyled(tagName);
+});
+export default newStyled;
+</code></pre>
+<h3 id="t376.3 serializeStyles.jsx">6.3 serializeStyles.jsx <a href="#t376.3 serializeStyles.jsx"> # </a></h3>
+<p>src\@emotion\serialize\serializeStyles.jsx</p>
+<pre><code class="lang-diff">import { hashString } from &apos;../utils&apos;;
+<span class="hljs-addition">+function serializeStyles(args, props) {</span>
+  if (typeof args <span class="hljs-comment">=== &apos;object&apos; &amp;&amp; args.styles !== undefined) {</span>
+    return args;
+  }
+  var styles = &apos;&apos;;
+  var strings = args[0];
+  if (strings.raw <span class="hljs-comment">=== undefined) {</span>
+<span class="hljs-addition">+   styles += handleInterpolation(props, strings);</span>
+  } else {
+    styles += strings[0];
+  }
+  for (var i = 1; i &lt; args.length; i++) {
+    styles += handleInterpolation(props, args[i]);
+  }
+  var name = hashString(styles);
+  return { name, styles }
+}
+
+<span class="hljs-addition">+function handleInterpolation(props, interpolation) {</span>
+  switch (typeof interpolation) {
+    case &apos;object&apos;: {
+<span class="hljs-addition">+     return createStringFromObject(props, interpolation);</span>
+    }
+<span class="hljs-addition">+   case &apos;function&apos;: {</span>
+<span class="hljs-addition">+     if (props !== undefined) {</span>
+<span class="hljs-addition">+       var result = interpolation(props);</span>
+<span class="hljs-addition">+       return handleInterpolation(props, result);</span>
+<span class="hljs-addition">+     }</span>
+<span class="hljs-addition">+   }</span>
+  }
+}
+function createStringFromObject(obj) {
+  var string = &apos;&apos;;
+  for (var key in obj) {
+    var value = obj[key];
+    string += key + &quot;:&quot; + value + &quot;;&quot;;
+  }
+  return string;
+}
+export default serializeStyles;
+</code></pre>
+<h2 id="t387. &#x4E3A;&#x7EC4;&#x4EF6;&#x6DFB;&#x52A0;&#x6837;&#x5F0F;">7. &#x4E3A;&#x7EC4;&#x4EF6;&#x6DFB;&#x52A0;&#x6837;&#x5F0F; <a href="#t387. &#x4E3A;&#x7EC4;&#x4EF6;&#x6DFB;&#x52A0;&#x6837;&#x5F0F;"> # </a></h2>
+<h3 id="t397.1 src\App.jsx">7.1 src\App.jsx <a href="#t397.1 src\App.jsx"> # </a></h3>
+<p>src\App.jsx</p>
+<pre><code class="lang-diff">import styled from &apos;./@emotion/styled&apos;
+<span class="hljs-addition">+function Hello({ className }) {</span>
+<span class="hljs-addition">+  return &lt;button className={className}&gt;Hello&lt;/button&gt;</span>
+<span class="hljs-addition">+}</span>
+<span class="hljs-addition">+const RedHello = styled(Hello)`</span>
+<span class="hljs-addition">+  color:red;</span>
+<span class="hljs-addition">+`</span>
+function App() {
+  return (
+<span class="hljs-addition">+   &lt;RedHello&gt;Button&lt;/RedHello&gt;</span>
+  )
+}
+export default App;
+</code></pre>
+<h2 id="t408. &#x7236;&#x7EC4;&#x4EF6;&#x8BBE;&#x7F6E;&#x5B50;&#x7EC4;&#x4EF6;">8. &#x7236;&#x7EC4;&#x4EF6;&#x8BBE;&#x7F6E;&#x5B50;&#x7EC4;&#x4EF6; <a href="#t408. &#x7236;&#x7EC4;&#x4EF6;&#x8BBE;&#x7F6E;&#x5B50;&#x7EC4;&#x4EF6;"> # </a></h2>
+<pre><code class="lang-css"><span class="hljs-selector-class">.css-1wvgi8y-Parent</span>{<span class="hljs-attribute">background</span>:green;}
+<span class="hljs-selector-class">.css-10c6c3i-Child</span>{<span class="hljs-attribute">color</span>:red;}
+<span class="hljs-selector-class">.css-1wvgi8y-Parent</span> <span class="hljs-selector-class">.eesff8e1</span>{<span class="hljs-attribute">color</span>:blue;}
+</code></pre>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;css-1wvgi8y-Parent eesff8e0&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;css-10c6c3i-Child eesff8e1&quot;</span>&gt;</span>App<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<h3 id="t418.1 vite.config.js">8.1 vite.config.js <a href="#t418.1 vite.config.js"> # </a></h3>
+<pre><code class="lang-js">npm install @emotion/babel-plugin --save
+</code></pre>
+<p>vite.config.js</p>
+<pre><code class="lang-diff">import { defineConfig } from &apos;vite&apos;
+import react from &apos;@vitejs/plugin-react&apos;
+export default defineConfig({
+  plugins: [react(
+    {
+      jsxRuntime: &apos;classic&apos;,
+      babel: {
+<span class="hljs-addition">+       plugins: [&apos;@emotion/babel-plugin&apos;]</span>
+      }
+    }
+  )]
+})
+</code></pre>
+<h3 id="t428.2 src\App.jsx">8.2 src\App.jsx <a href="#t428.2 src\App.jsx"> # </a></h3>
+<p>src\App.jsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> styled <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;@emotion/styled&apos;</span>
+<span class="hljs-keyword">const</span> Child = styled.div({
+  <span class="hljs-attr">color</span>: <span class="hljs-string">&apos;red&apos;</span>
+})
+<span class="hljs-keyword">const</span> Parent = styled.div({
+  <span class="hljs-attr">background</span>: <span class="hljs-string">&apos;green&apos;</span>,
+  [Child]: {
+    <span class="hljs-attr">color</span>: <span class="hljs-string">&apos;blue&apos;</span>
+  }
+})
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">App</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">Parent</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Child</span>&gt;</span>Child<span class="hljs-tag">&lt;/<span class="hljs-name">Child</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Parent</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">Child</span>&gt;</span>Child<span class="hljs-tag">&lt;/<span class="hljs-name">Child</span>&gt;</span>
+    <span class="hljs-tag">&lt;/&gt;</span></span>
+  )
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> App
+</code></pre>
+<h2 id="t439. &#x5D4C;&#x5957;&#x9009;&#x62E9;&#x5668;">9. &#x5D4C;&#x5957;&#x9009;&#x62E9;&#x5668; <a href="#t439. &#x5D4C;&#x5957;&#x9009;&#x62E9;&#x5668;"> # </a></h2>
+<h3 id="t449.1 src\App.jsx">9.1 src\App.jsx <a href="#t449.1 src\App.jsx"> # </a></h3>
+<p>src\App.jsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> styled <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;@emotion/styled&apos;</span>
+<span class="hljs-keyword">const</span> Container = styled.div<span class="hljs-string">`
+  width:200px;
+  height:200px;
+  background:lightgray;
+  &amp;:hover{
+    background:pink;
+  }
+  &amp; &gt; p {
+    color:green;
+  }
+`</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">App</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+      Container
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>span<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
+  )
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> App
+</code></pre>
+<h2 id="t4510. as&#x5C5E;&#x6027;">10. as&#x5C5E;&#x6027; <a href="#t4510. as&#x5C5E;&#x6027;"> # </a></h2>
+<ul>
+<li>&#x8981;&#x4F7F;&#x7528;&#x7EC4;&#x4EF6;&#x5185;&#x7684;&#x6837;&#x5F0F;&#xFF0C;&#x4F46;&#x8981;&#x66F4;&#x6539;&#x5448;&#x73B0;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;as&#x5C5E;&#x6027;</li>
+</ul>
+<h3 id="t4610.1 src\App.jsx">10.1 src\App.jsx <a href="#t4610.1 src\App.jsx"> # </a></h3>
+<p>src\App.jsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> styled <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;@emotion/styled&apos;</span>
+<span class="hljs-keyword">const</span> Button = styled.button<span class="hljs-string">`
+ color:red
+`</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">App</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">as</span>=<span class="hljs-string">&quot;a&quot;</span>&gt;</span>
+      Button
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span></span>
+  )
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> App
+
+</code></pre>
+<h2 id="t4711.&#x7EC4;&#x5408;&#x6837;&#x5F0F;">11.&#x7EC4;&#x5408;&#x6837;&#x5F0F; <a href="#t4711.&#x7EC4;&#x5408;&#x6837;&#x5F0F;"> # </a></h2>
+<ul>
+<li>&#x8981;&#x4F7F;&#x7528;&#x7EC4;&#x4EF6;&#x5185;&#x7684;&#x6837;&#x5F0F;&#xFF0C;&#x4F46;&#x8981;&#x66F4;&#x6539;&#x5448;&#x73B0;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;as&#x5C5E;&#x6027;</li>
+</ul>
+<h3 id="t4811.1 src\App.jsx">11.1 src\App.jsx <a href="#t4811.1 src\App.jsx"> # </a></h3>
+<p>src\App.jsx</p>
+<pre><code class="lang-js"><span class="hljs-comment">/** <span class="hljs-doctag">@jsx </span>jsx */</span>
+<span class="hljs-keyword">import</span> { jsx, css } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;@emotion/react&apos;</span>
+<span class="hljs-keyword">const</span> base = css`<span class="css">
+  <span class="hljs-selector-tag">color</span><span class="hljs-selector-pseudo">:white</span>;
+`</span>
+<span class="hljs-keyword">const</span> warning = css`<span class="css">
+  <span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:orange</span>;
+`</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">App</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">css</span>=<span class="hljs-string">{[base,</span> <span class="hljs-attr">warning</span>]}&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></span>
+  )
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> App
+</code></pre>
+<h2 id="t4912.&#x5168;&#x5C40;&#x6837;&#x5F0F;">12.&#x5168;&#x5C40;&#x6837;&#x5F0F; <a href="#t4912.&#x5168;&#x5C40;&#x6837;&#x5F0F;"> # </a></h2>
+<h3 id="t5012.1 src\App.jsx">12.1 src\App.jsx <a href="#t5012.1 src\App.jsx"> # </a></h3>
+<p>src\App.jsx</p>
+<pre><code class="lang-js"><span class="hljs-comment">/** <span class="hljs-doctag">@jsx </span>jsx */</span>
+<span class="hljs-keyword">import</span> { jsx, css, Global } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;@emotion/react&apos;</span>
+<span class="hljs-keyword">const</span> reset = css`<span class="css">
+  <span class="hljs-selector-tag">body</span>{
+    <span class="hljs-attribute">margin</span>:<span class="hljs-number">0</span>;
+  }
+  <span class="hljs-selector-tag">a</span>{
+    <span class="hljs-attribute">color</span>:red;
+  }
+`</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">App</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">Global</span> <span class="hljs-attr">styles</span>=<span class="hljs-string">{reset}</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">a</span>&gt;</span>&#x6211;&#x662F;a&#x6807;&#x8BB0;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/&gt;</span></span>
+  )
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> App
+</code></pre>
+<h2 id="t5113.&#x5173;&#x952E;&#x5E27;&#x52A8;&#x753B;">13.&#x5173;&#x952E;&#x5E27;&#x52A8;&#x753B; <a href="#t5113.&#x5173;&#x952E;&#x5E27;&#x52A8;&#x753B;"> # </a></h2>
+<h3 id="t5213.1 src\App.jsx">13.1 src\App.jsx <a href="#t5213.1 src\App.jsx"> # </a></h3>
+<p>src\App.jsx</p>
+<pre><code class="lang-js"><span class="hljs-comment">/** <span class="hljs-doctag">@jsx </span>jsx */</span>
+<span class="hljs-keyword">import</span> { jsx, css, keyframes } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;@emotion/react&apos;</span>
+
+<span class="hljs-keyword">const</span> bounce = keyframes<span class="hljs-string">`
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100px);
+  }
+`</span>
+<span class="hljs-keyword">const</span> base = css`<span class="css">
+  <span class="hljs-selector-tag">width</span><span class="hljs-selector-pseudo">:100px</span>;
+  <span class="hljs-selector-tag">height</span><span class="hljs-selector-pseudo">:100px</span>;
+  <span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">green</span>;
+  <span class="hljs-selector-tag">position</span>: <span class="hljs-selector-tag">absolute</span>;
+  <span class="hljs-selector-tag">animation</span>: </span><span class="hljs-subst">${bounce}</span><span class="css"> 1<span class="hljs-selector-tag">s</span> <span class="hljs-selector-tag">ease</span> <span class="hljs-selector-tag">infinite</span> <span class="hljs-selector-tag">alternate</span>;
+`</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">App</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">css</span>=<span class="hljs-string">{[base]}</span>&gt;</span>
+      &#x6587;&#x672C;
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  )
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> App
+</code></pre>
+<h2 id="t5314.&#x6A21;&#x677F;&#x5B57;&#x7B26;&#x4E32;">14.&#x6A21;&#x677F;&#x5B57;&#x7B26;&#x4E32; <a href="#t5314.&#x6A21;&#x677F;&#x5B57;&#x7B26;&#x4E32;"> # </a></h2>
+<ul>
+<li>&#x6A21;&#x677F;&#x5B57;&#x7B26;&#x4E32;&#x53EF;&#x4EE5;&#x7D27;&#x8DDF;&#x5728;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x540D;&#x540E;&#x9762;&#xFF0C;&#x8BE5;&#x51FD;&#x6570;&#x5C06;&#x88AB;&#x8C03;&#x7528;&#x6765;&#x5904;&#x7406;&#x8FD9;&#x4E2A;&#x6A21;&#x677F;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x8FD9;&#x88AB;&#x79F0;&#x4E3A;<code>&#x6807;&#x7B7E;&#x6A21;&#x677F;</code>&#x529F;&#x80FD;</li>
+<li>&#x6807;&#x7B7E;&#x6A21;&#x677F;&#x5176;&#x5B9E;&#x4E0D;&#x662F;&#x6A21;&#x677F;&#xFF0C;&#x800C;&#x662F;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x7684;&#x4E00;&#x79CD;&#x7279;&#x6B8A;&#x5F62;&#x5F0F;</li>
+<li>&#x6807;&#x7B7E;&#x6307;&#x7684;&#x5C31;&#x662F;&#x51FD;&#x6570;&#xFF0C;&#x7D27;&#x8DDF;&#x5728;&#x540E;&#x9762;&#x7684;&#x6A21;&#x677F;&#x5B57;&#x7B26;&#x4E32;&#x5C31;&#x662F;&#x5B83;&#x7684;&#x53C2;&#x6570;</li>
+<li>&#x5982;&#x679C;&#x6A21;&#x677F;&#x5B57;&#x7B26;&#x91CC;&#x9762;&#x6709;&#x53D8;&#x91CF;&#xFF0C;&#x5C31;&#x4E0D;&#x662F;&#x7B80;&#x5355;&#x7684;&#x8C03;&#x7528;&#x4E86;&#xFF0C;&#x800C;&#x662F;&#x4F1A;&#x5C06;&#x6A21;&#x677F;&#x5B57;&#x7B26;&#x4E32;&#x5148;&#x5904;&#x7406;&#x6210;&#x591A;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x518D;&#x8C03;&#x7528;&#x51FD;&#x6570;</li>
+<li>&#x6A21;&#x677F;&#x5904;&#x7406;&#x51FD;&#x6570;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#xFF08;&#x6A21;&#x677F;&#x5B57;&#x7B26;&#x4E32;&#x6570;&#x7EC4;&#xFF09;&#xFF0C;&#x8FD8;&#x6709;&#x4E00;&#x4E2A;<code>raw</code>&#x5C5E;&#x6027;,&#x4FDD;&#x5B58;&#x7684;&#x662F;&#x8F6C;&#x4E49;&#x540E;&#x7684;&#x539F;&#x5B57;&#x7B26;&#x4E32;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">tag</span>(<span class="hljs-params">stringArr, ...values</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(stringArr.raw);
+  <span class="hljs-keyword">let</span> output = <span class="hljs-string">&quot;&quot;</span>;
+  <span class="hljs-keyword">let</span> index;
+  <span class="hljs-keyword">for</span> (index = <span class="hljs-number">0</span>; index &lt; values.length; index++) {
+    output += stringArr[index] + values[index];
+  }
+  output += stringArr[index]
+  <span class="hljs-keyword">return</span> output;
+}
+<span class="hljs-keyword">let</span> v1 = <span class="hljs-number">1</span>;
+<span class="hljs-keyword">let</span> v2 = <span class="hljs-number">2</span>;
+
+<span class="hljs-keyword">let</span> result = tag<span class="hljs-string">`a<span class="hljs-subst">${v1}</span>b<span class="hljs-subst">${v2}</span>c`</span>;
+<span class="hljs-built_in">console</span>.log(result);
+</code></pre>
+
+    </div>
+</div>
+
+<script src="./assets/js/jquerymin_1645176580555.js"></script>
+<script src="./assets/js/bootstrapmin_1645176554753.js"></script>
+
+<script>
+$('.warpper .page-toc ul ul li a').on('click',function(){
+  $('.warpper .page-toc ul ul li a').removeClass('my-active')
+  $(this).addClass('my-active')
+})
+$('.logo').on('mouseenter',function(){
+  $('.nav').height('450px');
+})
+$('.nav').on('mouseleave',function(){
+  $('.nav').height('80px');
+})
+$('.logo').on('click',function(){
+  $('.nav').css('display','none');
+ $('.warpper').css('padding','0px');
+})
+</script>
+</body>
+</html>

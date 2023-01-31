@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>前端笔记</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/bootstrapmin_1645176572503.css" >
+    <style>
+        .page-toc > ul .red {
+            background: #f3f3f3;
+            z-index: 1;
+            border-left: 3px solid #009a61;
+            -webkit-transition: all .2s ease;
+            transition: all .2s ease;
+            color: #000
+        }
+    </style>
+</head>
+<body>
+<div class="nav">
+    <div class="logo">
+        
+                    前端笔记
+                        
+                        </div>
+                        <ul><li><a href="./index.html">0.api</a></li><li><a href="../html/0.Async.html">0.Async</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&NPM.html">7.module&NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li><li><a href="../html/98.websocket.html">98.websocket</a></li><li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li><li><a href="../html/101.1.monitor.html">101.1.monitor</a></li><li><a href="../html/101.2.monitor.html">101.2.monitor</a></li><li><a href="../html/102.java.html">102.java</a></li><li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="../html/103.11.webpack5.html">103.11.webpack5</a></li><li><a href="../html/103.13.splitChunks.html">103.13.splitChunks</a></li><li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="../html/103.16.rollup.1.html">103.16.rollup.1</a></li><li><a href="../html/103.16.rollup.2.html">103.16.rollup.2</a></li><li><a href="../html/103.16.rollup.3.html">103.16.rollup.3</a></li><li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li><li><a href="../html/103.16.vite.plugin.html">103.16.vite.plugin</a></li><li><a href="../html/103.16.vite.1.html">103.16.vite.1</a></li><li><a href="../html/103.16.vite.2.html">103.16.vite.2</a></li><li><a href="../html/103.17.polyfill.html">103.17.polyfill</a></li><li><a href="../html/104.1.binary.html">104.1.binary</a></li><li><a href="../html/104.2.binary.html">104.2.binary</a></li><li><a href="../html/105.skeleton.html">105.skeleton</a></li><li><a href="../html/106.1.react.html">106.1.react</a></li><li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="../html/106.3.react_router.html">106.3.react_router</a></li><li><a href="../html/106.4.redux.html">106.4.redux</a></li><li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="../html/106.6.redux-first-history.html">106.6.redux-first-history</a></li><li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="../html/106.8.dva.html">106.8.dva</a></li><li><a href="../html/106.9.umi.html">106.9.umi</a></li><li><a href="../html/106.10.ketang.html">106.10.ketang</a></li><li><a href="../html/106.11.antdesign.html">106.11.antdesign</a></li><li><a href="../html/106.12.antpro.html">106.12.antpro</a></li><li><a href="../html/106.13.router-6.html">106.13.router-6</a></li><li><a href="../html/106.14.ssr.html">106.14.ssr</a></li><li><a href="../html/106.15.nextjs.html">106.15.nextjs</a></li><li><a href="../html/106.16.1.cms.html">106.16.1.cms</a></li><li><a href="../html/106.16.2.cms.html">106.16.2.cms</a></li><li><a href="../html/106.16.3.cms.html">106.16.3.cms</a></li><li><a href="../html/106.16.4.cms.html">106.16.4.cms</a></li><li><a href="../html/106.16.mobx.html">106.16.mobx</a></li><li><a href="../html/106.17.fomily.html">106.17.fomily</a></li><li><a href="../html/107.fiber.html">107.fiber</a></li><li><a href="../html/108.http.html">108.http</a></li><li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="../html/109.3.dll.html">109.3.dll</a></li><li><a href="../html/110.nest.js.html">110.nest.js</a></li><li><a href="../html/111.xstate.html">111.xstate</a></li><li><a href="../html/112.Form.html">112.Form</a></li><li><a href="../html/113.redux-saga.html">113.redux-saga</a></li><li><a href="../html/114.react+typescript.html">114.react+typescript</a></li><li><a href="../html/115.immer.html">115.immer</a></li><li><a href="../html/116.pro5.html">116.pro5</a></li><li><a href="../html/117.css-loader.html">117.css-loader</a></li><li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li><li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li><li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li><li><a href="../html/120.create-react-app.html">120.create-react-app</a></li><li><a href="../html/121.react-scripts.html">121.react-scripts</a></li><li><a href="../html/122.react-optimize.html">122.react-optimize</a></li><li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="../html/124.next.js.html">124.next.js</a></li><li><a href="../html/125.1.linux.html">125.1.linux</a></li><li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li><li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li><li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li><li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li><li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li><li><a href="../html/125.10.nginx.html">125.10.nginx</a></li><li><a href="../html/125.11.docker.html">125.11.docker</a></li><li><a href="../html/125.12.ci.html">125.12.ci</a></li><li><a href="../html/125.13.k8s.html">125.13.k8s</a></li><li><a href="../html/125.14.k8s.html">125.14.k8s</a></li><li><a href="../html/125.15.k8s.html">125.15.k8s</a></li><li><a href="../html/125.16.k8s.html">125.16.k8s</a></li><li><a href="../html/126.11.react-1.html">126.11.react-1</a></li><li><a href="../html/126.12.react-2.html">126.12.react-2</a></li><li><a href="../html/126.12.react-3.html">126.12.react-3</a></li><li><a href="../html/126.12.react-4.html">126.12.react-4</a></li><li><a href="../html/126.12.react-5.html">126.12.react-5</a></li><li><a href="../html/126.12.react-6.html">126.12.react-6</a></li><li><a href="../html/126.12.react-7.html">126.12.react-7</a></li><li><a href="../html/126.12.react-8.html">126.12.react-8</a></li><li><a href="../html/127.frontend.html">127.frontend</a></li><li><a href="../html/128.rollup.html">128.rollup</a></li><li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="../html/130.health.html">130.health</a></li><li><a href="../html/131.hooks.html">131.hooks</a></li><li><a href="../html/132.keepalive.html">132.keepalive</a></li><li><a href="../html/133.vue-cli.html">133.vue-cli</a></li><li><a href="../html/134.react18.html">134.react18</a></li><li><a href="../html/134.2.react18.html">134.2.react18</a></li><li><a href="../html/134.3.react18.html">134.3.react18</a></li><li><a href="../html/135.function.html">135.function</a></li><li><a href="../html/136.toolkit.html">136.toolkit</a></li><li><a href="../html/137.lerna.html">137.lerna</a></li><li><a href="../html/138.create-vite.html">138.create-vite</a></li><li><a href="../html/139.cli.html">139.cli</a></li><li><a href="../html/140.antd.html">140.antd</a></li><li><a href="../html/141.react-dnd.html">141.react-dnd</a></li><li><a href="../html/142.1.link.html">142.1.link</a></li><li><a href="../html/143.1.gulp.html">143.1.gulp</a></li><li><a href="../html/143.2.stream.html">143.2.stream</a></li><li><a href="../html/143.3.gulp.html">143.3.gulp</a></li><li><a href="../html/144.1.closure.html">144.1.closure</a></li><li><a href="../html/144.2.v8.html">144.2.v8</a></li><li><a href="../html/144.3.gc.html">144.3.gc</a></li><li><a href="../html/145.react-router-v6.html">145.react-router-v6</a></li><li><a href="../html/146.browser.html">146.browser</a></li><li><a href="../html/147.lighthouse.html">147.lighthouse</a></li><li><a href="../html/148.1.basic.html">148.1.basic</a></li><li><a href="../html/148.2.basic .html">148.2.basic </a></li><li><a href="../html/148.3.basic.html">148.3.basic</a></li><li><a href="../html/148.4.basic.html">148.4.basic</a></li><li><a href="../html/148.5.basic.html">148.5.basic</a></li><li><a href="../html/149.1.vite.html">149.1.vite</a></li><li><a href="../html/149.2.vite.html">149.2.vite</a></li><li><a href="../html/149.3.vite.html">149.3.vite</a></li><li><a href="../html/149.4.vite.html">149.4.vite</a></li><li><a href="../html/150.react-window.html">150.react-window</a></li><li><a href="../html/151.react-query.html">151.react-query</a></li><li><a href="../html/152.useRequest.html">152.useRequest</a></li><li><a href="../html/153.transition.html">153.transition</a></li><li><a href="../html/154.emotion.html">154.emotion</a></li><li><a href="../html/155.1.formily.html">155.1.formily</a></li><li><a href="../html/155.2.formily.html">155.2.formily</a></li><li><a href="../html/155.3.formily.html">155.3.formily</a></li><li><a href="../html/155.3.1.mobx.usage.html">155.3.1.mobx.usage</a></li><li><a href="../html/155.3.2.mobx.source.html">155.3.2.mobx.source</a></li><li><a href="../html/156.vue-loader.html">156.vue-loader</a></li><li><a href="../html/103.11.mf.html">103.11.mf</a></li><li><a href="../html/157.1.react18.html">157.1.react18</a></li><li><a href="../html/158.umi4.html">158.umi4</a></li><li><a href="../html/159.rxjs.html">159.rxjs</a></li><li class="active"><a href="../html/159.rxjs2.html">159.rxjs2</a></li><li><a href="../html/160.bff.html">160.bff</a></li></ul>                        </div>
+
+                        
+<div class="warpper">
+    <div class="page-toc">
+        <ul><li><a href="#t01. RxJS">1. RxJS</a><ul><li><a href="#t11.1 基本概念">1.1 基本概念</a></li><li><a href="#t21.2 参考链接">1.2 参考链接</a></li><li><a href="#t31.3 Observable">1.3 Observable</a></li><li><a href="#t41.4 Subject">1.4 Subject</a></li><li><a href="#t51.5 API.js">1.5 API.js</a></li><li><a href="#t61.6 interval">1.6 interval</a></li><li><a href="#t71.7 buffer">1.7 buffer</a><ul><li><a href="#t81.7.1 bufferTime">1.7.1 bufferTime</a></li><li><a href="#t91.7.2 bufferCount">1.7.2 bufferCount</a></li></ul></li><li><a href="#t101.8 map">1.8 map</a><ul><li><a href="#t111.8.1 map">1.8.1 map</a></li><li><a href="#t121.8.2 switchMap">1.8.2 switchMap</a></li><li><a href="#t131.8.3 mergeMap">1.8.3 mergeMap</a></li><li><a href="#t141.8.4 map区别">1.8.4 map区别</a></li></ul></li><li><a href="#t151.9 takeUntil">1.9 takeUntil</a></li><li><a href="#t161.10 withLatestFrom">1.10 withLatestFrom</a></li><li><a href="#t171.11 debounce">1.11 debounce</a><ul><li><a href="#t181.11.1 debounceTime">1.11.1 debounceTime</a></li><li><a href="#t191.11.2 debounce">1.11.2 debounce</a></li></ul></li><li><a href="#t201.12 lastValueFrom">1.12 lastValueFrom</a></li><li><a href="#t211.13 share">1.13 share</a></li><li><a href="#t221.14 fromFetch">1.14 fromFetch</a></li><li><a href="#t231.15 merge">1.15 merge</a></li><li><a href="#t241.16  error">1.16  error</a></li><li><a href="#t251.17 filter">1.17 filter</a></li><li><a href="#t261.18 throwIfEmpty">1.18 throwIfEmpty</a></li></ul></li><li><a href="#t272.缓存">2.缓存</a><ul><li><a href="#t282.2 bufferTime.js">2.2 bufferTime.js</a></li><li><a href="#t292.1 bufferCount.js">2.1 bufferCount.js</a></li></ul></li><li><a href="#t303.拖拽">3.拖拽</a><ul><li><a href="#t313.1 public\index.html">3.1 public\index.html</a></li><li><a href="#t323.2 src\drag.js">3.2 src\drag.js</a></li></ul></li><li><a href="#t334.并发请求">4.并发请求</a><ul><li><a href="#t344.1 src\multiRequest.js">4.1 src\multiRequest.js</a></li></ul></li><li><a href="#t355.竞态">5.竞态</a><ul><li><a href="#t365.1 src/race.js">5.1 src/race.js</a></li></ul></li><li><a href="#t376.suggests">6.suggests</a><ul><li><a href="#t386.1 src\suggests.js">6.1 src\suggests.js</a></li></ul></li><li><a href="#t397.fetch封装">7.fetch封装</a><ul><li><a href="#t407.1 实现GET请求">7.1 实现GET请求</a><ul><li><a href="#t417.1.1 src\index.js">7.1.1 src\index.js</a></li><li><a href="#t427.1.2 http.js">7.1.2 http.js</a></li></ul></li><li><a href="#t437.2 实现POST请求">7.2 实现POST请求</a><ul><li><a href="#t447.2.1 src\index.js">7.2.1 src\index.js</a></li><li><a href="#t457.2.2  http.js">7.2.2  http.js</a></li><li><a href="#t467.2.3  utils.js">7.2.3  utils.js</a></li></ul></li><li><a href="#t477.3 解析响应体">7.3 解析响应体</a><ul><li><a href="#t487.3.1 src\index.js">7.3.1 src\index.js</a></li><li><a href="#t497.3.2 src\fetch\http.js">7.3.2 src\fetch\http.js</a></li></ul></li><li><a href="#t507.4  错误处理">7.4  错误处理</a><ul><li><a href="#t517.4.1 src\index.js">7.4.1 src\index.js</a></li><li><a href="#t527.4.2 http.js">7.4.2 http.js</a></li></ul></li><li><a href="#t537.5  取消任务">7.5  取消任务</a><ul><li><a href="#t547.5.1 src\index.js">7.5.1 src\index.js</a></li><li><a href="#t557.5.2  http.js">7.5.2  http.js</a></li></ul></li></ul></li></ul>
+    </div>
+    <div class="content markdown-body">
+        <h2 id="t01. RxJS">1. RxJS <a href="#t01. RxJS"> # </a></h2>
+<ul>
+<li>RxJS&#x662F;&#x4E00;&#x4E2A;&#x54CD;&#x5E94;&#x5F0F;&#x7F16;&#x7A0B;&#x5E93;&#xFF0C;&#x5B83;&#x4F7F;&#x7528;&#x53EF;&#x89C2;&#x5BDF;&#x5E8F;&#x5217;&#x6765;&#x7EC4;&#x6210;&#x5F02;&#x6B65;&#x548C;&#x57FA;&#x4E8E;&#x4E8B;&#x4EF6;&#x7684;&#x7A0B;&#x5E8F;</li>
+</ul>
+<h3 id="t11.1 &#x57FA;&#x672C;&#x6982;&#x5FF5;">1.1 &#x57FA;&#x672C;&#x6982;&#x5FF5; <a href="#t11.1 &#x57FA;&#x672C;&#x6982;&#x5FF5;"> # </a></h3>
+<ul>
+<li><code>Observable</code> &#x662F;<code>RxJS</code>&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x88AB;&#x89C2;&#x5BDF;&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x5728;&#x591A;&#x6B21;&#x8BA2;&#x9605;&#x4E4B;&#x95F4;&#x5171;&#x4EAB;</li>
+<li><code>Observer</code> &#x662F;RxJS&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x5B83;&#x8BA2;&#x9605;<code>Observable</code>&#x5E76;&#x5904;&#x7406;<code>Observable</code>&#x53D1;&#x5E03;&#x7684;&#x503C;</li>
+<li><code>Subscription</code> &#x8868;&#x793A;<code>Observer</code>&#x8BA2;&#x9605;<code>Observable</code>&#x7684;&#x5173;&#x7CFB;</li>
+<li><code>Operators</code> &#x662F;RxJS&#x4E2D;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x7528;&#x4E8E;&#x5728;<code>Observable</code>&#x5E8F;&#x5217;&#x4E0A;&#x6267;&#x884C;&#x5404;&#x79CD;&#x8F6C;&#x6362;&#x548C;&#x8FC7;&#x6EE4;&#x64CD;&#x4F5C;</li>
+<li><code>Subject</code> RxJS&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x5B83;&#x65E2;&#x662F;Observable&#xFF0C;&#x53C8;&#x662F;Observer&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;Subject&#x6765;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;Observable&#xFF0C;&#x5E76;&#x4F7F;&#x7528;&#x5B83;&#x7684;next&#xFF0C;error&#x548C;complete&#x65B9;&#x6CD5;&#x6765;&#x53D1;&#x5E03;&#x503C;&#x3002; &#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x8BA2;&#x9605;Subject&#xFF0C;&#x5E76;&#x5904;&#x7406;&#x53D1;&#x5E03;&#x7684;&#x503C;&#x3002;</li>
+<li><code>Schedulers</code> &#x662F;RxJS&#x4E2D;&#x7684;&#x4E00;&#x7EC4;&#x51FD;&#x6570;&#xFF0C;&#x7528;&#x4E8E;&#x63A7;&#x5236;Observable&#x7684;&#x6267;&#x884C;</li>
+</ul>
+<h3 id="t21.2 &#x53C2;&#x8003;&#x94FE;&#x63A5;">1.2 &#x53C2;&#x8003;&#x94FE;&#x63A5; <a href="#t21.2 &#x53C2;&#x8003;&#x94FE;&#x63A5;"> # </a></h3>
+<ul>
+<li><a href="https://rxjs.dev/">&#x5B98;&#x65B9;&#x6587;&#x6863;</a></li>
+<li><a href="https://cn.rx.js.org/">&#x4E2D;&#x6587;&#x6587;&#x6863;</a></li>
+<li><a href="https://github.com/ReactiveX/rxjs">github&#x6E90;&#x7801;</a></li>
+<li><a href="https://rxmarbles.com/">rxjs&#x5F39;&#x73E0;&#x56FE;</a></li>
+<li><a href="https://rxviz.com/">rxjs&#x53EF;&#x89C6;&#x5316;</a></li>
+<li><a href="https://reactive.how/rxjs/explorer">explorer</a></li>
+</ul>
+<h3 id="t31.3 Observable">1.3 Observable <a href="#t31.3 Observable"> # </a></h3>
+<ul>
+<li><code>Observer(&#x89C2;&#x5BDF;&#x8005;)</code> &#x662F;&#x7531;&#x53EF;&#x89C2;&#x5BDF;&#x5BF9;&#x8C61;&#x4F20;&#x9012;&#x7684;&#x503C;&#x7684;&#x6D88;&#x8D39;&#x8005;&#x3002;&#x89C2;&#x5BDF;&#x8005;&#x4EC5;&#x4EC5;&#x662F;&#x4E00;&#x7EC4;&#x56DE;&#x8C03;&#xFF0C;&#x6BCF;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x901A;&#x77E5;&#x7531;&#x53EF;&#x89C2;&#x5BDF;&#x5BF9;&#x8C61;&#x4F20;&#x9012;&#xFF1A;<code>next</code>&#xFF0C;<code>error</code> &#x548C; <code>complete</code></li>
+<li>&#x8981;&#x4F7F;&#x7528;<code>Observer(&#x89C2;&#x5BDF;&#x8005;)</code>&#xFF0C;&#x8BF7;&#x5C06;&#x5176;&#x63D0;&#x4F9B;&#x7ED9;&#x53EF;&#x89C2;&#x5BDF;&#x5BF9;&#x8C61;&#x7684;<code>subscribe</code></li>
+<li>&#x89C2;&#x5BDF;&#x8005;&#x53EA;&#x662F;&#x5E26;&#x6709;&#x4E09;&#x4E2A;&#x56DE;&#x8C03;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x6BCF;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x901A;&#x77E5;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x56DE;&#x8C03;&#xFF0C;&#x53EF;&#x89C2;&#x5BDF;&#x5BF9;&#x8C61;&#x53EF;&#x80FD;&#x4F20;&#x9012;&#x8FD9;&#x4E9B;&#x901A;&#x77E5;</li>
+<li><code>RxJS</code>&#x4E2D;&#x7684;&#x89C2;&#x5BDF;&#x8005;&#x4E5F;&#x53EF;&#x80FD;&#x662F;&#x90E8;&#x5206;&#x53EF;&#x9009;&#x7684;&#x7684;&#x3002;&#x5982;&#x679C;&#x4E0D;&#x63D0;&#x4F9B;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x56DE;&#x8C03;&#xFF0C;&#x53EF;&#x89C2;&#x5BDF;&#x5BF9;&#x8C61;&#x7684;&#x6267;&#x884C;&#x4ECD;&#x7136;&#x4F1A;&#x6B63;&#x5E38;&#x8FDB;&#x884C;&#xFF0C;&#x4F46;&#x662F;&#x67D0;&#x4E9B;&#x7C7B;&#x578B;&#x7684;&#x901A;&#x77E5;&#x5C06;&#x88AB;&#x5FFD;&#x7565;&#xFF0C;&#x56E0;&#x4E3A;&#x89C2;&#x5BDF;&#x8005;&#x4E2D;&#x6CA1;&#x6709;&#x76F8;&#x5E94;&#x7684;&#x56DE;&#x8C03;</li>
+<li>&#x5728;&#x8BA2;&#x9605;&#x53EF;&#x89C2;&#x5BDF;&#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x60A8;&#x4E5F;&#x53EF;&#x4EE5;&#x5C06;<code>next</code>&#x56DE;&#x8C03;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x63D0;&#x4F9B;&#xFF0C;&#x800C;&#x4E0D;&#x5FC5;&#x9644;&#x52A0;&#x5230;&#x89C2;&#x5BDF;&#x8005;&#x5BF9;&#x8C61;&#x4E0A;,&#x5728; <code>observable.subscribe</code> &#x5185;&#x90E8;&#xFF0C;&#x5B83;&#x5C06;&#x4F7F;&#x7528;&#x56DE;&#x8C03;&#x53C2;&#x6570;&#x4F5C;&#x4E3A;<code>next</code>&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x521B;&#x5EFA;&#x89C2;&#x5BDF;&#x8005;&#x5BF9;&#x8C61;</li>
+<li><code>&#x8C03;&#x7528;</code>&#x6216;<code>&#x8BA2;&#x9605;</code>&#x662F;&#x4E00;&#x4E2A;&#x9694;&#x79BB;&#x7684;&#x64CD;&#x4F5C;&#xFF1A;&#x4E24;&#x6B21;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x4F1A;&#x89E6;&#x53D1;&#x4E24;&#x4E2A;&#x5355;&#x72EC;&#x7684;&#x526F;&#x4F5C;&#x7528;&#xFF0C;&#x4E24;&#x6B21;&#x53EF;&#x89C2;&#x5BDF;&#x5BF9;&#x8C61;&#x8BA2;&#x9605;&#x4F1A;&#x89E6;&#x53D1;&#x4E24;&#x4E2A;&#x5355;&#x72EC;&#x7684;&#x526F;&#x4F5C;&#x7528;&#x3002;&#x4E0E;<code>&#x4E8B;&#x4EF6;&#x53D1;&#x5C04;&#x5668;&#xFF08;EventEmitters&#xFF09;</code>&#x4E0D;&#x540C;&#xFF0C;&#x4E8B;&#x4EF6;&#x53D1;&#x5C04;&#x5668;&#x5171;&#x4EAB;&#x526F;&#x4F5C;&#x7528;&#x5E76;&#x4E14;&#x65E0;&#x8BBA;&#x662F;&#x5426;&#x5B58;&#x5728;&#x8BA2;&#x9605;&#x8005;&#x90FD;&#x6709;&#x6025;&#x5207;&#x6267;&#x884C;&#xFF0C;&#x800C;&#x53EF;&#x89C2;&#x5BDF;&#x5BF9;&#x8C61;&#x6CA1;&#x6709;&#x5171;&#x4EAB;&#x7684;&#x6267;&#x884C;&#x5E76;&#x4E14;&#x662F;&#x61D2;&#x60F0;&#x7684;</li>
+<li><code>Observables</code> &#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>new Observable</code> &#x6216;&#x521B;&#x5EFA;&#x64CD;&#x4F5C;&#x7B26;&#x521B;&#x5EFA;&#xFF0C;&#x4F7F;&#x7528;&#x89C2;&#x5BDF;&#x8005;&#x8BA2;&#x9605;&#xFF0C;&#x6267;&#x884C;&#x4EE5;&#x5411;&#x89C2;&#x5BDF;&#x8005;&#x53D1;&#x9001; <code>next</code> / <code>error</code> / <code>complete</code> &#x901A;&#x77E5;&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x5BF9;&#x5176;&#x6267;&#x884C;&#x8FDB;&#x884C;&#x5904;&#x7406;</li>
+<li>Observable &#x7684;&#x6838;&#x5FC3;&#x5173;&#x6CE8;&#x70B9;<ul>
+<li>&#x521B;&#x5EFA; <code>Observables</code></li>
+<li>&#x8BA2;&#x9605; <code>Observables</code></li>
+<li>&#x6267;&#x884C; <code>Observables</code></li>
+<li>&#x5904;&#x7406; <code>Observables</code></li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { Observable } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;rxjs&apos;</span>
+<span class="hljs-keyword">const</span> observable = <span class="hljs-keyword">new</span> Observable(<span class="hljs-function"><span class="hljs-params">subscriber</span> =&gt;</span> {
+  subscriber.next(<span class="hljs-number">1</span>)
+  subscriber.next(<span class="hljs-number">2</span>)
+  subscriber.next(<span class="hljs-number">3</span>)
+  subscriber.complete()
+})
+observable.subscribe({
+  <span class="hljs-attr">next</span>: <span class="hljs-function"><span class="hljs-params">value</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;next value:&apos;</span>, value),
+  <span class="hljs-attr">complete</span>: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;complete&apos;</span>)
+  }
+})
+observable.subscribe(<span class="hljs-function"><span class="hljs-params">value</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;next value:&apos;</span>, value))
+</code></pre>
+<h3 id="t41.4 Subject">1.4 Subject <a href="#t41.4 Subject"> # </a></h3>
+<ul>
+<li>Subject &#x662F; Observable &#x7684;&#x4E00;&#x79CD;&#x7279;&#x6B8A;&#x7C7B;&#x578B;&#xFF0C;&#x5B83;&#x5141;&#x8BB8;&#x5C06;&#x503C;&#x591A;&#x64AD;&#x7ED9;&#x8BB8;&#x591A;&#x89C2;&#x5BDF;&#x8005;&#x3002;Subject &#x5C31;&#x50CF; EventEmitter
+&#x6BCF;&#x4E2A; Subject &#x90FD;&#x662F;&#x4E00;&#x4E2A; Observable &#x548C;&#x4E00;&#x4E2A; Observer&#x3002;&#x60A8;&#x53EF;&#x4EE5;&#x8BA2;&#x9605; Subject&#xFF0C;&#x5E76;&#x4E14;&#x8FD8;&#x53EF;&#x4EE5;&#x8C03;&#x7528; next &#x6765;&#x63D0;&#x4F9B;&#x503C;&#xFF0C;&#x4EE5;&#x53CA; error &#x548C; complete</li>
+<li>&#x7B80;&#x5355;&#x6765;&#x8BF4;&#xFF0C;Subject &#x662F;&#x4E00;&#x79CD;&#x7279;&#x6B8A;&#x7684; Observable&#xFF0C;&#x5B83;&#x65E2;&#x53EF;&#x4EE5;&#x8BA2;&#x9605;&#x6570;&#x636E;&#x6D41;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5411;&#x6570;&#x636E;&#x6D41;&#x4E2D;&#x63D0;&#x4EA4;&#x6570;&#x636E;&#x3002;Subject &#x8FD8;&#x5177;&#x6709; Observer &#x7684;&#x7279;&#x6027;&#xFF0C;&#x5373;&#x53EF;&#x4EE5;&#x8C03;&#x7528; next&#x3001;error &#x548C; complete &#x65B9;&#x6CD5;</li>
+</ul>
+<p>src\Subject.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { Subject } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;rxjs&apos;</span>;
+<span class="hljs-keyword">const</span> source = <span class="hljs-keyword">new</span> Subject();
+source.subscribe({ <span class="hljs-attr">next</span>: <span class="hljs-function"><span class="hljs-params">data</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Subject &#x7B2C;&#x4E00;&#x6B21;&#x8BA2;&#x9605;: <span class="hljs-subst">${data}</span>`</span>) });
+source.next(<span class="hljs-number">1</span>);
+source.next(<span class="hljs-number">2</span>);
+source.subscribe({ <span class="hljs-attr">next</span>: <span class="hljs-function"><span class="hljs-params">data</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Subject &#x7B2C;&#x4E8C;&#x6B21;&#x8BA2;&#x9605;: <span class="hljs-subst">${data}</span>`</span>) });
+source.next(<span class="hljs-number">3</span>);
+source.next(<span class="hljs-number">4</span>);
+</code></pre>
+<h3 id="t51.5 API.js">1.5 API.js <a href="#t51.5 API.js"> # </a></h3>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;express&apos;</span>);
+<span class="hljs-keyword">const</span> cors = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;cors&apos;</span>);
+<span class="hljs-keyword">const</span> morgan = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;morgan&apos;</span>);
+<span class="hljs-keyword">const</span> bodyParser = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;body-parser&apos;</span>);
+<span class="hljs-keyword">const</span> app = express();
+app.use(morgan(<span class="hljs-string">&apos;dev&apos;</span>));
+<span class="hljs-comment">// npm install express cors morgan  body-parser --save</span>
+app.use(cors(
+    {
+        <span class="hljs-attr">origin</span>: <span class="hljs-string">&apos;http://localhost:3000&apos;</span>,
+        <span class="hljs-attr">credentials</span>: <span class="hljs-literal">true</span>
+    }
+));
+app.use(bodyParser.json());
+<span class="hljs-keyword">const</span> users = [];
+app.get(<span class="hljs-string">&apos;/api/user/1&apos;</span>, (req, res) =&gt; {
+     setTimeout(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+        res.json({ <span class="hljs-attr">name</span>: <span class="hljs-string">&apos;&#x5F20;&#x4E09;&apos;</span> });
+    }, <span class="hljs-number">3000</span>);
+});
+app.get(<span class="hljs-string">&apos;/api/search&apos;</span>, (req, res) =&gt; {
+    <span class="hljs-keyword">const</span> q = req.query.q;
+    <span class="hljs-keyword">const</span> data = [];
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">1</span>; i &lt;= <span class="hljs-number">10</span>; i++) {
+        data.push(q + i);
+    }
+    res.json(data);
+});
+app.post(<span class="hljs-string">&apos;/api/user&apos;</span>, (req, res) =&gt; {
+   <span class="hljs-keyword">const</span> user = req.body;
+   user.id = <span class="hljs-built_in">Date</span>.now();
+   users.push(user);
+   res.json(user)
+});
+app.delete(<span class="hljs-string">&apos;/api/user/1&apos;</span>, (req, res) =&gt; {
+   res.status(<span class="hljs-number">500</span>).json({<span class="hljs-attr">message</span>:<span class="hljs-string">&apos;&#x5220;&#x9664;&#x5931;&#x8D25;&apos;</span>});
+});
+app.listen(<span class="hljs-number">8080</span>, () =&gt; {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;server start at 8080&apos;</span>);
+});
+</code></pre>
+<h3 id="t61.6 interval">1.6 interval <a href="#t61.6 interval"> # </a></h3>
+<ul>
+<li><code>interval</code> &#x662F; RxJS &#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x9759;&#x6001;&#x64CD;&#x4F5C;&#x7B26;&#xFF0C;&#x5B83;&#x4F1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x53D1;&#x51FA;&#x8FDE;&#x7EED;&#x6574;&#x6570;&#x7684; <code>Observable</code>&#xFF0C;&#x5E76;&#x6309;&#x7167;&#x6307;&#x5B9A;&#x7684;&#x65F6;&#x95F4;&#x95F4;&#x9694;&#x53D1;&#x51FA;&#x3002;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { interval } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;rxjs&apos;</span>;
+<span class="hljs-keyword">const</span> timer = interval(<span class="hljs-number">1000</span>);
+timer.subscribe(<span class="hljs-function"><span class="hljs-params">num</span> =&gt;</span> {
+  <span class="hljs-built_in">console</span>.log(num);
+});
+</code></pre>
+<h3 id="t71.7 buffer">1.7 buffer <a href="#t71.7 buffer"> # </a></h3>
+<h4 id="t81.7.1 bufferTime">1.7.1 bufferTime <a href="#t81.7.1 bufferTime"> # </a></h4>
+<ul>
+<li><code>bufferTime</code>&#x662F;<code>RxJS</code>&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x9759;&#x6001;&#x64CD;&#x4F5C;&#x7B26;&#xFF0C;&#x5B83;&#x4F1A;&#x6309;&#x7167;&#x6307;&#x5B9A;&#x7684;&#x65F6;&#x95F4;&#x95F4;&#x9694;&#x5C06;<code>Observable</code>&#x4E2D;&#x7684;&#x503C;&#x7F13;&#x5B58;&#x5728;&#x6570;&#x7EC4;&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x8FD9;&#x4E9B;&#x6570;&#x7EC4;&#x4F5C;&#x4E3A;&#x5355;&#x72EC;&#x7684;&#x503C;&#x53D1;&#x51FA;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { interval } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;rxjs&apos;</span>;
+<span class="hljs-keyword">import</span> { bufferTime } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;rxjs/operators&apos;</span>;
+<span class="hljs-keyword">const</span> timer = interval(<span class="hljs-number">500</span>);
+<span class="hljs-keyword">const</span> bufferedTimer = timer.pipe(bufferTime(<span class="hljs-number">1000</span>));
+bufferedTimer.subscribe(<span class="hljs-function"><span class="hljs-params">arr</span> =&gt;</span> {
+  <span class="hljs-built_in">console</span>.log(arr);
+});
+</code></pre>
+<h4 id="t91.7.2 bufferCount">1.7.2 bufferCount <a href="#t91.7.2 bufferCount"> # </a></h4>
+<ul>
+<li><code>bufferCount</code> &#x662F; RxJS &#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x9759;&#x6001;&#x64CD;&#x4F5C;&#x7B26;&#xFF0C;&#x5B83;&#x4F1A;&#x5C06; <code>Observable</code> &#x4E2D;&#x7684;&#x503C;&#x6309;&#x7167;&#x6307;&#x5B9A;&#x7684;&#x6570;&#x91CF;&#x7F13;&#x5B58;&#x5728;&#x6570;&#x7EC4;&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x8FD9;&#x4E9B;&#x6570;&#x7EC4;&#x4F5C;&#x4E3A;&#x5355;&#x72EC;&#x7684;&#x503C;&#x53D1;&#x51FA;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { interval } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;rxjs&apos;</span>;
+<span class="hljs-keyword">import</span> { bufferCount } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;rxjs/operators&apos;</span>;
+<span class="hljs-keyword">const</span> timer = interval(<span class="hljs-number">500</span>);
+<span class="hljs-keyword">const</span> bufferedTimer = timer.pipe(bufferCount(<span class="hljs-number">3</span>));
+bufferedTimer.subscribe(<span class="hljs-function"><span class="hljs-params">arr</span> =&gt;</span> {
+  <span class="hljs-built_in">console</span>.log(arr);
+});
+</code></pre>
+<h3 id="t101.8 map">1.8 map <a href="#t101.8 map"> # </a></h3>
+<h4 id="t111.8.1 map">1.8.1 map <a href="#t111.8.1 map"> # </a></h4>
+<ul>
+<li><code>map</code> &#x64CD;&#x4F5C;&#x7B26;&#x662F; RxJS &#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x5E38;&#x7528;&#x64CD;&#x4F5C;&#x7B26;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x5BF9;&#x6570;&#x636E;&#x6D41;&#x4E2D;&#x7684;&#x6BCF;&#x4E00;&#x9879;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x8F6C;&#x6362;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { <span class="hljs-keyword">of</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;rxjs&apos;</span>;
+<span class="hljs-keyword">import</span> { map } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;rxjs/operators&apos;</span>;
+
+<span class="hljs-keyword">const</span> source = <span class="hljs-keyword">of</span>(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>);
+<span class="hljs-keyword">const</span> example = source.pipe(
+  map(<span class="hljs-function"><span class="hljs-params">val</span> =&gt;</span> val * <span class="hljs-number">2</span>)
+);
+<span class="hljs-keyword">const</span> subscribe = example.subscribe(<span class="hljs-function"><span class="hljs-params">val</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(val));
+</code></pre>
+<h4 id="t121.8.2 switchMap">1.8.2 switchMap <a href="#t121.8.2 switchMap"> # </a></h4>
+<ul>
+<li><code>switchMap</code> &#x662F; <code>RxJS</code> &#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x64CD;&#x4F5C;&#x7B26;&#xFF0C;&#x5B83;&#x901A;&#x5E38;&#x7528;&#x4E8E;&#x5C06;&#x4E00;&#x4E2A; <code>Observable</code> &#x7684;&#x8F93;&#x51FA;&#x6620;&#x5C04;&#x5230;&#x53E6;&#x4E00;&#x4E2A; <code>Observable</code>&#xFF0C;&#x5E76;&#x5C06;&#x65B0;&#x7684;<code>Observable</code>&#x7684;&#x8F93;&#x51FA;&#x53D1;&#x9001;&#x5230;&#x8F93;&#x51FA;&#x6D41;&#x4E2D;</li>
+<li><code>switchMap</code> &#x7684;&#x884C;&#x4E3A;&#x975E;&#x5E38;&#x7C7B;&#x4F3C;&#x4E8E; <code>map</code> &#x64CD;&#x4F5C;&#x7B26;&#xFF0C;&#x4F46;&#x6709;&#x4E00;&#x4E2A;&#x91CD;&#x8981;&#x7684;&#x533A;&#x522B;&#xFF1A;&#x5B83;&#x4F1A;&#x53D6;&#x6D88;&#x8BA2;&#x9605;&#x4E4B;&#x524D;&#x7684; <code>Observable</code>&#xFF0C;&#x5E76;&#x8BA2;&#x9605;&#x6700;&#x65B0;&#x7684; <code>Observable</code>&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x591A;&#x4E2A; Observable &#x8F93;&#x51FA;&#xFF0C;&#x53EA;&#x4F1A;&#x53D1;&#x51FA;&#x6700;&#x65B0;&#x7684; Observable &#x7684;&#x8F93;&#x51FA;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { interval, switchMap, <span class="hljs-keyword">from</span>, take } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;rxjs&apos;</span>;
+<span class="hljs-comment">//interval &#x64CD;&#x4F5C;&#x7B26;&#x4F1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x53EF;&#x89C2;&#x5BDF;&#x5BF9;&#x8C61;&#xFF0C;&#x5B83;&#x4F1A;&#x6BCF;&#x9694;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x53D1;&#x51FA;&#x4E00;&#x4E2A;&#x6570;&#x5B57;</span>
+<span class="hljs-comment">//&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x5B83;&#x4F1A;&#x6BCF;&#x9694; 1000 &#x6BEB;&#x79D2;&#x53D1;&#x51FA;&#x4E00;&#x4E2A;&#x6570;&#x5B57;</span>
+<span class="hljs-keyword">const</span> source$ = interval(<span class="hljs-number">1000</span>)
+<span class="hljs-comment">//&#x4F7F;&#x7528; take &#x64CD;&#x4F5C;&#x7B26;&#x9650;&#x5236;&#x4E86; source$ &#x53EA;&#x4F1A;&#x53D1;&#x51FA; 3 &#x4E2A;&#x503C;&#xFF08;0&#x3001;1&#x3001;2&#xFF09;</span>
+.pipe(take(<span class="hljs-number">3</span>));
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">switch</span>$ = source$.pipe(
+    <span class="hljs-comment">//switchMap &#x64CD;&#x4F5C;&#x7B26;&#x3002;&#x5B83;&#x4F1A;&#x5C06;&#x6BCF;&#x4E2A;&#x503C;&#x6620;&#x5C04;&#x6210;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x53EF;&#x89C2;&#x5BDF;&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x8FD9;&#x4E2A;&#x65B0;&#x7684;&#x53EF;&#x89C2;&#x5BDF;&#x5BF9;&#x8C61;&#x53D1;&#x51FA;&#x503C;&#x4E4B;&#x524D;&#xFF0C;&#x4F1A;&#x53D6;&#x6D88;&#x8BA2;&#x9605;&#x4E4B;&#x524D;&#x7684;&#x53EF;&#x89C2;&#x5BDF;&#x5BF9;&#x8C61;</span>
+    <span class="hljs-comment">//&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x6BCF;&#x4E2A;&#x503C;&#x90FD;&#x4F1A;&#x88AB;&#x6620;&#x5C04;&#x6210;&#x4E00;&#x4E2A; Promise&#xFF0C;&#x8BE5; Promise &#x5728; 2 &#x79D2;&#x540E;&#x88AB;&#x89E3;&#x6790;</span>
+    <span class="hljs-comment">//&#x6700;&#x540E;&#x4F7F;&#x7528; from &#x64CD;&#x4F5C;&#x7B26;&#x5C06; Promise &#x8F6C;&#x6362;&#x4E3A;&#x53EF;&#x89C2;&#x5BDF;&#x5BF9;&#x8C61;</span>
+    switchMap(<span class="hljs-function"><span class="hljs-params">n</span> =&gt;</span> <span class="hljs-keyword">from</span>(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-params">resolve</span> =&gt;</span> {
+        setTimeout(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> resolve(n), <span class="hljs-number">2000</span>)
+    })))
+);
+<span class="hljs-keyword">switch</span>$.subscribe(<span class="hljs-function"><span class="hljs-params">n</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(n));
+</code></pre>
+<h4 id="t131.8.3 mergeMap">1.8.3 mergeMap <a href="#t131.8.3 mergeMap"> # </a></h4>
+<ul>
+<li><code>mergeMap</code>&#x662F;&#x4E00;&#x79CD;&#x5185;&#x7F6E;&#x7684;&#x64CD;&#x4F5C;&#x7B26;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x5C06;&#x6E90;<code>Observable</code>&#x7684;&#x6BCF;&#x4E2A;&#x503C;&#x6620;&#x5C04;&#x5230;&#x4E00;&#x4E2A;&#x65B0;&#x7684;<code>Observable</code>&#x4E2D;&#xFF0C;&#x5E76;&#x5C06;&#x5B83;&#x4EEC;&#x5408;&#x5E76;&#x5230;&#x4E00;&#x4E2A;&#x5355;&#x72EC;&#x7684;&#x8F93;&#x51FA;<code>Observable</code>&#x4E2D;&#x3002;&#x8FD9;&#x4E2A;&#x64CD;&#x4F5C;&#x7B26;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x6267;&#x884C;&#x591A;&#x4E2A;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#xFF0C;&#x5E76;&#x5C06;&#x5B83;&#x4EEC;&#x7684;&#x7ED3;&#x679C;&#x5408;&#x5E76;&#x5230;&#x4E00;&#x8D77;</li>
+<li><code>map</code>&#x64CD;&#x4F5C;&#x7B26;&#x4F1A;&#x628A;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x6D41;&#x8F6C;&#x6362;&#x6210;&#x53E6;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x6D41;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x7684;&#x8F6C;&#x6362;&#x51FD;&#x6570;&#x5FC5;&#x987B;&#x662F;&#x540C;&#x6B65;&#x7684;&#xFF0C;&#x5E76;&#x4E14;&#x53EA;&#x80FD;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x503C;</li>
+<li><code>mergeMap</code>&#x64CD;&#x4F5C;&#x7B26;&#x4E5F;&#x53EF;&#x4EE5;&#x628A;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x6D41;&#x8F6C;&#x6362;&#x6210;&#x53E6;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x6D41;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x7684;&#x8F6C;&#x6362;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x662F;&#x5F02;&#x6B65;&#x7684;&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x8FD4;&#x56DE;&#x591A;&#x4E2A;&#x503C;&#x3002;&#x5B83;&#x4F1A;&#x628A;&#x8FD9;&#x4E9B;&#x503C;&#x5408;&#x5E76;&#x6210;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x6D41;&#x8F93;&#x51FA;</li>
+</ul>
+<pre><code class="lang-js">source$.pipe(
+    mergeMap(project: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">value: T, index: number</span>): <span class="hljs-title">ObservableInput</span>, <span class="hljs-title">concurrent</span>: <span class="hljs-title">number</span>): <span class="hljs-title">Observable</span>)
+</span></code></pre>
+<ul>
+<li><code>source$</code>&#x662F;&#x6E90;Observable</li>
+<li><code>project</code>&#x51FD;&#x6570;&#x63A5;&#x53D7;&#x6E90;Observable&#x7684;&#x6BCF;&#x4E2A;&#x503C;&#x548C;&#x7D22;&#x5F15;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;Observable</li>
+<li><code>concurrent</code>&#x53C2;&#x6570;&#x662F;&#x53EF;&#x9009;&#x7684;&#xFF0C;&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x6700;&#x591A;&#x6709;&#x591A;&#x5C11;&#x4E2A;&#x5185;&#x90E8;Observable&#x53EF;&#x4EE5;&#x5E76;&#x53D1;&#x6267;&#x884C;</li>
+</ul>
+<p>src\mergeMap.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { interval, <span class="hljs-keyword">of</span>, mergeMap } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;rxjs&apos;</span>;
+<span class="hljs-comment">//&#x6E90;Observablesource$&#x5728;&#x6BCF;&#x79D2;&#x53D1;&#x51FA;&#x4E00;&#x4E2A;&#x6570;&#x5B57;</span>
+<span class="hljs-keyword">const</span> source$ = interval(<span class="hljs-number">1000</span>);
+<span class="hljs-keyword">const</span> merged$ = source$.pipe(
+    <span class="hljs-comment">//&#x4F7F;&#x7528;mergeMap&#x64CD;&#x4F5C;&#x7B26;&#x6765;&#x6620;&#x5C04;&#x6BCF;&#x4E2A;&#x6570;&#x5B57;&#x5230;&#x4E00;&#x4E2A;&#x65B0;&#x7684;Observable&#xFF0C;&#x5E76;&#x5C06;&#x5B83;&#x4EEC;&#x5408;&#x5E76;&#x5230;&#x4E00;&#x8D77;</span>
+    mergeMap(<span class="hljs-function"><span class="hljs-params">n</span> =&gt;</span> <span class="hljs-keyword">of</span>(n * <span class="hljs-number">2</span>))
+);
+merged$.subscribe(<span class="hljs-function"><span class="hljs-params">n</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(n));
+<span class="hljs-comment">// &#x8F93;&#x51FA;: 0, 2, 4, 6, 8, ...</span>
+</code></pre>
+<h4 id="t141.8.4 map&#x533A;&#x522B;">1.8.4 map&#x533A;&#x522B; <a href="#t141.8.4 map&#x533A;&#x522B;"> # </a></h4>
+<ul>
+<li><code>map</code> &#x64CD;&#x4F5C;&#x7B26;&#x662F;&#x4E00;&#x4E2A;&#x53D8;&#x6362;&#x64CD;&#x4F5C;&#x7B26;&#xFF0C;&#x5B83;&#x4F1A;&#x5C06;&#x6E90; Observable &#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x503C;&#x6620;&#x5C04;&#x5230;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x503C;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x8FD9;&#x4E9B;&#x65B0;&#x503C;&#x53D1;&#x51FA;&#x3002;</li>
+<li><code>switchMap</code> &#x548C; <code>mergeMap</code> &#x4E5F;&#x662F;&#x53D8;&#x6362;&#x64CD;&#x4F5C;&#x7B26;&#xFF0C;&#x4F46;&#x5B83;&#x4EEC;&#x4E0D;&#x4EC5;&#x4F1A;&#x5C06;&#x6E90; Observable &#x4E2D;&#x7684;&#x503C;&#x6620;&#x5C04;&#x5230;&#x65B0;&#x7684;&#x503C;&#xFF0C;&#x8FD8;&#x4F1A;&#x5C06;&#x8FD9;&#x4E9B;&#x503C;&#x6620;&#x5C04;&#x5230;&#x65B0;&#x7684; <code>Observable</code></li>
+<li><code>switchMap</code> &#x4F1A;&#x53D6;&#x6D88;&#x4E4B;&#x524D;&#x7684; <code>Observable</code>&#xFF0C;&#x5E76;&#x53EA;&#x53D1;&#x51FA;&#x6700;&#x65B0;&#x7684; Observable &#x4E2D;&#x7684;&#x503C;</li>
+<li><code>mergeMap</code> &#x4F1A;&#x540C;&#x65F6;&#x53D1;&#x51FA;&#x6240;&#x6709; <code>Observable</code> &#x4E2D;&#x7684;&#x503C;</li>
+</ul>
+<h3 id="t151.9 takeUntil">1.9 takeUntil <a href="#t151.9 takeUntil"> # </a></h3>
+<ul>
+<li><code>takeUntil</code>&#x662F;RxJS&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x53D8;&#x6362;&#x64CD;&#x4F5C;&#x7B26;&#xFF0C;&#x5B83;&#x4F1A;&#x53D6;&#x6D88;&#x8BA2;&#x9605;&#x6E90; Observable&#xFF0C;&#x5E76;&#x505C;&#x6B62;&#x53D1;&#x51FA;&#x503C;&#xFF0C;&#x76F4;&#x5230;&#x53E6;&#x4E00;&#x4E2A; Observable &#x53D1;&#x51FA;&#x503C;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { interval } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;rxjs&apos;</span>;
+<span class="hljs-keyword">import</span> { takeUntil } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;rxjs/operators&apos;</span>;
+
+<span class="hljs-keyword">const</span> source$ = interval(<span class="hljs-number">1000</span>);
+<span class="hljs-keyword">const</span> stop$ = <span class="hljs-keyword">new</span> Subject();
+<span class="hljs-comment">//&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x4F1A;&#x6BCF;&#x9694; 1000 &#x6BEB;&#x79D2;&#x5728;&#x63A7;&#x5236;&#x53F0;&#x8F93;&#x51FA;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#xFF0C;&#x76F4;&#x5230; stop$ Observable &#x53D1;&#x51FA;&#x503C;</span>
+<span class="hljs-comment">//&#x4E00;&#x65E6; stop$ Observable &#x53D1;&#x51FA;&#x503C;&#xFF0C;&#x5C31;&#x4F1A;&#x505C;&#x6B62;&#x53D1;&#x51FA;&#x6570;&#x5B57;&#xFF0C;&#x5E76;&#x53D6;&#x6D88;&#x8BA2;&#x9605;&#x6E90; Observable&#x3002;</span>
+<span class="hljs-keyword">const</span> result$ = source$.pipe(
+  takeUntil(stop$)
+);
+
+result$.subscribe(<span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(x));
+
+<span class="hljs-comment">// &#x5728;&#x67D0;&#x4E2A;&#x65F6;&#x523B;&#x505C;&#x6B62;&#x53D1;&#x51FA;&#x6570;&#x5B57;</span>
+stop$.next();
+
+</code></pre>
+<h3 id="t161.10 withLatestFrom">1.10 withLatestFrom <a href="#t161.10 withLatestFrom"> # </a></h3>
+<ul>
+<li><code>withLatestFrom</code> &#x662F; RxJS &#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x53D8;&#x6362;&#x64CD;&#x4F5C;&#x7B26;&#xFF0C;&#x5B83;&#x4F1A;&#x5728;&#x6E90; Observable &#x53D1;&#x51FA;&#x503C;&#x65F6;&#xFF0C;&#x53D6;&#x6700;&#x65B0;&#x7684;&#x503C;&#x4ECE;&#x53E6;&#x4E00;&#x4E2A; Observable &#x4E2D;&#x53D1;&#x51FA;</li>
+</ul>
+<pre><code class="lang-js">first$:  ----<span class="hljs-number">-0</span>----<span class="hljs-number">-1</span>----<span class="hljs-number">-2</span>----<span class="hljs-number">-3</span>----<span class="hljs-number">-4</span>----<span class="hljs-number">-5</span>|
+second$: ----------------<span class="hljs-number">-0</span>----------------<span class="hljs-number">-1</span>|
+result$: -----------------[<span class="hljs-number">2</span>,<span class="hljs-number">0</span>]--[<span class="hljs-number">3</span>,<span class="hljs-number">0</span>]-[<span class="hljs-number">4</span>,<span class="hljs-number">0</span>]-[<span class="hljs-number">5</span>,<span class="hljs-number">1</span>]|
+</code></pre>
+<p>withLatestFrom.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> {interval } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;rxjs&apos;</span>;
+<span class="hljs-keyword">import</span> { withLatestFrom } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;rxjs/operators&apos;</span>;
+<span class="hljs-keyword">const</span> first$ = interval(<span class="hljs-number">1000</span>);
+<span class="hljs-keyword">const</span> second$ = interval(<span class="hljs-number">3000</span>);
+<span class="hljs-keyword">const</span> result$ = first$.pipe(
+  withLatestFrom(second$)
+);
+result$.subscribe(<span class="hljs-function">(<span class="hljs-params">[first, second]</span>) =&gt;</span> <span class="hljs-built_in">console</span>.log(first, second));
+</code></pre>
+<h3 id="t171.11 debounce">1.11 debounce <a href="#t171.11 debounce"> # </a></h3>
+<h4 id="t181.11.1 debounceTime">1.11.1 debounceTime <a href="#t181.11.1 debounceTime"> # </a></h4>
+<ul>
+<li>debounceTime &#x64CD;&#x4F5C;&#x7B26;&#x4F1A;&#x5728;&#x6307;&#x5B9A;&#x7684;&#x65F6;&#x95F4;&#x5185;&#x5FFD;&#x7565;&#x6389;&#x6E90; Observable &#x53D1;&#x51FA;&#x7684;&#x65B0;&#x7684;&#x503C;&#xFF0C;&#x5982;&#x679C;&#x5728;&#x8FD9;&#x6BB5;&#x65F6;&#x95F4;&#x5185;&#x6E90; Observable &#x518D;&#x6B21;&#x53D1;&#x51FA;&#x503C;&#xFF0C;&#x5219;&#x4F1A;&#x91CD;&#x65B0;&#x8BA1;&#x7B97;&#x8FD9;&#x6BB5;&#x65F6;&#x95F4;&#x3002;</li>
+</ul>
+<p>debounceTime.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { debounceTime } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;rxjs/operators&apos;</span>;
+<span class="hljs-comment">// &#x5047;&#x8BBE;&#x6211;&#x4EEC;&#x6709;&#x4E00;&#x4E2A;&#x540D;&#x4E3A; input$ &#x7684; Observable&#xFF0C;&#x4EE3;&#x8868;&#x6587;&#x672C;&#x6846;&#x7684;&#x8F93;&#x5165;&#x4E8B;&#x4EF6;</span>
+input$.pipe(debounceTime(<span class="hljs-number">500</span>)).subscribe(<span class="hljs-function"><span class="hljs-params">val</span> =&gt;</span> {
+  <span class="hljs-comment">// &#x5728;&#x7528;&#x6237;&#x8F93;&#x5165;&#x5B8C;&#x6587;&#x672C;&#x540E;&#x7684; 500 &#x6BEB;&#x79D2;&#x5185;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x65B0;&#x7684;&#x8F93;&#x5165;&#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#xFF0C;</span>
+  <span class="hljs-comment">// &#x5C31;&#x4F1A;&#x5728;&#x8FD9;&#x91CC;&#x6267;&#x884C;&#x641C;&#x7D22;&#x8BF7;&#x6C42;</span>
+  search(val);
+});
+</code></pre>
+<h4 id="t191.11.2 debounce">1.11.2 debounce <a href="#t191.11.2 debounce"> # </a></h4>
+<ul>
+<li>debounce &#x548C; debounceTime &#x64CD;&#x4F5C;&#x7B26;&#x7C7B;&#x4F3C;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x5141;&#x8BB8;&#x4F60;&#x4F7F;&#x7528;&#x81EA;&#x5B9A;&#x4E49;&#x51FD;&#x6570;&#x6765;&#x51B3;&#x5B9A;&#x5FFD;&#x7565;&#x6389;&#x6E90; Observable &#x53D1;&#x51FA;&#x7684;&#x503C;&#x7684;&#x65F6;&#x95F4;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { debounce, timer } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;rxjs&apos;</span>;
+input$.pipe(debounce(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> timer(<span class="hljs-number">500</span>))).subscribe(<span class="hljs-function"><span class="hljs-params">val</span> =&gt;</span> {
+  <span class="hljs-comment">// &#x5728;&#x7528;&#x6237;&#x8F93;&#x5165;&#x5B8C;&#x6587;&#x672C;&#x540E;&#x7684; 500 &#x6BEB;&#x79D2;&#x5185;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x65B0;&#x7684;&#x8F93;&#x5165;&#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#xFF0C;</span>
+  <span class="hljs-comment">// &#x5C31;&#x4F1A;&#x5728;&#x8FD9;&#x91CC;&#x6267;&#x884C;&#x641C;&#x7D22;&#x8BF7;&#x6C42;</span>
+  search(val);
+});
+</code></pre>
+<h3 id="t201.12 lastValueFrom">1.12 lastValueFrom <a href="#t201.12 lastValueFrom"> # </a></h3>
+<ul>
+<li>lastValueFrom &#x662F;&#x4E00;&#x79CD; RxJS &#x64CD;&#x4F5C;&#x7B26;&#xFF0C;&#x5B83;&#x662F;&#x7528;&#x4E8E; Observable &#x5E8F;&#x5217;&#x7684;&#x3002;&#x5B83;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x7684; Observable&#xFF0C;&#x8BE5; Observable &#x5728;&#x6E90; Observable &#x5B8C;&#x6210;&#xFF08;&#x5373;&#x4E0D;&#x518D;&#x53D1;&#x51FA;&#x4EFB;&#x4F55;&#x9879;&#xFF09;&#x65F6;&#x53D1;&#x51FA;&#x6E90; Observable &#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x503C;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x6E90; Observable &#x4ECE;&#x672A;&#x5B8C;&#x6210;&#xFF0C;&#x5219; lastValue Observable &#x5C06;&#x6C38;&#x8FDC;&#x4E0D;&#x4F1A;&#x53D1;&#x51FA;&#x4EFB;&#x4F55;&#x503C;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x901A;&#x5E38;&#x9700;&#x8981;&#x4E0E;&#x5176;&#x4ED6;&#x64CD;&#x4F5C;&#x7B26;&#xFF08;&#x4F8B;&#x5982; take &#x6216; takeUntil&#xFF09;&#x7ED3;&#x5408;&#x4F7F;&#x7528;&#xFF0C;&#x4EE5;&#x4FBF;&#x5728;&#x6E90; Observable &#x5B8C;&#x6210;&#x4E4B;&#x524D;&#x7EC8;&#x6B62;&#x89C2;&#x5BDF;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { lastValueFrom,interval,take } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;rxjs&apos;</span>;
+<span class="hljs-keyword">const</span> source = interval(<span class="hljs-number">1000</span>);
+<span class="hljs-keyword">const</span> lastValue = lastValueFrom(source.pipe(
+    take(<span class="hljs-number">5</span>),
+));
+lastValue.then(<span class="hljs-built_in">console</span>.log);
+</code></pre>
+<h3 id="t211.13 share">1.13 share <a href="#t211.13 share"> # </a></h3>
+<ul>
+<li>RxJS&#x4E2D;&#x7684;share&#x65B9;&#x6CD5;&#x662F;&#x4E00;&#x79CD;&#x53EF;&#x4EE5;&#x8BA9;&#x591A;&#x4E2A;&#x89C2;&#x5BDF;&#x8005;&#x8BA2;&#x9605;&#x540C;&#x4E00;&#x4E2A;Observable&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x5B83;&#x901A;&#x5E38;&#x7528;&#x4E8E;&#x907F;&#x514D;&#x5728;&#x591A;&#x4E2A;&#x89C2;&#x5BDF;&#x8005;&#x4E4B;&#x95F4;&#x91CD;&#x590D;&#x6267;&#x884C;&#x76F8;&#x540C;&#x7684;&#x6570;&#x636E;&#x8BF7;&#x6C42;</li>
+<li>&#x5047;&#x8BBE;&#x4F60;&#x6709;&#x4E00;&#x4E2A;Observable&#xFF0C;&#x5B83;&#x6267;&#x884C;&#x4E00;&#x4E2A;HTTP&#x8BF7;&#x6C42;&#x4EE5;&#x83B7;&#x53D6;&#x6570;&#x636E;&#x3002;&#x5982;&#x679C;&#x4F60;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x7EC4;&#x4EF6;&#x4E2D;&#x8BA2;&#x9605;&#x4E86;&#x8FD9;&#x4E2A;Observable&#xFF0C;&#x5B83;&#x5C31;&#x4F1A;&#x6267;&#x884C;&#x591A;&#x6B21;HTTP&#x8BF7;&#x6C42;&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x80FD;&#x4F1A;&#x5BFC;&#x81F4;&#x6027;&#x80FD;&#x95EE;&#x9898;</li>
+<li>&#x8FD9;&#x65F6;&#xFF0C;&#x4F60;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;share&#x65B9;&#x6CD5;&#x6765;&#x5171;&#x4EAB;&#x8FD9;&#x4E2A;Observable&#xFF0C;&#x4EE5;&#x907F;&#x514D;&#x591A;&#x6B21;&#x6267;&#x884C;&#x76F8;&#x540C;&#x7684;HTTP&#x8BF7;&#x6C42;&#x3002;&#x5177;&#x4F53;&#x6765;&#x8BF4;&#xFF0C;share&#x65B9;&#x6CD5;&#x4F1A;&#x5C06;Observable&#x8F6C;&#x6362;&#x6210;&#x4E00;&#x4E2A;ConnectableObservable&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x8BA9;&#x591A;&#x4E2A;&#x89C2;&#x5BDF;&#x8005;&#x8BA2;&#x9605;&#x540C;&#x4E00;&#x4E2A;Observable&#xFF0C;&#x4F46;&#x662F;&#x5B9E;&#x9645;&#x4E0A;&#x53EA;&#x4F1A;&#x6267;&#x884C;&#x4E00;&#x6B21;&#x6570;&#x636E;&#x8BF7;&#x6C42;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { share } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;rxjs/operators&apos;</span>;
+<span class="hljs-keyword">import</span> { fromFetch } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;rxjs/fetch&apos;</span>;
+<span class="hljs-keyword">const</span> sharedObservable = fromFetch(<span class="hljs-string">&apos;http://localhost:8080/api/user/1&apos;</span>)
+.pipe(share())
+sharedObservable.subscribe(<span class="hljs-function"><span class="hljs-params">res</span>=&gt;</span>res.json().then(<span class="hljs-function"><span class="hljs-params">res</span>=&gt;</span><span class="hljs-built_in">console</span>.log(res)));
+sharedObservable.subscribe(<span class="hljs-function"><span class="hljs-params">res</span>=&gt;</span>res.json().then(<span class="hljs-function"><span class="hljs-params">res</span>=&gt;</span><span class="hljs-built_in">console</span>.log(res)));
+</code></pre>
+<h3 id="t221.14 fromFetch">1.14 fromFetch <a href="#t221.14 fromFetch"> # </a></h3>
+<ul>
+<li>fromFetch &#x64CD;&#x4F5C;&#x7B26;&#x5141;&#x8BB8;&#x4F60;&#x4ECE;&#x7ED9;&#x5B9A;&#x7684; URL &#x4E2D;&#x83B7;&#x53D6;&#x8D44;&#x6E90;&#xFF0C;&#x5E76;&#x5C06;&#x83B7;&#x53D6;&#x5230;&#x7684;&#x8D44;&#x6E90;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A; Observable &#x53D1;&#x51FA;</li>
+</ul>
+<pre><code class="lang-js">fromFetch(<span class="hljs-string">&apos;http://localhost:8080/api/user/1&apos;</span>)
+  .pipe(
+    switchMap(<span class="hljs-function"><span class="hljs-params">response</span> =&gt;</span> {
+      <span class="hljs-keyword">if</span> (response.ok) {
+        <span class="hljs-keyword">return</span> response.json();
+      } <span class="hljs-keyword">else</span> {
+        <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">&apos;Api request failed&apos;</span>);
+      }
+    }),
+  )
+  .subscribe({
+    <span class="hljs-attr">next</span>: <span class="hljs-function"><span class="hljs-params">response</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(response),
+    <span class="hljs-attr">error</span>: <span class="hljs-function"><span class="hljs-params">error</span> =&gt;</span> <span class="hljs-built_in">console</span>.error(error),
+  });
+
+</code></pre>
+<h3 id="t231.15 merge">1.15 merge <a href="#t231.15 merge"> # </a></h3>
+<ul>
+<li><code>merge</code> &#x64CD;&#x4F5C;&#x7B26;&#x5141;&#x8BB8;&#x4F60;&#x5C06;&#x591A;&#x4E2A; Observable &#x5408;&#x5E76;&#x6210;&#x4E00;&#x4E2A; Observable&#xFF0C;&#x5E76;&#x5C06;&#x8FD9;&#x4E9B; Observable &#x4E2D;&#x7684;&#x503C;&#x6309;&#x65F6;&#x95F4;&#x987A;&#x5E8F;&#x4F9D;&#x6B21;&#x53D1;&#x51FA;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> first = <span class="hljs-keyword">of</span>(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>);
+<span class="hljs-keyword">const</span> second = <span class="hljs-keyword">of</span>(<span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>);
+merge(first, second).subscribe(<span class="hljs-function"><span class="hljs-params">value</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(value));
+<span class="hljs-comment">// Output: 1, 4, 2, 5, 3, 6</span>
+</code></pre>
+<h3 id="t241.16  error">1.16  error <a href="#t241.16  error"> # </a></h3>
+<ul>
+<li><code>catchError</code>&#x548C;<code>throwError</code>&#x90FD;&#x662F;&#x7528;&#x6765;&#x5904;&#x7406;<code>Observable</code>&#x4E2D;&#x53D1;&#x751F;&#x7684;&#x9519;&#x8BEF;&#x7684;</li>
+<li><code>catchError</code>&#x64CD;&#x4F5C;&#x7B26;&#x5141;&#x8BB8;&#x4F60;&#x6355;&#x83B7;&#x4E00;&#x4E2A;<code>Observable</code>&#x4E2D;&#x53D1;&#x751F;&#x7684;&#x9519;&#x8BEF;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x7684;<code>Observable</code>&#x6765;&#x53D6;&#x4EE3;&#x539F;&#x6765;&#x7684;<code>Observable</code></li>
+<li><code>catchError</code> &#x7684;&#x65B9;&#x6CD5;&#x662F;&#x5C06;&#x5B83;&#x4F5C;&#x4E3A; Observable &#x7684;&#x94FE;&#x5F0F;&#x8C03;&#x7528;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x5E76;&#x4F20;&#x5165;&#x4E00;&#x4E2A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x3002;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x5BF9;&#x8C61;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x7684; Observable&#x3002;&#x8FD9;&#x4E2A;&#x65B0;&#x7684; Observable &#x5C06;&#x4F1A;&#x53D6;&#x4EE3;&#x539F;&#x6765;&#x7684; Observable&#xFF0C;&#x5E76;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#x540E;&#x7EED;&#x7684;&#x64CD;&#x4F5C;&#x3002;</li>
+<li><code>throwError</code> &#x64CD;&#x4F5C;&#x7B26;&#x5219;&#x662F;&#x7528;&#x6765;&#x663E;&#x5F0F;&#x5730;&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x7684;&#x3002;&#x5B83;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x4E0D;&#x5305;&#x542B;&#x4EFB;&#x4F55;&#x503C;&#x7684; Observable&#xFF0C;&#x5E76;&#x7ACB;&#x5373;&#x7EC8;&#x6B62;&#x3002;&#x901A;&#x5E38;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x4F1A;&#x4F7F;&#x7528; <code>throwError</code> &#x6765;&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x4E0D;&#x53EF;&#x6062;&#x590D;&#x7684;&#x9519;&#x8BEF;&#xFF0C;&#x4F8B;&#x5982;&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;</li>
+</ul>
+<p>catchError</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { Observable ,<span class="hljs-keyword">of</span>} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;rxjs&apos;</span>;
+<span class="hljs-keyword">import</span> { catchError } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;rxjs/operators&apos;</span>;
+<span class="hljs-keyword">const</span> source$ = <span class="hljs-keyword">new</span> Observable(<span class="hljs-function"><span class="hljs-params">subscriber</span>=&gt;</span>{
+    setTimeout(<span class="hljs-function"><span class="hljs-params">()</span>=&gt;</span>{
+        subscriber.error(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">&apos;&#x53D1;&#x751F;&#x4E86;&#x9519;&#x8BEF;&apos;</span>));
+    },<span class="hljs-number">1000</span>);
+});
+source$.pipe(
+    catchError(<span class="hljs-function"><span class="hljs-params">error</span> =&gt;</span> <span class="hljs-keyword">of</span>(<span class="hljs-string">&apos;&#x6B63;&#x5E38;&#x503C;&apos;</span>)),
+).subscribe({
+    <span class="hljs-attr">next</span>: <span class="hljs-function"><span class="hljs-params">value</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;next&apos;</span>,value),
+    <span class="hljs-attr">error</span>: <span class="hljs-function"><span class="hljs-params">error</span> =&gt;</span> <span class="hljs-built_in">console</span>.error(<span class="hljs-string">&apos;error&apos;</span>,error),
+    <span class="hljs-attr">complete</span>: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;complete&apos;</span>),
+});
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { Observable ,<span class="hljs-keyword">of</span>, throwError} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;rxjs&apos;</span>;
+<span class="hljs-keyword">import</span> { catchError } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;rxjs/operators&apos;</span>;
+<span class="hljs-keyword">const</span> source$ = <span class="hljs-keyword">new</span> Observable(<span class="hljs-function"><span class="hljs-params">subscriber</span>=&gt;</span>{
+    subscriber.error({<span class="hljs-attr">success</span>:<span class="hljs-literal">false</span>});
+});
+source$.pipe(
+    catchError(<span class="hljs-function"><span class="hljs-params">error</span> =&gt;</span> {
+        <span class="hljs-comment">//return [&quot;hello&quot;]</span>
+        <span class="hljs-keyword">return</span> throwError(<span class="hljs-function"><span class="hljs-params">()</span>=&gt;</span>error);
+    }),
+).subscribe({
+    <span class="hljs-attr">next</span>: <span class="hljs-function"><span class="hljs-params">value</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;next&apos;</span>,value),
+    <span class="hljs-attr">error</span>: <span class="hljs-function"><span class="hljs-params">error</span> =&gt;</span> <span class="hljs-built_in">console</span>.error(<span class="hljs-string">&apos;error&apos;</span>,error),
+    <span class="hljs-attr">complete</span>: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;complete&apos;</span>),
+});
+</code></pre>
+<h3 id="t251.17 filter">1.17 filter <a href="#t251.17 filter"> # </a></h3>
+<ul>
+<li><code>filter</code> &#x64CD;&#x4F5C;&#x7B26;&#x5141;&#x8BB8;&#x4F60;&#x53EA;&#x53D1;&#x51FA;&#x6E90; Observable &#x4E2D;&#x6EE1;&#x8DB3;&#x7279;&#x5B9A;&#x6761;&#x4EF6;&#x7684;&#x503C;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { <span class="hljs-keyword">of</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;rxjs&apos;</span>;
+<span class="hljs-keyword">of</span>(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>)
+  .pipe(
+    filter(<span class="hljs-function"><span class="hljs-params">value</span> =&gt;</span> value % <span class="hljs-number">2</span> === <span class="hljs-number">0</span>),
+  )
+  .subscribe(<span class="hljs-function"><span class="hljs-params">value</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(value));
+<span class="hljs-comment">// Output: 2, 4</span>
+</code></pre>
+<h3 id="t261.18 throwIfEmpty">1.18 throwIfEmpty <a href="#t261.18 throwIfEmpty"> # </a></h3>
+<ul>
+<li><code>throwIfEmpty</code>&#x64CD;&#x4F5C;&#x7B26;&#x7528;&#x4E8E;&#x5728;&#x6E90; Observable &#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x53D1;&#x51FA;&#x4EFB;&#x4F55;&#x503C;&#xFF0C;&#x5C31;&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { Observable, throwIfEmpty } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;rxjs&apos;</span>;
+<span class="hljs-keyword">const</span> source$ = <span class="hljs-keyword">new</span> Observable(<span class="hljs-function"><span class="hljs-params">subscriber</span> =&gt;</span> {
+    subscriber.next(<span class="hljs-number">1</span>);
+    subscriber.complete();
+});
+source$
+    .pipe(throwIfEmpty())
+    .subscribe({
+        <span class="hljs-attr">next</span>: <span class="hljs-function"><span class="hljs-params">user</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(user),
+        <span class="hljs-attr">error</span>: <span class="hljs-function"><span class="hljs-params">error</span> =&gt;</span> <span class="hljs-built_in">console</span>.error(error),
+    })
+</code></pre>
+<h2 id="t272.&#x7F13;&#x5B58;">2.&#x7F13;&#x5B58; <a href="#t272.&#x7F13;&#x5B58;"> # </a></h2>
+<h3 id="t282.2 bufferTime.js">2.2 bufferTime.js <a href="#t282.2 bufferTime.js"> # </a></h3>
+<p>src\bufferTime.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { interval, bufferTime } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;rxjs&apos;</span>;
+<span class="hljs-comment">//interval &#x51FD;&#x6570;&#x6BCF;&#x9694;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#xFF08;&#x8FD9;&#x91CC;&#x662F; 1000 &#x6BEB;&#x79D2;&#xFF09;&#x53D1;&#x51FA;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#xFF0C;&#x8868;&#x793A;&#x8FC7;&#x4E86;&#x591A;&#x957F;&#x65F6;&#x95F4;&#x3002;</span>
+<span class="hljs-comment">//bufferTime &#x64CD;&#x4F5C;&#x7B26;&#x4F1A;&#x6536;&#x96C6;&#x6765;&#x81EA;&#x6E90; Observable&#xFF08;&#x8FD9;&#x91CC;&#x662F; interval &#x53D1;&#x51FA;&#x7684; Observable&#xFF09;&#x7684;&#x503C;&#xFF0C;</span>
+<span class="hljs-comment">//&#x6BCF;&#x9694;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#xFF08;&#x8FD9;&#x91CC;&#x662F; 2000 &#x6BEB;&#x79D2;&#xFF09;&#x5C31;&#x628A;&#x8FD9;&#x4E9B;&#x503C;&#x5F53;&#x505A;&#x6570;&#x7EC4;&#x53D1;&#x51FA;&#x3002;</span>
+<span class="hljs-keyword">const</span> messageBox = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;messageBox&apos;</span>);
+<span class="hljs-keyword">const</span> source$ = interval(<span class="hljs-number">1000</span>);
+source$.pipe(bufferTime(<span class="hljs-number">2000</span>))
+    .subscribe(<span class="hljs-function">(<span class="hljs-params">messages</span>) =&gt;</span> {
+        messageBox.innerHTML += messages.map(<span class="hljs-function"><span class="hljs-params">item</span> =&gt;</span> <span class="hljs-string">`&lt;li&gt;Message <span class="hljs-subst">${item}</span>&lt;/li&gt;`</span>)
+            .join(<span class="hljs-string">&apos;\n&apos;</span>)
+    })
+</code></pre>
+<h3 id="t292.1 bufferCount.js">2.1 bufferCount.js <a href="#t292.1 bufferCount.js"> # </a></h3>
+<p>src\bufferCount.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { interval, bufferCount } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;rxjs&apos;</span>;
+<span class="hljs-keyword">const</span> messageBox = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;messageBox&apos;</span>);
+<span class="hljs-keyword">const</span> source$ = interval(<span class="hljs-number">1000</span>);
+<span class="hljs-comment">//bufferCount &#x64CD;&#x4F5C;&#x7B26;&#x4F1A;&#x6536;&#x96C6;&#x6765;&#x81EA;&#x6E90; Observable&#xFF08;&#x8FD9;&#x91CC;&#x662F; interval &#x53D1;&#x51FA;&#x7684; Observable&#xFF09;&#x7684;&#x503C;&#xFF0C;</span>
+<span class="hljs-comment">//&#x5F53;&#x6536;&#x96C6;&#x5230;&#x4E86;&#x8DB3;&#x591F;&#x591A;&#xFF08;&#x8FD9;&#x91CC;&#x662F; 3 &#x4E2A;&#xFF09;&#x7684;&#x503C;&#x65F6;&#xFF0C;&#x5C31;&#x628A;&#x8FD9;&#x4E9B;&#x503C;&#x5F53;&#x505A;&#x6570;&#x7EC4;&#x53D1;&#x51FA;&#x3002;</span>
+source$.pipe(bufferCount(<span class="hljs-number">3</span>))
+    .subscribe(<span class="hljs-function">(<span class="hljs-params">messages</span>) =&gt;</span> {
+        messageBox.innerHTML += messages.map(<span class="hljs-function"><span class="hljs-params">item</span> =&gt;</span> <span class="hljs-string">`&lt;li&gt;Message <span class="hljs-subst">${item}</span>&lt;/li&gt;`</span>)
+            .join(<span class="hljs-string">&apos;\n&apos;</span>)
+    })
+</code></pre>
+<h2 id="t303.&#x62D6;&#x62FD;">3.&#x62D6;&#x62FD; <a href="#t303.&#x62D6;&#x62FD;"> # </a></h2>
+<h3 id="t313.1 public\index.html">3.1 public\index.html <a href="#t313.1 public\index.html"> # </a></h3>
+<p>public\index.html</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1&quot;</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;theme-color&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;#000000&quot;</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;description&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;Web site created using create-react-app&quot;</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>React App<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+    <span class="hljs-selector-id">#draggable</span> {
+      <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;
+      <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;
+      <span class="hljs-attribute">background-color</span>: red;
+      <span class="hljs-attribute">position</span>: absolute;
+      <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+      <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+    }
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;messageBox&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;draggable&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<h3 id="t323.2 src\drag.js">3.2 src\drag.js <a href="#t323.2 src\drag.js"> # </a></h3>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { fromEvent } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;rxjs&apos;</span>;
+<span class="hljs-keyword">import</span> { withLatestFrom, takeUntil,switchMap} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;rxjs/operators&apos;</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">startDragging</span>(<span class="hljs-params">element</span>) </span>{
+    <span class="hljs-keyword">const</span> mouseDown = fromEvent(element, <span class="hljs-string">&apos;mousedown&apos;</span>)
+    <span class="hljs-keyword">const</span> mouseUp = fromEvent(<span class="hljs-built_in">document</span>, <span class="hljs-string">&apos;mouseup&apos;</span>)
+    <span class="hljs-keyword">const</span> mouseMove = fromEvent(<span class="hljs-built_in">document</span>, <span class="hljs-string">&apos;mousemove&apos;</span>)
+    mouseDown.pipe(
+        switchMap(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> mouseMove.pipe(takeUntil(mouseUp))),
+        withLatestFrom(mouseDown, (moveEvent, downEvent) =&gt; {
+            <span class="hljs-keyword">return</span> {
+                <span class="hljs-attr">left</span>: moveEvent.clientX - downEvent.offsetX,
+                <span class="hljs-attr">top</span>: moveEvent.clientY - downEvent.offsetY
+            }
+        })
+    ).subscribe(<span class="hljs-function">(<span class="hljs-params">{left,top}</span>) =&gt;</span> {
+        element.style.left = left + <span class="hljs-string">&apos;px&apos;</span>;
+        element.style.top = top + <span class="hljs-string">&apos;px&apos;</span>;
+    })
+}
+
+<span class="hljs-keyword">const</span> draggable = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;draggable&apos;</span>);
+startDragging(draggable);
+</code></pre>
+<h2 id="t334.&#x5E76;&#x53D1;&#x8BF7;&#x6C42;">4.&#x5E76;&#x53D1;&#x8BF7;&#x6C42; <a href="#t334.&#x5E76;&#x53D1;&#x8BF7;&#x6C42;"> # </a></h2>
+<h3 id="t344.1 src\multiRequest.js">4.1 src\multiRequest.js <a href="#t344.1 src\multiRequest.js"> # </a></h3>
+<p>src\multiRequest.js</p>
+<pre><code class="lang-js">import { mergeMap, from } from &apos;rxjs&apos;;
+/**
+  &#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x6279;&#x91CF;&#x5E76;&#x53D1;&#x8BF7;&#x6C42;&#x51FD;&#x6570; request(urls, concurrent)&#xFF0C;&#x8981;&#x6C42;&#x5982;&#x4E0B;&#xFF1A;
+  1.&#x8981;&#x6C42;&#x6700;&#x5927;&#x5E76;&#x53D1;&#x6570; concurrent
+  2.&#x6BCF;&#x5F53;&#x6709;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x8FD4;&#x56DE;&#xFF0C;&#x5C31;&#x8FDB;&#x884C;&#x65B0;&#x7684;&#x8BF7;&#x6C42;
+  3.&#x6240;&#x6709;&#x8BF7;&#x6C42;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x7ED3;&#x679C;&#x6309;&#x7167;urls&#x91CC;&#x9762;&#x7684;&#x987A;&#x5E8F;&#x4F9D;&#x6B21;&#x6253;&#x51FA;
+ */
+function fetchData(url) {
+  return new Promise(resolve =&gt; setTimeout(() =&gt; resolve(url), 3000));
+}
+const urls = [
+  &apos;/api/user/1&apos;,
+  &apos;/api/user/2&apos;,
+  &apos;/api/user/3&apos;
+];
+const start = Date.now();
+function request(urls, concurrent) {
+  from(urls)
+    .pipe(mergeMap(fetchData, concurrent))
+    .subscribe(val =&gt; {
+      console.log(`&#x8017;&#x65F6;: ${parseInt((Date.now() - start) / 1000)}s`);
+      console.log(val)
+    });
+}
+request(urls, 2)
+</code></pre>
+<h2 id="t355.&#x7ADE;&#x6001;">5.&#x7ADE;&#x6001; <a href="#t355.&#x7ADE;&#x6001;"> # </a></h2>
+<ul>
+<li>&#x524D;&#x7AEF;&#x8BF7;&#x6C42;&#x540E;&#x7AEF;&#x63A5;&#x53E3;&#x65F6;&#x7684;&#x7ADE;&#x6001;&#x95EE;&#x9898;&#x662F;&#x6307;&#xFF0C;&#x5F53;&#x524D;&#x7AEF;&#x540C;&#x65F6;&#x53D1;&#x8D77;&#x591A;&#x4E2A;&#x8BF7;&#x6C42;&#x65F6;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x5BFC;&#x81F4;&#x610F;&#x6599;&#x4E4B;&#x5916;&#x7684;&#x7ED3;&#x679C;</li>
+<li>&#x4F8B;&#x5982;&#xFF0C;&#x5047;&#x8BBE;&#x4F60;&#x6B63;&#x5728;&#x4F7F;&#x7528; JavaScript &#x7684; fetch &#x51FD;&#x6570;&#x53D1;&#x8D77;&#x591A;&#x4E2A;&#x8BF7;&#x6C42;&#xFF0C;&#x5982;&#x679C;&#x5728;&#x524D;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x5B8C;&#x6210;&#x4E4B;&#x524D;&#x5C31;&#x53D1;&#x8D77;&#x4E86;&#x65B0;&#x7684;&#x8BF7;&#x6C42;&#xFF0C;&#x5219;&#x4F1A;&#x53D1;&#x751F;&#x7ADE;&#x6001;&#x95EE;&#x9898;&#x3002;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#xFF0C;&#x5728;&#x524D;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x5B8C;&#x6210;&#x4E4B;&#x524D;&#xFF0C;&#x540E;&#x7AEF;&#x63A5;&#x53E3;&#x53EF;&#x80FD;&#x4F1A;&#x6536;&#x5230;&#x5E76;&#x5904;&#x7406;&#x591A;&#x4E2A;&#x8BF7;&#x6C42;&#xFF0C;&#x5BFC;&#x81F4;&#x6570;&#x636E;&#x66F4;&#x65B0;&#x7684;&#x987A;&#x5E8F;&#x4E0D;&#x786E;&#x5B9A;</li>
+</ul>
+<h3 id="t365.1 src/race.js">5.1 src/race.js <a href="#t365.1 src/race.js"> # </a></h3>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { Subject, switchMap } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;rxjs&apos;</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fetchData</span>(<span class="hljs-params">id</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-params">resolve</span> =&gt;</span> setTimeout(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> resolve(id), <span class="hljs-number">1000</span> * id));
+}
+<span class="hljs-keyword">const</span> search = <span class="hljs-keyword">new</span> Subject()
+search.pipe(switchMap(fetchData))
+    .subscribe(<span class="hljs-built_in">console</span>.log);
+search.next(<span class="hljs-number">3</span>);
+setTimeout(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    search.next(<span class="hljs-number">1</span>);
+}, <span class="hljs-number">1000</span>);
+</code></pre>
+<h2 id="t376.suggests">6.suggests <a href="#t376.suggests"> # </a></h2>
+<h3 id="t386.1 src\suggests.js">6.1 src\suggests.js <a href="#t386.1 src\suggests.js"> # </a></h3>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { fromEvent, <span class="hljs-keyword">of</span>, timer } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;rxjs&apos;</span>;
+<span class="hljs-keyword">import</span> { debounce, debounceTime, switchMap } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;rxjs/operators&apos;</span>;
+
+<span class="hljs-keyword">const</span> inputElement = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;#keyword&apos;</span>);
+<span class="hljs-keyword">const</span> wordsElement = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;#words&apos;</span>);
+
+<span class="hljs-comment">// &#x76D1;&#x542C;&#x8F93;&#x5165;&#x6846;&#x7684;&#x8F93;&#x5165;&#x4E8B;&#x4EF6;</span>
+<span class="hljs-keyword">const</span> input$ = fromEvent(inputElement, <span class="hljs-string">&apos;input&apos;</span>);
+input$.subscribe(<span class="hljs-function"><span class="hljs-params">event</span> =&gt;</span> { <span class="hljs-built_in">console</span>.log(event) });
+
+<span class="hljs-comment">// &#x5BF9;&#x8F93;&#x5165;&#x4E8B;&#x4EF6;&#x8FDB;&#x884C;&#x5904;&#x7406;&#xFF0C;&#x5EF6;&#x8FDF; 100 &#x6BEB;&#x79D2;&#x540E;&#x53D1;&#x9001;&#x8BF7;&#x6C42;</span>
+<span class="hljs-keyword">const</span> search$ = input$.pipe(
+    debounceTime(<span class="hljs-number">100</span>),
+    <span class="hljs-comment">//debounce &#x64CD;&#x4F5C;&#x7B26;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x4E00;&#x4E2A;&#x6307;&#x5B9A;&#x7684;&#x51FD;&#x6570;&#x6765;&#x5224;&#x65AD;&#x662F;&#x5426;&#x53D1;&#x51FA;&#x4E8B;&#x4EF6;</span>
+    <span class="hljs-comment">//debounce &#x64CD;&#x4F5C;&#x7B26;&#x7684;&#x597D;&#x5904;&#x5728;&#x4E8E;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x6211;&#x4EEC;&#x63D0;&#x4F9B;&#x7684;&#x51FD;&#x6570;&#x52A8;&#x6001;&#x5730;&#x51B3;&#x5B9A;&#x662F;&#x5426;&#x53D1;&#x51FA;&#x4E8B;&#x4EF6;</span>
+    debounce(<span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> event.target.value.length &gt; <span class="hljs-number">3</span> ? <span class="hljs-keyword">of</span>(event) : timer(<span class="hljs-number">3000</span>)), <span class="hljs-comment">// &#x5EF6;&#x8FDF; 100 &#x6BEB;&#x79D2;</span>
+    switchMap(<span class="hljs-function"><span class="hljs-params">event</span> =&gt;</span> fetch(<span class="hljs-string">`http://localhost:8080/api/search?q=<span class="hljs-subst">${event.target.value}</span>`</span>)) <span class="hljs-comment">// &#x53D1;&#x9001;&#x8BF7;&#x6C42;</span>
+);
+<span class="hljs-comment">// &#x5904;&#x7406;&#x8BF7;&#x6C42;&#x7ED3;&#x679C;&#xFF0C;&#x6E32;&#x67D3;&#x5230;&#x9875;&#x9762;</span>
+search$.subscribe(<span class="hljs-function"><span class="hljs-params">response</span> =&gt;</span> {
+    response.json().then(<span class="hljs-function"><span class="hljs-params">data</span> =&gt;</span> {
+        <span class="hljs-comment">// &#x5C06;&#x54CD;&#x5E94;&#x7ED3;&#x679C;&#x6E32;&#x67D3;&#x5230;&#x9875;&#x9762;</span>
+        wordsElement.innerHTML = data.map(<span class="hljs-function"><span class="hljs-params">item</span> =&gt;</span> <span class="hljs-string">`&lt;li&gt;<span class="hljs-subst">${item}</span>&lt;/li&gt;`</span>).join(<span class="hljs-string">&apos;&apos;</span>);
+    });
+});
+</code></pre>
+<h2 id="t397.fetch&#x5C01;&#x88C5;">7.fetch&#x5C01;&#x88C5; <a href="#t397.fetch&#x5C01;&#x88C5;"> # </a></h2>
+<h3 id="t407.1 &#x5B9E;&#x73B0;GET&#x8BF7;&#x6C42;">7.1 &#x5B9E;&#x73B0;GET&#x8BF7;&#x6C42; <a href="#t407.1 &#x5B9E;&#x73B0;GET&#x8BF7;&#x6C42;"> # </a></h3>
+<h4 id="t417.1.1 src\index.js">7.1.1 src\index.js <a href="#t417.1.1 src\index.js"> # </a></h4>
+<p>src\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> {http} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./fetch/http&apos;</span>;
+http.request({ 
+    <span class="hljs-attr">url</span>: <span class="hljs-string">&apos;http://localhost:8080/api/user/1&apos;</span>,
+    <span class="hljs-attr">method</span>: <span class="hljs-string">&apos;GET&apos;</span>
+}).then(<span class="hljs-function"><span class="hljs-params">response</span> =&gt;</span> {
+    <span class="hljs-built_in">console</span>.log(response)
+})
+</code></pre>
+<h4 id="t427.1.2 http.js">7.1.2 http.js <a href="#t427.1.2 http.js"> # </a></h4>
+<p>src\fetch\http.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { lastValueFrom, share } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;rxjs&apos;</span>;
+<span class="hljs-keyword">import</span> { fromFetch } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;rxjs/fetch&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Http</span> </span>{
+  request(options) {
+    <span class="hljs-keyword">return</span>  lastValueFrom(
+      fromFetch(options.url, options)
+      .pipe(share())
+    )
+  }
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> http = <span class="hljs-keyword">new</span> Http();
+</code></pre>
+<h3 id="t437.2 &#x5B9E;&#x73B0;POST&#x8BF7;&#x6C42;">7.2 &#x5B9E;&#x73B0;POST&#x8BF7;&#x6C42; <a href="#t437.2 &#x5B9E;&#x73B0;POST&#x8BF7;&#x6C42;"> # </a></h3>
+<h4 id="t447.2.1 src\index.js">7.2.1 src\index.js <a href="#t447.2.1 src\index.js"> # </a></h4>
+<p>src\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { http } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./fetch/http&apos;</span>;
+http.post(<span class="hljs-string">&apos;http://localhost:8080/api/user&apos;</span>, { <span class="hljs-attr">name</span>: <span class="hljs-string">&apos;zhangsan&apos;</span> })
+    .then(<span class="hljs-function"><span class="hljs-params">res</span> =&gt;</span> res.json())
+    .then(<span class="hljs-function"><span class="hljs-params">response</span> =&gt;</span> {
+        <span class="hljs-built_in">console</span>.log(response)
+    })
+</code></pre>
+<h4 id="t457.2.2  http.js">7.2.2  http.js <a href="#t457.2.2  http.js"> # </a></h4>
+<p>src\fetch\http.js</p>
+<pre><code class="lang-diff">import { lastValueFrom, share } from &apos;rxjs&apos;;
+import { fromFetch } from &apos;rxjs/fetch&apos;;
+import { getUrlFromOptions, getInitFromOptions } from &apos;./utils&apos;;
+export class Http {
+  request(options) {
+    const url = getUrlFromOptions(options);
+    const init = getInitFromOptions(options);
+    return  lastValueFrom(
+      fromFetch(url, init)
+      .pipe(share())
+    )
+  }
+<span class="hljs-addition">+ delete(url) {</span>
+<span class="hljs-addition">+   return this.request({ method: &apos;DELETE&apos;, url });</span>
+<span class="hljs-addition">+ }</span>
+<span class="hljs-addition">+ put(url, data) {</span>
+<span class="hljs-addition">+   return this.request({ method: &apos;PUT&apos;, url, data, headers: { &quot;Content-Type&quot;: &quot;application/json&quot; } });</span>
+<span class="hljs-addition">+ }</span>
+<span class="hljs-addition">+ post(url, data) {</span>
+<span class="hljs-addition">+   return this.request({ method: &apos;POST&apos;, url, data, headers: { &quot;Content-Type&quot;: &quot;application/json&quot; } });</span>
+<span class="hljs-addition">+ }</span>
+}
+export const http = new Http();
+</code></pre>
+<h4 id="t467.2.3  utils.js">7.2.3  utils.js <a href="#t467.2.3  utils.js"> # </a></h4>
+<p>src\fetch\utils.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getUrlFromOptions</span>(<span class="hljs-params">options</span>) </span>{
+    <span class="hljs-keyword">let</span> { url, params={}, method=<span class="hljs-string">&apos;GET&apos;</span> } = options;
+    <span class="hljs-keyword">let</span> queryString = <span class="hljs-string">&quot;&quot;</span>;
+    params = <span class="hljs-built_in">Object</span>.keys(params).reduce(<span class="hljs-function">(<span class="hljs-params">filteredParams, key</span>) =&gt;</span> {
+        <span class="hljs-keyword">if</span> (params[key] !== <span class="hljs-string">&quot;&quot;</span>) {
+            filteredParams[key] = params[key];
+        }
+        <span class="hljs-keyword">return</span> filteredParams;
+    }, {});
+    queryString = <span class="hljs-built_in">Object</span>.keys(params).map(<span class="hljs-function"><span class="hljs-params">key</span> =&gt;</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-built_in">encodeURIComponent</span>(key) + <span class="hljs-string">&quot;=&quot;</span> + <span class="hljs-built_in">encodeURIComponent</span>(params[key]);
+    }).join(<span class="hljs-string">&quot;&amp;&quot;</span>);
+    <span class="hljs-keyword">if</span> (method === <span class="hljs-string">&quot;GET&quot;</span> || method === <span class="hljs-string">&quot;DELETE&quot;</span>) {
+        url += <span class="hljs-string">&quot;?&quot;</span> + queryString;
+    }
+    <span class="hljs-keyword">return</span> url;
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getInitFromOptions</span>(<span class="hljs-params">options</span>) </span>{
+    <span class="hljs-keyword">let</span> method = options.method || <span class="hljs-string">&apos;GET&apos;</span>;
+    <span class="hljs-keyword">let</span> headers = options.headers || {};
+    <span class="hljs-keyword">let</span> isJSONBody = headers[<span class="hljs-string">&apos;Content-Type&apos;</span>] === <span class="hljs-string">&apos;application/json&apos;</span>;
+    <span class="hljs-keyword">let</span> body = options.data;
+    <span class="hljs-keyword">if</span>(body&amp;&amp; <span class="hljs-built_in">Object</span>.keys(body).length&gt;<span class="hljs-number">0</span>){
+        <span class="hljs-keyword">if</span> (isJSONBody) {
+            body = <span class="hljs-built_in">JSON</span>.stringify(body);
+        } <span class="hljs-keyword">else</span> {
+            body = <span class="hljs-keyword">new</span> URLSearchParams(body);
+        }
+    }
+    <span class="hljs-keyword">let</span> credentials = options.credentials || <span class="hljs-string">&apos;omit&apos;</span>;<span class="hljs-comment">//omit,same-origin,include</span>
+    <span class="hljs-keyword">return</span> { method, headers, body, credentials };
+}
+</code></pre>
+<h3 id="t477.3 &#x89E3;&#x6790;&#x54CD;&#x5E94;&#x4F53;">7.3 &#x89E3;&#x6790;&#x54CD;&#x5E94;&#x4F53; <a href="#t477.3 &#x89E3;&#x6790;&#x54CD;&#x5E94;&#x4F53;"> # </a></h3>
+<h4 id="t487.3.1 src\index.js">7.3.1 src\index.js <a href="#t487.3.1 src\index.js"> # </a></h4>
+<p>src\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { http } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./fetch/http&apos;</span>;
+http.post(<span class="hljs-string">&apos;http://localhost:8080/api/user&apos;</span>, { <span class="hljs-attr">name</span>: <span class="hljs-string">&apos;zhangsan&apos;</span> })
+    .then(<span class="hljs-function"><span class="hljs-params">response</span> =&gt;</span> {
+        <span class="hljs-built_in">console</span>.log(response.data)
+    })
+</code></pre>
+<h4 id="t497.3.2 src\fetch\http.js">7.3.2 src\fetch\http.js <a href="#t497.3.2 src\fetch\http.js"> # </a></h4>
+<p>src\fetch\http.js</p>
+<pre><code class="lang-diff"><span class="hljs-addition">+import { lastValueFrom, share ,mergeMap} from &apos;rxjs&apos;;</span>
+import { fromFetch } from &apos;rxjs/fetch&apos;;
+import { getUrlFromOptions, getInitFromOptions } from &apos;./utils&apos;;
+export class Http {
+  request(options) {
+    const url = getUrlFromOptions(options);
+    const init = getInitFromOptions(options);
+    return  lastValueFrom(
+      fromFetch(url, init)
+      .pipe(
+<span class="hljs-addition">+       mergeMap(async response =&gt; {</span>
+<span class="hljs-addition">+         if (response.ok) {</span>
+<span class="hljs-addition">+           return {data: await response.json(),status: response.status};</span>
+<span class="hljs-addition">+         } else {</span>
+<span class="hljs-addition">+           return Promise.reject({data: await response.json(),status: response.status});</span>
+<span class="hljs-addition">+         }</span>
+<span class="hljs-addition">+       }),</span>
+        share())
+    )
+  }
+  post(url, data) {
+    return this.request({ method: &apos;POST&apos;, url, data, headers: { &quot;Content-Type&quot;: &quot;application/json&quot; } });
+  }
+  delete(url) {
+    return this.request({ method: &apos;DELETE&apos;, url });
+  }
+  put(url, data) {
+    return this.request({ method: &apos;PUT&apos;, url, data, headers: { &quot;Content-Type&quot;: &quot;application/json&quot; } });
+  }
+  get(url, params) {
+    return this.request({ method: &apos;GET&apos;, url, params });
+  }
+}
+export const http = new Http();
+</code></pre>
+<h3 id="t507.4  &#x9519;&#x8BEF;&#x5904;&#x7406;">7.4  &#x9519;&#x8BEF;&#x5904;&#x7406; <a href="#t507.4  &#x9519;&#x8BEF;&#x5904;&#x7406;"> # </a></h3>
+<h4 id="t517.4.1 src\index.js">7.4.1 src\index.js <a href="#t517.4.1 src\index.js"> # </a></h4>
+<p>src\index.js</p>
+<pre><code class="lang-diff">import { http } from &apos;./fetch/http&apos;;
+<span class="hljs-addition">+http.delete(&apos;http://localhost:8080/api/user/1&apos;, { name: &apos;zhangsan&apos; })</span>
+    .then(response =&gt; {
+        console.log(response.data)
+<span class="hljs-addition">+    },error=&gt;console.error(error))</span>
+</code></pre>
+<h4 id="t527.4.2 http.js">7.4.2 http.js <a href="#t527.4.2 http.js"> # </a></h4>
+<p>src\fetch\http.js</p>
+<pre><code class="lang-diff">import { lastValueFrom, share, mergeMap, filter, merge } from &apos;rxjs&apos;;
+import { fromFetch } from &apos;rxjs/fetch&apos;;
+import { getUrlFromOptions, getInitFromOptions } from &apos;./utils&apos;;
+export class Http {
+  request(options) {
+    const url = getUrlFromOptions(options);
+    const init = getInitFromOptions(options);
+<span class="hljs-addition">+   const fetchStream = fromFetch(url, init).pipe(share())</span>
+<span class="hljs-addition">+   const successStream = fetchStream.pipe(</span>
+<span class="hljs-addition">+     filter(response =&gt; response.ok),</span>
+<span class="hljs-addition">+     mergeMap(async response =&gt; {</span>
+<span class="hljs-addition">+       return { data: await response.json(), status: response.status };</span>
+<span class="hljs-addition">+     }),</span>
+<span class="hljs-addition">+   );</span>
+<span class="hljs-addition">+   const failureStream = fetchStream.pipe(</span>
+<span class="hljs-addition">+     filter(response =&gt; !response.ok),</span>
+<span class="hljs-addition">+     mergeMap(async response =&gt; {</span>
+<span class="hljs-addition">+       return Promise.reject({ error: await response.json(), status: response.status })</span>
+<span class="hljs-addition">+     }),</span>
+<span class="hljs-addition">+   );</span>
+<span class="hljs-addition">+   const mergedStream = merge(successStream, failureStream)</span>
+<span class="hljs-addition">+   return lastValueFrom(mergedStream);</span>
+  }
+  delete(url) {
+    return this.request({ method: &apos;DELETE&apos;, url });
+  }
+  put(url, data) {
+    return this.request({ method: &apos;PUT&apos;, url, data, headers: { &quot;Content-Type&quot;: &quot;application/json&quot; } });
+  }
+  post(url, data) {
+    return this.request({ method: &apos;POST&apos;, url, data, headers: { &quot;Content-Type&quot;: &quot;application/json&quot; } });
+  }
+}
+export const http = new Http();
+</code></pre>
+<h3 id="t537.5  &#x53D6;&#x6D88;&#x4EFB;&#x52A1;">7.5  &#x53D6;&#x6D88;&#x4EFB;&#x52A1; <a href="#t537.5  &#x53D6;&#x6D88;&#x4EFB;&#x52A1;"> # </a></h3>
+<h4 id="t547.5.1 src\index.js">7.5.1 src\index.js <a href="#t547.5.1 src\index.js"> # </a></h4>
+<p>src\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { http } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./fetch/http&apos;</span>;
+http.delete(<span class="hljs-string">&apos;http://localhost:8080/api/user/1&apos;</span>)
+    .then(<span class="hljs-function"><span class="hljs-params">response</span> =&gt;</span> {
+        <span class="hljs-built_in">console</span>.log(response.data)
+    },error=&gt;<span class="hljs-built_in">console</span>.error(error))
+</code></pre>
+<h4 id="t557.5.2  http.js">7.5.2  http.js <a href="#t557.5.2  http.js"> # </a></h4>
+<p>src\fetch\http.js</p>
+<pre><code class="lang-diff"><span class="hljs-addition">+import { lastValueFrom, share, mergeMap, filter, merge,catchError,throwError,takeUntil,throwIfEmpty,Subject } from &apos;rxjs&apos;;</span>
+import { fromFetch } from &apos;rxjs/fetch&apos;;
+import { getUrlFromOptions, getInitFromOptions } from &apos;./utils&apos;;
+export class Http {
+<span class="hljs-addition">+ cancleRequests = new Subject();</span>
+<span class="hljs-addition">+ cancel(requestId) { </span>
+<span class="hljs-addition">+   this.cancleRequests.next(requestId);</span>
+<span class="hljs-addition">+ }</span>
+  request(options) {
+    const url = getUrlFromOptions(options);
+    const init = getInitFromOptions(options);
+    const fetchStream = fromFetch(url, init).pipe(share())
+    const successStream = fetchStream.pipe(
+      filter(response =&gt; response.ok),
+      mergeMap(async response =&gt; {
+        return { data: await response.json(), status: response.status };
+      }),
+    );
+    const failureStream = fetchStream.pipe(
+      filter(response =&gt; !response.ok),
+      mergeMap(async response =&gt; {
+        return Promise.reject({ error: await response.json(), status: response.status })
+      }),
+    );
+<span class="hljs-addition">+   const mergedStream = merge(successStream, failureStream).pipe(</span>
+<span class="hljs-addition">+     catchError(error =&gt; throwError(()=&gt;({...error,url}))),</span>
+<span class="hljs-addition">+     takeUntil(</span>
+<span class="hljs-addition">+       this.cancleRequests.pipe(</span>
+<span class="hljs-addition">+         filter(requestId =&gt; options.requestId === requestId))</span>
+<span class="hljs-addition">+     )</span>
+<span class="hljs-addition">+     ,throwIfEmpty(() =&gt; ({</span>
+<span class="hljs-addition">+       type: &apos;cancel&apos;,</span>
+<span class="hljs-addition">+       cancelled: true,</span>
+<span class="hljs-addition">+       data: null,</span>
+<span class="hljs-addition">+       status: -1,</span>
+<span class="hljs-addition">+       statusText: &apos;&#x8BF7;&#x6C42;&#x88AB;&#x53D6;&#x6D88;&apos;,</span>
+<span class="hljs-addition">+       config: options</span>
+<span class="hljs-addition">+     }))</span>
+<span class="hljs-addition">+   );</span>
+<span class="hljs-addition">+   return lastValueFrom(mergedStream);</span>
+  }
+  delete(url) {
+    return this.request({ method: &apos;DELETE&apos;, url });
+  }
+  put(url, data) {
+    return this.request({ method: &apos;PUT&apos;, url, data, headers: { &quot;Content-Type&quot;: &quot;application/json&quot; } });
+  }
+  post(url, data) {
+    return this.request({ method: &apos;POST&apos;, url, data, headers: { &quot;Content-Type&quot;: &quot;application/json&quot; } });
+  }
+  get(url, params) {
+    return this.request({ method: &apos;GET&apos;, url, params });
+  }
+}
+export const http = new Http();
+</code></pre>
+
+    </div>
+</div>
+
+<script src="./assets/js/jquerymin_1645176580555.js"></script>
+<script src="./assets/js/bootstrapmin_1645176554753.js"></script>
+
+<script>
+$('.warpper .page-toc ul ul li a').on('click',function(){
+  $('.warpper .page-toc ul ul li a').removeClass('my-active')
+  $(this).addClass('my-active')
+})
+$('.logo').on('mouseenter',function(){
+  $('.nav').height('450px');
+})
+$('.nav').on('mouseleave',function(){
+  $('.nav').height('80px');
+})
+$('.logo').on('click',function(){
+  $('.nav').css('display','none');
+ $('.warpper').css('padding','0px');
+})
+</script>
+</body>
+</html>

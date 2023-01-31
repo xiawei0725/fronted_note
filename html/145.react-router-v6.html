@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>前端笔记</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/bootstrapmin_1645176572503.css" >
+    <style>
+        .page-toc > ul .red {
+            background: #f3f3f3;
+            z-index: 1;
+            border-left: 3px solid #009a61;
+            -webkit-transition: all .2s ease;
+            transition: all .2s ease;
+            color: #000
+        }
+    </style>
+</head>
+<body>
+<div class="nav">
+    <div class="logo">
+        
+                    前端笔记
+                        
+                        </div>
+                        <ul><li><a href="./index.html">0.api</a></li><li><a href="../html/0.Async.html">0.Async</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&NPM.html">7.module&NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li><li><a href="../html/98.websocket.html">98.websocket</a></li><li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li><li><a href="../html/101.1.monitor.html">101.1.monitor</a></li><li><a href="../html/101.2.monitor.html">101.2.monitor</a></li><li><a href="../html/102.java.html">102.java</a></li><li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="../html/103.11.webpack5.html">103.11.webpack5</a></li><li><a href="../html/103.13.splitChunks.html">103.13.splitChunks</a></li><li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="../html/103.16.rollup.1.html">103.16.rollup.1</a></li><li><a href="../html/103.16.rollup.2.html">103.16.rollup.2</a></li><li><a href="../html/103.16.rollup.3.html">103.16.rollup.3</a></li><li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li><li><a href="../html/103.16.vite.plugin.html">103.16.vite.plugin</a></li><li><a href="../html/103.16.vite.1.html">103.16.vite.1</a></li><li><a href="../html/103.16.vite.2.html">103.16.vite.2</a></li><li><a href="../html/103.17.polyfill.html">103.17.polyfill</a></li><li><a href="../html/104.1.binary.html">104.1.binary</a></li><li><a href="../html/104.2.binary.html">104.2.binary</a></li><li><a href="../html/105.skeleton.html">105.skeleton</a></li><li><a href="../html/106.1.react.html">106.1.react</a></li><li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="../html/106.3.react_router.html">106.3.react_router</a></li><li><a href="../html/106.4.redux.html">106.4.redux</a></li><li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="../html/106.6.redux-first-history.html">106.6.redux-first-history</a></li><li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="../html/106.8.dva.html">106.8.dva</a></li><li><a href="../html/106.9.umi.html">106.9.umi</a></li><li><a href="../html/106.10.ketang.html">106.10.ketang</a></li><li><a href="../html/106.11.antdesign.html">106.11.antdesign</a></li><li><a href="../html/106.12.antpro.html">106.12.antpro</a></li><li><a href="../html/106.13.router-6.html">106.13.router-6</a></li><li><a href="../html/106.14.ssr.html">106.14.ssr</a></li><li><a href="../html/106.15.nextjs.html">106.15.nextjs</a></li><li><a href="../html/106.16.1.cms.html">106.16.1.cms</a></li><li><a href="../html/106.16.2.cms.html">106.16.2.cms</a></li><li><a href="../html/106.16.3.cms.html">106.16.3.cms</a></li><li><a href="../html/106.16.4.cms.html">106.16.4.cms</a></li><li><a href="../html/106.16.mobx.html">106.16.mobx</a></li><li><a href="../html/106.17.fomily.html">106.17.fomily</a></li><li><a href="../html/107.fiber.html">107.fiber</a></li><li><a href="../html/108.http.html">108.http</a></li><li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="../html/109.3.dll.html">109.3.dll</a></li><li><a href="../html/110.nest.js.html">110.nest.js</a></li><li><a href="../html/111.xstate.html">111.xstate</a></li><li><a href="../html/112.Form.html">112.Form</a></li><li><a href="../html/113.redux-saga.html">113.redux-saga</a></li><li><a href="../html/114.react+typescript.html">114.react+typescript</a></li><li><a href="../html/115.immer.html">115.immer</a></li><li><a href="../html/116.pro5.html">116.pro5</a></li><li><a href="../html/117.css-loader.html">117.css-loader</a></li><li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li><li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li><li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li><li><a href="../html/120.create-react-app.html">120.create-react-app</a></li><li><a href="../html/121.react-scripts.html">121.react-scripts</a></li><li><a href="../html/122.react-optimize.html">122.react-optimize</a></li><li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="../html/124.next.js.html">124.next.js</a></li><li><a href="../html/125.1.linux.html">125.1.linux</a></li><li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li><li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li><li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li><li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li><li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li><li><a href="../html/125.10.nginx.html">125.10.nginx</a></li><li><a href="../html/125.11.docker.html">125.11.docker</a></li><li><a href="../html/125.12.ci.html">125.12.ci</a></li><li><a href="../html/125.13.k8s.html">125.13.k8s</a></li><li><a href="../html/125.14.k8s.html">125.14.k8s</a></li><li><a href="../html/125.15.k8s.html">125.15.k8s</a></li><li><a href="../html/125.16.k8s.html">125.16.k8s</a></li><li><a href="../html/126.11.react-1.html">126.11.react-1</a></li><li><a href="../html/126.12.react-2.html">126.12.react-2</a></li><li><a href="../html/126.12.react-3.html">126.12.react-3</a></li><li><a href="../html/126.12.react-4.html">126.12.react-4</a></li><li><a href="../html/126.12.react-5.html">126.12.react-5</a></li><li><a href="../html/126.12.react-6.html">126.12.react-6</a></li><li><a href="../html/126.12.react-7.html">126.12.react-7</a></li><li><a href="../html/126.12.react-8.html">126.12.react-8</a></li><li><a href="../html/127.frontend.html">127.frontend</a></li><li><a href="../html/128.rollup.html">128.rollup</a></li><li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="../html/130.health.html">130.health</a></li><li><a href="../html/131.hooks.html">131.hooks</a></li><li><a href="../html/132.keepalive.html">132.keepalive</a></li><li><a href="../html/133.vue-cli.html">133.vue-cli</a></li><li><a href="../html/134.react18.html">134.react18</a></li><li><a href="../html/134.2.react18.html">134.2.react18</a></li><li><a href="../html/134.3.react18.html">134.3.react18</a></li><li><a href="../html/135.function.html">135.function</a></li><li><a href="../html/136.toolkit.html">136.toolkit</a></li><li><a href="../html/137.lerna.html">137.lerna</a></li><li><a href="../html/138.create-vite.html">138.create-vite</a></li><li><a href="../html/139.cli.html">139.cli</a></li><li><a href="../html/140.antd.html">140.antd</a></li><li><a href="../html/141.react-dnd.html">141.react-dnd</a></li><li><a href="../html/142.1.link.html">142.1.link</a></li><li><a href="../html/143.1.gulp.html">143.1.gulp</a></li><li><a href="../html/143.2.stream.html">143.2.stream</a></li><li><a href="../html/143.3.gulp.html">143.3.gulp</a></li><li><a href="../html/144.1.closure.html">144.1.closure</a></li><li><a href="../html/144.2.v8.html">144.2.v8</a></li><li><a href="../html/144.3.gc.html">144.3.gc</a></li><li class="active"><a href="../html/145.react-router-v6.html">145.react-router-v6</a></li><li><a href="../html/146.browser.html">146.browser</a></li><li><a href="../html/147.lighthouse.html">147.lighthouse</a></li><li><a href="../html/148.1.basic.html">148.1.basic</a></li><li><a href="../html/148.2.basic .html">148.2.basic </a></li><li><a href="../html/148.3.basic.html">148.3.basic</a></li><li><a href="../html/148.4.basic.html">148.4.basic</a></li><li><a href="../html/148.5.basic.html">148.5.basic</a></li><li><a href="../html/149.1.vite.html">149.1.vite</a></li><li><a href="../html/149.2.vite.html">149.2.vite</a></li><li><a href="../html/149.3.vite.html">149.3.vite</a></li><li><a href="../html/149.4.vite.html">149.4.vite</a></li><li><a href="../html/150.react-window.html">150.react-window</a></li><li><a href="../html/151.react-query.html">151.react-query</a></li><li><a href="../html/152.useRequest.html">152.useRequest</a></li><li><a href="../html/153.transition.html">153.transition</a></li><li><a href="../html/154.emotion.html">154.emotion</a></li><li><a href="../html/155.1.formily.html">155.1.formily</a></li><li><a href="../html/155.2.formily.html">155.2.formily</a></li><li><a href="../html/155.3.formily.html">155.3.formily</a></li><li><a href="../html/155.3.1.mobx.usage.html">155.3.1.mobx.usage</a></li><li><a href="../html/155.3.2.mobx.source.html">155.3.2.mobx.source</a></li><li><a href="../html/156.vue-loader.html">156.vue-loader</a></li><li><a href="../html/103.11.mf.html">103.11.mf</a></li><li><a href="../html/157.1.react18.html">157.1.react18</a></li><li><a href="../html/158.umi4.html">158.umi4</a></li><li><a href="../html/159.rxjs.html">159.rxjs</a></li><li><a href="../html/159.rxjs2.html">159.rxjs2</a></li><li><a href="../html/160.bff.html">160.bff</a></li></ul>                        </div>
+
+                        
+<div class="warpper">
+    <div class="page-toc">
+        <ul><li><a href="#t01.React RouterV6新特性">1.React RouterV6新特性</a><ul><li><a href="#t11.1 Switch重命名为Routes">1.1 Switch重命名为Routes</a><ul><li><a href="#t21.1.1 src\index.js">1.1.1 src\index.js</a></li></ul></li><li><a href="#t31.2 嵌套路由变得更简单">1.2 嵌套路由变得更简单</a><ul><li><a href="#t41.2.1 src\index.js">1.2.1 src\index.js</a></li><li><a href="#t51.2.2 User.js">1.2.2 User.js</a></li><li><a href="#t61.2.3 UserAdd.js">1.2.3 UserAdd.js</a></li><li><a href="#t71.2.4 UserDetail.js">1.2.4 UserDetail.js</a></li><li><a href="#t81.2.5 UserList.js">1.2.5 UserList.js</a></li></ul></li><li><a href="#t91.3 Outlet">1.3 Outlet</a><ul><li><a href="#t101.3.1 src\index.js">1.3.1 src\index.js</a></li><li><a href="#t111.3.2 User.js">1.3.2 User.js</a></li></ul></li><li><a href="#t121.4  用useNavigate代替useHistory">1.4  用useNavigate代替useHistory</a><ul><li><a href="#t131.4.1 Home.js">1.4.1 Home.js</a></li></ul></li><li><a href="#t141.5 5. 新钩子useRoutes代替react-router-config">1.5 5. 新钩子useRoutes代替react-router-config</a><ul><li><a href="#t151.5.1 src\index.js">1.5.1 src\index.js</a></li><li><a href="#t161.5.2 src\routes.js">1.5.2 src\routes.js</a></li></ul></li><li><a href="#t171.6 Redirect 标签删除">1.6 Redirect 标签删除</a></li></ul></li><li><a href="#t182. React路由原理">2. React路由原理</a><ul><li><a href="#t192.1 HashRouter">2.1 HashRouter</a></li><li><a href="#t202.2 BrowserRouter">2.2 BrowserRouter</a><ul><li><a href="#t212.2.1 history">2.2.1 history</a><ul><li><a href="#t222.2.1.1 pushState">2.2.1.1 pushState</a></li><li><a href="#t232.2.1.2 onpopstate">2.2.1.2 onpopstate</a></li><li><a href="#t242.2.1.4 案例">2.2.1.4 案例</a></li></ul></li></ul></li></ul></li><li><a href="#t253.使用基本路由">3.使用基本路由</a><ul><li><a href="#t263.1 安装">3.1 安装</a></li><li><a href="#t273.2 src\index.js">3.2 src\index.js</a></li><li><a href="#t283.3 Home.js">3.3 Home.js</a></li><li><a href="#t293.4 User.js">3.4 User.js</a></li><li><a href="#t303.5 Profile.js">3.5 Profile.js</a></li></ul></li><li><a href="#t314.实现基本路由">4.实现基本路由</a><ul><li><a href="#t324.1 react-router-dom\index.js">4.1 react-router-dom\index.js</a></li><li><a href="#t334.2 src\react-router\index.js">4.2 src\react-router\index.js</a></li></ul></li></ul>
+    </div>
+    <div class="content markdown-body">
+        <h2 id="t01.React RouterV6&#x65B0;&#x7279;&#x6027;">1.React RouterV6&#x65B0;&#x7279;&#x6027; <a href="#t01.React RouterV6&#x65B0;&#x7279;&#x6027;"> # </a></h2>
+<ul>
+<li><a href="https://reactrouter.com/docs/en/v6">&#x5B98;&#x7F51;</a></li>
+<li>Switch&#x91CD;&#x547D;&#x540D;&#x4E3A;Routes</li>
+<li>Route&#x7684;&#x65B0;&#x7279;&#x6027;</li>
+<li>&#x5D4C;&#x5957;&#x8DEF;&#x7531;&#x53D8;&#x5F97;&#x66F4;&#x7B80;&#x5355;</li>
+<li>&#x7528;useNavigate&#x4EE3;&#x66FF;useHistory</li>
+<li>&#x65B0;&#x94A9;&#x5B50;useRoutes&#x4EE3;&#x66FF;react-router-config</li>
+</ul>
+<h3 id="t11.1 Switch&#x91CD;&#x547D;&#x540D;&#x4E3A;Routes">1.1 Switch&#x91CD;&#x547D;&#x540D;&#x4E3A;Routes <a href="#t11.1 Switch&#x91CD;&#x547D;&#x540D;&#x4E3A;Routes"> # </a></h3>
+<ul>
+<li><code>component/render</code>&#x88AB;<code>element</code>&#x66FF;&#x4EE3;</li>
+<li><code>Routes</code>&#x548C;<code>Route</code>&#x57FA;&#x4E8E;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;&#x5728;<code>React Router</code>&#x4E2D;&#x6E32;&#x67D3;&#x67D0;&#x4E9B;&#x5185;&#x5BB9;&#x7684;&#x4E3B;&#x8981;&#x65B9;&#x6CD5;</li>
+<li>&#x60A8;&#x53EF;&#x4EE5;&#x628A;Route&#x8003;&#x8651;&#x4E3A;&#x4E00;&#x79CD;&#x7C7B;&#x4F3C;&#x4E8E;if&#x8BED;&#x53E5;&#x7684;&#x8DEF;&#x7531;&#xFF0C;&#x5982;&#x679C;&#x5176;&#x8DEF;&#x5F84;&#x4E0E;&#x5F53;&#x524D;URL&#x5339;&#x914D;&#xFF0C;&#x5219;&#x5448;&#x73B0;&#x5176;&#x5143;&#x7D20;</li>
+<li>Route&#x7684;caseSensitive&#x5C5E;&#x6027;&#x5C5E;&#x6027;&#x786E;&#x5B9A;&#x662F;&#x5426;&#x5E94;&#x4EE5;&#x533A;&#x5206;&#x5927;&#x5C0F;&#x5199;&#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x5339;&#x914D;(&#x9ED8;&#x8BA4;&#x4E3A;false)</li>
+</ul>
+<h4 id="t21.1.1 src\index.js">1.1.1 src\index.js <a href="#t21.1.1 src\index.js"> # </a></h4>
+<p>src\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-dom&apos;</span>;
+<span class="hljs-keyword">import</span> { BrowserRouter <span class="hljs-keyword">as</span> Router, Route, Routes, Link } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-router-dom&apos;</span>;
+<span class="hljs-keyword">import</span> Home <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Home&apos;</span>;
+<span class="hljs-keyword">import</span> User <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/User&apos;</span>;
+<span class="hljs-keyword">import</span> Profile <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Profile&apos;</span>;
+ReactDOM.render(
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Router</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">Link</span> <span class="hljs-attr">to</span>=<span class="hljs-string">&quot;/&quot;</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">Link</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">Link</span> <span class="hljs-attr">to</span>=<span class="hljs-string">&quot;/user&quot;</span>&gt;</span>User<span class="hljs-tag">&lt;/<span class="hljs-name">Link</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">Link</span> <span class="hljs-attr">to</span>=<span class="hljs-string">&quot;/profile&quot;</span>&gt;</span>Profile<span class="hljs-tag">&lt;/<span class="hljs-name">Link</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">Routes</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">Route</span> <span class="hljs-attr">path</span>=<span class="hljs-string">&quot;/&quot;</span> <span class="hljs-attr">element</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">Home</span> /&gt;</span>} /&gt;
+      <span class="hljs-tag">&lt;<span class="hljs-name">Route</span> <span class="hljs-attr">path</span>=<span class="hljs-string">&quot;/user&quot;</span> <span class="hljs-attr">element</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">User</span> /&gt;</span>} /&gt;
+      <span class="hljs-tag">&lt;<span class="hljs-name">Route</span> <span class="hljs-attr">path</span>=<span class="hljs-string">&quot;/profile&quot;</span> <span class="hljs-attr">element</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">Profile</span> /&gt;</span>} /&gt;
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Routes</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">Router</span>&gt;</span></span>,
+  <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;root&apos;</span>)
+);
+</code></pre>
+<h3 id="t31.2 &#x5D4C;&#x5957;&#x8DEF;&#x7531;&#x53D8;&#x5F97;&#x66F4;&#x7B80;&#x5355;">1.2 &#x5D4C;&#x5957;&#x8DEF;&#x7531;&#x53D8;&#x5F97;&#x66F4;&#x7B80;&#x5355; <a href="#t31.2 &#x5D4C;&#x5957;&#x8DEF;&#x7531;&#x53D8;&#x5F97;&#x66F4;&#x7B80;&#x5355;"> # </a></h3>
+<ul>
+<li>Route children &#x5DF2;&#x66F4;&#x6539;&#x4E3A;&#x63A5;&#x53D7;&#x5B50;&#x8DEF;&#x7531;</li>
+<li>&#x6BD4;Route exact&#x548C;Route strict&#x66F4;&#x7B80;&#x5355;&#x7684;&#x5339;&#x914D;&#x89C4;&#x5219;</li>
+<li>Route path &#x8DEF;&#x5F84;&#x5C42;&#x6B21;&#x66F4;&#x6E05;&#x6670;</li>
+</ul>
+<h4 id="t41.2.1 src\index.js">1.2.1 src\index.js <a href="#t41.2.1 src\index.js"> # </a></h4>
+<pre><code class="lang-diff">import React from &apos;react&apos;;
+import ReactDOM from &apos;react-dom&apos;;
+import { BrowserRouter as Router, Route, Routes, Link } from &apos;react-router-dom&apos;;
+import Home from &apos;./components/Home&apos;;
+import User from &apos;./components/User&apos;;
+import Profile from &apos;./components/Profile&apos;;
+ReactDOM.render(
+  &lt;Router&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;Link to=&quot;/&quot;&gt;Home&lt;/Link&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;Link to=&quot;/user&quot;&gt;User&lt;/Link&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;Link to=&quot;/profile&quot;&gt;Profile&lt;/Link&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;Routes&gt;
+      &lt;Route path=&quot;/&quot; element={&lt;Home /&gt;} /&gt;
+<span class="hljs-addition">+     &lt;Route path=&quot;/user/*&quot; element={&lt;User /&gt;} /&gt;</span>
+      &lt;Route path=&quot;/profile&quot; element={&lt;Profile /&gt;} /&gt;
+    &lt;/Routes&gt;
+  &lt;/Router&gt;,
+  document.getElementById(&apos;root&apos;)
+);
+</code></pre>
+<h4 id="t51.2.2 User.js">1.2.2 User.js <a href="#t51.2.2 User.js"> # </a></h4>
+<p>src\components\User.js</p>
+<pre><code class="lang-diff">import React from &apos;react&apos;;
+<span class="hljs-addition">+import { Route, Routes, Link } from &apos;react-router-dom&apos;;</span>
+<span class="hljs-addition">+import UserAdd from &apos;./UserAdd&apos;;</span>
+<span class="hljs-addition">+import UserDetail from &apos;./UserDetail&apos;;</span>
+<span class="hljs-addition">+import UserList from &apos;./UserList&apos;;</span>
+function User() {
+    return (
+<span class="hljs-addition">+       &lt;div&gt;</span>
+<span class="hljs-addition">+           &lt;ul&gt;</span>
+<span class="hljs-addition">+               &lt;li&gt;&lt;Link to=&quot;add&quot;&gt;&#x6DFB;&#x52A0;&#x7528;&#x6237;&lt;/Link&gt;&lt;/li&gt;</span>
+<span class="hljs-addition">+               &lt;li&gt;&lt;Link to=&quot;list&quot;&gt;&#x7528;&#x6237;&#x5217;&#x8868;&lt;/Link&gt;&lt;/li&gt;</span>
+<span class="hljs-addition">+           &lt;/ul&gt;</span>
+<span class="hljs-addition">+           &lt;Routes&gt;</span>
+<span class="hljs-addition">+               &lt;Route path=&quot;add&quot; element={&lt;UserAdd /&gt;} /&gt;</span>
+<span class="hljs-addition">+               &lt;Route path=&quot;list&quot; element={&lt;UserList /&gt;} /&gt;</span>
+<span class="hljs-addition">+               &lt;Route path=&quot;detail/:id&quot; element={&lt;UserDetail /&gt;} /&gt;</span>
+<span class="hljs-addition">+           &lt;/Routes&gt;</span>
+<span class="hljs-addition">+       &lt;/div&gt;</span>
+<span class="hljs-addition">+   )</span>
+}
+export default User;
+</code></pre>
+<h4 id="t61.2.3 UserAdd.js">1.2.3 UserAdd.js <a href="#t61.2.3 UserAdd.js"> # </a></h4>
+<p>src\components\UserAdd.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">UserAdd</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">return</span> (
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>UserAdd<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    )
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> UserAdd;
+</code></pre>
+<h4 id="t71.2.4 UserDetail.js">1.2.4 UserDetail.js <a href="#t71.2.4 UserDetail.js"> # </a></h4>
+<p>src\components\UserDetail.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">UserDetail</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">return</span> (
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>UserDetail<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    )
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> UserDetail;
+</code></pre>
+<h4 id="t81.2.5 UserList.js">1.2.5 UserList.js <a href="#t81.2.5 UserList.js"> # </a></h4>
+<p>src\components\UserList.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">UserList</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">return</span> (
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>UserList<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    )
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> UserList;
+</code></pre>
+<h3 id="t91.3 Outlet">1.3 Outlet <a href="#t91.3 Outlet"> # </a></h3>
+<ul>
+<li>&#x5E94;&#x5728;&#x7236;Route&#x5143;&#x7D20;&#x4E2D;&#x4F7F;&#x7528;Outlet(&#x63D2;&#x5EA7;)&#x6765;&#x6E32;&#x67D3;&#x5176;&#x5B50;Route&#x5143;&#x7D20;</li>
+<li>&#x8FD9;&#x5141;&#x8BB8;&#x5728;&#x6E32;&#x67D3;&#x5B50;Route&#x65F6;&#x663E;&#x793A;&#x5D4C;&#x5957;UI</li>
+<li>&#x5982;&#x679C;&#x7236;&#x8DEF;&#x7531;&#x5B8C;&#x5168;&#x5339;&#x914D;&#xFF0C;&#x5219;&#x4F1A;&#x5448;&#x73B0;&#x5B50;&#x8DEF;&#x7531;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x8DEF;&#x7531;&#xFF0C;&#x5219;&#x4E0D;&#x4F1A;&#x5448;&#x73B0;&#x4EFB;&#x4F55;&#x5185;&#x5BB9;</li>
+<li><h4 id="t101.3.1 src\index.js">1.3.1 src\index.js <a href="#t101.3.1 src\index.js"> # </a></h4>
+</li>
+</ul>
+<pre><code class="lang-diff">import React from &apos;react&apos;;
+import ReactDOM from &apos;react-dom&apos;;
+import { BrowserRouter as Router, Route, Routes, Link } from &apos;react-router-dom&apos;;
+import Home from &apos;./components/Home&apos;;
+import User from &apos;./components/User&apos;;
+import Profile from &apos;./components/Profile&apos;;
+import UserAdd from &apos;./components/UserAdd&apos;;
+import UserDetail from &apos;./components/UserDetail&apos;;
+import UserList from &apos;./components/UserList&apos;;
+ReactDOM.render(
+  &lt;Router&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;Link to=&quot;/&quot;&gt;Home&lt;/Link&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;Link to=&quot;/user&quot;&gt;User&lt;/Link&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;Link to=&quot;/profile&quot;&gt;Profile&lt;/Link&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;Routes&gt;
+      &lt;Route path=&quot;/&quot; element={&lt;Home /&gt;} /&gt;
+<span class="hljs-addition">+     &lt;Route path=&quot;/user&quot; element={&lt;User /&gt;} &gt;</span>
+<span class="hljs-addition">+       &lt;Route path=&quot;add&quot; element={&lt;UserAdd /&gt;} /&gt;</span>
+<span class="hljs-addition">+       &lt;Route path=&quot;list&quot; element={&lt;UserList /&gt;} /&gt;</span>
+<span class="hljs-addition">+       &lt;Route path=&quot;detail/:id&quot; element={&lt;UserDetail /&gt;} /&gt;</span>
+<span class="hljs-addition">+     &lt;/Route&gt;</span>
+      &lt;Route path=&quot;/profile&quot; element={&lt;Profile /&gt;} /&gt;
+    &lt;/Routes&gt;
+  &lt;/Router&gt;,
+  document.getElementById(&apos;root&apos;)
+);
+</code></pre>
+<h4 id="t111.3.2 User.js">1.3.2 User.js <a href="#t111.3.2 User.js"> # </a></h4>
+<p>src\components\User.js</p>
+<pre><code class="lang-diff">import React from &apos;react&apos;;
+<span class="hljs-addition">+import { Link, Outlet } from &apos;react-router-dom&apos;;</span>
+function User() {
+    return (
+        &lt;div&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;Link to=&quot;add&quot;&gt;&#x6DFB;&#x52A0;&#x7528;&#x6237;&lt;/Link&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;Link to=&quot;list&quot;&gt;&#x7528;&#x6237;&#x5217;&#x8868;&lt;/Link&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+<span class="hljs-addition">+           &lt;Outlet /&gt;</span>
+        &lt;/div&gt;
+    )
+}
+export default User;
+</code></pre>
+<h3 id="t121.4  &#x7528;useNavigate&#x4EE3;&#x66FF;useHistory">1.4  &#x7528;useNavigate&#x4EE3;&#x66FF;useHistory <a href="#t121.4  &#x7528;useNavigate&#x4EE3;&#x66FF;useHistory"> # </a></h3>
+<ul>
+<li><code>useNavigate</code>&#x94A9;&#x5B50;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x8BE5;&#x51FD;&#x6570;&#x5141;&#x8BB8;&#x60A8;&#x4EE5;&#x7F16;&#x7A0B;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x5BFC;&#x822A;</li>
+</ul>
+<h4 id="t131.4.1 Home.js">1.4.1 Home.js <a href="#t131.4.1 Home.js"> # </a></h4>
+<p>src\components\Home.js</p>
+<pre><code class="lang-diff">import React from &apos;react&apos;;
+import { useNavigate } from &apos;react-router-dom&apos;;
+function Home() {
+<span class="hljs-addition">+   let navigate = useNavigate();</span>
+<span class="hljs-addition">+   function navigateToUser() {</span>
+<span class="hljs-addition">+       navigate(&apos;/user&apos;);</span>
+<span class="hljs-addition">+   };</span>
+<span class="hljs-addition">+   return (</span>
+<span class="hljs-addition">+       &lt;div&gt;</span>
+<span class="hljs-addition">+           &lt;p&gt;Home&lt;/p&gt;</span>
+<span class="hljs-addition">+           &lt;button onClick={navigateToUser}&gt;&#x8DF3;&#x8F6C;&#x5230;/user&lt;/button&gt;</span>
+<span class="hljs-addition">+       &lt;/div&gt;</span>
+<span class="hljs-addition">+   )</span>
+}
+export default Home;
+</code></pre>
+<h3 id="t141.5 5. &#x65B0;&#x94A9;&#x5B50;useRoutes&#x4EE3;&#x66FF;react-router-config">1.5 5. &#x65B0;&#x94A9;&#x5B50;useRoutes&#x4EE3;&#x66FF;react-router-config <a href="#t141.5 5. &#x65B0;&#x94A9;&#x5B50;useRoutes&#x4EE3;&#x66FF;react-router-config"> # </a></h3>
+<ul>
+<li>useRoutes&#x94A9;&#x5B50;&#x5728;&#x529F;&#x80FD;&#x4E0A;&#x7B49;&#x540C;&#x4E8E;Routes&#xFF0C;&#x4F46;&#x5B83;&#x4F7F;&#x7528;JavaScript&#x5BF9;&#x8C61;&#x800C;&#x4E0D;&#x662F;Route&#x5143;&#x7D20;&#x6765;&#x5B9A;&#x4E49;&#x8DEF;&#x7531;</li>
+<li>&#x8FD9;&#x4E9B;&#x5BF9;&#x8C61;&#x4E0E;&#x666E;&#x901A;Route&#x5143;&#x7D20;&#x5177;&#x6709;&#x76F8;&#x540C;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x4F46;&#x5B83;&#x4EEC;&#x4E0D;&#x9700;&#x8981;JSX</li>
+</ul>
+<h4 id="t151.5.1 src\index.js">1.5.1 src\index.js <a href="#t151.5.1 src\index.js"> # </a></h4>
+<pre><code class="lang-diff">import React from &apos;react&apos;;
+import ReactDOM from &apos;react-dom&apos;;
+<span class="hljs-addition">+import { BrowserRouter as Router, Route, Routes, Link, useRoutes } from &apos;react-router-dom&apos;;</span>
+<span class="hljs-addition">+import routes from &apos;./routes&apos;;</span>
+<span class="hljs-addition">+function App() {</span>
+<span class="hljs-addition">+  return useRoutes(routes);</span>
+<span class="hljs-addition">+}</span>
+ReactDOM.render(
+  &lt;Router&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;Link to=&quot;/&quot;&gt;Home&lt;/Link&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;Link to=&quot;/user&quot;&gt;User&lt;/Link&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;Link to=&quot;/profile&quot;&gt;Profile&lt;/Link&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+<span class="hljs-addition">+   &lt;App /&gt;</span>
+  &lt;/Router&gt;,
+  document.getElementById(&apos;root&apos;)
+);
+</code></pre>
+<h4 id="t161.5.2 src\routes.js">1.5.2 src\routes.js <a href="#t161.5.2 src\routes.js"> # </a></h4>
+<p>src\routes.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> Home <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Home&apos;</span>;
+<span class="hljs-keyword">import</span> User <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/User&apos;</span>;
+<span class="hljs-keyword">import</span> Profile <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Profile&apos;</span>;
+<span class="hljs-keyword">import</span> UserAdd <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/UserAdd&apos;</span>;
+<span class="hljs-keyword">import</span> UserDetail <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/UserDetail&apos;</span>;
+<span class="hljs-keyword">import</span> UserList <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/UserList&apos;</span>;
+<span class="hljs-keyword">import</span> NotFound <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/NotFound&apos;</span>;
+<span class="hljs-keyword">const</span> routes = [
+    { <span class="hljs-attr">path</span>: <span class="hljs-string">&apos;/&apos;</span>, <span class="hljs-attr">element</span>: <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Home</span> /&gt;</span></span> },
+    { <span class="hljs-attr">path</span>: <span class="hljs-string">&apos;/profile&apos;</span>, <span class="hljs-attr">element</span>: <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Profile</span> /&gt;</span></span> },
+    {
+        <span class="hljs-attr">path</span>: <span class="hljs-string">&apos;user&apos;</span>,
+        <span class="hljs-attr">element</span>: <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">User</span> /&gt;</span></span>,
+        <span class="hljs-attr">children</span>: [
+            { <span class="hljs-attr">path</span>: <span class="hljs-string">&apos;add&apos;</span>, <span class="hljs-attr">element</span>: <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">UserAdd</span> /&gt;</span></span> },
+            { <span class="hljs-attr">path</span>: <span class="hljs-string">&apos;list&apos;</span>, <span class="hljs-attr">element</span>: <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">UserList</span> /&gt;</span></span> },
+            { <span class="hljs-attr">path</span>: <span class="hljs-string">&apos;detail/:id&apos;</span>, <span class="hljs-attr">element</span>: <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">UserDetail</span> /&gt;</span></span> }
+        ]
+    },
+    <span class="hljs-comment">// 404&#x627E;&#x4E0D;&#x5230;</span>
+    { <span class="hljs-attr">path</span>: <span class="hljs-string">&apos;*&apos;</span>, <span class="hljs-attr">element</span>: <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">NotFound</span> /&gt;</span></span> }
+];
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> routes;
+</code></pre>
+<h3 id="t171.6 Redirect &#x6807;&#x7B7E;&#x5220;&#x9664;">1.6 Redirect &#x6807;&#x7B7E;&#x5220;&#x9664; <a href="#t171.6 Redirect &#x6807;&#x7B7E;&#x5220;&#x9664;"> # </a></h3>
+<ul>
+<li>&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;&#x65B0;&#x7248;&#x7684;&#x8DEF;&#x7531;&#x9700;&#x8981;&#x5F15;&#x5165;<navigate>&#x6807;&#x7B7E;</navigate></li>
+<li><code>Navigate</code>&#x5143;&#x7D20;&#x5728;&#x6E32;&#x67D3;&#x65F6;&#x66F4;&#x6539;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;</li>
+</ul>
+<pre><code class="lang-js">import { HashRouter as Router, Route, Routes, Navigate } from &apos;react-router-dom&apos;
+&lt;Router&gt;
+    &lt;Routes&gt;
+        &lt;Route path=&apos;/login&apos; element={&lt;Login/&gt;}/&gt;
+        &lt;Route path=&apos;/admin&apos; element={&lt;Admin/&gt;}/&gt;
+        &lt;Route path=&quot;*&quot; element={&lt;Navigate to=&quot;/login&quot; /&gt;} /&gt;
+    &lt;/Routes&gt;
+&lt;/Router&gt;
+</code></pre>
+<h2 id="t182. React&#x8DEF;&#x7531;&#x539F;&#x7406;">2. React&#x8DEF;&#x7531;&#x539F;&#x7406; <a href="#t182. React&#x8DEF;&#x7531;&#x539F;&#x7406;"> # </a></h2>
+<ul>
+<li>&#x4E0D;&#x540C;&#x7684;&#x8DEF;&#x5F84;&#x6E32;&#x67D3;&#x4E0D;&#x540C;&#x7684;&#x7EC4;&#x4EF6;</li>
+<li>&#x6709;&#x4E24;&#x79CD;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;<ul>
+<li>HashRouter:&#x5229;&#x7528;hash&#x5B9E;&#x73B0;&#x8DEF;&#x7531;&#x5207;&#x6362;</li>
+<li>BrowserRouter:&#x5B9E;&#x73B0;h5 Api&#x5B9E;&#x73B0;&#x8DEF;&#x7531;&#x7684;&#x5207;&#x6362;</li>
+</ul>
+</li>
+</ul>
+<h3 id="t192.1 HashRouter">2.1 HashRouter <a href="#t192.1 HashRouter"> # </a></h3>
+<ul>
+<li>&#x5229;&#x7528;hash&#x5B9E;&#x73B0;&#x8DEF;&#x7531;&#x5207;&#x6362;</li>
+</ul>
+<p>public\index.html</p>
+<pre><code class="lang-js">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+    &lt;style&gt;
+        #root{
+            border:1px solid red;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id=&quot;root&quot;&gt;&lt;/div&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#/a&quot;&gt;/a&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#/b&quot;&gt;/b&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;script&gt;
+        window.addEventListener(&apos;hashchange&apos;,()=&gt;{
+            console.log(window.location.hash);
+            let pathname = window.location.hash.slice(1);//&#x628A;&#x6700;&#x524D;&#x9762;&#x7684;&#x90A3;&#x4E2A;#&#x5220;&#x9664; 
+            root.innerHTML = pathname;
+        });
+
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h3 id="t202.2 BrowserRouter">2.2 BrowserRouter <a href="#t202.2 BrowserRouter"> # </a></h3>
+<ul>
+<li>&#x5229;&#x7528;h5 Api&#x5B9E;&#x73B0;&#x8DEF;&#x7531;&#x7684;&#x5207;&#x6362;</li>
+</ul>
+<h4 id="t212.2.1 history">2.2.1 history <a href="#t212.2.1 history"> # </a></h4>
+<ul>
+<li>HTML5&#x89C4;&#x8303;&#x7ED9;&#x6211;&#x4EEC;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;<a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/history">history</a>&#x63A5;&#x53E3;</li>
+<li>HTML5 History API&#x5305;&#x62EC;2&#x4E2A;&#x65B9;&#x6CD5;&#xFF1A;<code>history.pushState()</code>&#x548C;<code>history.replaceState()</code>&#xFF0C;&#x548C;1&#x4E2A;&#x4E8B;&#x4EF6;<code>window.onpopstate</code></li>
+</ul>
+<h5 id="t222.2.1.1 pushState">2.2.1.1 pushState <a href="#t222.2.1.1 pushState"> # </a></h5>
+<ul>
+<li>history.pushState(stateObject, title, url)&#xFF0C;&#x5305;&#x62EC;&#x4E09;&#x4E2A;&#x53C2;&#x6570;<ul>
+<li>&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x7528;&#x4E8E;&#x5B58;&#x50A8;&#x8BE5;url&#x5BF9;&#x5E94;&#x7684;&#x72B6;&#x6001;&#x5BF9;&#x8C61;&#xFF0C;&#x8BE5;&#x5BF9;&#x8C61;&#x53EF;&#x5728;onpopstate&#x4E8B;&#x4EF6;&#x4E2D;&#x83B7;&#x53D6;&#xFF0C;&#x4E5F;&#x53EF;&#x5728;history&#x5BF9;&#x8C61;&#x4E2D;&#x83B7;&#x53D6;</li>
+<li>&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x6807;&#x9898;&#xFF0C;&#x76EE;&#x524D;&#x6D4F;&#x89C8;&#x5668;&#x5E76;&#x672A;&#x5B9E;&#x73B0;</li>
+<li>&#x7B2C;&#x4E09;&#x4E2A;&#x53C2;&#x6570;&#x5219;&#x662F;&#x8BBE;&#x5B9A;&#x7684;url</li>
+</ul>
+</li>
+<li>pushState&#x51FD;&#x6570;&#x5411;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x5386;&#x53F2;&#x5806;&#x6808;&#x538B;&#x5165;&#x4E00;&#x4E2A;url&#x4E3A;&#x8BBE;&#x5B9A;&#x503C;&#x7684;&#x8BB0;&#x5F55;&#xFF0C;&#x5E76;&#x6539;&#x53D8;&#x5386;&#x53F2;&#x5806;&#x6808;&#x7684;&#x5F53;&#x524D;&#x6307;&#x9488;&#x81F3;&#x6808;&#x9876;  </li>
+</ul>
+<h5 id="t232.2.1.2 onpopstate">2.2.1.2 onpopstate <a href="#t232.2.1.2 onpopstate"> # </a></h5>
+<ul>
+<li>&#x8BE5;&#x4E8B;&#x4EF6;&#x662F;window&#x7684;&#x5C5E;&#x6027;</li>
+<li>&#x8BE5;&#x4E8B;&#x4EF6;&#x4F1A;&#x5728;&#x8C03;&#x7528;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x524D;&#x8FDB;&#x3001;&#x540E;&#x9000;&#x4EE5;&#x53CA;&#x6267;&#x884C;<code>history.forward</code>&#x3001;<code>history.back</code>&#x3001;&#x548C;<code>history.go</code>&#x89E6;&#x53D1;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x4E9B;&#x64CD;&#x4F5C;&#x6709;&#x4E00;&#x4E2A;&#x5171;&#x6027;&#xFF0C;&#x5373;&#x4FEE;&#x6539;&#x4E86;&#x5386;&#x53F2;&#x5806;&#x6808;&#x7684;&#x5F53;&#x524D;&#x6307;&#x9488;</li>
+<li>&#x5728;&#x4E0D;&#x6539;&#x53D8;document&#x7684;&#x524D;&#x63D0;&#x4E0B;&#xFF0C;&#x4E00;&#x65E6;&#x5F53;&#x524D;&#x6307;&#x9488;&#x6539;&#x53D8;&#x5219;&#x4F1A;&#x89E6;&#x53D1;<code>onpopstate</code>&#x4E8B;&#x4EF6;</li>
+</ul>
+<h5 id="t242.2.1.4 &#x6848;&#x4F8B;">2.2.1.4 &#x6848;&#x4F8B; <a href="#t242.2.1.4 &#x6848;&#x4F8B;"> # </a></h5>
+<ul>
+<li>&#x6D4F;&#x89C8;&#x5668;&#x9488;&#x5BF9;&#x6BCF;&#x4E2A;&#x9875;&#x9762;&#x7EF4;&#x62A4;&#x4E00;&#x4E2A;<code>History</code>&#x6808;,&#x6267;&#x884C;<code>pushState</code>&#x51FD;&#x6570;&#x53EF;&#x538B;&#x5165;&#x8BBE;&#x5B9A;&#x7684;<code>url</code>&#x81F3;&#x6808;&#x9876;,&#x540C;&#x65F6;&#x4FEE;&#x6539;&#x5F53;&#x524D;&#x6307;&#x9488;</li>
+<li>&#x5F53;&#x6267;&#x884C;<code>back</code>&#x548C;<code>forward</code>&#x64CD;&#x4F5C;&#x65F6;&#xFF0C;history&#x6808;&#x5927;&#x5C0F;&#x5E76;&#x4E0D;&#x4F1A;&#x6539;&#x53D8;&#xFF08;history.length&#x4E0D;&#x53D8;&#xFF09;&#xFF0C;&#x4EC5;&#x4EC5;&#x79FB;&#x52A8;&#x5F53;&#x524D;&#x6307;&#x9488;&#x7684;&#x4F4D;&#x7F6E;</li>
+<li>&#x82E5;&#x5F53;&#x524D;&#x6307;&#x9488;&#x5728;history&#x6808;&#x7684;&#x4E2D;&#x95F4;&#x4F4D;&#x7F6E;(&#x975E;&#x6808;&#x9876;)&#xFF0C;&#x6B64;&#x65F6;&#x6267;&#x884C;pushState&#x4F1A;&#x5728;&#x6307;&#x9488;&#x5F53;&#x524D;&#x7684;&#x4F4D;&#x7F6E;&#x6DFB;&#x52A0;&#x6B64;&#x6761;&#x76EE;,&#x5E76;&#x6210;&#x4E3A;&#x65B0;&#x7684;&#x6808;&#x9876;</li>
+</ul>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">&quot;X-UA-Compatible&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;IE=edge&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>browser<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;root&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;pushA()&quot;</span>&gt;</span>/a<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;pushB()&quot;</span>&gt;</span>/b<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;pushC()&quot;</span>&gt;</span>/c<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;forward()&quot;</span>&gt;</span>forward<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;back()&quot;</span>&gt;</span>back<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;go(-1)&quot;</span>&gt;</span>go-1=back<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;go(1)&quot;</span>&gt;</span>go+1=forward<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+        <span class="hljs-keyword">let</span> history = <span class="hljs-built_in">window</span>.history;
+        (<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">history</span>) </span>{
+            <span class="hljs-keyword">let</span> oldPushState = history.pushState;
+            history.pushState = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">state, title, pathname</span>) </span>{
+                <span class="hljs-keyword">let</span> result = oldPushState.apply(history, <span class="hljs-built_in">arguments</span>);
+                <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> <span class="hljs-built_in">window</span>.onpushstate === <span class="hljs-string">&apos;function&apos;</span>) {
+                    <span class="hljs-built_in">window</span>.onpushstate(<span class="hljs-keyword">new</span> CustomEvent(<span class="hljs-string">&apos;pushstate&apos;</span>, { <span class="hljs-attr">detail</span>: { pathname, state } }));
+                }
+            }
+        })(history);
+        <span class="hljs-built_in">window</span>.onpushstate = <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> {
+            <span class="hljs-built_in">console</span>.log(event);
+            root.innerHTML = <span class="hljs-built_in">window</span>.location.pathname;
+        }
+        <span class="hljs-built_in">window</span>.onpopstate = <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> {
+            <span class="hljs-built_in">console</span>.log(event);
+            root.innerHTML = <span class="hljs-built_in">window</span>.location.pathname;
+        }
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">pushA</span>(<span class="hljs-params"></span>) </span>{
+            history.pushState({ <span class="hljs-attr">name</span>: <span class="hljs-string">&apos;a&apos;</span> }, <span class="hljs-literal">null</span>, <span class="hljs-string">&apos;/a&apos;</span>);
+        }
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">pushB</span>(<span class="hljs-params"></span>) </span>{
+            history.pushState({ <span class="hljs-attr">name</span>: <span class="hljs-string">&apos;b&apos;</span> }, <span class="hljs-literal">null</span>, <span class="hljs-string">&apos;/b&apos;</span>);
+        }
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">pushC</span>(<span class="hljs-params"></span>) </span>{
+            history.pushState({ <span class="hljs-attr">name</span>: <span class="hljs-string">&apos;c&apos;</span> }, <span class="hljs-literal">null</span>, <span class="hljs-string">&apos;/c&apos;</span>);
+        }
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">forward</span>(<span class="hljs-params"></span>) </span>{
+            history.forward();
+        }
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">back</span>(<span class="hljs-params"></span>) </span>{
+            history.back();
+        }
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">go</span>(<span class="hljs-params">step</span>) </span>{
+            history.go(step);
+        }
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<h2 id="t253.&#x4F7F;&#x7528;&#x57FA;&#x672C;&#x8DEF;&#x7531;">3.&#x4F7F;&#x7528;&#x57FA;&#x672C;&#x8DEF;&#x7531; <a href="#t253.&#x4F7F;&#x7528;&#x57FA;&#x672C;&#x8DEF;&#x7531;"> # </a></h2>
+<ul>
+<li><a href="https://create-react-app.dev">https://create-react-app.dev</a></li>
+<li><a href="https://reactrouter.com/docs/en/v6">https://reactrouter.com/docs/en/v6</a></li>
+<li><a href="https://github.com/remix-run/react-router">https://github.com/remix-run/react-router</a></li>
+</ul>
+<h3 id="t263.1 &#x5B89;&#x88C5;">3.1 &#x5B89;&#x88C5; <a href="#t263.1 &#x5B89;&#x88C5;"> # </a></h3>
+<pre><code class="lang-js">npm i react-router-dom --save
+</code></pre>
+<h3 id="t273.2 src\index.js">3.2 src\index.js <a href="#t273.2 src\index.js"> # </a></h3>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-dom&apos;</span>;
+<span class="hljs-keyword">import</span> { HashRouter, BrowserRouter, Routes, Route } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-router-dom&apos;</span>;
+<span class="hljs-keyword">import</span> Home <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Home&apos;</span>;
+<span class="hljs-keyword">import</span> User <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/User&apos;</span>;
+<span class="hljs-keyword">import</span> Profile <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Profile&apos;</span>;
+ReactDOM.render(
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">HashRouter</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">Routes</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">Route</span> <span class="hljs-attr">path</span>=<span class="hljs-string">&quot;/&quot;</span> <span class="hljs-attr">element</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">Home</span> /&gt;</span>} /&gt;
+      <span class="hljs-tag">&lt;<span class="hljs-name">Route</span> <span class="hljs-attr">path</span>=<span class="hljs-string">&quot;/user&quot;</span> <span class="hljs-attr">element</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">User</span> /&gt;</span>} /&gt;
+      <span class="hljs-tag">&lt;<span class="hljs-name">Route</span> <span class="hljs-attr">path</span>=<span class="hljs-string">&quot;/profile&quot;</span> <span class="hljs-attr">element</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">Profile</span> /&gt;</span>} /&gt;
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Routes</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">HashRouter</span>&gt;</span></span>
+  , <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;root&apos;</span>));
+</code></pre>
+<h3 id="t283.3 Home.js">3.3 Home.js <a href="#t283.3 Home.js"> # </a></h3>
+<p>src\components\Home.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Home</span>(<span class="hljs-params">props</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(props);
+    <span class="hljs-keyword">return</span> (
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    )
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> Home;
+</code></pre>
+<h3 id="t293.4 User.js">3.4 User.js <a href="#t293.4 User.js"> # </a></h3>
+<p>src\components\User.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">User</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">return</span> (
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>User<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    )
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> User;
+</code></pre>
+<h3 id="t303.5 Profile.js">3.5 Profile.js <a href="#t303.5 Profile.js"> # </a></h3>
+<p>src\components\Profile.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Profile</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">return</span> (
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Profile<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    )
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> Profile;
+</code></pre>
+<h2 id="t314.&#x5B9E;&#x73B0;&#x57FA;&#x672C;&#x8DEF;&#x7531;">4.&#x5B9E;&#x73B0;&#x57FA;&#x672C;&#x8DEF;&#x7531; <a href="#t314.&#x5B9E;&#x73B0;&#x57FA;&#x672C;&#x8DEF;&#x7531;"> # </a></h2>
+<p><img src="https://static.zhufengpeixun.com/reactrouter_1640086131583.jpg" alt></p>
+<h3 id="t324.1 react-router-dom\index.js">4.1 react-router-dom\index.js <a href="#t324.1 react-router-dom\index.js"> # </a></h3>
+<p>src\react-router-dom\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>
+<span class="hljs-keyword">import</span> { Router } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../react-router&apos;</span>;
+<span class="hljs-keyword">import</span> { createHashHistory, createBrowserHistory } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;history&quot;</span>;
+<span class="hljs-keyword">export</span> * <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../react-router&apos;</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">HashRouter</span>(<span class="hljs-params">{ children }</span>) </span>{
+    <span class="hljs-keyword">let</span> historyRef = React.useRef();
+    <span class="hljs-keyword">if</span> (historyRef.current == <span class="hljs-literal">null</span>) {
+        historyRef.current = createHashHistory();
+    }
+    <span class="hljs-keyword">let</span> history = historyRef.current;
+    <span class="hljs-keyword">let</span> [state, setState] = React.useState({
+        <span class="hljs-attr">action</span>: history.action,
+        <span class="hljs-attr">location</span>: history.location
+    });
+    React.useLayoutEffect(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> history.listen(setState), [history]);
+    <span class="hljs-keyword">return</span> (
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Router</span>
+            <span class="hljs-attr">children</span>=<span class="hljs-string">{children}</span>
+            <span class="hljs-attr">location</span>=<span class="hljs-string">{state.location}</span>
+            <span class="hljs-attr">navigationType</span>=<span class="hljs-string">{state.action}</span>
+            <span class="hljs-attr">navigator</span>=<span class="hljs-string">{history}</span>
+        /&gt;</span></span>
+    );
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">BrowserRouter</span>(<span class="hljs-params">{ children }</span>) </span>{
+    <span class="hljs-keyword">let</span> historyRef = React.useRef();
+    <span class="hljs-keyword">if</span> (historyRef.current == <span class="hljs-literal">null</span>) {
+        historyRef.current = createBrowserHistory();
+    }
+    <span class="hljs-keyword">let</span> history = historyRef.current;
+    <span class="hljs-keyword">let</span> [state, setState] = React.useState({
+        <span class="hljs-attr">action</span>: history.action,
+        <span class="hljs-attr">location</span>: history.location
+    });
+    React.useLayoutEffect(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> history.listen(setState), [history]);
+    <span class="hljs-keyword">return</span> (
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Router</span>
+            <span class="hljs-attr">children</span>=<span class="hljs-string">{children}</span>
+            <span class="hljs-attr">location</span>=<span class="hljs-string">{state.location}</span>
+            <span class="hljs-attr">navigationType</span>=<span class="hljs-string">{state.action}</span>
+            <span class="hljs-attr">navigator</span>=<span class="hljs-string">{history}</span>
+        /&gt;</span></span>
+    );
+}
+</code></pre>
+<h3 id="t334.2 src\react-router\index.js">4.2 src\react-router\index.js <a href="#t334.2 src\react-router\index.js"> # </a></h3>
+<p>src\react-router\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-comment">//&#x5BFC;&#x822A;&#x4E0A;&#x4E0B;&#x6587;</span>
+<span class="hljs-keyword">const</span> NavigationContext = React.createContext({});
+<span class="hljs-comment">//&#x8DEF;&#x5F84;&#x4E0A;&#x4E0B;&#x6587;</span>
+<span class="hljs-keyword">const</span> LocationContext = React.createContext({});
+<span class="hljs-comment">//&#x8DEF;&#x7531;&#x4E0A;&#x4E0B;&#x6587;</span>
+<span class="hljs-keyword">const</span> RouteContext = React.createContext({});
+
+<span class="hljs-keyword">export</span> {
+    NavigationContext,
+    LocationContext,
+    RouteContext
+};
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Router</span>(<span class="hljs-params">{ children, location, navigator }</span>) </span>{
+    <span class="hljs-keyword">let</span> navigationContext = React.useMemo(
+        <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> ({ navigator }),
+        [navigator]
+    );
+    <span class="hljs-keyword">return</span> (
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">NavigationContext.Provider</span> <span class="hljs-attr">value</span>=<span class="hljs-string">{navigationContext}</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">LocationContext.Provider</span>
+                <span class="hljs-attr">children</span>=<span class="hljs-string">{children}</span>
+                <span class="hljs-attr">value</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">location</span> }}
+            /&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">NavigationContext.Provider</span>&gt;</span></span>
+    );
+}
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Routes</span>(<span class="hljs-params">{ children }</span>) </span>{
+    <span class="hljs-keyword">return</span> useRoutes(createRoutesFromChildren(children));
+}
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">useLocation</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">return</span> React.useContext(LocationContext).location;
+}
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">useRoutes</span>(<span class="hljs-params">routes</span>) </span>{
+    <span class="hljs-keyword">let</span> location = useLocation();<span class="hljs-comment">//&#x5F53;&#x524D;&#x7684;&#x8DEF;&#x5F84;&#x5BF9;&#x8C61;</span>
+    <span class="hljs-keyword">let</span> pathname = location.pathname || <span class="hljs-string">&quot;/&quot;</span>;<span class="hljs-comment">//&#x5F53;&#x524D;&#x7684;&#x8DEF;&#x5F84;</span>
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; routes.length; i++) {
+        <span class="hljs-keyword">let</span> { path, element } = routes[i];
+        <span class="hljs-keyword">let</span> match = matchPath(path, pathname);
+        <span class="hljs-keyword">if</span> (match) {
+            <span class="hljs-keyword">return</span> element;
+        }
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createRoutesFromChildren</span>(<span class="hljs-params">children</span>) </span>{
+    <span class="hljs-keyword">let</span> routes = [];
+    React.Children.forEach(children, element =&gt; {
+        <span class="hljs-keyword">let</span> route = {
+            <span class="hljs-attr">path</span>: element.props.path,
+            <span class="hljs-attr">element</span>: element.props.element
+        };
+        routes.push(route);
+    });
+    <span class="hljs-keyword">return</span> routes;
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Route</span>(<span class="hljs-params">props</span>) </span>{
+
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">compilePath</span>(<span class="hljs-params">path</span>) </span>{
+    <span class="hljs-keyword">let</span> source = <span class="hljs-string">&quot;^&quot;</span> + path;
+    source += <span class="hljs-string">&quot;$&quot;</span>;
+    <span class="hljs-keyword">let</span> matcher = <span class="hljs-keyword">new</span> <span class="hljs-built_in">RegExp</span>(source);
+    <span class="hljs-keyword">return</span> matcher;
+}
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">matchPath</span>(<span class="hljs-params">path, pathname</span>) </span>{
+    <span class="hljs-keyword">let</span> matcher = compilePath(path);
+    <span class="hljs-keyword">let</span> match = pathname.match(matcher);
+    <span class="hljs-keyword">if</span> (!match) <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+    <span class="hljs-keyword">return</span> match;
+}
+</code></pre>
+
+    </div>
+</div>
+
+<script src="./assets/js/jquerymin_1645176580555.js"></script>
+<script src="./assets/js/bootstrapmin_1645176554753.js"></script>
+
+<script>
+$('.warpper .page-toc ul ul li a').on('click',function(){
+  $('.warpper .page-toc ul ul li a').removeClass('my-active')
+  $(this).addClass('my-active')
+})
+$('.logo').on('mouseenter',function(){
+  $('.nav').height('450px');
+})
+$('.nav').on('mouseleave',function(){
+  $('.nav').height('80px');
+})
+$('.logo').on('click',function(){
+  $('.nav').css('display','none');
+ $('.warpper').css('padding','0px');
+})
+</script>
+</body>
+</html>

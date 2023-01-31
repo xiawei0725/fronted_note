@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>前端笔记</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/bootstrapmin_1645176572503.css" >
+    <style>
+        .page-toc > ul .red {
+            background: #f3f3f3;
+            z-index: 1;
+            border-left: 3px solid #009a61;
+            -webkit-transition: all .2s ease;
+            transition: all .2s ease;
+            color: #000
+        }
+    </style>
+</head>
+<body>
+<div class="nav">
+    <div class="logo">
+        
+                    前端笔记
+                        
+                        </div>
+                        <ul><li><a href="./index.html">0.api</a></li><li><a href="../html/0.Async.html">0.Async</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&NPM.html">7.module&NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li><li><a href="../html/98.websocket.html">98.websocket</a></li><li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li><li><a href="../html/101.1.monitor.html">101.1.monitor</a></li><li><a href="../html/101.2.monitor.html">101.2.monitor</a></li><li><a href="../html/102.java.html">102.java</a></li><li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="../html/103.11.webpack5.html">103.11.webpack5</a></li><li><a href="../html/103.13.splitChunks.html">103.13.splitChunks</a></li><li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="../html/103.16.rollup.1.html">103.16.rollup.1</a></li><li><a href="../html/103.16.rollup.2.html">103.16.rollup.2</a></li><li><a href="../html/103.16.rollup.3.html">103.16.rollup.3</a></li><li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li><li><a href="../html/103.16.vite.plugin.html">103.16.vite.plugin</a></li><li><a href="../html/103.16.vite.1.html">103.16.vite.1</a></li><li><a href="../html/103.16.vite.2.html">103.16.vite.2</a></li><li class="active"><a href="../html/103.17.polyfill.html">103.17.polyfill</a></li><li><a href="../html/104.1.binary.html">104.1.binary</a></li><li><a href="../html/104.2.binary.html">104.2.binary</a></li><li><a href="../html/105.skeleton.html">105.skeleton</a></li><li><a href="../html/106.1.react.html">106.1.react</a></li><li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="../html/106.3.react_router.html">106.3.react_router</a></li><li><a href="../html/106.4.redux.html">106.4.redux</a></li><li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="../html/106.6.redux-first-history.html">106.6.redux-first-history</a></li><li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="../html/106.8.dva.html">106.8.dva</a></li><li><a href="../html/106.9.umi.html">106.9.umi</a></li><li><a href="../html/106.10.ketang.html">106.10.ketang</a></li><li><a href="../html/106.11.antdesign.html">106.11.antdesign</a></li><li><a href="../html/106.12.antpro.html">106.12.antpro</a></li><li><a href="../html/106.13.router-6.html">106.13.router-6</a></li><li><a href="../html/106.14.ssr.html">106.14.ssr</a></li><li><a href="../html/106.15.nextjs.html">106.15.nextjs</a></li><li><a href="../html/106.16.1.cms.html">106.16.1.cms</a></li><li><a href="../html/106.16.2.cms.html">106.16.2.cms</a></li><li><a href="../html/106.16.3.cms.html">106.16.3.cms</a></li><li><a href="../html/106.16.4.cms.html">106.16.4.cms</a></li><li><a href="../html/106.16.mobx.html">106.16.mobx</a></li><li><a href="../html/106.17.fomily.html">106.17.fomily</a></li><li><a href="../html/107.fiber.html">107.fiber</a></li><li><a href="../html/108.http.html">108.http</a></li><li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="../html/109.3.dll.html">109.3.dll</a></li><li><a href="../html/110.nest.js.html">110.nest.js</a></li><li><a href="../html/111.xstate.html">111.xstate</a></li><li><a href="../html/112.Form.html">112.Form</a></li><li><a href="../html/113.redux-saga.html">113.redux-saga</a></li><li><a href="../html/114.react+typescript.html">114.react+typescript</a></li><li><a href="../html/115.immer.html">115.immer</a></li><li><a href="../html/116.pro5.html">116.pro5</a></li><li><a href="../html/117.css-loader.html">117.css-loader</a></li><li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li><li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li><li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li><li><a href="../html/120.create-react-app.html">120.create-react-app</a></li><li><a href="../html/121.react-scripts.html">121.react-scripts</a></li><li><a href="../html/122.react-optimize.html">122.react-optimize</a></li><li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="../html/124.next.js.html">124.next.js</a></li><li><a href="../html/125.1.linux.html">125.1.linux</a></li><li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li><li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li><li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li><li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li><li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li><li><a href="../html/125.10.nginx.html">125.10.nginx</a></li><li><a href="../html/125.11.docker.html">125.11.docker</a></li><li><a href="../html/125.12.ci.html">125.12.ci</a></li><li><a href="../html/125.13.k8s.html">125.13.k8s</a></li><li><a href="../html/125.14.k8s.html">125.14.k8s</a></li><li><a href="../html/125.15.k8s.html">125.15.k8s</a></li><li><a href="../html/125.16.k8s.html">125.16.k8s</a></li><li><a href="../html/126.11.react-1.html">126.11.react-1</a></li><li><a href="../html/126.12.react-2.html">126.12.react-2</a></li><li><a href="../html/126.12.react-3.html">126.12.react-3</a></li><li><a href="../html/126.12.react-4.html">126.12.react-4</a></li><li><a href="../html/126.12.react-5.html">126.12.react-5</a></li><li><a href="../html/126.12.react-6.html">126.12.react-6</a></li><li><a href="../html/126.12.react-7.html">126.12.react-7</a></li><li><a href="../html/126.12.react-8.html">126.12.react-8</a></li><li><a href="../html/127.frontend.html">127.frontend</a></li><li><a href="../html/128.rollup.html">128.rollup</a></li><li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="../html/130.health.html">130.health</a></li><li><a href="../html/131.hooks.html">131.hooks</a></li><li><a href="../html/132.keepalive.html">132.keepalive</a></li><li><a href="../html/133.vue-cli.html">133.vue-cli</a></li><li><a href="../html/134.react18.html">134.react18</a></li><li><a href="../html/134.2.react18.html">134.2.react18</a></li><li><a href="../html/134.3.react18.html">134.3.react18</a></li><li><a href="../html/135.function.html">135.function</a></li><li><a href="../html/136.toolkit.html">136.toolkit</a></li><li><a href="../html/137.lerna.html">137.lerna</a></li><li><a href="../html/138.create-vite.html">138.create-vite</a></li><li><a href="../html/139.cli.html">139.cli</a></li><li><a href="../html/140.antd.html">140.antd</a></li><li><a href="../html/141.react-dnd.html">141.react-dnd</a></li><li><a href="../html/142.1.link.html">142.1.link</a></li><li><a href="../html/143.1.gulp.html">143.1.gulp</a></li><li><a href="../html/143.2.stream.html">143.2.stream</a></li><li><a href="../html/143.3.gulp.html">143.3.gulp</a></li><li><a href="../html/144.1.closure.html">144.1.closure</a></li><li><a href="../html/144.2.v8.html">144.2.v8</a></li><li><a href="../html/144.3.gc.html">144.3.gc</a></li><li><a href="../html/145.react-router-v6.html">145.react-router-v6</a></li><li><a href="../html/146.browser.html">146.browser</a></li><li><a href="../html/147.lighthouse.html">147.lighthouse</a></li><li><a href="../html/148.1.basic.html">148.1.basic</a></li><li><a href="../html/148.2.basic .html">148.2.basic </a></li><li><a href="../html/148.3.basic.html">148.3.basic</a></li><li><a href="../html/148.4.basic.html">148.4.basic</a></li><li><a href="../html/148.5.basic.html">148.5.basic</a></li><li><a href="../html/149.1.vite.html">149.1.vite</a></li><li><a href="../html/149.2.vite.html">149.2.vite</a></li><li><a href="../html/149.3.vite.html">149.3.vite</a></li><li><a href="../html/149.4.vite.html">149.4.vite</a></li><li><a href="../html/150.react-window.html">150.react-window</a></li><li><a href="../html/151.react-query.html">151.react-query</a></li><li><a href="../html/152.useRequest.html">152.useRequest</a></li><li><a href="../html/153.transition.html">153.transition</a></li><li><a href="../html/154.emotion.html">154.emotion</a></li><li><a href="../html/155.1.formily.html">155.1.formily</a></li><li><a href="../html/155.2.formily.html">155.2.formily</a></li><li><a href="../html/155.3.formily.html">155.3.formily</a></li><li><a href="../html/155.3.1.mobx.usage.html">155.3.1.mobx.usage</a></li><li><a href="../html/155.3.2.mobx.source.html">155.3.2.mobx.source</a></li><li><a href="../html/156.vue-loader.html">156.vue-loader</a></li><li><a href="../html/103.11.mf.html">103.11.mf</a></li><li><a href="../html/157.1.react18.html">157.1.react18</a></li><li><a href="../html/158.umi4.html">158.umi4</a></li><li><a href="../html/159.rxjs.html">159.rxjs</a></li><li><a href="../html/159.rxjs2.html">159.rxjs2</a></li><li><a href="../html/160.bff.html">160.bff</a></li></ul>                        </div>
+
+                        
+<div class="warpper">
+    <div class="page-toc">
+        <ul><li><a href="#t01. babel-polyfill">1. babel-polyfill</a><ul><li><a href="#t11.1 安装">1.1 安装</a></li><li><a href="#t21.2 targets">1.2 targets</a></li><li><a href="#t31.3  useBuiltIns: false">1.3  useBuiltIns: false</a><ul><li><a href="#t41.3.1 src/index.js">1.3.1 src/index.js</a></li><li><a href="#t51.3.2 webpack.config.js">1.3.2 webpack.config.js</a></li></ul></li><li><a href="#t61.4  useBuiltIns: "entry"">1.4  useBuiltIns: "entry"</a><ul><li><a href="#t71.4.1 安装">1.4.1 安装</a></li><li><a href="#t81.4.2 src\index.js">1.4.2 src\index.js</a></li><li><a href="#t91.4.3 webpack.config.js">1.4.3 webpack.config.js</a></li></ul></li><li><a href="#t101.5 "useBuiltIns": "usage"">1.5 "useBuiltIns": "usage"</a><ul><li><a href="#t111.5.1 src/index.js">1.5.1 src/index.js</a></li><li><a href="#t121.5.2 webpack.config.js">1.5.2 webpack.config.js</a></li></ul></li></ul></li><li><a href="#t132. babel-runtime">2. babel-runtime</a><ul><li><a href="#t142.1 安装">2.1 安装</a></li><li><a href="#t152.2 src/index.js">2.2 src/index.js</a></li></ul></li><li><a href="#t163. babel-plugin-transform-runtime">3. babel-plugin-transform-runtime</a><ul><li><a href="#t173.1 安装">3.1 安装</a></li><li><a href="#t183.2 webpack.config.js">3.2 webpack.config.js</a></li><li><a href="#t193.3 corejs: 3">3.3 corejs: 3</a></li><li><a href="#t203.4 helpers: true">3.4 helpers: true</a></li><li><a href="#t213.5 regenerator: true">3.5 regenerator: true</a></li></ul></li><li><a href="#t224. 最佳实践">4. 最佳实践</a><ul><li><a href="#t234.1 项目开发">4.1 项目开发</a></li><li><a href="#t244.2 类库开发">4.2 类库开发</a></li></ul></li><li><a href="#t255. polyfill-service">5. polyfill-service</a></li></ul>
+    </div>
+    <div class="content markdown-body">
+        <h2 id="t01. babel-polyfill">1. babel-polyfill <a href="#t01. babel-polyfill"> # </a></h2>
+<ul>
+<li><code>Babel</code>&#x9ED8;&#x8BA4;&#x53EA;&#x8F6C;&#x6362;&#x65B0;&#x7684;<code>Javascript</code>&#x8BED;&#x6CD5;&#xFF0C;&#x800C;&#x4E0D;&#x8F6C;&#x6362;&#x65B0;&#x7684;API&#xFF0C;&#x6BD4;&#x5982; <ul>
+<li>Iterator, Generator, Set, Maps, Proxy, Reflect,Symbol,Promise &#x7B49;&#x5168;&#x5C40;&#x5BF9;&#x8C61;</li>
+<li>&#x5728;&#x5168;&#x5C40;&#x5BF9;&#x8C61;&#x4E0A;&#x7684;&#x65B9;&#x6CD5;,&#x6BD4;&#x5982;&#x8BF4;ES6&#x5728;Array&#x5BF9;&#x8C61;&#x4E0A;&#x65B0;&#x589E;&#x4E86;<code>Array.find</code>&#x65B9;&#x6CD5;&#xFF0C;Babel&#x5C31;&#x4E0D;&#x4F1A;&#x8F6C;&#x7801;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;</li>
+</ul>
+</li>
+<li>&#x5982;&#x679C;&#x60F3;&#x8BA9;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x8FD0;&#x884C;&#xFF0C;&#x5FC5;&#x987B;&#x4F7F;&#x7528; <code>babel-polyfill</code>&#x6765;&#x8F6C;&#x6362;&#x7B49;</li>
+<li>Babel 7.4&#x4E4B;&#x540E;&#x4E0D;&#x518D;&#x63A8;&#x8350;&#x4F7F;&#x7528;@babel/polyfill</li>
+<li>babel v7 &#x63A8;&#x8350;&#x4F7F;&#x7528;@babel/preset-env&#x4EE3;&#x66FF;&#x4EE5;&#x5F80;&#x7684;&#x8BF8;&#x591A;polyfill&#x65B9;&#x6848;</li>
+<li><a href="https://babeljs.io/docs/en/babel-preset-env">babel-preset-env</a></li>
+<li><a href="https://babeljs.io/docs/en/babel-polyfill">babel-polyfill</a></li>
+<li><a href="https://babeljs.io/docs/en/babel-runtime">babel-runtime</a></li>
+<li><a href="https://babeljs.io/docs/en/babel-plugin-transform-runtime">babel-plugin-transform-runtime</a></li>
+</ul>
+<h3 id="t11.1 &#x5B89;&#x88C5;">1.1 &#x5B89;&#x88C5; <a href="#t11.1 &#x5B89;&#x88C5;"> # </a></h3>
+<pre><code class="lang-js">npm i @babel/polyfill
+</code></pre>
+<h3 id="t21.2 targets">1.2 targets <a href="#t21.2 targets"> # </a></h3>
+<ul>
+<li>&#x914D;&#x7F6E;&#x53C2;&#x6570;<code>targets</code>&#x8868;&#x793A;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x652F;&#x6301;&#x54EA;&#x4E9B;&#x5E73;&#x53F0;&#x548C;&#x54EA;&#x4E9B;&#x7248;&#x672C;</li>
+<li><a href="https://www.npmjs.com/package/browserslist">browserslist</a></li>
+</ul>
+<pre><code class="lang-js">{
+    <span class="hljs-attr">test</span>: <span class="hljs-regexp">/\.js?$/</span>,
+    <span class="hljs-attr">exclude</span>: <span class="hljs-regexp">/node_modules/</span>,
+    <span class="hljs-attr">use</span>: {
+        <span class="hljs-attr">loader</span>: <span class="hljs-string">&apos;babel-loader&apos;</span>,
+        <span class="hljs-attr">options</span>: {
+            <span class="hljs-attr">targets</span>: {
+                <span class="hljs-comment">//&quot;browsers&quot;: [&quot;ie &gt;= 8&quot;, &quot;chrome &gt;= 62&quot;],// &#x63A8;&#x8350;&#x4F7F;&#x7528; .browserslist</span>
+                <span class="hljs-string">&quot;browsers&quot;</span>: [<span class="hljs-string">&quot;&gt;1%&quot;</span>]
+            }
+        }
+    }
+}
+</code></pre>
+<h3 id="t31.3  useBuiltIns: false">1.3  useBuiltIns: false <a href="#t31.3  useBuiltIns: false"> # </a></h3>
+<ul>
+<li><code>babel-polyfill</code> &#x5B83;&#x662F;&#x901A;&#x8FC7;&#x5411;&#x5168;&#x5C40;&#x5BF9;&#x8C61;&#x548C;&#x5185;&#x7F6E;&#x5BF9;&#x8C61;&#x7684;<code>prototype</code>&#x4E0A;&#x6DFB;&#x52A0;&#x65B9;&#x6CD5;&#x6765;&#x5B9E;&#x73B0;&#x7684;&#x3002;&#x6BD4;&#x5982;&#x8FD0;&#x884C;&#x73AF;&#x5883;&#x4E2D;&#x4E0D;&#x652F;&#x6301;<code>Array.prototype.find</code>&#x65B9;&#x6CD5;&#xFF0C;&#x5F15;&#x5165;<code>polyfill</code>, &#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>ES6</code>&#x65B9;&#x6CD5;&#x6765;&#x7F16;&#x5199;&#x4E86;&#xFF0C;&#x4F46;&#x662F;&#x7F3A;&#x70B9;&#x5C31;&#x662F;&#x4F1A;&#x9020;&#x6210;&#x5168;&#x5C40;&#x7A7A;&#x95F4;&#x6C61;&#x67D3;</li>
+<li><a href="https://www.npmjs.com/package/@babel/preset-env">@babel/preset-env</a>&#x4E3A;&#x6BCF;&#x4E00;&#x4E2A;&#x73AF;&#x5883;&#x7684;&#x9884;&#x8BBE;</li>
+<li><code>@babel/preset-env</code>&#x9ED8;&#x8BA4;&#x53EA;&#x652F;&#x6301;&#x8BED;&#x6CD5;&#x8F6C;&#x5316;&#xFF0C;&#x9700;&#x8981;&#x5F00;&#x542F;<code>useBuiltIns</code>&#x914D;&#x7F6E;&#x624D;&#x80FD;&#x8F6C;&#x5316;API&#x548C;&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;</li>
+<li><code>useBuiltIns</code>&#x53EF;&#x9009;&#x503C;&#x5305;&#x62EC;&#xFF1A;&quot;usage&quot; | &quot;entry&quot; | false, &#x9ED8;&#x8BA4;&#x4E3A; false&#xFF0C;&#x8868;&#x793A;&#x4E0D;&#x5BF9;<code>polyfills</code> &#x5904;&#x7406;&#xFF0C;&#x8FD9;&#x4E2A;&#x914D;&#x7F6E;&#x662F;&#x5F15;&#x5165; polyfills &#x7684;&#x5173;&#x952E;</li>
+<li><code>useBuiltIns: false</code>  &#x6B64;&#x65F6;&#x4E0D;&#x5BF9; <code>polyfill</code> &#x505A;&#x64CD;&#x4F5C;&#x3002;&#x5982;&#x679C;&#x5F15;&#x5165; <code>@babel/polyfill</code>&#xFF0C;&#x5219;&#x65E0;&#x89C6;&#x914D;&#x7F6E;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x517C;&#x5BB9;&#xFF0C;&#x5F15;&#x5165;&#x6240;&#x6709;&#x7684; <code>polyfill</code></li>
+</ul>
+<h4 id="t41.3.1 src/index.js">1.3.1 src/index.js <a href="#t41.3.1 src/index.js"> # </a></h4>
+<p>src/index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> <span class="hljs-string">&apos;@babel/polyfill&apos;</span>;
+<span class="hljs-keyword">let</span> sum = <span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> a + b;
+<span class="hljs-keyword">let</span> promise = <span class="hljs-built_in">Promise</span>.resolve();
+<span class="hljs-built_in">console</span>.log([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>].find(<span class="hljs-function"><span class="hljs-params">item</span> =&gt;</span> item === <span class="hljs-number">2</span>));
+</code></pre>
+<h4 id="t51.3.2 webpack.config.js">1.3.2 webpack.config.js <a href="#t51.3.2 webpack.config.js"> # </a></h4>
+<p>webpack.config.js</p>
+<pre><code class="lang-diff">const path = require(&apos;path&apos;);
+module.exports = {
+    mode: &apos;development&apos;,
+    devtool: false,
+    entry: &apos;./src/index.js&apos;,
+    output: {
+        path: path.resolve(__dirname, &apos;dist&apos;),
+        filename: &apos;main.js&apos;
+    },
+    module: {
+        rules: [
+            {
+                test: /\.js?$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: &apos;babel-loader&apos;,
+                    options: {
+                        sourceType: &quot;unambiguous&quot;,
+<span class="hljs-addition">+                       presets: [[&quot;@babel/preset-env&quot;, { useBuiltIns: false }]]</span>
+                    }
+                }
+            }
+        ]
+    },
+    plugins: []
+};
+</code></pre>
+<h3 id="t61.4  useBuiltIns: &quot;entry&quot;">1.4  useBuiltIns: &quot;entry&quot; <a href="#t61.4  useBuiltIns: " entry""> # </a></h3>
+<ul>
+<li>&#x5728;&#x9879;&#x76EE;&#x5165;&#x53E3;&#x5F15;&#x5165;&#x4E00;&#x6B21;&#xFF08;&#x591A;&#x6B21;&#x5F15;&#x5165;&#x4F1A;&#x62A5;&#x9519;&#xFF09;</li>
+<li>&quot;useBuiltIns&quot;: &quot;entry&quot; &#x6839;&#x636E;&#x914D;&#x7F6E;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x517C;&#x5BB9;&#xFF0C;&#x5F15;&#x5165;&#x6D4F;&#x89C8;&#x5668;&#x4E0D;&#x517C;&#x5BB9;&#x7684; polyfill&#x3002;&#x9700;&#x8981;&#x5728;&#x5165;&#x53E3;&#x6587;&#x4EF6;&#x624B;&#x52A8;&#x6DFB;&#x52A0; <code>import &apos;@babel/polyfill&apos;</code>&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x6839;&#x636E; browserslist &#x66FF;&#x6362;&#x6210;&#x6D4F;&#x89C8;&#x5668;&#x4E0D;&#x517C;&#x5BB9;&#x7684;&#x6240;&#x6709; polyfill</li>
+<li>&#x8FD9;&#x91CC;&#x9700;&#x8981;&#x6307;&#x5B9A; core-js &#x7684;&#x7248;&#x672C;,<code>corejs</code>&#x9ED8;&#x8BA4;&#x662F;2,</li>
+<li>&#x5982;&#x679C;&#x914D;&#x7F6E; <code>corejs: 3</code>, &#x5219;<code>import &apos;@babel/polyfill&apos;</code> &#x9700;&#x8981;&#x6539;&#x6210; <code>import &apos;core-js/stable&apos;;import &apos;regenerator-runtime/runtime&apos;;</code></li>
+<li><ul>
+<li><code>corejs</code>&#x9ED8;&#x8BA4;&#x662F;2</li>
+</ul>
+</li>
+<li>50.8 KiB</li>
+</ul>
+<h4 id="t71.4.1 &#x5B89;&#x88C5;">1.4.1 &#x5B89;&#x88C5; <a href="#t71.4.1 &#x5B89;&#x88C5;"> # </a></h4>
+<pre><code class="lang-js"> npm install --save core-js@<span class="hljs-number">2</span>    npm install --save core-js@<span class="hljs-number">3</span>
+</code></pre>
+<h4 id="t81.4.2 src\index.js">1.4.2 src\index.js <a href="#t81.4.2 src\index.js"> # </a></h4>
+<p>src\index.js
+core-js@2</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> <span class="hljs-string">&apos;@babel/polyfill&apos;</span>;
+<span class="hljs-keyword">let</span> sum = <span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> a + b;
+<span class="hljs-keyword">let</span> promise = <span class="hljs-built_in">Promise</span>.resolve();
+<span class="hljs-built_in">console</span>.log([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>].find(<span class="hljs-function"><span class="hljs-params">item</span> =&gt;</span> item === <span class="hljs-number">2</span>));
+</code></pre>
+<p>core-js@3</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> <span class="hljs-string">&apos;core-js/stable&apos;</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;regenerator-runtime/runtime&apos;</span>;
+<span class="hljs-keyword">let</span> sum = <span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> a + b;
+<span class="hljs-keyword">let</span> promise = <span class="hljs-built_in">Promise</span>.resolve();
+<span class="hljs-built_in">console</span>.log([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>].find(<span class="hljs-function"><span class="hljs-params">item</span> =&gt;</span> item === <span class="hljs-number">2</span>));
+</code></pre>
+<h4 id="t91.4.3 webpack.config.js">1.4.3 webpack.config.js <a href="#t91.4.3 webpack.config.js"> # </a></h4>
+<pre><code class="lang-diff">{
+  test: /\.js?$/,
+  exclude: /node_modules/,
+  use: {
+      loader: &apos;babel-loader&apos;,
+      options: {
+<span class="hljs-addition">+         presets: [[&quot;@babel/preset-env&quot;, { useBuiltIns: &apos;entry&apos;, corejs: { version: 3 } }]]</span>
+      }
+  }
+}
+</code></pre>
+<pre><code class="lang-js">WARNING (@babel/preset-env): We noticed you&apos;re using the `useBuiltIns` option without declaring a core-js version. Currently, we assume version 2.x when no version is passed. Since this default version will likely change in future versions of Babel, we recommend explicitly setting the core-js version you are using via the `corejs` option.
+You should also be sure that the version you pass to the `corejs` option matches the version specified in your `package.json`&apos;s `dependencies` section. If it doesn&apos;t, you need to run one of the following commands:
+
+npm install --save core-js@2    npm install --save core-js@3
+
+</code></pre>
+<h3 id="t101.5 &quot;useBuiltIns&quot;: &quot;usage&quot;">1.5 &quot;useBuiltIns&quot;: &quot;usage&quot; <a href="#t101.5 " usebuiltins": "usage""> # </a></h3>
+<ul>
+<li>&quot;useBuiltIns&quot;: &quot;usage&quot; <code>usage</code> &#x4F1A;&#x6839;&#x636E;&#x914D;&#x7F6E;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x517C;&#x5BB9;&#xFF0C;&#x4EE5;&#x53CA;&#x4F60;&#x4EE3;&#x7801;&#x4E2D;&#x7528;&#x5230;&#x7684; API &#x6765;&#x8FDB;&#x884C; polyfill&#xFF0C;&#x5B9E;&#x73B0;&#x4E86;&#x6309;&#x9700;&#x6DFB;&#x52A0;</li>
+<li>&#x5F53;&#x8BBE;&#x7F6E;&#x4E3A;usage&#x65F6;&#xFF0C;polyfill&#x4F1A;&#x81EA;&#x52A8;&#x6309;&#x9700;&#x6DFB;&#x52A0;&#xFF0C;&#x4E0D;&#x518D;&#x9700;&#x8981;&#x624B;&#x5DE5;&#x5F15;&#x5165;<code>@babel/polyfill</code></li>
+</ul>
+<h4 id="t111.5.1 src/index.js">1.5.1 src/index.js <a href="#t111.5.1 src/index.js"> # </a></h4>
+<p> src/index.js</p>
+<pre><code class="lang-js"><span class="hljs-built_in">console</span>.log([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>].find(<span class="hljs-function"><span class="hljs-params">item</span> =&gt;</span> item === <span class="hljs-number">2</span>));
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Array</span>.prototype.find);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Array</span>.prototype.hasOwnProperty(<span class="hljs-string">&apos;find&apos;</span>));
+</code></pre>
+<h4 id="t121.5.2 webpack.config.js">1.5.2 webpack.config.js <a href="#t121.5.2 webpack.config.js"> # </a></h4>
+<p>webpack.config.js</p>
+<pre><code class="lang-diff">{
+  test: /\.js?$/,
+  exclude: /node_modules/,
+  use: {
+      loader: &apos;babel-loader&apos;,
+      options: {
+<span class="hljs-addition">+         presets: [[&quot;@babel/preset-env&quot;, { useBuiltIns: &apos;usage&apos;, corejs: { version: 3 } }]]</span>
+      }
+  }
+}
+</code></pre>
+<h2 id="t132. babel-runtime">2. babel-runtime <a href="#t132. babel-runtime"> # </a></h2>
+<ul>
+<li>Babel&#x4E3A;&#x4E86;&#x89E3;&#x51B3;&#x5168;&#x5C40;&#x7A7A;&#x95F4;&#x6C61;&#x67D3;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x63D0;&#x4F9B;&#x4E86;&#x5355;&#x72EC;&#x7684;&#x5305;<a href="https://babeljs.io/docs/en/babel-runtime">babel-runtime</a>&#x7528;&#x4EE5;&#x63D0;&#x4F9B;&#x7F16;&#x8BD1;&#x6A21;&#x5757;&#x7684;&#x5DE5;&#x5177;&#x51FD;&#x6570;</li>
+<li>&#x7B80;&#x5355;&#x8BF4; <code>babel-runtime</code> &#x66F4;&#x50CF;&#x662F;&#x4E00;&#x79CD;&#x6309;&#x9700;&#x52A0;&#x8F7D;&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x6BD4;&#x5982;&#x4F60;&#x54EA;&#x91CC;&#x9700;&#x8981;&#x4F7F;&#x7528; <code>Promise</code>&#xFF0C;&#x53EA;&#x8981;&#x5728;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x5934;&#x90E8;<code>import Promise from &apos;babel-runtime/core-js/promise&apos;</code>&#x5C31;&#x884C;&#x4E86;</li>
+</ul>
+<h3 id="t142.1 &#x5B89;&#x88C5;">2.1 &#x5B89;&#x88C5; <a href="#t142.1 &#x5B89;&#x88C5;"> # </a></h3>
+<pre><code class="lang-js">npm i babel-runtime --save-dev
+</code></pre>
+<h3 id="t152.2 src/index.js">2.2 src/index.js <a href="#t152.2 src/index.js"> # </a></h3>
+<p>src/index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> <span class="hljs-built_in">Promise</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;babel-runtime/core-js/promise&apos;</span>;
+<span class="hljs-keyword">const</span> p = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-params">()</span>=&gt;</span> {});
+</code></pre>
+<h2 id="t163. babel-plugin-transform-runtime">3. babel-plugin-transform-runtime <a href="#t163. babel-plugin-transform-runtime"> # </a></h2>
+<ul>
+<li><code>@babel/plugin-transform-runtime</code>&#x63D2;&#x4EF6;&#x662F;&#x4E3A;&#x4E86;&#x89E3;&#x51B3;<ul>
+<li>&#x591A;&#x4E2A;&#x6587;&#x4EF6;&#x91CD;&#x590D;&#x5F15;&#x7528;  &#x76F8;&#x540C;helpers(&#x5E2E;&#x52A9;&#x51FD;&#x6570;)=&gt;&#x63D0;&#x53D6;&#x8FD0;&#x884C;&#x65F6;</li>
+<li>&#x65B0;API&#x65B9;&#x6CD5;&#x5168;&#x5C40;&#x6C61;&#x67D3; -&gt; &#x5C40;&#x90E8;&#x5F15;&#x5165;</li>
+</ul>
+</li>
+<li>&#x542F;&#x7528;&#x63D2;&#x4EF6;<code>babel-plugin-transform-runtime</code>&#x540E;&#xFF0C;Babel&#x5C31;&#x4F1A;&#x4F7F;&#x7528;<code>babel-runtime</code>&#x4E0B;&#x7684;&#x5DE5;&#x5177;&#x51FD;&#x6570;</li>
+<li><code>babel-plugin-transform-runtime</code>&#x63D2;&#x4EF6;&#x80FD;&#x591F;&#x5C06;&#x8FD9;&#x4E9B;&#x5DE5;&#x5177;&#x51FD;&#x6570;&#x7684;&#x4EE3;&#x7801;&#x8F6C;&#x6362;&#x6210;<code>require</code>&#x8BED;&#x53E5;&#xFF0C;&#x6307;&#x5411;&#x4E3A;&#x5BF9;<code>babel-runtime</code>&#x7684;&#x5F15;&#x7528;</li>
+<li><code>babel-plugin-transform-runtime</code> &#x5C31;&#x662F;&#x53EF;&#x4EE5;&#x5728;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x65B0; API &#x65F6;&#x81EA;&#x52A8; import <code>babel-runtime</code> &#x91CC;&#x9762;&#x7684; <code>polyfill</code><ul>
+<li>&#x5F53;&#x6211;&#x4EEC;&#x4F7F;&#x7528; <code>async/await</code> &#x65F6;&#xFF0C;&#x81EA;&#x52A8;&#x5F15;&#x5165; <code>babel-runtime/regenerator</code></li>
+<li>&#x5F53;&#x6211;&#x4EEC;&#x4F7F;&#x7528; ES6 &#x7684;&#x9759;&#x6001;&#x4E8B;&#x4EF6;&#x6216;&#x5185;&#x7F6E;&#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x81EA;&#x52A8;&#x5F15;&#x5165; <code>babel-runtime/core-js</code></li>
+<li>&#x79FB;&#x9664;&#x5185;&#x8054;<code>babel helpers</code>&#x5E76;&#x66FF;&#x6362;&#x4F7F;&#x7528;<code>babel-runtime/helpers</code> &#x6765;&#x66FF;&#x6362;</li>
+</ul>
+</li>
+</ul>
+<h3 id="t173.1 &#x5B89;&#x88C5;">3.1 &#x5B89;&#x88C5; <a href="#t173.1 &#x5B89;&#x88C5;"> # </a></h3>
+<pre><code class="lang-js">npm i @babel/plugin-transform-runtime @babel/runtime-corejs3 --save-dev
+</code></pre>
+<h3 id="t183.2 webpack.config.js">3.2 webpack.config.js <a href="#t183.2 webpack.config.js"> # </a></h3>
+<p>webpack.config.js</p>
+<pre><code class="lang-diff">{
+    test: /\.js?$/,
+    exclude: /node_modules/,
+    use: {
+        loader: &apos;babel-loader&apos;,
+        options: {
+            sourceType: &quot;unambiguous&quot;,
+            presets: [[&quot;@babel/preset-env&quot;, { useBuiltIns: &apos;usage&apos;, corejs: { version: 3 } }]],
+            plugins: [
+                [
+                    &quot;@babel/plugin-transform-runtime&quot;,
+                    {
+                        corejs: 3,
+                        helpers: true,
+                        regenerator: true
+                    }
+                ],
+            ]
+        }
+    }
+ }
+</code></pre>
+<h3 id="t193.3 corejs: 3">3.3 corejs: 3 <a href="#t193.3 corejs: 3"> # </a></h3>
+<ul>
+<li>&#x5F53;&#x6211;&#x4EEC;&#x4F7F;&#x7528; ES6 &#x7684;&#x9759;&#x6001;&#x4E8B;&#x4EF6;&#x6216;&#x5185;&#x7F6E;&#x5BF9;&#x8C61;&#x65F6;&#x81EA;&#x52A8;&#x5F15;&#x5165; babel-runtime/core-js<pre><code class="lang-js"><span class="hljs-comment">//var _Promise = __webpack_require__(&quot;./node_modules/@babel/runtime-corejs3/core-js-stable/promise.js&quot;);</span>
+<span class="hljs-keyword">const</span> p = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> { });
+<span class="hljs-built_in">console</span>.log(p);
+</code></pre>
+</li>
+</ul>
+<h3 id="t203.4 helpers: true">3.4 helpers: true <a href="#t203.4 helpers: true"> # </a></h3>
+<ul>
+<li>&#x79FB;&#x9664;&#x5185;&#x8054;babel helpers&#x5E76;&#x66FF;&#x6362;&#x4F7F;&#x7528;<code>babel-runtime/helpers</code> &#x6765;&#x66FF;&#x6362;</li>
+<li>&#x907F;&#x514D;&#x5185;&#x8054;&#x7684; helper &#x4EE3;&#x7801;&#x5728;&#x591A;&#x4E2A;&#x6587;&#x4EF6;&#x91CD;&#x590D;&#x51FA;&#x73B0;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">A</span> </span>{
+
+}
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">B</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">A</span> </span>{
+
+}
+<span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">new</span> B());
+</code></pre>
+<h3 id="t213.5 regenerator: true">3.5 regenerator: true <a href="#t213.5 regenerator: true"> # </a></h3>
+<ul>
+<li>&#x662F;&#x5426;&#x5F00;&#x542F;<code>generator</code>&#x51FD;&#x6570;&#x8F6C;&#x6362;&#x6210;&#x4F7F;&#x7528;<code>regenerator runtime</code>&#x6765;&#x907F;&#x514D;&#x6C61;&#x67D3;&#x5168;&#x5C40;&#x57DF;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-comment">//var _regeneratorRuntime = __webpack_require__(/*! @babel/runtime-corejs3/regenerator */ &quot;./node_modules/@babel/runtime-corejs3/regenerator/index.js&quot;);</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span>* <span class="hljs-title">gen</span>(<span class="hljs-params"></span>) </span>{
+
+}
+<span class="hljs-built_in">console</span>.log(gen());
+</code></pre>
+<h2 id="t224. &#x6700;&#x4F73;&#x5B9E;&#x8DF5;">4. &#x6700;&#x4F73;&#x5B9E;&#x8DF5; <a href="#t224. &#x6700;&#x4F73;&#x5B9E;&#x8DF5;"> # </a></h2>
+<ul>
+<li>@babel/preset-env&#x548C;plugin-transform-runtime&#x4E8C;&#x8005;&#x90FD;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x4F7F;&#x7528;corejs&#x6765;&#x5904;&#x7406;polyfill</li>
+</ul>
+<h3 id="t234.1 &#x9879;&#x76EE;&#x5F00;&#x53D1;">4.1 &#x9879;&#x76EE;&#x5F00;&#x53D1; <a href="#t234.1 &#x9879;&#x76EE;&#x5F00;&#x53D1;"> # </a></h3>
+<ul>
+<li>useBuiltIns&#x4F7F;&#x7528;usage</li>
+<li>plugin-transform-runtime&#x53EA;&#x4F7F;&#x7528;&#x5176;&#x79FB;&#x9664;&#x5185;&#x8054;&#x590D;&#x7528;&#x7684;&#x8F85;&#x52A9;&#x51FD;&#x6570;&#x7684;&#x7279;&#x6027;&#xFF0C;&#x51CF;&#x5C0F;&#x6253;&#x5305;&#x4F53;&#x79EF;<pre><code class="lang-json">{
+  <span class="hljs-attr">&quot;presets&quot;</span>: [
+      [
+          <span class="hljs-string">&quot;@babel/preset-env&quot;</span>,
+          {
+              <span class="hljs-attr">&quot;useBuiltIns&quot;</span>: <span class="hljs-string">&quot;usage&quot;</span>,
+              <span class="hljs-attr">&quot;corejs&quot;</span>: <span class="hljs-number">3</span>
+          }
+      ]
+  ],
+  <span class="hljs-attr">&quot;plugins&quot;</span>: [
+      [
+          <span class="hljs-string">&quot;@babel/plugin-transform-runtime&quot;</span>,
+          {
+              <span class="hljs-attr">&quot;corejs&quot;</span>: <span class="hljs-literal">false</span>
+          }
+      ]
+  ]
+}
+</code></pre>
+</li>
+</ul>
+<h3 id="t244.2 &#x7C7B;&#x5E93;&#x5F00;&#x53D1;">4.2 &#x7C7B;&#x5E93;&#x5F00;&#x53D1; <a href="#t244.2 &#x7C7B;&#x5E93;&#x5F00;&#x53D1;"> # </a></h3>
+<ul>
+<li>&#x7C7B;&#x5E93;&#x5F00;&#x53D1;&#x5C3D;&#x91CF;&#x4E0D;&#x4F7F;&#x7528;&#x6C61;&#x67D3;&#x5168;&#x5C40;&#x73AF;&#x5883;&#x7684;<code>polyfill</code>&#xFF0C;&#x56E0;&#x6B64;<code>@babel/preset-env</code>&#x53EA;&#x53D1;&#x6325;&#x8BED;&#x6CD5;&#x8F6C;&#x6362;&#x7684;&#x529F;&#x80FD;</li>
+<li>polyfill&#x7531;<code>@babel/plugin-transform-runtime</code>&#x6765;&#x5904;&#x7406;&#xFF0C;&#x63A8;&#x8350;&#x4F7F;&#x7528;core-js@3</li>
+</ul>
+<pre><code class="lang-json">{
+    <span class="hljs-attr">&quot;presets&quot;</span>: [
+        [
+            <span class="hljs-string">&quot;@babel/preset-env&quot;</span>
+        ]
+    ],
+    <span class="hljs-attr">&quot;plugins&quot;</span>: [
+        [
+            <span class="hljs-string">&quot;@babel/plugin-transform-runtime&quot;</span>,
+            {
+                <span class="hljs-attr">&quot;corejs&quot;</span>: {
+                    <span class="hljs-attr">&quot;version&quot;</span>: <span class="hljs-number">3</span>
+                }
+            }
+        ]
+    ]
+}
+</code></pre>
+<h2 id="t255. polyfill-service">5. polyfill-service <a href="#t255. polyfill-service"> # </a></h2>
+<ul>
+<li><a href="https://polyfill.io/v3/">polyfill.io</a>&#x81EA;&#x52A8;&#x5316;&#x7684; JavaScript Polyfill &#x670D;&#x52A1;</li>
+<li><a href="https://polyfill.io/v3/">polyfill.io</a>&#x901A;&#x8FC7;&#x5206;&#x6790;&#x8BF7;&#x6C42;&#x5934;&#x4FE1;&#x606F;&#x4E2D;&#x7684; UserAgent &#x5B9E;&#x73B0;&#x81EA;&#x52A8;&#x52A0;&#x8F7D;&#x6D4F;&#x89C8;&#x5668;&#x6240;&#x9700;&#x7684; polyfills</li>
+</ul>
+<pre><code class="lang-js">&lt;script src=&quot;https://polyfill.io/v3/polyfill.min.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+
+    </div>
+</div>
+
+<script src="./assets/js/jquerymin_1645176580555.js"></script>
+<script src="./assets/js/bootstrapmin_1645176554753.js"></script>
+
+<script>
+$('.warpper .page-toc ul ul li a').on('click',function(){
+  $('.warpper .page-toc ul ul li a').removeClass('my-active')
+  $(this).addClass('my-active')
+})
+$('.logo').on('mouseenter',function(){
+  $('.nav').height('450px');
+})
+$('.nav').on('mouseleave',function(){
+  $('.nav').height('80px');
+})
+$('.logo').on('click',function(){
+  $('.nav').css('display','none');
+ $('.warpper').css('padding','0px');
+})
+</script>
+</body>
+</html>

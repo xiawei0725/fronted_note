@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>前端笔记</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/bootstrapmin_1645176572503.css" >
+    <style>
+        .page-toc > ul .red {
+            background: #f3f3f3;
+            z-index: 1;
+            border-left: 3px solid #009a61;
+            -webkit-transition: all .2s ease;
+            transition: all .2s ease;
+            color: #000
+        }
+    </style>
+</head>
+<body>
+<div class="nav">
+    <div class="logo">
+        
+                    前端笔记
+                        
+                        </div>
+                        <ul><li><a href="./index.html">0.api</a></li><li><a href="../html/0.Async.html">0.Async</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&NPM.html">7.module&NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li><li><a href="../html/98.websocket.html">98.websocket</a></li><li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li><li><a href="../html/101.1.monitor.html">101.1.monitor</a></li><li><a href="../html/101.2.monitor.html">101.2.monitor</a></li><li><a href="../html/102.java.html">102.java</a></li><li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="../html/103.11.webpack5.html">103.11.webpack5</a></li><li><a href="../html/103.13.splitChunks.html">103.13.splitChunks</a></li><li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="../html/103.16.rollup.1.html">103.16.rollup.1</a></li><li class="active"><a href="../html/103.16.rollup.2.html">103.16.rollup.2</a></li><li><a href="../html/103.16.rollup.3.html">103.16.rollup.3</a></li><li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li><li><a href="../html/103.16.vite.plugin.html">103.16.vite.plugin</a></li><li><a href="../html/103.16.vite.1.html">103.16.vite.1</a></li><li><a href="../html/103.16.vite.2.html">103.16.vite.2</a></li><li><a href="../html/103.17.polyfill.html">103.17.polyfill</a></li><li><a href="../html/104.1.binary.html">104.1.binary</a></li><li><a href="../html/104.2.binary.html">104.2.binary</a></li><li><a href="../html/105.skeleton.html">105.skeleton</a></li><li><a href="../html/106.1.react.html">106.1.react</a></li><li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="../html/106.3.react_router.html">106.3.react_router</a></li><li><a href="../html/106.4.redux.html">106.4.redux</a></li><li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="../html/106.6.redux-first-history.html">106.6.redux-first-history</a></li><li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="../html/106.8.dva.html">106.8.dva</a></li><li><a href="../html/106.9.umi.html">106.9.umi</a></li><li><a href="../html/106.10.ketang.html">106.10.ketang</a></li><li><a href="../html/106.11.antdesign.html">106.11.antdesign</a></li><li><a href="../html/106.12.antpro.html">106.12.antpro</a></li><li><a href="../html/106.13.router-6.html">106.13.router-6</a></li><li><a href="../html/106.14.ssr.html">106.14.ssr</a></li><li><a href="../html/106.15.nextjs.html">106.15.nextjs</a></li><li><a href="../html/106.16.1.cms.html">106.16.1.cms</a></li><li><a href="../html/106.16.2.cms.html">106.16.2.cms</a></li><li><a href="../html/106.16.3.cms.html">106.16.3.cms</a></li><li><a href="../html/106.16.4.cms.html">106.16.4.cms</a></li><li><a href="../html/106.16.mobx.html">106.16.mobx</a></li><li><a href="../html/106.17.fomily.html">106.17.fomily</a></li><li><a href="../html/107.fiber.html">107.fiber</a></li><li><a href="../html/108.http.html">108.http</a></li><li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="../html/109.3.dll.html">109.3.dll</a></li><li><a href="../html/110.nest.js.html">110.nest.js</a></li><li><a href="../html/111.xstate.html">111.xstate</a></li><li><a href="../html/112.Form.html">112.Form</a></li><li><a href="../html/113.redux-saga.html">113.redux-saga</a></li><li><a href="../html/114.react+typescript.html">114.react+typescript</a></li><li><a href="../html/115.immer.html">115.immer</a></li><li><a href="../html/116.pro5.html">116.pro5</a></li><li><a href="../html/117.css-loader.html">117.css-loader</a></li><li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li><li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li><li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li><li><a href="../html/120.create-react-app.html">120.create-react-app</a></li><li><a href="../html/121.react-scripts.html">121.react-scripts</a></li><li><a href="../html/122.react-optimize.html">122.react-optimize</a></li><li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="../html/124.next.js.html">124.next.js</a></li><li><a href="../html/125.1.linux.html">125.1.linux</a></li><li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li><li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li><li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li><li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li><li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li><li><a href="../html/125.10.nginx.html">125.10.nginx</a></li><li><a href="../html/125.11.docker.html">125.11.docker</a></li><li><a href="../html/125.12.ci.html">125.12.ci</a></li><li><a href="../html/125.13.k8s.html">125.13.k8s</a></li><li><a href="../html/125.14.k8s.html">125.14.k8s</a></li><li><a href="../html/125.15.k8s.html">125.15.k8s</a></li><li><a href="../html/125.16.k8s.html">125.16.k8s</a></li><li><a href="../html/126.11.react-1.html">126.11.react-1</a></li><li><a href="../html/126.12.react-2.html">126.12.react-2</a></li><li><a href="../html/126.12.react-3.html">126.12.react-3</a></li><li><a href="../html/126.12.react-4.html">126.12.react-4</a></li><li><a href="../html/126.12.react-5.html">126.12.react-5</a></li><li><a href="../html/126.12.react-6.html">126.12.react-6</a></li><li><a href="../html/126.12.react-7.html">126.12.react-7</a></li><li><a href="../html/126.12.react-8.html">126.12.react-8</a></li><li><a href="../html/127.frontend.html">127.frontend</a></li><li><a href="../html/128.rollup.html">128.rollup</a></li><li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="../html/130.health.html">130.health</a></li><li><a href="../html/131.hooks.html">131.hooks</a></li><li><a href="../html/132.keepalive.html">132.keepalive</a></li><li><a href="../html/133.vue-cli.html">133.vue-cli</a></li><li><a href="../html/134.react18.html">134.react18</a></li><li><a href="../html/134.2.react18.html">134.2.react18</a></li><li><a href="../html/134.3.react18.html">134.3.react18</a></li><li><a href="../html/135.function.html">135.function</a></li><li><a href="../html/136.toolkit.html">136.toolkit</a></li><li><a href="../html/137.lerna.html">137.lerna</a></li><li><a href="../html/138.create-vite.html">138.create-vite</a></li><li><a href="../html/139.cli.html">139.cli</a></li><li><a href="../html/140.antd.html">140.antd</a></li><li><a href="../html/141.react-dnd.html">141.react-dnd</a></li><li><a href="../html/142.1.link.html">142.1.link</a></li><li><a href="../html/143.1.gulp.html">143.1.gulp</a></li><li><a href="../html/143.2.stream.html">143.2.stream</a></li><li><a href="../html/143.3.gulp.html">143.3.gulp</a></li><li><a href="../html/144.1.closure.html">144.1.closure</a></li><li><a href="../html/144.2.v8.html">144.2.v8</a></li><li><a href="../html/144.3.gc.html">144.3.gc</a></li><li><a href="../html/145.react-router-v6.html">145.react-router-v6</a></li><li><a href="../html/146.browser.html">146.browser</a></li><li><a href="../html/147.lighthouse.html">147.lighthouse</a></li><li><a href="../html/148.1.basic.html">148.1.basic</a></li><li><a href="../html/148.2.basic .html">148.2.basic </a></li><li><a href="../html/148.3.basic.html">148.3.basic</a></li><li><a href="../html/148.4.basic.html">148.4.basic</a></li><li><a href="../html/148.5.basic.html">148.5.basic</a></li><li><a href="../html/149.1.vite.html">149.1.vite</a></li><li><a href="../html/149.2.vite.html">149.2.vite</a></li><li><a href="../html/149.3.vite.html">149.3.vite</a></li><li><a href="../html/149.4.vite.html">149.4.vite</a></li><li><a href="../html/150.react-window.html">150.react-window</a></li><li><a href="../html/151.react-query.html">151.react-query</a></li><li><a href="../html/152.useRequest.html">152.useRequest</a></li><li><a href="../html/153.transition.html">153.transition</a></li><li><a href="../html/154.emotion.html">154.emotion</a></li><li><a href="../html/155.1.formily.html">155.1.formily</a></li><li><a href="../html/155.2.formily.html">155.2.formily</a></li><li><a href="../html/155.3.formily.html">155.3.formily</a></li><li><a href="../html/155.3.1.mobx.usage.html">155.3.1.mobx.usage</a></li><li><a href="../html/155.3.2.mobx.source.html">155.3.2.mobx.source</a></li><li><a href="../html/156.vue-loader.html">156.vue-loader</a></li><li><a href="../html/103.11.mf.html">103.11.mf</a></li><li><a href="../html/157.1.react18.html">157.1.react18</a></li><li><a href="../html/158.umi4.html">158.umi4</a></li><li><a href="../html/159.rxjs.html">159.rxjs</a></li><li><a href="../html/159.rxjs2.html">159.rxjs2</a></li><li><a href="../html/160.bff.html">160.bff</a></li></ul>                        </div>
+
+                        
+<div class="warpper">
+    <div class="page-toc">
+        <ul><li><a href="#t01.前置知识">1.前置知识</a><ul><li><a href="#t11.1. 初始化项目">1.1. 初始化项目</a></li><li><a href="#t21.2. magic-string">1.2. magic-string</a></li><li><a href="#t32.3. AST">2.3. AST</a><ul><li><a href="#t42.3.1 AST工作流">2.3.1 AST工作流</a></li><li><a href="#t52.3.2 acorn">2.3.2 acorn</a><ul><li><a href="#t62.3.2.1 walk.js">2.3.2.1 walk.js</a></li><li><a href="#t72.3.2.2 use.js">2.3.2.2 use.js</a></li></ul></li></ul></li><li><a href="#t81.4  作用域">1.4  作用域</a><ul><li><a href="#t91.4.1 作用域">1.4.1 作用域</a></li><li><a href="#t101.4.2 作用域链">1.4.2 作用域链</a><ul><li><a href="#t111.4.2.1 scope.js">1.4.2.1 scope.js</a></li><li><a href="#t121.4.2.2 useScope.js">1.4.2.2 useScope.js</a></li></ul></li></ul></li></ul></li><li><a href="#t132. 实现rollup">2. 实现rollup</a><ul><li><a href="#t142.1 目录结构">2.1 目录结构</a></li><li><a href="#t152.2 src\main.js">2.2 src\main.js</a></li><li><a href="#t162.3 debugger.js">2.3 debugger.js</a></li><li><a href="#t172.4 rollup.js">2.4 rollup.js</a></li><li><a href="#t182.5 bundle.js">2.5 bundle.js</a></li><li><a href="#t192.6 module.js">2.6 module.js</a></li><li><a href="#t202.7 analyse.js">2.7 analyse.js</a></li></ul></li><li><a href="#t213. 实现tree-shaking">3. 实现tree-shaking</a><ul><li><a href="#t223.1 基本原理">3.1 基本原理</a></li><li><a href="#t233.2 基本语句">3.2 基本语句</a></li><li><a href="#t243.3 main.js">3.3 main.js</a></li><li><a href="#t253.4 msg.js">3.4 msg.js</a></li><li><a href="#t263.5 bundle.js">3.5 bundle.js</a></li><li><a href="#t273.6 utils.js">3.6 utils.js</a></li><li><a href="#t283.7 module.js">3.7 module.js</a></li><li><a href="#t293.8 analyse.js">3.8 analyse.js</a></li><li><a href="#t303.9 scope.js">3.9 scope.js</a></li><li><a href="#t313.10 lib\ast\walk.js">3.10 lib\ast\walk.js</a></li></ul></li><li><a href="#t324.包含修改语句">4.包含修改语句</a><ul><li><a href="#t334.1 main.js">4.1 main.js</a></li><li><a href="#t344.2 msg.js">4.2 msg.js</a></li><li><a href="#t354.3 module.js">4.3 module.js</a></li><li><a href="#t364.4 analyse.js">4.4 analyse.js</a></li></ul></li><li><a href="#t374.支持块级作用域">4.支持块级作用域</a><ul><li><a href="#t384.1 src\main.js">4.1 src\main.js</a></li><li><a href="#t395.2 lib\ast\scope.js">5.2 lib\ast\scope.js</a></li><li><a href="#t405.3 analyse.js">5.3 analyse.js</a></li><li><a href="#t415.4 module.js">5.4 module.js</a></li></ul></li><li><a href="#t426.实现变量名重命名">6.实现变量名重命名</a><ul><li><a href="#t436.1 src\main.js">6.1 src\main.js</a></li><li><a href="#t446.2 src\age1.js">6.2 src\age1.js</a></li><li><a href="#t456.3 src\age2.js">6.3 src\age2.js</a></li><li><a href="#t466.4 src\age3.js">6.4 src\age3.js</a></li><li><a href="#t476.5 utils.js">6.5 utils.js</a></li><li><a href="#t486.6 bundle.js">6.6 bundle.js</a></li><li><a href="#t496.7 module.js">6.7 module.js</a></li></ul></li></ul>
+    </div>
+    <div class="content markdown-body">
+        <h2 id="t01.&#x524D;&#x7F6E;&#x77E5;&#x8BC6;">1.&#x524D;&#x7F6E;&#x77E5;&#x8BC6; <a href="#t01.&#x524D;&#x7F6E;&#x77E5;&#x8BC6;"> # </a></h2>
+<h3 id="t11.1. &#x521D;&#x59CB;&#x5316;&#x9879;&#x76EE;">1.1. &#x521D;&#x59CB;&#x5316;&#x9879;&#x76EE; <a href="#t11.1. &#x521D;&#x59CB;&#x5316;&#x9879;&#x76EE;"> # </a></h3>
+<pre><code class="lang-js">npm install rollup magic-string acorn --save
+</code></pre>
+<h3 id="t21.2. magic-string">1.2. magic-string <a href="#t21.2. magic-string"> # </a></h3>
+<ul>
+<li><a href="https://www.npmjs.com/package/magic-string">magic-string</a>&#x662F;&#x4E00;&#x4E2A;&#x64CD;&#x4F5C;&#x5B57;&#x7B26;&#x4E32;&#x548C;&#x751F;&#x6210;source-map&#x7684;&#x5DE5;&#x5177;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> MagicString = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;magic-string&apos;</span>);
+<span class="hljs-keyword">let</span> sourceCode = <span class="hljs-string">`export var name = &quot;zhufeng&quot;`</span>;
+<span class="hljs-keyword">let</span> ms = <span class="hljs-keyword">new</span> MagicString(sourceCode);
+<span class="hljs-built_in">console</span>.log(ms);
+<span class="hljs-comment">//&#x88C1;&#x526A;&#x51FA;&#x539F;&#x59CB;&#x5B57;&#x7B26;&#x4E32;&#x5F00;&#x59CB;&#x548C;&#x7ED3;&#x675F;&#x4E4B;&#x95F4;&#x6240;&#x6709;&#x7684;&#x5185;&#x5BB9;</span>
+<span class="hljs-comment">//&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x514B;&#x9686;&#x540E;&#x7684;MagicString&#x7684;&#x5B9E;&#x4F8B;</span>
+<span class="hljs-built_in">console</span>.log(ms.snip(<span class="hljs-number">0</span>, <span class="hljs-number">6</span>).toString());<span class="hljs-comment">//sourceCode.slice(0,6);</span>
+<span class="hljs-comment">//&#x5220;&#x9664;0, 7&#x4E4B;&#x95F4;&#x7684;&#x5185;&#x5BB9;</span>
+<span class="hljs-built_in">console</span>.log(ms.remove(<span class="hljs-number">0</span>, <span class="hljs-number">7</span>).toString());<span class="hljs-comment">//sourceCode.slice(7);</span>
+
+<span class="hljs-comment">//&#x8FD8;&#x53EF;&#x4EE5;&#x7528;&#x7528;&#x6765;&#x5408;&#x5E76;&#x4EE3;&#x7801; //TODO</span>
+<span class="hljs-keyword">let</span> bundle = <span class="hljs-keyword">new</span> MagicString.Bundle();
+bundle.addSource({
+  <span class="hljs-attr">content</span>: <span class="hljs-string">&apos;var a = 1;&apos;</span>,
+  <span class="hljs-attr">separator</span>: <span class="hljs-string">&apos;\n&apos;</span>
+});
+bundle.addSource({
+  <span class="hljs-attr">content</span>: <span class="hljs-string">&apos;var b = 2;&apos;</span>,
+  <span class="hljs-attr">separator</span>: <span class="hljs-string">&apos;\n&apos;</span>
+});
+<span class="hljs-built_in">console</span>.log(bundle.toString());
+</code></pre>
+<h3 id="t32.3. AST">2.3. AST <a href="#t32.3. AST"> # </a></h3>
+<ul>
+<li>&#x901A;&#x8FC7;<code>JavaScript Parser</code>&#x53EF;&#x4EE5;&#x628A;&#x4EE3;&#x7801;&#x8F6C;&#x5316;&#x4E3A;&#x4E00;&#x9897;&#x62BD;&#x8C61;&#x8BED;&#x6CD5;&#x6811;AST,&#x8FD9;&#x9897;&#x6811;&#x5B9A;&#x4E49;&#x4E86;&#x4EE3;&#x7801;&#x7684;&#x7ED3;&#x6784;&#xFF0C;&#x901A;&#x8FC7;&#x64CD;&#x7EB5;&#x8FD9;&#x9897;&#x6811;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7CBE;&#x51C6;&#x7684;&#x5B9A;&#x4F4D;&#x5230;&#x58F0;&#x660E;&#x8BED;&#x53E5;&#x3001;&#x8D4B;&#x503C;&#x8BED;&#x53E5;&#x3001;&#x8FD0;&#x7B97;&#x8BED;&#x53E5;&#x7B49;&#x7B49;&#xFF0C;&#x5B9E;&#x73B0;&#x5BF9;&#x4EE3;&#x7801;&#x7684;&#x5206;&#x6790;&#x3001;&#x4F18;&#x5316;&#x3001;&#x53D8;&#x66F4;&#x7B49;&#x64CD;&#x4F5C;</li>
+</ul>
+<p><img src="./assets/img/f5f0d311c21589911537286e98fa243d.jpg" alt="868f60df0f5227621151031e261678a9"></p>
+<h4 id="t42.3.1 AST&#x5DE5;&#x4F5C;&#x6D41;">2.3.1 AST&#x5DE5;&#x4F5C;&#x6D41; <a href="#t42.3.1 AST&#x5DE5;&#x4F5C;&#x6D41;"> # </a></h4>
+<ul>
+<li>Parse(&#x89E3;&#x6790;) &#x5C06;&#x6E90;&#x4EE3;&#x7801;&#x8F6C;&#x6362;&#x6210;&#x62BD;&#x8C61;&#x8BED;&#x6CD5;&#x6811;&#xFF0C;&#x6811;&#x4E0A;&#x6709;&#x5F88;&#x591A;&#x7684;estree&#x8282;&#x70B9;</li>
+<li>Transform(&#x8F6C;&#x6362;) &#x5BF9;&#x62BD;&#x8C61;&#x8BED;&#x6CD5;&#x6811;&#x8FDB;&#x884C;&#x8F6C;&#x6362;</li>
+<li>Generate(&#x4EE3;&#x7801;&#x751F;&#x6210;) &#x5C06;&#x4E0A;&#x4E00;&#x6B65;&#x7ECF;&#x8FC7;&#x8F6C;&#x6362;&#x8FC7;&#x7684;&#x62BD;&#x8C61;&#x8BED;&#x6CD5;&#x6811;&#x751F;&#x6210;&#x65B0;&#x7684;&#x4EE3;&#x7801;</li>
+</ul>
+<p><img src="./assets/img/900b4a9a80d1e2728c8889e9f6b28597.jpg" alt="1d821a22ff221e924731a6d8c8a654c4"></p>
+<h4 id="t52.3.2 acorn">2.3.2 acorn <a href="#t52.3.2 acorn"> # </a></h4>
+<ul>
+<li><a href="https://astexplorer.net/">astexplorer</a>&#x53EF;&#x4EE5;&#x628A;&#x4EE3;&#x7801;&#x8F6C;&#x6210;&#x8BED;&#x6CD5;&#x6811;</li>
+<li>acorn &#x89E3;&#x6790;&#x7ED3;&#x679C;&#x7B26;&#x5408;<code>The Estree Spec</code>&#x89C4;&#x8303;</li>
+</ul>
+<p><img src="./assets/img/c598fe4f89d678cadfc1793ad88a6bf2.jpg" alt="d434186f338a42917a8ef3835df3a28f"></p>
+<h5 id="t62.3.2.1 walk.js">2.3.2.1 walk.js <a href="#t62.3.2.1 walk.js"> # </a></h5>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">walk</span>(<span class="hljs-params">astNode, { enter, leave }</span>) </span>{
+  visit(astNode, <span class="hljs-literal">null</span>, enter, leave);
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">visit</span>(<span class="hljs-params">node, parent, enter, leave</span>) </span>{
+  <span class="hljs-keyword">if</span> (enter) {
+    enter.call(<span class="hljs-literal">null</span>, node, parent);
+  }
+  <span class="hljs-keyword">let</span> keys = <span class="hljs-built_in">Object</span>.keys(node).filter(<span class="hljs-function"><span class="hljs-params">key</span> =&gt;</span> <span class="hljs-keyword">typeof</span> node[key] === <span class="hljs-string">&apos;object&apos;</span>)
+  keys.forEach(<span class="hljs-function"><span class="hljs-params">key</span> =&gt;</span> {
+    <span class="hljs-keyword">let</span> value = node[key];
+    <span class="hljs-keyword">if</span> (<span class="hljs-built_in">Array</span>.isArray(value)) {
+      value.forEach(<span class="hljs-function"><span class="hljs-params">val</span> =&gt;</span> visit(val, node, enter, leave));
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (value &amp;&amp; value.type) {
+      visit(value, node, enter, leave)
+    }
+  });
+  <span class="hljs-keyword">if</span> (leave) {
+    leave.call(<span class="hljs-literal">null</span>, node, parent);
+  }
+}
+
+
+<span class="hljs-built_in">module</span>.exports = walk;
+</code></pre>
+<h5 id="t72.3.2.2 use.js">2.3.2.2 use.js <a href="#t72.3.2.2 use.js"> # </a></h5>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> acorn = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;acorn&apos;</span>);
+<span class="hljs-keyword">const</span> walk = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./walk&apos;</span>);
+<span class="hljs-keyword">const</span> sourceCode = <span class="hljs-string">&apos;import $ from &quot;jquery&quot;&apos;</span>
+<span class="hljs-keyword">const</span> ast = acorn.parse(sourceCode, {
+ <span class="hljs-attr">sourceType</span>: <span class="hljs-string">&apos;module&apos;</span>, <span class="hljs-attr">ecmaVersion</span>: <span class="hljs-number">8</span>
+});
+<span class="hljs-keyword">let</span> indent = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">const</span> padding = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-string">&apos; &apos;</span>.repeat(indent)
+ast.body.forEach(<span class="hljs-function">(<span class="hljs-params">statement</span>) =&gt;</span> {
+  walk(statement, {
+    enter(node) {
+      <span class="hljs-keyword">if</span> (node.type) {
+        <span class="hljs-built_in">console</span>.log(padding() + node.type + <span class="hljs-string">&quot;&#x8FDB;&#x5165;&quot;</span>);
+        indent += <span class="hljs-number">2</span>;
+      }
+    },
+    leave(node) {
+      <span class="hljs-keyword">if</span> (node.type) {
+        indent -= <span class="hljs-number">2</span>;
+        <span class="hljs-built_in">console</span>.log(padding() + node.type + <span class="hljs-string">&quot;&#x79BB;&#x5F00;&quot;</span>);
+      }
+    }
+  });
+});
+</code></pre>
+<p><img src="./assets/img/5d80e90f1e80e536329b0bb02cf0e744.jpg" alt="d39f73349c0580b4bfe6aa106ef0b1ae"></p>
+<pre><code class="lang-js">ImportDeclaration&#x8FDB;&#x5165;
+  ImportDefaultSpecifier&#x8FDB;&#x5165;
+    Identifier&#x8FDB;&#x5165;
+    Identifier&#x79BB;&#x5F00;
+  ImportDefaultSpecifier&#x79BB;&#x5F00;
+  Literal&#x8FDB;&#x5165;
+  Literal&#x79BB;&#x5F00;
+ImportDeclaration&#x79BB;&#x5F00;
+</code></pre>
+<h3 id="t81.4  &#x4F5C;&#x7528;&#x57DF;">1.4  &#x4F5C;&#x7528;&#x57DF; <a href="#t81.4  &#x4F5C;&#x7528;&#x57DF;"> # </a></h3>
+<h4 id="t91.4.1 &#x4F5C;&#x7528;&#x57DF;">1.4.1 &#x4F5C;&#x7528;&#x57DF; <a href="#t91.4.1 &#x4F5C;&#x7528;&#x57DF;"> # </a></h4>
+<ul>
+<li>&#x5728;JS&#x4E2D;&#xFF0C;&#x4F5C;&#x7528;&#x57DF;&#x662F;&#x7528;&#x6765;&#x89C4;&#x5B9A;&#x53D8;&#x91CF;&#x8BBF;&#x95EE;&#x8303;&#x56F4;&#x7684;&#x89C4;&#x5219;<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">one</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">var</span> a = <span class="hljs-number">1</span>;
+}
+<span class="hljs-built_in">console</span>.log(a);
+</code></pre>
+</li>
+</ul>
+<h4 id="t101.4.2 &#x4F5C;&#x7528;&#x57DF;&#x94FE;">1.4.2 &#x4F5C;&#x7528;&#x57DF;&#x94FE; <a href="#t101.4.2 &#x4F5C;&#x7528;&#x57DF;&#x94FE;"> # </a></h4>
+<ul>
+<li>&#x4F5C;&#x7528;&#x57DF;&#x94FE;&#x662F;&#x7531;&#x5F53;&#x524D;&#x6267;&#x884C;&#x73AF;&#x5883;&#x4E0E;&#x4E0A;&#x5C42;&#x6267;&#x884C;&#x73AF;&#x5883;&#x7684;&#x4E00;&#x7CFB;&#x5217;&#x53D8;&#x91CF;&#x5BF9;&#x8C61;&#x7EC4;&#x6210;&#x7684;&#xFF0C;&#x5B83;&#x4FDD;&#x8BC1;&#x4E86;&#x5F53;&#x524D;&#x6267;&#x884C;&#x73AF;&#x5883;&#x5BF9;&#x7B26;&#x5408;&#x8BBF;&#x95EE;&#x6743;&#x9650;&#x7684;&#x53D8;&#x91CF;&#x548C;&#x51FD;&#x6570;&#x7684;&#x6709;&#x5E8F;&#x8BBF;&#x95EE;</li>
+</ul>
+<h5 id="t111.4.2.1 scope.js">1.4.2.1 scope.js <a href="#t111.4.2.1 scope.js"> # </a></h5>
+<p>scope.js</p>
+<pre><code class="lang-js">
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Scope</span> </span>{
+  <span class="hljs-keyword">constructor</span>(options = {}) {
+    <span class="hljs-comment">//&#x4F5C;&#x7528;&#x57DF;&#x7684;&#x540D;&#x79F0;</span>
+    <span class="hljs-keyword">this</span>.name = options.name;
+    <span class="hljs-comment">//&#x7236;&#x4F5C;&#x7528;&#x57DF;</span>
+    <span class="hljs-keyword">this</span>.parent = options.parent;
+    <span class="hljs-comment">//&#x6B64;&#x4F5C;&#x7528;&#x57DF;&#x5185;&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;</span>
+    <span class="hljs-keyword">this</span>.names = options.names || [];
+  }
+  add(name) {
+    <span class="hljs-keyword">this</span>.names.push(name);
+  }
+  findDefiningScope(name) {
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.names.includes(name)) {
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.parent) {
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.parent.findDefiningScope(name);
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+    }
+  }
+}
+<span class="hljs-built_in">module</span>.exports = Scope;
+</code></pre>
+<h5 id="t121.4.2.2 useScope.js">1.4.2.2 useScope.js <a href="#t121.4.2.2 useScope.js"> # </a></h5>
+<p>useScope.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> a = <span class="hljs-number">1</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">one</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">var</span> b = <span class="hljs-number">1</span>;
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">two</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">var</span> c = <span class="hljs-number">2</span>;
+     <span class="hljs-built_in">console</span>.log(a, b, c);
+  }
+}
+<span class="hljs-keyword">let</span> Scope = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./scope&apos;</span>);
+<span class="hljs-keyword">let</span> globalScope = <span class="hljs-keyword">new</span> Scope({ <span class="hljs-attr">name</span>: <span class="hljs-string">&apos;global&apos;</span>, <span class="hljs-attr">names</span>: [], <span class="hljs-attr">parent</span>: <span class="hljs-literal">null</span> });
+<span class="hljs-keyword">let</span> oneScope = <span class="hljs-keyword">new</span> Scope({ <span class="hljs-attr">name</span>: <span class="hljs-string">&apos;one&apos;</span>, <span class="hljs-attr">names</span>: [<span class="hljs-string">&apos;b&apos;</span>], <span class="hljs-attr">parent</span>: globalScope });
+<span class="hljs-keyword">let</span> twoScope = <span class="hljs-keyword">new</span> Scope({ <span class="hljs-attr">name</span>: <span class="hljs-string">&apos;two&apos;</span>, <span class="hljs-attr">names</span>: [<span class="hljs-string">&apos;c&apos;</span>], <span class="hljs-attr">parent</span>: oneScope });
+<span class="hljs-built_in">console</span>.log(
+  threeScope.findDefiningScope(<span class="hljs-string">&apos;a&apos;</span>).name,
+  threeScope.findDefiningScope(<span class="hljs-string">&apos;b&apos;</span>).name,
+  threeScope.findDefiningScope(<span class="hljs-string">&apos;c&apos;</span>).name
+</code></pre>
+<h2 id="t132. &#x5B9E;&#x73B0;rollup">2. &#x5B9E;&#x73B0;rollup <a href="#t132. &#x5B9E;&#x73B0;rollup"> # </a></h2>
+<h3 id="t142.1 &#x76EE;&#x5F55;&#x7ED3;&#x6784;">2.1 &#x76EE;&#x5F55;&#x7ED3;&#x6784; <a href="#t142.1 &#x76EE;&#x5F55;&#x7ED3;&#x6784;"> # </a></h3>
+<ul>
+<li><a href="https://gitee.com/zhufengpeixun/rollup">rollup&#x4EE3;&#x7801;&#x4ED3;&#x5E93;&#x5730;&#x5740;</a></li>
+</ul>
+<pre><code class="lang-js">&#x251C;&#x2500;&#x2500; package.json
+&#x251C;&#x2500;&#x2500; README.md
+&#x251C;&#x2500;&#x2500; src
+    &#x251C;&#x2500;&#x2500; ast
+    &#x2502;   &#x251C;&#x2500;&#x2500; analyse.js <span class="hljs-comment">//&#x5206;&#x6790;AST&#x8282;&#x70B9;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x548C;&#x4F9D;&#x8D56;&#x9879;</span>
+    &#x2502;   &#x251C;&#x2500;&#x2500; Scope.js <span class="hljs-comment">//&#x6709;&#x4E9B;&#x8BED;&#x53E5;&#x4F1A;&#x521B;&#x5EFA;&#x65B0;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x5B9E;&#x4F8B;</span>
+    &#x2502;   &#x2514;&#x2500;&#x2500; walk.js <span class="hljs-comment">//&#x63D0;&#x4F9B;&#x4E86;&#x9012;&#x5F52;&#x904D;&#x5386;AST&#x8BED;&#x6CD5;&#x6811;&#x7684;&#x529F;&#x80FD;</span>
+    &#x251C;&#x2500;&#x2500; Bundle<span class="hljs-comment">//&#x6253;&#x5305;&#x5DE5;&#x5177;&#xFF0C;&#x5728;&#x6253;&#x5305;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x751F;&#x6210;&#x4E00;&#x4E2A;Bundle&#x5B9E;&#x4F8B;&#xFF0C;&#x5E76;&#x6536;&#x96C6;&#x5176;&#x5B83;&#x6A21;&#x5757;&#xFF0C;&#x6700;&#x540E;&#x628A;&#x6240;&#x6709;&#x4EE3;&#x7801;&#x6253;&#x5305;&#x5728;&#x4E00;&#x8D77;&#x8F93;&#x51FA;</span>
+    &#x2502;   &#x2514;&#x2500;&#x2500; index.js 
+    &#x251C;&#x2500;&#x2500; Module<span class="hljs-comment">//&#x6BCF;&#x4E2A;&#x6587;&#x4EF6;&#x90FD;&#x662F;&#x4E00;&#x4E2A;&#x6A21;&#x5757;</span>
+    &#x2502;   &#x2514;&#x2500;&#x2500; index.js
+    &#x251C;&#x2500;&#x2500; rollup.js <span class="hljs-comment">//&#x6253;&#x5305;&#x7684;&#x5165;&#x53E3;&#x6A21;&#x5757;</span>
+    &#x2514;&#x2500;&#x2500; utils
+        &#x251C;&#x2500;&#x2500; map-helpers.js
+        &#x251C;&#x2500;&#x2500; object.js
+        &#x2514;&#x2500;&#x2500; promise.js
+</code></pre>
+<h3 id="t152.2 src\main.js">2.2 src\main.js <a href="#t152.2 src\main.js"> # </a></h3>
+<p>src\main.js</p>
+<pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;hello&apos;</span>);
+</code></pre>
+<h3 id="t162.3 debugger.js">2.3 debugger.js <a href="#t162.3 debugger.js"> # </a></h3>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;path&apos;</span>);
+<span class="hljs-keyword">const</span> rollup = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./lib/rollup&apos;</span>);
+<span class="hljs-keyword">let</span> entry = path.resolve(__dirname, <span class="hljs-string">&apos;src/main.js&apos;</span>);
+rollup(entry, <span class="hljs-string">&apos;bundle.js&apos;</span>);
+</code></pre>
+<h3 id="t172.4 rollup.js">2.4 rollup.js <a href="#t172.4 rollup.js"> # </a></h3>
+<p>lib\rollup.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> Bundle = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./bundle&apos;</span>)
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">rollup</span>(<span class="hljs-params">entry, filename</span>) </span>{
+  <span class="hljs-keyword">const</span> bundle = <span class="hljs-keyword">new</span> Bundle({ entry });
+  bundle.build(filename);
+}
+<span class="hljs-built_in">module</span>.exports = rollup;
+</code></pre>
+<h3 id="t182.5 bundle.js">2.5 bundle.js <a href="#t182.5 bundle.js"> # </a></h3>
+<p>lib\bundle.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;fs&apos;</span>);
+<span class="hljs-keyword">let</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;path&apos;</span>);
+<span class="hljs-keyword">let</span> Module = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./module&apos;</span>);
+<span class="hljs-keyword">let</span> MagicString = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;magic-string&apos;</span>);
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bundle</span> </span>{
+  <span class="hljs-keyword">constructor</span>(options) {
+    <span class="hljs-comment">//&#x5165;&#x53E3;&#x6587;&#x4EF6;&#x6570;&#x636E;</span>
+    <span class="hljs-keyword">this</span>.entryPath = path.resolve(options.entry.replace(<span class="hljs-regexp">/\.js$/</span>, <span class="hljs-string">&apos;&apos;</span>) + <span class="hljs-string">&apos;.js&apos;</span>);
+    <span class="hljs-comment">//&#x5B58;&#x653E;&#x6240;&#x6709;&#x7684;&#x6A21;&#x5757;</span>
+    <span class="hljs-keyword">this</span>.modules = {};
+  }
+  build(filename) {
+    <span class="hljs-keyword">const</span> entryModule = <span class="hljs-keyword">this</span>.fetchModule(<span class="hljs-keyword">this</span>.entryPath);<span class="hljs-comment">//&#x83B7;&#x53D6;&#x6A21;&#x5757;&#x4EE3;&#x7801;</span>
+    <span class="hljs-keyword">this</span>.statements = entryModule.expandAllStatements(<span class="hljs-literal">true</span>);<span class="hljs-comment">//&#x5C55;&#x5F00;&#x6240;&#x6709;&#x7684;&#x8BED;&#x53E5;</span>
+    <span class="hljs-keyword">const</span> { code } = <span class="hljs-keyword">this</span>.generate();<span class="hljs-comment">//&#x751F;&#x6210;&#x6253;&#x5305;&#x540E;&#x7684;&#x4EE3;&#x7801;</span>
+    fs.writeFileSync(filename, code);<span class="hljs-comment">//&#x5199;&#x5165;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;</span>
+  }
+  fetchModule(importee) {
+    <span class="hljs-keyword">let</span> route = importee;
+    <span class="hljs-keyword">if</span> (route) {
+      <span class="hljs-keyword">let</span> code = fs.readFileSync(route, <span class="hljs-string">&apos;utf8&apos;</span>);
+      <span class="hljs-keyword">const</span> <span class="hljs-built_in">module</span> = <span class="hljs-keyword">new</span> Module({
+        code,
+        <span class="hljs-attr">path</span>: importee,
+        <span class="hljs-attr">bundle</span>: <span class="hljs-keyword">this</span>
+      })
+      <span class="hljs-keyword">return</span> <span class="hljs-built_in">module</span>;
+    }
+  }
+  generate() {
+    <span class="hljs-keyword">let</span> magicString = <span class="hljs-keyword">new</span> MagicString.Bundle();
+    <span class="hljs-keyword">this</span>.statements.forEach(<span class="hljs-function"><span class="hljs-params">statement</span> =&gt;</span> {
+      <span class="hljs-keyword">const</span> source = statement._source.clone();
+      magicString.addSource({
+        <span class="hljs-attr">content</span>: source,
+        <span class="hljs-attr">separator</span>: <span class="hljs-string">&apos;\n&apos;</span>
+      })
+    })
+    <span class="hljs-keyword">return</span> { <span class="hljs-attr">code</span>: magicString.toString() }
+  }
+}
+<span class="hljs-built_in">module</span>.exports = Bundle;
+</code></pre>
+<h3 id="t192.6 module.js">2.6 module.js <a href="#t192.6 module.js"> # </a></h3>
+<p>lib\module.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> MagicString = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;magic-string&apos;</span>);
+<span class="hljs-keyword">const</span> { parse } = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;acorn&apos;</span>);
+<span class="hljs-keyword">let</span> analyse = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./ast/analyse&apos;</span>);
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Module</span> </span>{
+  <span class="hljs-keyword">constructor</span>({ code, path, bundle }) {
+    <span class="hljs-keyword">this</span>.code = <span class="hljs-keyword">new</span> MagicString(code, { <span class="hljs-attr">filename</span>: path });
+    <span class="hljs-keyword">this</span>.path = path;
+    <span class="hljs-keyword">this</span>.bundle = bundle;
+    <span class="hljs-keyword">this</span>.ast = parse(code, {
+      <span class="hljs-attr">ecmaVersion</span>: <span class="hljs-number">8</span>,
+      <span class="hljs-attr">sourceType</span>: <span class="hljs-string">&apos;module&apos;</span>
+    })
+    analyse(<span class="hljs-keyword">this</span>.ast, <span class="hljs-keyword">this</span>.code, <span class="hljs-keyword">this</span>);
+  }
+  expandAllStatements() {
+    <span class="hljs-keyword">let</span> allStatements = [];
+    <span class="hljs-keyword">this</span>.ast.body.forEach(<span class="hljs-function"><span class="hljs-params">statement</span> =&gt;</span> {
+      <span class="hljs-keyword">let</span> statements = <span class="hljs-keyword">this</span>.expandStatement(statement);
+      allStatements.push(...statements);
+    });
+    <span class="hljs-keyword">return</span> allStatements;
+  }
+  expandStatement(statement) {
+    statement._included = <span class="hljs-literal">true</span>;
+    <span class="hljs-keyword">let</span> result = [];
+    result.push(statement);
+    <span class="hljs-keyword">return</span> result;
+  }
+}
+<span class="hljs-built_in">module</span>.exports = Module;
+</code></pre>
+<h3 id="t202.7 analyse.js">2.7 analyse.js <a href="#t202.7 analyse.js"> # </a></h3>
+<p>lib\ast\analyse.js</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">analyse</span>(<span class="hljs-params">ast, code,module</span>) </span>{
+  <span class="hljs-comment">//&#x7ED9;statement&#x5B9A;&#x4E49;&#x5C5E;&#x6027;</span>
+  ast.body.forEach(<span class="hljs-function"><span class="hljs-params">statement</span> =&gt;</span> {
+    <span class="hljs-built_in">Object</span>.defineProperties(statement, {
+      <span class="hljs-attr">_module</span>: { <span class="hljs-attr">value</span>: <span class="hljs-built_in">module</span> },
+      <span class="hljs-attr">_source</span>: { <span class="hljs-attr">value</span>: code.snip(statement.start, statement.end) }
+    })
+  });
+}
+<span class="hljs-built_in">module</span>.exports = analyse;
+</code></pre>
+<h2 id="t213. &#x5B9E;&#x73B0;tree-shaking">3. &#x5B9E;&#x73B0;tree-shaking <a href="#t213. &#x5B9E;&#x73B0;tree-shaking"> # </a></h2>
+<h3 id="t223.1 &#x57FA;&#x672C;&#x539F;&#x7406;">3.1 &#x57FA;&#x672C;&#x539F;&#x7406; <a href="#t223.1 &#x57FA;&#x672C;&#x539F;&#x7406;"> # </a></h3>
+<ul>
+<li>&#x7B2C;&#x4E00;&#x6B65;<ul>
+<li>&#x5728;<code>module</code>&#x91CC;&#x6536;&#x96C6;<code>imports</code>&#x3001;<code>exports</code>&#x548C;<code>definitions</code></li>
+<li>&#x5728;<code>analyse</code>&#x6536;&#x96C6;<code>_defines</code>&#x548C;<code>_dependsOn</code></li>
+</ul>
+</li>
+<li>&#x7B2C;&#x4E8C;&#x6B65;<ul>
+<li>&#x91CD;&#x6784;<code>expandAllStatements</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="t233.2 &#x57FA;&#x672C;&#x8BED;&#x53E5;">3.2 &#x57FA;&#x672C;&#x8BED;&#x53E5; <a href="#t233.2 &#x57FA;&#x672C;&#x8BED;&#x53E5;"> # </a></h3>
+<pre><code class="lang-js"><span class="hljs-comment">//&#x5B58;&#x653E;&#x672C;&#x6A21;&#x5757;&#x5BFC;&#x5165;&#x4E86;&#x54EA;&#x4E9B;&#x53D8;&#x91CF;</span>
+<span class="hljs-keyword">this</span>.imports = {};
+<span class="hljs-comment">// &#x5B58;&#x653E;&#x672C;&#x6A21;&#x5757;&#x5BFC;&#x51FA;&#x4E86;&#x54EA;&#x4E9B;&#x53D8;&#x91CF;</span>
+<span class="hljs-keyword">this</span>.exports = {};
+<span class="hljs-comment">//&#x5B58;&#x653E;&#x672C;&#x6A21;&#x5757;&#x7684;&#x5B9A;&#x4E49;&#x53D8;&#x91CF;&#x7684;&#x8BED;&#x53E5;</span>
+<span class="hljs-keyword">this</span>.definitions = {};
+<span class="hljs-comment">//&#x6B64;&#x53D8;&#x91CF;&#x5B58;&#x653E;&#x6240;&#x6709;&#x7684;&#x53D8;&#x91CF;&#x4FEE;&#x6539;&#x8BED;&#x53E5;,key&#x662F;&#x53D8;&#x91CF;&#x540D;&#xFF0C;&#x503C;&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;</span>
+<span class="hljs-keyword">this</span>.modifications = {};<span class="hljs-comment">//{name:[name+=&apos;jiagou&apos;],age:&apos;age++&apos;}</span>
+<span class="hljs-comment">//&#x8BB0;&#x5F97;&#x91CD;&#x547D;&#x540D;&#x7684;&#x53D8;&#x91CF;{key&#x8001;&#x7684;&#x53D8;&#x91CF;&#x540D;:value&#x65B0;&#x7684;&#x53D8;&#x91CF;&#x540D;}</span>
+<span class="hljs-keyword">this</span>.canonicalNames = {};<span class="hljs-comment">//{age:&apos;age$1&apos;}</span>
+<span class="hljs-comment">//&#x672C;&#x6A21;&#x5757;&#x4ECE;&#x54EA;&#x4E2A;&#x6A21;&#x5757;&#x5BFC;&#x5165;&#x4E86;&#x4EC0;&#x4E48;&#x53D8;&#x91CF;&#xFF0C;&#x5728;&#x5F53;&#x524D;&#x6A21;&#x5757;&#x5185;&#x53EB;&#x4EC0;&#x4E48;&#x540D;&#x5B57;</span>
+<span class="hljs-comment">//this.imports.name = {&apos;./msg&apos;,&apos;name&apos;};</span>
+<span class="hljs-keyword">this</span>.imports[localName] = { source, importName }
+<span class="hljs-comment">//&#x672C;&#x6A21;&#x5757;&#x5BFC;&#x51FA;&#x4E86;&#x54EA;&#x4E2A;&#x53D8;&#x91CF;&#xFF0C;&#x5BF9;&#x5E94;&#x54EA;&#x4E2A;&#x672C;&#x5730;&#x53D8;&#x91CF;</span>
+<span class="hljs-comment">//this.exports.name = {localName:&apos;name&apos;};</span>
+<span class="hljs-keyword">this</span>.exports[exportName] = { localName };
+<span class="hljs-comment">//&#x672C;&#x9876;&#x7EA7;&#x8BED;&#x53E5;&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;</span>
+statement._defines[name] = <span class="hljs-literal">true</span>;
+<span class="hljs-comment">//&#x5B9A;&#x4E49;&#x53D8;&#x91CF;&#x7684;&#x8BED;&#x53E5;</span>
+<span class="hljs-keyword">this</span>.definitions[name] = statement;
+<span class="hljs-comment">//&#x672C;&#x8BED;&#x53E5;&#x7528;&#x5230;&#x7684;&#x53D8;&#x91CF;</span>
+statement._dependsOn[name] = <span class="hljs-literal">true</span>;
+<span class="hljs-comment">//&#x4ECE;&#x6A21;&#x5757;&#x4E2D;&#x83B7;&#x53D6;&#x5B9A;&#x4E49;&#x53D8;&#x91CF;&#x7684;&#x8BED;&#x53E5;</span>
+<span class="hljs-built_in">module</span>.define(name);
+</code></pre>
+<h3 id="t243.3 main.js">3.3 main.js <a href="#t243.3 main.js"> # </a></h3>
+<p>src\main.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { name, age } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./msg&apos;</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">say</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;hello&apos;</span>, name);
+}
+say();
+</code></pre>
+<h3 id="t253.4 msg.js">3.4 msg.js <a href="#t253.4 msg.js"> # </a></h3>
+<p>src\msg.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">var</span> name = <span class="hljs-string">&apos;zhufeng&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">var</span> age = <span class="hljs-number">12</span>;
+</code></pre>
+<h3 id="t263.5 bundle.js">3.5 bundle.js <a href="#t263.5 bundle.js"> # </a></h3>
+<p>lib\bundle.js</p>
+<pre><code class="lang-diff">let fs = require(&apos;fs&apos;);
+let path = require(&apos;path&apos;);
+let Module = require(&apos;./module&apos;);
+let MagicString = require(&apos;magic-string&apos;);
+class Bundle {
+  constructor(options) {
+    //&#x5165;&#x53E3;&#x6587;&#x4EF6;&#x6570;&#x636E;
+    this.entryPath = path.resolve(options.entry.replace(/\.js$/, &apos;&apos;) + &apos;.js&apos;);
+    //&#x5B58;&#x653E;&#x6240;&#x6709;&#x7684;&#x6A21;&#x5757;
+    this.modules = {};
+  }
+  build(filename) {
+    const entryModule = this.fetchModule(this.entryPath);//&#x83B7;&#x53D6;&#x6A21;&#x5757;&#x4EE3;&#x7801;
+    this.statements = entryModule.expandAllStatements(true);//&#x5C55;&#x5F00;&#x6240;&#x6709;&#x7684;&#x8BED;&#x53E5;
+    const { code } = this.generate();//&#x751F;&#x6210;&#x6253;&#x5305;&#x540E;&#x7684;&#x4EE3;&#x7801;
+    fs.writeFileSync(filename, code);//&#x5199;&#x5165;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;
+  }
+  fetchModule(importee, importer) {
+<span class="hljs-addition">+   let route;</span>
+<span class="hljs-addition">+   if (!importer) {</span>
+<span class="hljs-addition">+     route = importee;</span>
+<span class="hljs-addition">+   } else {</span>
+<span class="hljs-addition">+     if (path.isAbsolute(importee)) {</span>
+<span class="hljs-addition">+       route = importee;</span>
+<span class="hljs-addition">+     } else {</span>
+<span class="hljs-addition">+       route = path.resolve(path.dirname(importer), importee.replace(/\.js$/, &apos;&apos;) + &apos;.js&apos;);</span>
+<span class="hljs-addition">+     }</span>
+<span class="hljs-addition">+   }</span>
+    if (route) {
+      let code = fs.readFileSync(route, &apos;utf8&apos;);
+      const module = new Module({
+        code,
+        path: importee,
+        bundle: this
+      })
+      return module;
+    }
+  }
+  generate() {
+    let magicString = new MagicString.Bundle();
+    this.statements.forEach(statement =&gt; {
+      const source = statement._source.clone();
+<span class="hljs-addition">+     if (statement.type === &apos;ExportNamedDeclaration&apos;) {</span>
+<span class="hljs-addition">+       source.remove(statement.start, statement.declaration.start);</span>
+<span class="hljs-addition">+     }</span>
+      magicString.addSource({
+        content: source,
+        separator: &apos;\n&apos;
+      })
+    })
+    return { code: magicString.toString() }
+  }
+}
+module.exports = Bundle;
+</code></pre>
+<h3 id="t273.6 utils.js">3.6 utils.js <a href="#t273.6 utils.js"> # </a></h3>
+<p>lib\utils.js</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">hasOwnProperty</span>(<span class="hljs-params">obj, prop</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-built_in">Object</span>.prototype.hasOwnProperty.call(obj, prop)
+}
+exports.hasOwnProperty = hasOwnProperty;
+</code></pre>
+<h3 id="t283.7 module.js">3.7 module.js <a href="#t283.7 module.js"> # </a></h3>
+<p>lib\module.js</p>
+<pre><code class="lang-diff">const MagicString = require(&apos;magic-string&apos;);
+const { parse } = require(&apos;acorn&apos;);
+<span class="hljs-addition">+const { hasOwnProperty } = require(&apos;./utils&apos;);</span>
+const analyse = require(&apos;./ast/analyse&apos;);
+class Module {
+  constructor({ code, path, bundle }) {
+    this.code = new MagicString(code, { filename: path });
+    this.path = path;
+    this.bundle = bundle;
+    this.ast = parse(code, {
+      ecmaVersion: 8,
+      sourceType: &apos;module&apos;
+    })
+<span class="hljs-addition">+   //&#x5B58;&#x653E;&#x672C;&#x6A21;&#x5757;&#x7684;&#x5BFC;&#x5165;&#x4FE1;&#x606F;</span>
+<span class="hljs-addition">+   this.imports = {};</span>
+<span class="hljs-addition">+   //&#x672C;&#x6A21;&#x5757;&#x7684;&#x5BFC;&#x51FA;&#x4FE1;&#x606F;</span>
+<span class="hljs-addition">+   this.exports = {};</span>
+<span class="hljs-addition">+   //&#x5B58;&#x653E;&#x672C;&#x6A21;&#x5757;&#x7684;&#x5B9A;&#x4E49;&#x53D8;&#x91CF;&#x7684;&#x8BED;&#x53E5; a=&gt;var a = 1;b =var b =2;</span>
+<span class="hljs-addition">+   this.definitions = {};</span>
+    analyse(this.ast, this.code, this);
+  }
+  expandAllStatements() {
+    let allStatements = [];
+    this.ast.body.forEach(statement =&gt; {
+<span class="hljs-addition">+     //&#x5BFC;&#x5165;&#x7684;&#x8BED;&#x53E5;&#x9ED8;&#x8BA4;&#x5168;&#x90E8;&#x8FC7;&#x6EE4;&#x6389; </span>
+<span class="hljs-addition">+     if (statement.type === &apos;ImportDeclaration&apos;) return;</span>
+      let statements = this.expandStatement(statement);
+      allStatements.push(...statements);
+    });
+    return allStatements;
+  }
+  expandStatement(statement) {
+    statement._included = true;
+    let result = [];
+<span class="hljs-addition">+   //&#x83B7;&#x53D6;&#x6B64;&#x8BED;&#x53E5;&#x4F9D;&#x8D56;&#x7684;&#x53D8;&#x91CF;</span>
+<span class="hljs-addition">+   let _dependsOn = Object.keys(statement._dependsOn);</span>
+<span class="hljs-addition">+   _dependsOn.forEach(name =&gt; {</span>
+<span class="hljs-addition">+     //&#x627E;&#x5230;&#x6B64;&#x53D8;&#x91CF;&#x5B9A;&#x4E49;&#x7684;&#x8BED;&#x53E5;&#xFF0C;&#x6DFB;&#x52A0;&#x5230;&#x8F93;&#x51FA;&#x6570;&#x7EC4;&#x91CC;</span>
+<span class="hljs-addition">+     let definitions = this.define(name);</span>
+<span class="hljs-addition">+     result.push(...definitions);</span>
+<span class="hljs-addition">+   });</span>
+    //&#x628A;&#x6B64;&#x8BED;&#x53E5;&#x6DFB;&#x52A0;&#x5230;&#x8F93;&#x51FA;&#x5217;&#x8868;&#x4E2D;
+    result.push(statement);
+    return result;
+  }
+<span class="hljs-addition">+ define(name) {</span>
+<span class="hljs-addition">+   //&#x5148;&#x5224;&#x65AD;&#x6B64;&#x53D8;&#x91CF;&#x662F;&#x5916;&#x90E8;&#x5BFC;&#x5165;&#x7684;&#x8FD8;&#x662F;&#x6A21;&#x5757;&#x5185;&#x58F0;&#x660E;&#x7684; </span>
+<span class="hljs-addition">+   if (hasOwnProperty(this.imports, name)) {</span>
+<span class="hljs-addition">+     //&#x8BF4;&#x660E;&#x6B64;&#x53D8;&#x91CF;&#x4E0D;&#x662F;&#x6A21;&#x5757;&#x5185;&#x58F0;&#x660E;&#x7684;&#xFF0C;&#x800C;&#x662F;&#x5916;&#x90E8;&#x5BFC;&#x5165;&#x7684;,&#x83B7;&#x53D6;&#x4ECE;&#x54EA;&#x4E2A;&#x6A21;&#x5757;&#x5185;&#x5BFC;&#x5165;&#x4E86;&#x54EA;&#x4E2A;&#x53D8;&#x91CF;</span>
+<span class="hljs-addition">+     const { source, importName } = this.imports[name];</span>
+<span class="hljs-addition">+     //&#x83B7;&#x53D6;&#x8FD9;&#x4E2A;&#x6A21;&#x5757;</span>
+<span class="hljs-addition">+     const importModule = this.bundle.fetchModule(source, this.path);</span>
+<span class="hljs-addition">+     //&#x4ECE;&#x8FD9;&#x4E2A;&#x6A21;&#x5757;&#x7684;&#x5BFC;&#x51FA;&#x53D8;&#x91CF;&#x91CF;&#x83B7;&#x5F97;&#x672C;&#x5730;&#x53D8;&#x91CF;&#x7684;&#x540D;&#x79F0;</span>
+<span class="hljs-addition">+     const { localName } = importModule.exports[importName];</span>
+<span class="hljs-addition">+     //&#x83B7;&#x53D6;&#x672C;&#x5730;&#x53D8;&#x91CF;&#x7684;&#x5B9A;&#x4E49;&#x8BED;&#x53E5;</span>
+<span class="hljs-addition">+     return importModule.define(localName);//name</span>
+<span class="hljs-addition">+   } else {//&#x5982;&#x679C;&#x662F;&#x6A21;&#x5757;&#x7684;&#x53D8;&#x91CF;&#x7684;&#x8BDD;</span>
+<span class="hljs-addition">+     let statement = this.definitions[name];//name</span>
+<span class="hljs-addition">+     if (statement &amp;&amp; !statement._included) {</span>
+<span class="hljs-addition">+       //&#x5982;&#x679C;&#x672C;&#x5730;&#x53D8;&#x91CF;&#x7684;&#x8BDD;&#x8FD8;&#x9700;&#x8981;&#x7EE7;&#x7EED;&#x5C55;&#x5F00;</span>
+<span class="hljs-addition">+       return this.expandStatement(statement);</span>
+<span class="hljs-addition">+     } else {</span>
+<span class="hljs-addition">+       return []</span>
+<span class="hljs-addition">+     }</span>
+<span class="hljs-addition">+   }</span>
+<span class="hljs-addition">+ }</span>
+}
+module.exports = Module;
+</code></pre>
+<h3 id="t293.8 analyse.js">3.8 analyse.js <a href="#t293.8 analyse.js"> # </a></h3>
+<ul>
+<li>&#x7B2C;1&#x4E2A;&#x5FAA;&#x73AF; &#x627E;&#x51FA;&#x5BFC;&#x5165;&#x5BFC;&#x51FA;&#x7684;&#x53D8;&#x91CF;</li>
+<li>&#x7B2C;2&#x4E2A;&#x5FAA;&#x73AF; &#x627E;&#x51FA;&#x5B9A;&#x4E49;&#x548C;&#x4F9D;&#x8D56;&#x7684;&#x53D8;&#x91CF;</li>
+</ul>
+<p>lib\ast\analyse.js</p>
+<pre><code class="lang-diff"><span class="hljs-addition">+const Scope = require(&apos;./scope&apos;);</span>
+<span class="hljs-addition">+const walk = require(&apos;./walk&apos;);</span>
+<span class="hljs-addition">+const { hasOwnProperty } = require(&apos;../utils&apos;);</span>
+<span class="hljs-addition">+function analyse(ast, code, module) {</span>
+<span class="hljs-addition">+  //&#x7B2C;1&#x4E2A;&#x5FAA;&#x73AF;&#xFF0C;&#x627E;&#x51FA;&#x5BFC;&#x5165;&#x5BFC;&#x51FA;&#x7684;&#x53D8;&#x91CF;</span>
+<span class="hljs-addition">+  ast.body.forEach(statement =&gt; {</span>
+<span class="hljs-addition">+    Object.defineProperties(statement, {</span>
+       _module: { value: module }
+       _source: { value: code.snip(statement.start, statement.end) },
+<span class="hljs-addition">+      _defines: { value: {} },//&#x6B64;&#x8282;&#x70B9;&#x4E0A;&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;say</span>
+<span class="hljs-addition">+      _dependsOn: { value: {} }//&#x6B64;&#x6B64;&#x8282;&#x70B9;&#x8BFB;&#x53D6;&#x4E86;&#x54EA;&#x4E9B;&#x53D8;&#x91CF;</span>
+<span class="hljs-addition">+    })</span>
+<span class="hljs-addition">+    //import { name, age } from &apos;./msg&apos;;</span>
+<span class="hljs-addition">+    if (statement.type === &apos;ImportDeclaration&apos;) {</span>
+<span class="hljs-addition">+      let source = statement.source.value;// ./msg</span>
+<span class="hljs-addition">+      statement.specifiers.forEach(specifier =&gt; {</span>
+<span class="hljs-addition">+        let importName = specifier.imported.name;//&#x5BFC;&#x5165;&#x7684;&#x53D8;&#x91CF;&#x540D;</span>
+<span class="hljs-addition">+        let localName = specifier.local.name;//&#x672C;&#x5730;&#x7684;&#x53D8;&#x91CF;&#x540D;</span>
+<span class="hljs-addition">+        //imports.name = {source:&apos;./msg&apos;,importName:&apos;name&apos;};</span>
+<span class="hljs-addition">+        module.imports[localName] = { source, importName }</span>
+<span class="hljs-addition">+      });</span>
+<span class="hljs-addition">+    } else if (statement.type === &apos;ExportNamedDeclaration&apos;) {</span>
+<span class="hljs-addition">+      const declaration = statement.declaration;</span>
+<span class="hljs-addition">+      if (declaration &amp;&amp; declaration.type === &apos;VariableDeclaration&apos;) {</span>
+<span class="hljs-addition">+        const declarations = declaration.declarations;</span>
+<span class="hljs-addition">+        declarations.forEach(variableDeclarator =&gt; {</span>
+<span class="hljs-addition">+          const localName = variableDeclarator.id.name;//name</span>
+<span class="hljs-addition">+          const exportName = localName;</span>
+<span class="hljs-addition">+          //exports.name = {localName:&apos;name&apos;};</span>
+<span class="hljs-addition">+          module.exports[exportName] = { localName };</span>
+<span class="hljs-addition">+        });</span>
+<span class="hljs-addition">+      }</span>
+<span class="hljs-addition">+    }</span>
+<span class="hljs-addition">+  });</span>
+<span class="hljs-addition">+  //&#x7B2C;2&#x6B21;&#x5FAA;&#x73AF;&#x521B;&#x5EFA;&#x4F5C;&#x7528;&#x57DF;&#x94FE;</span>
+<span class="hljs-addition">+  let currentScope = new Scope({ name: &apos;&#x5168;&#x5C40;&#x4F5C;&#x7528;&#x57DF;&apos; });</span>
+<span class="hljs-addition">+  //&#x521B;&#x5EFA;&#x4F5C;&#x7528;&#x57DF;&#x94FE;,&#x4E3A;&#x4E86;&#x77E5;&#x9053;&#x6211;&#x5728;&#x6B64;&#x6A21;&#x5757;&#x4E2D;&#x58F0;&#x660E;&#x54EA;&#x4E9B;&#x53D8;&#x91CF;&#xFF0C;&#x8FD9;&#x4E9B;&#x53D8;&#x91CF;&#x7684;&#x58F0;&#x660E;&#x8282;&#x70B9;&#x662F;&#x54EA;&#x4E2A; var name = 1;</span>
+<span class="hljs-addition">+  ast.body.forEach(statement =&gt; {</span>
+<span class="hljs-addition">+    function addToScope(name) {</span>
+<span class="hljs-addition">+      currentScope.add(name);//&#x628A;name&#x53D8;&#x91CF;&#x653E;&#x5165;&#x5F53;&#x524D;&#x7684;&#x4F5C;&#x7528;&#x57DF;</span>
+<span class="hljs-addition">+      //&#x5982;&#x679C;&#x6CA1;&#x6709;&#x7236;&#x4EB2;&#xFF0C;&#x76F8;&#x5F53; &#x4E8E;&#x5C31;&#x662F;&#x6839;&#x4F5C;&#x7528;&#x57DF;&#x6216;&#x8005; &#x5F53;&#x524D;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x662F;&#x4E00;&#x4E2A;&#x5757;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;&#x7684;&#x8BDD;</span>
+<span class="hljs-addition">+      if (!currentScope.parent) {//&#x5982;&#x679C;&#x6CA1;&#x6709;&#x7236;&#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x8BF4;&#x660E;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x9876;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;</span>
+<span class="hljs-addition">+        statement._defines[name] = true;//&#x5728;&#x4E00;&#x7EA7;&#x8282;&#x70B9;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;name _defines.say=true</span>
+<span class="hljs-addition">+        module.definitions[name] = statement;</span>
+<span class="hljs-addition">+      }</span>
+<span class="hljs-addition">+    }</span>
+<span class="hljs-addition">+    walk(statement, {</span>
+<span class="hljs-addition">+      enter(node) {</span>
+<span class="hljs-addition">+        //&#x6536;&#x96C6;&#x672C;&#x8282;&#x70B9;&#x4E0A;&#x4F7F;&#x7528;&#x7684;&#x53D8;&#x91CF;</span>
+<span class="hljs-addition">+        if (node.type === &apos;Identifier&apos;) {</span>
+<span class="hljs-addition">+          statement._dependsOn[node.name] = true;</span>
+<span class="hljs-addition">+        }</span>
+<span class="hljs-addition">+        let newScope;</span>
+<span class="hljs-addition">+        switch (node.type) {</span>
+<span class="hljs-addition">+          case &apos;FunctionDeclaration&apos;:</span>
+<span class="hljs-addition">+            addToScope(node.id.name);//say</span>
+<span class="hljs-addition">+            const names = node.params.map(param =&gt; param.name);</span>
+<span class="hljs-addition">+            newScope = new Scope({ name: node.id.name, parent: currentScope, names });</span>
+<span class="hljs-addition">+            break;</span>
+<span class="hljs-addition">+          case &apos;VariableDeclaration&apos;:</span>
+<span class="hljs-addition">+            node.declarations.forEach(declaration =&gt; {</span>
+<span class="hljs-addition">+              addToScope(declaration.id.name);//var</span>
+<span class="hljs-addition">+            });</span>
+<span class="hljs-addition">+            break;</span>
+<span class="hljs-addition">+          default:</span>
+<span class="hljs-addition">+            break;</span>
+<span class="hljs-addition">+        }</span>
+<span class="hljs-addition">+        if (newScope) {</span>
+<span class="hljs-addition">+          Object.defineProperty(node, &apos;_scope&apos;, { value: newScope });</span>
+<span class="hljs-addition">+          currentScope = newScope;</span>
+<span class="hljs-addition">+        }</span>
+<span class="hljs-addition">+      },</span>
+<span class="hljs-addition">+      leave(node) {</span>
+<span class="hljs-addition">+        if (hasOwnProperty(node, &apos;_scope&apos;)) {</span>
+<span class="hljs-addition">+          currentScope = currentScope.parent;</span>
+<span class="hljs-addition">+        }</span>
+<span class="hljs-addition">+      }</span>
+<span class="hljs-addition">+    });</span>
+<span class="hljs-addition">+  });</span>
+<span class="hljs-addition">+}</span>
+module.exports = analyse;
+</code></pre>
+<h3 id="t303.9 scope.js">3.9 scope.js <a href="#t303.9 scope.js"> # </a></h3>
+<p>lib\ast\scope.js</p>
+<pre><code class="lang-js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Scope</span> </span>{
+  <span class="hljs-keyword">constructor</span>(options = {}) {
+    <span class="hljs-comment">//&#x4F5C;&#x7528;&#x57DF;&#x7684;&#x540D;&#x79F0;</span>
+    <span class="hljs-keyword">this</span>.name = options.name;
+    <span class="hljs-comment">//&#x7236;&#x4F5C;&#x7528;&#x57DF;</span>
+    <span class="hljs-keyword">this</span>.parent = options.parent;
+    <span class="hljs-comment">//&#x6B64;&#x4F5C;&#x7528;&#x57DF;&#x5185;&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;</span>
+    <span class="hljs-keyword">this</span>.names = options.names || [];
+  }
+  add(name) {
+    <span class="hljs-keyword">this</span>.names.push(name);
+  }
+  findDefiningScope(name) {
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.names.includes(name)) {
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.parent) {
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.parent.findDefiningScope(name);
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+    }
+  }
+}
+<span class="hljs-built_in">module</span>.exports = Scope;
+</code></pre>
+<h3 id="t313.10 lib\ast\walk.js">3.10 lib\ast\walk.js <a href="#t313.10 lib\ast\walk.js"> # </a></h3>
+<p>lib\ast\walk.js</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">walk</span>(<span class="hljs-params">astNode, { enter, leave }</span>) </span>{
+  visit(astNode, <span class="hljs-literal">null</span>, enter, leave);
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">visit</span>(<span class="hljs-params">node, parent, enter, leave</span>) </span>{
+  <span class="hljs-keyword">if</span> (enter) {
+    enter.call(<span class="hljs-literal">null</span>, node, parent);
+  }
+  <span class="hljs-keyword">let</span> keys = <span class="hljs-built_in">Object</span>.keys(node).filter(<span class="hljs-function"><span class="hljs-params">key</span> =&gt;</span> <span class="hljs-keyword">typeof</span> node[key] === <span class="hljs-string">&apos;object&apos;</span>)
+  keys.forEach(<span class="hljs-function"><span class="hljs-params">key</span> =&gt;</span> {
+    <span class="hljs-keyword">let</span> value = node[key];
+    <span class="hljs-keyword">if</span> (<span class="hljs-built_in">Array</span>.isArray(value)) {
+      value.forEach(<span class="hljs-function"><span class="hljs-params">val</span> =&gt;</span> visit(val, node, enter, leave));
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (value &amp;&amp; value.type) {
+      visit(value, node, enter, leave)
+    }
+  });
+  <span class="hljs-keyword">if</span> (leave) {
+    leave.call(<span class="hljs-literal">null</span>, node, parent);
+  }
+}
+<span class="hljs-built_in">module</span>.exports = walk;
+</code></pre>
+<h2 id="t324.&#x5305;&#x542B;&#x4FEE;&#x6539;&#x8BED;&#x53E5;">4.&#x5305;&#x542B;&#x4FEE;&#x6539;&#x8BED;&#x53E5; <a href="#t324.&#x5305;&#x542B;&#x4FEE;&#x6539;&#x8BED;&#x53E5;"> # </a></h2>
+<h3 id="t334.1 main.js">4.1 main.js <a href="#t334.1 main.js"> # </a></h3>
+<p>src\main.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { name, age } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./msg&apos;</span>;
+<span class="hljs-built_in">console</span>.log(name);
+</code></pre>
+<h3 id="t344.2 msg.js">4.2 msg.js <a href="#t344.2 msg.js"> # </a></h3>
+<p>src\msg.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">var</span> name = <span class="hljs-string">&apos;zhufeng&apos;</span>;
+name += <span class="hljs-string">&apos;jiagou&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">var</span> age = <span class="hljs-number">12</span>;
+</code></pre>
+<h3 id="t354.3 module.js">4.3 module.js <a href="#t354.3 module.js"> # </a></h3>
+<p>lib\module.js</p>
+<pre><code class="lang-diff">const MagicString = require(&apos;magic-string&apos;);
+const { parse } = require(&apos;acorn&apos;);
+const { hasOwnProperty } = require(&apos;./utils&apos;);
+let analyse = require(&apos;./ast/analyse&apos;);
+class Module {
+  constructor({ code, path, bundle }) {
+    this.code = new MagicString(code, { filename: path });
+    this.path = path;
+    this.bundle = bundle;
+    this.ast = parse(code, {
+      ecmaVersion: 8,
+      sourceType: &apos;module&apos;
+    })
+    //&#x5B58;&#x653E;&#x672C;&#x6A21;&#x5757;&#x7684;&#x5BFC;&#x5165;&#x4FE1;&#x606F;
+    this.imports = {};
+    //&#x672C;&#x6A21;&#x5757;&#x7684;&#x5BFC;&#x51FA;&#x4FE1;&#x606F;
+    this.exports = {};
+    //&#x5B58;&#x653E;&#x672C;&#x6A21;&#x5757;&#x7684;&#x5B9A;&#x4E49;&#x53D8;&#x91CF;&#x7684;&#x8BED;&#x53E5; a=&gt;var a = 1;b =var b =2;
+    this.definitions = {};
+    //&#x5B58;&#x653E;&#x53D8;&#x91CF;&#x4FEE;&#x6539;&#x8BED;&#x53E5;
+<span class="hljs-addition">+   this.modifications = {};</span>
+    analyse(this.ast, this.code, this);
+  }
+  expandAllStatements() {
+    let allStatements = [];
+    this.ast.body.forEach(statement =&gt; {
+      if (statement.type <span class="hljs-comment">=== &apos;ImportDeclaration&apos;) return;</span>
+      let statements = this.expandStatement(statement);
+      allStatements.push(...statements);
+    });
+    return allStatements;
+  }
+  expandStatement(statement) {
+    statement._included = true;
+    let result = [];
+    //&#x83B7;&#x53D6;&#x6B64;&#x8BED;&#x53E5;&#x4F9D;&#x8D56;&#x7684;&#x53D8;&#x91CF;
+    let _dependsOn = Object.keys(statement._dependsOn);
+    _dependsOn.forEach(name =&gt; {
+      //&#x627E;&#x5230;&#x6B64;&#x53D8;&#x91CF;&#x5B9A;&#x4E49;&#x7684;&#x8BED;&#x53E5;&#xFF0C;&#x6DFB;&#x52A0;&#x5230;&#x8F93;&#x51FA;&#x6570;&#x7EC4;&#x91CC;
+      let definitions = this.define(name);
+      result.push(...definitions);
+    });
+    //&#x628A;&#x6B64;&#x8BED;&#x53E5;&#x6DFB;&#x52A0;&#x5230;&#x8F93;&#x51FA;&#x5217;&#x8868;&#x4E2D;
+    result.push(statement);
+<span class="hljs-addition">+   //&#x627E;&#x5230;&#x6B64;&#x8BED;&#x53E5;&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;,&#x628A;&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;&#x548C;&#x4FEE;&#x6539;&#x8BED;&#x53E5;&#x4E5F;&#x5305;&#x62EC;&#x8FDB;&#x6765;</span>
+<span class="hljs-addition">+   //&#x6CE8;&#x610F;&#x8981;&#x5148;&#x5B9A;&#x4E49;&#x518D;&#x4FEE;&#x6539;&#xFF0C;&#x6240;&#x4EE5;&#x8981;&#x628A;&#x8FD9;&#x884C;&#x653E;&#x5728;push(statement)&#x7684;&#x4E0B;&#x9762;</span>
+<span class="hljs-addition">+   const defines = Object.keys(statement._defines);</span>
+<span class="hljs-addition">+   defines.forEach(name =&gt; {</span>
+<span class="hljs-addition">+     //&#x627E;&#x5230;&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;&#x4F9D;&#x8D56;&#x7684;&#x4FEE;&#x6539;&#x7684;&#x8BED;&#x53E5;</span>
+<span class="hljs-addition">+     const modifications = hasOwnProperty(this.modifications, name) &amp;&amp; this.modifications[name];</span>
+<span class="hljs-addition">+     if (modifications) {</span>
+<span class="hljs-addition">+       //&#x628A;&#x4FEE;&#x6539;&#x8BED;&#x53E5;&#x4E5F;&#x5C55;&#x5F00;&#x653E;&#x5230;&#x7ED3;&#x679C;&#x91CC;</span>
+<span class="hljs-addition">+       modifications.forEach(statement =&gt; {</span>
+<span class="hljs-addition">+         if (!statement._included) {</span>
+<span class="hljs-addition">+           let statements = this.expandStatement(statement);</span>
+<span class="hljs-addition">+           result.push(...statements);</span>
+<span class="hljs-addition">+         }</span>
+<span class="hljs-addition">+       });</span>
+<span class="hljs-addition">+     }</span>
+<span class="hljs-addition">+   });</span>
+    return result;
+  }
+  define(name) {
+    //&#x5148;&#x5224;&#x65AD;&#x6B64;&#x53D8;&#x91CF;&#x662F;&#x5916;&#x90E8;&#x5BFC;&#x5165;&#x7684;&#x8FD8;&#x662F;&#x6A21;&#x5757;&#x5185;&#x58F0;&#x660E;&#x7684; 
+    if (hasOwnProperty(this.imports, name)) {
+      //&#x8BF4;&#x660E;&#x6B64;&#x53D8;&#x91CF;&#x4E0D;&#x662F;&#x6A21;&#x5757;&#x5185;&#x58F0;&#x660E;&#x7684;&#xFF0C;&#x800C;&#x662F;&#x5916;&#x90E8;&#x5BFC;&#x5165;&#x7684;,&#x83B7;&#x53D6;&#x4ECE;&#x54EA;&#x4E2A;&#x6A21;&#x5757;&#x5185;&#x5BFC;&#x5165;&#x4E86;&#x54EA;&#x4E2A;&#x53D8;&#x91CF;
+      const { source, importName } = this.imports[name];
+      //&#x83B7;&#x53D6;&#x8FD9;&#x4E2A;&#x6A21;&#x5757;
+      const importModule = this.bundle.fetchModule(source, this.path);
+      //&#x4ECE;&#x8FD9;&#x4E2A;&#x6A21;&#x5757;&#x7684;&#x5BFC;&#x51FA;&#x53D8;&#x91CF;&#x91CF;&#x83B7;&#x5F97;&#x672C;&#x5730;&#x53D8;&#x91CF;&#x7684;&#x540D;&#x79F0;
+      const { localName } = importModule.exports[importName];
+      //&#x83B7;&#x53D6;&#x672C;&#x5730;&#x53D8;&#x91CF;&#x7684;&#x5B9A;&#x4E49;&#x8BED;&#x53E5;
+      return importModule.define(localName);//name
+    } else {//&#x5982;&#x679C;&#x662F;&#x6A21;&#x5757;&#x7684;&#x53D8;&#x91CF;&#x7684;&#x8BDD;
+      let statement = this.definitions[name];//name
+      if (statement &amp;&amp; !statement._included) {
+        //&#x5982;&#x679C;&#x672C;&#x5730;&#x53D8;&#x91CF;&#x7684;&#x8BDD;&#x8FD8;&#x9700;&#x8981;&#x7EE7;&#x7EED;&#x5C55;&#x5F00;
+        return this.expandStatement(statement);
+      } else {
+        return []
+      }
+    }
+  }
+}
+module.exports = Module;
+</code></pre>
+<h3 id="t364.4 analyse.js">4.4 analyse.js <a href="#t364.4 analyse.js"> # </a></h3>
+<p>lib\ast\analyse.js</p>
+<pre><code class="lang-diff">const Scope = require(&apos;./scope&apos;);
+const walk = require(&apos;./walk&apos;);
+const { hasOwnProperty } = require(&apos;../utils&apos;);
+function analyse(ast, code, module) {
+  //&#x7B2C;1&#x4E2A;&#x5FAA;&#x73AF;&#xFF0C;&#x627E;&#x51FA;&#x5BFC;&#x5165;&#x5BFC;&#x51FA;&#x7684;&#x53D8;&#x91CF;
+  ast.body.forEach(statement =&gt; {
+    Object.defineProperties(statement, {
+      _module: { value: module },
+      _source: { value: code.snip(statement.start, statement.end) },
+      _defines: { value: {} },//&#x6B64;&#x8282;&#x70B9;&#x4E0A;&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;say
+      _dependsOn: { value: {} },//&#x6B64;&#x6B64;&#x8282;&#x70B9;&#x8BFB;&#x53D6;&#x4E86;&#x54EA;&#x4E9B;&#x53D8;&#x91CF;
+<span class="hljs-addition">+     _modifies: { value: {} },//&#x672C;&#x8BED;&#x53E5;&#x4FEE;&#x6539;&#x7684;&#x53D8;&#x91CF;</span>
+    })
+    //import { name, age } from &apos;./msg&apos;;
+    if (statement.type <span class="hljs-comment">=== &apos;ImportDeclaration&apos;) {</span>
+      let source = statement.source.value;// ./msg
+      statement.specifiers.forEach(specifier =&gt; {
+        let importName = specifier.imported.name;//&#x5BFC;&#x5165;&#x7684;&#x53D8;&#x91CF;&#x540D;
+        let localName = specifier.local.name;//&#x672C;&#x5730;&#x7684;&#x53D8;&#x91CF;&#x540D;
+        //imports.name = {source:&apos;./msg&apos;,importName:&apos;name&apos;};
+        module.imports[localName] = { source, importName }
+      });
+    } else if (statement.type <span class="hljs-comment">=== &apos;ExportNamedDeclaration&apos;) {</span>
+      const declaration = statement.declaration;
+      if (declaration &amp;&amp; declaration.type <span class="hljs-comment">=== &apos;VariableDeclaration&apos;) {</span>
+        const declarations = declaration.declarations;
+        declarations.forEach(variableDeclarator =&gt; {
+          const localName = variableDeclarator.id.name;//name
+          const exportName = localName;
+          //exports.name = {localName:&apos;name&apos;};
+          module.exports[exportName] = { localName };
+        });
+      }
+    }
+  });
+  //&#x7B2C;2&#x6B21;&#x5FAA;&#x73AF;&#x521B;&#x5EFA;&#x4F5C;&#x7528;&#x57DF;&#x94FE;
+  let currentScope = new Scope({ name: &apos;&#x5168;&#x5C40;&#x4F5C;&#x7528;&#x57DF;&apos; });
+  //&#x521B;&#x5EFA;&#x4F5C;&#x7528;&#x57DF;&#x94FE;,&#x4E3A;&#x4E86;&#x77E5;&#x9053;&#x6211;&#x5728;&#x6B64;&#x6A21;&#x5757;&#x4E2D;&#x58F0;&#x660E;&#x54EA;&#x4E9B;&#x53D8;&#x91CF;&#xFF0C;&#x8FD9;&#x4E9B;&#x53D8;&#x91CF;&#x7684;&#x58F0;&#x660E;&#x8282;&#x70B9;&#x662F;&#x54EA;&#x4E2A; var name = 1;
+  ast.body.forEach(statement =&gt; {
+<span class="hljs-addition">+   function checkForReads(node) {</span>
+<span class="hljs-addition">+     //&#x5982;&#x679C;&#x6B64;&#x8282;&#x70B9;&#x7C7B;&#x578B;&#x662F;&#x4E00;&#x4E2A;&#x6807;&#x8BC6;&#x7B26;&#x8BDD;</span>
+<span class="hljs-addition">+     if (node.type === &apos;Identifier&apos;) {</span>
+<span class="hljs-addition">+       statement._dependsOn[node.name] = true;</span>
+<span class="hljs-addition">+     }</span>
+<span class="hljs-addition">+   }</span>
+<span class="hljs-addition">+   function checkForWrites(node) {</span>
+<span class="hljs-addition">+     function addNode(node) {</span>
+<span class="hljs-addition">+       const name = node.name;</span>
+<span class="hljs-addition">+       statement._modifies[name] = true;//statement._modifies.age = true;</span>
+<span class="hljs-addition">+       if (!hasOwnProperty(module.modifications, name)) {</span>
+<span class="hljs-addition">+         module.modifications[name] = [];</span>
+<span class="hljs-addition">+       }</span>
+<span class="hljs-addition">+       module.modifications[name].push(statement);</span>
+<span class="hljs-addition">+     }</span>
+<span class="hljs-addition">+     if (node.type === &apos;AssignmentExpression&apos;) {</span>
+<span class="hljs-addition">+       addNode(node.left, true);</span>
+<span class="hljs-addition">+     } else if (node.type === &apos;UpdateExpression&apos;) {</span>
+<span class="hljs-addition">+       addNode(node.argument);</span>
+<span class="hljs-addition">+     }</span>
+<span class="hljs-addition">+   }</span>
+    function addToScope(name) {
+      currentScope.add(name);//&#x628A;name&#x53D8;&#x91CF;&#x653E;&#x5165;&#x5F53;&#x524D;&#x7684;&#x4F5C;&#x7528;&#x57DF;
+      //&#x5982;&#x679C;&#x6CA1;&#x6709;&#x7236;&#x4EB2;&#xFF0C;&#x76F8;&#x5F53; &#x4E8E;&#x5C31;&#x662F;&#x6839;&#x4F5C;&#x7528;&#x57DF;&#x6216;&#x8005; &#x5F53;&#x524D;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x662F;&#x4E00;&#x4E2A;&#x5757;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;&#x7684;&#x8BDD;
+      if (!currentScope.parent) {//&#x5982;&#x679C;&#x6CA1;&#x6709;&#x7236;&#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x8BF4;&#x660E;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x9876;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;
+        statement._defines[name] = true;//&#x5728;&#x4E00;&#x7EA7;&#x8282;&#x70B9;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;name _defines.say=true
+        module.definitions[name] = statement;
+      }
+    }
+    walk(statement, {
+      enter(node) {
+<span class="hljs-deletion">-        if (node.type === &apos;Identifier&apos;) {</span>
+<span class="hljs-deletion">-          statement._dependsOn[node.name] = true;</span>
+<span class="hljs-deletion">-        }</span>
+<span class="hljs-addition">+       //&#x6536;&#x96C6;&#x672C;&#x8282;&#x70B9;&#x4E0A;&#x4F7F;&#x7528;&#x7684;&#x53D8;&#x91CF;</span>
+<span class="hljs-addition">+       checkForReads(node);</span>
+<span class="hljs-addition">+       checkForWrites(node);</span>
+        let newScope;
+        switch (node.type) {
+          case &apos;FunctionDeclaration&apos;:
+            addToScope(node.id.name);//say
+            const names = node.params.map(param =&gt; param.name);
+            newScope = new Scope({ name: node.id.name, parent: currentScope, names });
+            break;
+          case &apos;VariableDeclaration&apos;:
+            node.declarations.forEach(declaration =&gt; {
+              addToScope(declaration.id.name);//var
+            });
+            break;
+          default:
+            break;
+        }
+        if (newScope) {
+          Object.defineProperty(node, &apos;_scope&apos;, { value: newScope });
+          currentScope = newScope;
+        }
+      },
+      leave(node) {
+        if (hasOwnProperty(node, &apos;_scope&apos;)) {
+          currentScope = currentScope.parent;
+        }
+      }
+    });
+  });
+}
+module.exports = analyse;
+</code></pre>
+<h2 id="t374.&#x652F;&#x6301;&#x5757;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;">4.&#x652F;&#x6301;&#x5757;&#x7EA7;&#x4F5C;&#x7528;&#x57DF; <a href="#t374.&#x652F;&#x6301;&#x5757;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;"> # </a></h2>
+<h3 id="t384.1 src\main.js">4.1 src\main.js <a href="#t384.1 src\main.js"> # </a></h3>
+<p>src\main.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> name = <span class="hljs-string">&apos;zhufeng&apos;</span>;
+<span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>) {
+  <span class="hljs-keyword">var</span> age = <span class="hljs-number">12</span>;
+}
+<span class="hljs-built_in">console</span>.log(age);
+</code></pre>
+<h3 id="t395.2 lib\ast\scope.js">5.2 lib\ast\scope.js <a href="#t395.2 lib\ast\scope.js"> # </a></h3>
+<p>lib\ast\scope.js</p>
+<pre><code class="lang-diff">class Scope {
+  constructor(options = {}) {
+    //&#x4F5C;&#x7528;&#x57DF;&#x7684;&#x540D;&#x79F0;
+    this.name = options.name;
+    //&#x7236;&#x4F5C;&#x7528;&#x57DF;
+    this.parent = options.parent;
+    //&#x6B64;&#x4F5C;&#x7528;&#x57DF;&#x5185;&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;
+    this.names = options.names || [];
+    // &#x662F;&#x5426;&#x5757;&#x4F5C;&#x7528;&#x57DF;
+<span class="hljs-addition">+   this.isBlock = !!options.isBlock</span>
+  }
+<span class="hljs-addition">+ add(name, isBlockDeclaration) {</span>
+<span class="hljs-addition">+   if (!isBlockDeclaration &amp;&amp; this.isBlock) {</span>
+      //&#x8FD9;&#x662F;&#x4E00;&#x4E2A;var&#x6216;&#x8005;&#x51FD;&#x6570;&#x58F0;&#x660E;&#xFF0C;&#x5E76;&#x4E14;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x5757;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5411;&#x4E0A;&#x63D0;&#x5347;
+<span class="hljs-addition">+     this.parent.add(name, isBlockDeclaration)</span>
+    } else {
+      this.names.push(name);
+    }
+  }
+  findDefiningScope(name) {
+    if (this.names.includes(name)) {
+      return this;
+    } else if (this.parent) {
+      return this.parent.findDefiningScope(name);
+    } else {
+      return null;
+    }
+  }
+}
+module.exports = Scope;
+</code></pre>
+<h3 id="t405.3 analyse.js">5.3 analyse.js <a href="#t405.3 analyse.js"> # </a></h3>
+<p>lib\ast\analyse.js</p>
+<pre><code class="lang-diff">const Scope = require(&apos;./scope&apos;);
+const walk = require(&apos;./walk&apos;);
+const { hasOwnProperty } = require(&apos;../utils&apos;);
+function analyse(ast, code, module) {
+  //&#x7B2C;1&#x4E2A;&#x5FAA;&#x73AF;&#xFF0C;&#x627E;&#x51FA;&#x5BFC;&#x5165;&#x5BFC;&#x51FA;&#x7684;&#x53D8;&#x91CF;
+  ast.body.forEach(statement =&gt; {
+    Object.defineProperties(statement, {
+      _module: { value: module },
+      _source: { value: code.snip(statement.start, statement.end) },
+      _defines: { value: {} },//&#x6B64;&#x8282;&#x70B9;&#x4E0A;&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;say
+      _dependsOn: { value: {} },//&#x6B64;&#x6B64;&#x8282;&#x70B9;&#x8BFB;&#x53D6;&#x4E86;&#x54EA;&#x4E9B;&#x53D8;&#x91CF;
+      _modifies: { value: {} },//&#x672C;&#x8BED;&#x53E5;&#x4FEE;&#x6539;&#x7684;&#x53D8;&#x91CF;
+    })
+    //import { name, age } from &apos;./msg&apos;;
+    if (statement.type <span class="hljs-comment">=== &apos;ImportDeclaration&apos;) {</span>
+      let source = statement.source.value;// ./msg
+      statement.specifiers.forEach(specifier =&gt; {
+        let importName = specifier.imported.name;//&#x5BFC;&#x5165;&#x7684;&#x53D8;&#x91CF;&#x540D;
+        let localName = specifier.local.name;//&#x672C;&#x5730;&#x7684;&#x53D8;&#x91CF;&#x540D;
+        //imports.name = {source:&apos;./msg&apos;,importName:&apos;name&apos;};
+        module.imports[localName] = { source, importName }
+      });
+    } else if (statement.type <span class="hljs-comment">=== &apos;ExportNamedDeclaration&apos;) {</span>
+      const declaration = statement.declaration;
+      if (declaration &amp;&amp; declaration.type <span class="hljs-comment">=== &apos;VariableDeclaration&apos;) {</span>
+        const declarations = declaration.declarations;
+        declarations.forEach(variableDeclarator =&gt; {
+          const localName = variableDeclarator.id.name;//name
+          const exportName = localName;
+          //exports.name = {localName:&apos;name&apos;};
+          module.exports[exportName] = { localName };
+        });
+      }
+    }
+  });
+  //&#x7B2C;2&#x6B21;&#x5FAA;&#x73AF;&#x521B;&#x5EFA;&#x4F5C;&#x7528;&#x57DF;&#x94FE;
+  let currentScope = new Scope({ name: &apos;&#x5168;&#x5C40;&#x4F5C;&#x7528;&#x57DF;&apos; });
+  //&#x521B;&#x5EFA;&#x4F5C;&#x7528;&#x57DF;&#x94FE;,&#x4E3A;&#x4E86;&#x77E5;&#x9053;&#x6211;&#x5728;&#x6B64;&#x6A21;&#x5757;&#x4E2D;&#x58F0;&#x660E;&#x54EA;&#x4E9B;&#x53D8;&#x91CF;&#xFF0C;&#x8FD9;&#x4E9B;&#x53D8;&#x91CF;&#x7684;&#x58F0;&#x660E;&#x8282;&#x70B9;&#x662F;&#x54EA;&#x4E2A; var name = 1;
+  ast.body.forEach(statement =&gt; {
+    function checkForReads(node) {
+      //&#x5982;&#x679C;&#x6B64;&#x8282;&#x70B9;&#x7C7B;&#x578B;&#x662F;&#x4E00;&#x4E2A;&#x6807;&#x8BC6;&#x7B26;&#x8BDD;
+      if (node.type <span class="hljs-comment">=== &apos;Identifier&apos;) {</span>
+        statement._dependsOn[node.name] = true;
+      }
+    }
+    function checkForWrites(node) {
+      function addNode(node) {
+        const name = node.name;
+        statement._modifies[name] = true;//statement._modifies.age = true;
+        if (!hasOwnProperty(module.modifications, name)) {
+          module.modifications[name] = [];
+        }
+        module.modifications[name].push(statement);
+      }
+      if (node.type <span class="hljs-comment">=== &apos;AssignmentExpression&apos;) {</span>
+        addNode(node.left, true);
+      } else if (node.type <span class="hljs-comment">=== &apos;UpdateExpression&apos;) {</span>
+        addNode(node.argument);
+      }
+    }
+<span class="hljs-addition">+   function addToScope(name, isBlockDeclaration) {</span>
+<span class="hljs-addition">+     currentScope.add(name, isBlockDeclaration);//&#x628A;name&#x53D8;&#x91CF;&#x653E;&#x5165;&#x5F53;&#x524D;&#x7684;&#x4F5C;&#x7528;&#x57DF;</span>
+      //&#x5982;&#x679C;&#x6CA1;&#x6709;&#x7236;&#x4EB2;&#xFF0C;&#x76F8;&#x5F53; &#x4E8E;&#x5C31;&#x662F;&#x6839;&#x4F5C;&#x7528;&#x57DF;&#x6216;&#x8005; &#x5F53;&#x524D;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x662F;&#x4E00;&#x4E2A;&#x5757;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;&#x7684;&#x8BDD;
+<span class="hljs-addition">+     if (!currentScope.parent || (currentScope.isBlock &amp;&amp; !isBlockDeclaration)) {//&#x5982;&#x679C;&#x6CA1;&#x6709;&#x7236;&#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x8BF4;&#x660E;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x9876;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;</span>
+        statement._defines[name] = true;//&#x5728;&#x4E00;&#x7EA7;&#x8282;&#x70B9;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;name _defines.say=true
+        module.definitions[name] = statement;
+      }
+    }
+    walk(statement, {
+      enter(node) {
+        //&#x6536;&#x96C6;&#x672C;&#x8282;&#x70B9;&#x4E0A;&#x4F7F;&#x7528;&#x7684;&#x53D8;&#x91CF;
+        checkForReads(node);
+        checkForWrites(node);
+        let newScope;
+        switch (node.type) {
+          case &apos;FunctionDeclaration&apos;:
+            addToScope(node.id.name);//say
+            const names = node.params.map(param =&gt; param.name);
+<span class="hljs-addition">+           newScope = new Scope({ name: node.id.name, parent: currentScope, names, isBlock: false });</span>
+            break;
+          case &apos;VariableDeclaration&apos;:
+            node.declarations.forEach(declaration =&gt; {
+<span class="hljs-addition">+             if (node.kind === &apos;let&apos; || node.kind === &apos;const&apos;) {</span>
+<span class="hljs-addition">+               addToScope(declaration.id.name, true);//&#x8FD9;&#x662F;&#x662F;&#x4E00;&#x4E2A;&#x5757;&#x7EA7;&#x53D8;&#x91CF;</span>
+<span class="hljs-addition">+             } else {</span>
+<span class="hljs-addition">+               addToScope(declaration.id.name);//var</span>
+<span class="hljs-addition">+             }</span>
+            });
+            break;
+<span class="hljs-addition">+         case &apos;BlockStatement&apos;:</span>
+<span class="hljs-addition">+           newScope = new Scope({ parent: currentScope, isBlock: true });</span>
+<span class="hljs-addition">+           break;</span>
+          default:
+            break;
+        }
+        if (newScope) {
+          Object.defineProperty(node, &apos;_scope&apos;, { value: newScope });
+          currentScope = newScope;
+        }
+      },
+      leave(node) {
+        if (hasOwnProperty(node, &apos;_scope&apos;)) {
+          currentScope = currentScope.parent;
+        }
+      }
+    });
+  });
+
+}
+module.exports = analyse;
+</code></pre>
+<h3 id="t415.4 module.js">5.4 module.js <a href="#t415.4 module.js"> # </a></h3>
+<p>lib\module.js</p>
+<pre><code class="lang-diff">const MagicString = require(&apos;magic-string&apos;);
+const { parse } = require(&apos;acorn&apos;);
+const { hasOwnProperty } = require(&apos;./utils&apos;);
+const analyse = require(&apos;./ast/analyse&apos;);
+<span class="hljs-addition">+const SYSTEMS = [&apos;console&apos;, &apos;log&apos;];</span>
+class Module {
+  constructor({ code, path, bundle }) {
+    this.code = new MagicString(code, { filename: path });
+    this.path = path;
+    this.bundle = bundle;
+    this.ast = parse(code, {
+      ecmaVersion: 8,
+      sourceType: &apos;module&apos;
+    })
+    //&#x5B58;&#x653E;&#x672C;&#x6A21;&#x5757;&#x7684;&#x5BFC;&#x5165;&#x4FE1;&#x606F;
+    this.imports = {};
+    //&#x672C;&#x6A21;&#x5757;&#x7684;&#x5BFC;&#x51FA;&#x4FE1;&#x606F;
+    this.exports = {};
+    //&#x5B58;&#x653E;&#x672C;&#x6A21;&#x5757;&#x7684;&#x5B9A;&#x4E49;&#x53D8;&#x91CF;&#x7684;&#x8BED;&#x53E5; a=&gt;var a = 1;b =var b =2;
+    this.definitions = {};
+    //&#x5B58;&#x653E;&#x53D8;&#x91CF;&#x4FEE;&#x6539;&#x8BED;&#x53E5;
+    this.modifications = {};
+    analyse(this.ast, this.code, this);
+  }
+  expandAllStatements() {
+    let allStatements = [];
+    this.ast.body.forEach(statement =&gt; {
+      if (statement.type <span class="hljs-comment">=== &apos;ImportDeclaration&apos;) return;</span>
+<span class="hljs-addition">+     //&#x9ED8;&#x8BA4;&#x4E0D;&#x5305;&#x542B;&#x6240;&#x6709;&#x7684;&#x53D8;&#x91CF;&#x58F0;&#x660E;&#x8BED;&#x53E5;</span>
+<span class="hljs-addition">+     if (statement.type === &apos;VariableDeclaration&apos;) return;</span>
+      let statements = this.expandStatement(statement);
+      allStatements.push(...statements);
+    });
+    return allStatements;
+  }
+  expandStatement(statement) {
+    statement._included = true;
+    let result = [];
+    //&#x83B7;&#x53D6;&#x6B64;&#x8BED;&#x53E5;&#x4F9D;&#x8D56;&#x7684;&#x53D8;&#x91CF;
+    let _dependsOn = Object.keys(statement._dependsOn);
+    _dependsOn.forEach(name =&gt; {
+      //&#x627E;&#x5230;&#x6B64;&#x53D8;&#x91CF;&#x5B9A;&#x4E49;&#x7684;&#x8BED;&#x53E5;&#xFF0C;&#x6DFB;&#x52A0;&#x5230;&#x8F93;&#x51FA;&#x6570;&#x7EC4;&#x91CC;
+      let definitions = this.define(name);
+      result.push(...definitions);
+    });
+    //&#x628A;&#x6B64;&#x8BED;&#x53E5;&#x6DFB;&#x52A0;&#x5230;&#x8F93;&#x51FA;&#x5217;&#x8868;&#x4E2D;
+    result.push(statement);
+    //&#x627E;&#x5230;&#x6B64;&#x8BED;&#x53E5;&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;,&#x628A;&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;&#x548C;&#x4FEE;&#x6539;&#x8BED;&#x53E5;&#x4E5F;&#x5305;&#x62EC;&#x8FDB;&#x6765;
+    //&#x6CE8;&#x610F;&#x8981;&#x5148;&#x5B9A;&#x4E49;&#x518D;&#x4FEE;&#x6539;&#xFF0C;&#x6240;&#x4EE5;&#x8981;&#x628A;&#x8FD9;&#x884C;&#x653E;&#x5728;push(statement)&#x7684;&#x4E0B;&#x9762;
+    const defines = Object.keys(statement._defines);
+    defines.forEach(name =&gt; {
+      //&#x627E;&#x5230;&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;&#x4F9D;&#x8D56;&#x7684;&#x4FEE;&#x6539;&#x7684;&#x8BED;&#x53E5;
+      const modifications = hasOwnProperty(this.modifications, name) &amp;&amp; this.modifications[name];
+      if (modifications) {
+        //&#x628A;&#x4FEE;&#x6539;&#x8BED;&#x53E5;&#x4E5F;&#x5C55;&#x5F00;&#x653E;&#x5230;&#x7ED3;&#x679C;&#x91CC;
+        modifications.forEach(statement =&gt; {
+          if (!statement._included) {
+            let statements = this.expandStatement(statement);
+            result.push(...statements);
+          }
+        });
+      }
+    });
+    return result;
+  }
+  define(name) {
+    //&#x5148;&#x5224;&#x65AD;&#x6B64;&#x53D8;&#x91CF;&#x662F;&#x5916;&#x90E8;&#x5BFC;&#x5165;&#x7684;&#x8FD8;&#x662F;&#x6A21;&#x5757;&#x5185;&#x58F0;&#x660E;&#x7684; 
+    if (hasOwnProperty(this.imports, name)) {
+      //&#x8BF4;&#x660E;&#x6B64;&#x53D8;&#x91CF;&#x4E0D;&#x662F;&#x6A21;&#x5757;&#x5185;&#x58F0;&#x660E;&#x7684;&#xFF0C;&#x800C;&#x662F;&#x5916;&#x90E8;&#x5BFC;&#x5165;&#x7684;,&#x83B7;&#x53D6;&#x4ECE;&#x54EA;&#x4E2A;&#x6A21;&#x5757;&#x5185;&#x5BFC;&#x5165;&#x4E86;&#x54EA;&#x4E2A;&#x53D8;&#x91CF;
+      const { source, importName } = this.imports[name];
+      //&#x83B7;&#x53D6;&#x8FD9;&#x4E2A;&#x6A21;&#x5757;
+      const importModule = this.bundle.fetchModule(source, this.path);
+      //&#x4ECE;&#x8FD9;&#x4E2A;&#x6A21;&#x5757;&#x7684;&#x5BFC;&#x51FA;&#x53D8;&#x91CF;&#x91CF;&#x83B7;&#x5F97;&#x672C;&#x5730;&#x53D8;&#x91CF;&#x7684;&#x540D;&#x79F0;
+      const { localName } = importModule.exports[importName];
+      //&#x83B7;&#x53D6;&#x672C;&#x5730;&#x53D8;&#x91CF;&#x7684;&#x5B9A;&#x4E49;&#x8BED;&#x53E5;
+      return importModule.define(localName);//name
+    } else {//&#x5982;&#x679C;&#x662F;&#x6A21;&#x5757;&#x7684;&#x53D8;&#x91CF;&#x7684;&#x8BDD;
+      let statement = this.definitions[name];//name
+<span class="hljs-addition">+     if (statement) {</span>
+<span class="hljs-addition">+       if (statement._included) {</span>
+<span class="hljs-addition">+         return [];</span>
+<span class="hljs-addition">+       } else {</span>
+<span class="hljs-addition">+         return this.expandStatement(statement);</span>
+<span class="hljs-addition">+       }</span>
+<span class="hljs-addition">+     } else {  </span>
+<span class="hljs-addition">+       if (SYSTEMS.includes(name)) {</span>
+<span class="hljs-addition">+         return [];</span>
+<span class="hljs-addition">+       } else {  //&#x5982;&#x679C;&#x627E;&#x4E0D;&#x5230;&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;&#x5C31;&#x62A5;&#x9519;</span>
+<span class="hljs-addition">+         throw new Error(`&#x53D8;&#x91CF;${name}&#x65E2;&#x6CA1;&#x6709;&#x4ECE;&#x5916;&#x90E8;&#x5BFC;&#x5165;&#xFF0C;&#x4E5F;&#x6CA1;&#x6709;&#x5728;&#x5F53;&#x524D;&#x7684;&#x6A21;&#x5757;&#x58F0;&#x660E;`);</span>
+<span class="hljs-addition">+       }</span>
+      }
+    }
+  }
+}
+module.exports = Module;
+</code></pre>
+<h2 id="t426.&#x5B9E;&#x73B0;&#x53D8;&#x91CF;&#x540D;&#x91CD;&#x547D;&#x540D;">6.&#x5B9E;&#x73B0;&#x53D8;&#x91CF;&#x540D;&#x91CD;&#x547D;&#x540D; <a href="#t426.&#x5B9E;&#x73B0;&#x53D8;&#x91CF;&#x540D;&#x91CD;&#x547D;&#x540D;"> # </a></h2>
+<h3 id="t436.1 src\main.js">6.1 src\main.js <a href="#t436.1 src\main.js"> # </a></h3>
+<p>src\main.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { age1 } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./age1.js&apos;</span>;
+<span class="hljs-keyword">import</span> { age2 } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./age2.js&apos;</span>;
+<span class="hljs-keyword">import</span> { age3 } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./age3.js&apos;</span>;
+<span class="hljs-built_in">console</span>.log(age1, age2, age3);
+
+<span class="hljs-comment">/**
+const age$2 = &apos;&#x5E74;&#x9F84;&apos;;
+const age1 = age$2 + &apos;1&apos;;
+
+const age$1 = &apos;&#x5E74;&#x9F84;&apos;;
+const age2 = age$1 + &apos;2&apos;;
+
+const age = &apos;&#x5E74;&#x9F84;&apos;;
+const age3 = age + &apos;3&apos;;
+
+console.log(age1, age2, age3);
+ */</span>
+</code></pre>
+<h3 id="t446.2 src\age1.js">6.2 src\age1.js <a href="#t446.2 src\age1.js"> # </a></h3>
+<p>src\age1.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> age = <span class="hljs-string">&apos;&#x5E74;&#x9F84;&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> age1 = age + <span class="hljs-string">&apos;1&apos;</span>;
+</code></pre>
+<h3 id="t456.3 src\age2.js">6.3 src\age2.js <a href="#t456.3 src\age2.js"> # </a></h3>
+<p>src\age2.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> age = <span class="hljs-string">&apos;&#x5E74;&#x9F84;&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> age2 = age + <span class="hljs-string">&apos;2&apos;</span>;
+</code></pre>
+<h3 id="t466.4 src\age3.js">6.4 src\age3.js <a href="#t466.4 src\age3.js"> # </a></h3>
+<p>src\age3.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> age = <span class="hljs-string">&apos;&#x5E74;&#x9F84;&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> age3 = age + <span class="hljs-string">&apos;3&apos;</span>;
+</code></pre>
+<h3 id="t476.5 utils.js">6.5 utils.js <a href="#t476.5 utils.js"> # </a></h3>
+<p>lib\utils.js</p>
+<pre><code class="lang-diff"><span class="hljs-addition">+const walk = require(&apos;./ast/walk&apos;);</span>
+function hasOwnProperty(obj, prop) {
+  return Object.prototype.hasOwnProperty.call(obj, prop)
+}
+exports.hasOwnProperty = hasOwnProperty;
+<span class="hljs-addition">+function replaceIdentifiers(statement, source, replacements) {</span>
+<span class="hljs-addition">+  walk(statement, {</span>
+<span class="hljs-addition">+    enter(node) {</span>
+<span class="hljs-addition">+      if (node.type === &apos;Identifier&apos;) {</span>
+<span class="hljs-addition">+        if (node.name &amp;&amp; replacements[node.name]) {</span>
+<span class="hljs-addition">+          source.overwrite(node.start, node.end, replacements[node.name]);</span>
+<span class="hljs-addition">+        }</span>
+<span class="hljs-addition">+      }</span>
+<span class="hljs-addition">+    }</span>
+<span class="hljs-addition">+  })</span>
+<span class="hljs-addition">+}</span>
+<span class="hljs-addition">+exports.replaceIdentifiers = replaceIdentifiers;</span>
+</code></pre>
+<h3 id="t486.6 bundle.js">6.6 bundle.js <a href="#t486.6 bundle.js"> # </a></h3>
+<p>lib\bundle.js</p>
+<pre><code class="lang-diff">let fs = require(&apos;fs&apos;);
+let path = require(&apos;path&apos;);
+let Module = require(&apos;./module&apos;);
+let MagicString = require(&apos;magic-string&apos;);
+<span class="hljs-addition">+const { hasOwnProperty, replaceIdentifiers } = require(&apos;./utils&apos;);</span>
+class Bundle {
+  constructor(options) {
+    //&#x5165;&#x53E3;&#x6587;&#x4EF6;&#x6570;&#x636E;
+    this.entryPath = path.resolve(options.entry.replace(/\.js$/, &apos;&apos;) + &apos;.js&apos;);
+    //&#x5B58;&#x653E;&#x6240;&#x6709;&#x7684;&#x6A21;&#x5757;
+    this.modules = {};
+  }
+  build(filename) {
+    const entryModule = this.fetchModule(this.entryPath);//&#x83B7;&#x53D6;&#x6A21;&#x5757;&#x4EE3;&#x7801;
+    this.statements = entryModule.expandAllStatements(true);//&#x5C55;&#x5F00;&#x6240;&#x6709;&#x7684;&#x8BED;&#x53E5;
+<span class="hljs-addition">+   this.deconflict();</span>
+    const { code } = this.generate();//&#x751F;&#x6210;&#x6253;&#x5305;&#x540E;&#x7684;&#x4EE3;&#x7801;
+    fs.writeFileSync(filename, code);//&#x5199;&#x5165;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;
+    console.log(&apos;done&apos;);
+  }
+<span class="hljs-addition">+ deconflict() {</span>
+<span class="hljs-addition">+   const defines = {};//&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;</span>
+<span class="hljs-addition">+   const conflicts = {};//&#x53D8;&#x91CF;&#x540D;&#x51B2;&#x7A81;&#x7684;&#x53D8;&#x91CF;</span>
+<span class="hljs-addition">+   this.statements.forEach(statement =&gt; {</span>
+<span class="hljs-addition">+     Object.keys(statement._defines).forEach(name =&gt; {</span>
+<span class="hljs-addition">+       if (hasOwnProperty(defines, name)) {</span>
+<span class="hljs-addition">+         conflicts[name] = true;</span>
+<span class="hljs-addition">+       } else {</span>
+<span class="hljs-addition">+         defines[name] = [];//defines.age = [];</span>
+<span class="hljs-addition">+       }</span>
+<span class="hljs-addition">+       //&#x628A;&#x6B64;&#x58F0;&#x660E;&#x53D8;&#x91CF;&#x7684;&#x8BED;&#x53E5;&#xFF0C;&#x5BF9;&#x5E94;&#x7684;&#x6A21;&#x5757;&#x6DFB;&#x52A0;&#x5230;&#x6570;&#x7EC4;&#x91CC;</span>
+<span class="hljs-addition">+       defines[name].push(statement._module);</span>
+<span class="hljs-addition">+     });</span>
+<span class="hljs-addition">+   });</span>
+<span class="hljs-addition">+   Object.keys(conflicts).forEach(name =&gt; {</span>
+<span class="hljs-addition">+     const modules = defines[name];//&#x83B7;&#x53D6;&#x5B9A;&#x4E49;&#x6B64;&#x53D8;&#x91CF;&#x540D;&#x7684;&#x6A21;&#x5757;&#x7684;&#x6570;&#x7EC4;</span>
+<span class="hljs-addition">+     modules.pop();//&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x4E0D;&#x9700;&#x8981;&#x91CD;&#x547D;&#x540D;,&#x4FDD;&#x7559; &#x539F;&#x6765;&#x7684;&#x540D;&#x79F0;&#x5373;&#x53EF; [age1,age2]</span>
+<span class="hljs-addition">+     modules.forEach((module, index) =&gt; {</span>
+<span class="hljs-addition">+       let replacement = `${name}$${modules.length - index}`;</span>
+<span class="hljs-addition">+       debugger</span>
+<span class="hljs-addition">+       module.rename(name, replacement);//module age=&gt;age$2</span>
+<span class="hljs-addition">+     });</span>
+<span class="hljs-addition">+   });</span>
+<span class="hljs-addition">+ }</span>
+  fetchModule(importee, importer) {
+    let route;
+    if (!importer) {
+      route = importee;
+    } else {
+      if (path.isAbsolute(importee)) {
+        route = importee;
+      } else {
+        route = path.resolve(path.dirname(importer), importee.replace(/\.js$/, &apos;&apos;) + &apos;.js&apos;);
+      }
+    }
+    if (route) {
+      let code = fs.readFileSync(route, &apos;utf8&apos;);
+      const module = new Module({
+        code,
+        path: importee,
+        bundle: this
+      })
+      return module;
+    }
+  }
+  generate() {
+    let magicString = new MagicString.Bundle();
+    this.statements.forEach(statement =&gt; {
+<span class="hljs-addition">+     let replacements = {};</span>
+<span class="hljs-addition">+     Object.keys(statement._dependsOn)</span>
+<span class="hljs-addition">+       .concat(Object.keys(statement._defines))</span>
+<span class="hljs-addition">+       .forEach(name =&gt; {</span>
+<span class="hljs-addition">+         const canonicalName = statement._module.getCanonicalName(name);</span>
+<span class="hljs-addition">+         if (name !== canonicalName)</span>
+<span class="hljs-addition">+           replacements[name] = canonicalName;</span>
+<span class="hljs-addition">+       });</span>
+      const source = statement._source.clone();
+      if (statement.type <span class="hljs-comment">=== &apos;ExportNamedDeclaration&apos;) {</span>
+        source.remove(statement.start, statement.declaration.start);
+      }
+<span class="hljs-addition">+     replaceIdentifiers(statement, source, replacements);</span>
+      magicString.addSource({
+        content: source,
+        separator: &apos;\n&apos;
+      })
+    })
+    return { code: magicString.toString() }
+  }
+}
+module.exports = Bundle;
+</code></pre>
+<h3 id="t496.7 module.js">6.7 module.js <a href="#t496.7 module.js"> # </a></h3>
+<p>lib\module.js</p>
+<pre><code class="lang-diff">const MagicString = require(&apos;magic-string&apos;);
+const { parse } = require(&apos;acorn&apos;);
+const { hasOwnProperty } = require(&apos;./utils&apos;);
+const analyse = require(&apos;./ast/analyse&apos;);
+const SYSTEMS = [&apos;console&apos;, &apos;log&apos;];
+class Module {
+  constructor({ code, path, bundle }) {
+    this.code = new MagicString(code, { filename: path });
+    this.path = path;
+    this.bundle = bundle;
+    this.ast = parse(code, {
+      ecmaVersion: 8,
+      sourceType: &apos;module&apos;
+    })
+    //&#x5B58;&#x653E;&#x672C;&#x6A21;&#x5757;&#x7684;&#x5BFC;&#x5165;&#x4FE1;&#x606F;
+    this.imports = {};
+    //&#x672C;&#x6A21;&#x5757;&#x7684;&#x5BFC;&#x51FA;&#x4FE1;&#x606F;
+    this.exports = {};
+    //&#x5B58;&#x653E;&#x672C;&#x6A21;&#x5757;&#x7684;&#x5B9A;&#x4E49;&#x53D8;&#x91CF;&#x7684;&#x8BED;&#x53E5; a=&gt;var a = 1;b =var b =2;
+    this.definitions = {};
+    //&#x5B58;&#x653E;&#x53D8;&#x91CF;&#x4FEE;&#x6539;&#x8BED;&#x53E5;
+    this.modifications = {};
+<span class="hljs-addition">+   this.canonicalNames = {};</span>
+    analyse(this.ast, this.code, this);
+  }
+  expandAllStatements() {
+    let allStatements = [];
+    this.ast.body.forEach(statement =&gt; {
+      if (statement.type <span class="hljs-comment">=== &apos;ImportDeclaration&apos;) return;</span>
+      if (statement.type <span class="hljs-comment">=== &apos;VariableDeclaration&apos;) return;</span>
+      let statements = this.expandStatement(statement);
+      allStatements.push(...statements);
+    });
+    return allStatements;
+  }
+  expandStatement(statement) {
+    statement._included = true;
+    let result = [];
+    //&#x83B7;&#x53D6;&#x6B64;&#x8BED;&#x53E5;&#x4F9D;&#x8D56;&#x7684;&#x53D8;&#x91CF;
+    let _dependsOn = Object.keys(statement._dependsOn);
+    _dependsOn.forEach(name =&gt; {
+      //&#x627E;&#x5230;&#x6B64;&#x53D8;&#x91CF;&#x5B9A;&#x4E49;&#x7684;&#x8BED;&#x53E5;&#xFF0C;&#x6DFB;&#x52A0;&#x5230;&#x8F93;&#x51FA;&#x6570;&#x7EC4;&#x91CC;
+      let definitions = this.define(name);
+      result.push(...definitions);
+    });
+    //&#x628A;&#x6B64;&#x8BED;&#x53E5;&#x6DFB;&#x52A0;&#x5230;&#x8F93;&#x51FA;&#x5217;&#x8868;&#x4E2D;
+    result.push(statement);
+    //&#x627E;&#x5230;&#x6B64;&#x8BED;&#x53E5;&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;,&#x628A;&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;&#x548C;&#x4FEE;&#x6539;&#x8BED;&#x53E5;&#x4E5F;&#x5305;&#x62EC;&#x8FDB;&#x6765;
+    //&#x6CE8;&#x610F;&#x8981;&#x5148;&#x5B9A;&#x4E49;&#x518D;&#x4FEE;&#x6539;&#xFF0C;&#x6240;&#x4EE5;&#x8981;&#x628A;&#x8FD9;&#x884C;&#x653E;&#x5728;push(statement)&#x7684;&#x4E0B;&#x9762;
+    const defines = Object.keys(statement._defines);
+    defines.forEach(name =&gt; {
+      //&#x627E;&#x5230;&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;&#x4F9D;&#x8D56;&#x7684;&#x4FEE;&#x6539;&#x7684;&#x8BED;&#x53E5;
+      const modifications = hasOwnProperty(this.modifications, name) &amp;&amp; this.modifications[name];
+      if (modifications) {
+        //&#x628A;&#x4FEE;&#x6539;&#x8BED;&#x53E5;&#x4E5F;&#x5C55;&#x5F00;&#x653E;&#x5230;&#x7ED3;&#x679C;&#x91CC;
+        modifications.forEach(statement =&gt; {
+          if (!statement._included) {
+            let statements = this.expandStatement(statement);
+            result.push(...statements);
+          }
+        });
+      }
+    });
+    return result;
+  }
+  define(name) {
+    //&#x5148;&#x5224;&#x65AD;&#x6B64;&#x53D8;&#x91CF;&#x662F;&#x5916;&#x90E8;&#x5BFC;&#x5165;&#x7684;&#x8FD8;&#x662F;&#x6A21;&#x5757;&#x5185;&#x58F0;&#x660E;&#x7684; 
+    if (hasOwnProperty(this.imports, name)) {
+      //&#x8BF4;&#x660E;&#x6B64;&#x53D8;&#x91CF;&#x4E0D;&#x662F;&#x6A21;&#x5757;&#x5185;&#x58F0;&#x660E;&#x7684;&#xFF0C;&#x800C;&#x662F;&#x5916;&#x90E8;&#x5BFC;&#x5165;&#x7684;,&#x83B7;&#x53D6;&#x4ECE;&#x54EA;&#x4E2A;&#x6A21;&#x5757;&#x5185;&#x5BFC;&#x5165;&#x4E86;&#x54EA;&#x4E2A;&#x53D8;&#x91CF;
+      const { source, importName } = this.imports[name];
+      //&#x83B7;&#x53D6;&#x8FD9;&#x4E2A;&#x6A21;&#x5757;
+      const importModule = this.bundle.fetchModule(source, this.path);
+      //&#x4ECE;&#x8FD9;&#x4E2A;&#x6A21;&#x5757;&#x7684;&#x5BFC;&#x51FA;&#x53D8;&#x91CF;&#x91CF;&#x83B7;&#x5F97;&#x672C;&#x5730;&#x53D8;&#x91CF;&#x7684;&#x540D;&#x79F0;
+      const { localName } = importModule.exports[importName];
+      //&#x83B7;&#x53D6;&#x672C;&#x5730;&#x53D8;&#x91CF;&#x7684;&#x5B9A;&#x4E49;&#x8BED;&#x53E5;
+      return importModule.define(localName);//name
+    } else {//&#x5982;&#x679C;&#x662F;&#x6A21;&#x5757;&#x7684;&#x53D8;&#x91CF;&#x7684;&#x8BDD;
+      let statement = this.definitions[name];//name
+      if (statement) {
+        if (statement._included) {
+          return [];
+        } else {
+          return this.expandStatement(statement);
+        }
+      } else {
+        if (SYSTEMS.includes(name)) {
+          return [];
+        } else {
+          throw new Error(`&#x53D8;&#x91CF;${name}&#x65E2;&#x6CA1;&#x6709;&#x4ECE;&#x5916;&#x90E8;&#x5BFC;&#x5165;&#xFF0C;&#x4E5F;&#x6CA1;&#x6709;&#x5728;&#x5F53;&#x524D;&#x7684;&#x6A21;&#x5757;&#x58F0;&#x660E;`);
+        }
+      }
+    }
+  }
+<span class="hljs-addition">+ rename(name, replacement) {</span>
+<span class="hljs-addition">+   this.canonicalNames[name] = replacement;</span>
+<span class="hljs-addition">+ }</span>
+<span class="hljs-addition">+ getCanonicalName(name) {</span>
+<span class="hljs-addition">+   return this.canonicalNames[name] || name;</span>
+<span class="hljs-addition">+ }</span>
+}
+module.exports = Module;
+</code></pre>
+
+    </div>
+</div>
+
+<script src="./assets/js/jquerymin_1645176580555.js"></script>
+<script src="./assets/js/bootstrapmin_1645176554753.js"></script>
+
+<script>
+$('.warpper .page-toc ul ul li a').on('click',function(){
+  $('.warpper .page-toc ul ul li a').removeClass('my-active')
+  $(this).addClass('my-active')
+})
+$('.logo').on('mouseenter',function(){
+  $('.nav').height('450px');
+})
+$('.nav').on('mouseleave',function(){
+  $('.nav').height('80px');
+})
+$('.logo').on('click',function(){
+  $('.nav').css('display','none');
+ $('.warpper').css('padding','0px');
+})
+</script>
+</body>
+</html>

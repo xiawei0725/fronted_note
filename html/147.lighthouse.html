@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>前端笔记</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/bootstrapmin_1645176572503.css" >
+    <style>
+        .page-toc > ul .red {
+            background: #f3f3f3;
+            z-index: 1;
+            border-left: 3px solid #009a61;
+            -webkit-transition: all .2s ease;
+            transition: all .2s ease;
+            color: #000
+        }
+    </style>
+</head>
+<body>
+<div class="nav">
+    <div class="logo">
+        
+                    前端笔记
+                        
+                        </div>
+                        <ul><li><a href="./index.html">0.api</a></li><li><a href="../html/0.Async.html">0.Async</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&NPM.html">7.module&NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li><li><a href="../html/98.websocket.html">98.websocket</a></li><li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li><li><a href="../html/101.1.monitor.html">101.1.monitor</a></li><li><a href="../html/101.2.monitor.html">101.2.monitor</a></li><li><a href="../html/102.java.html">102.java</a></li><li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="../html/103.11.webpack5.html">103.11.webpack5</a></li><li><a href="../html/103.13.splitChunks.html">103.13.splitChunks</a></li><li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="../html/103.16.rollup.1.html">103.16.rollup.1</a></li><li><a href="../html/103.16.rollup.2.html">103.16.rollup.2</a></li><li><a href="../html/103.16.rollup.3.html">103.16.rollup.3</a></li><li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li><li><a href="../html/103.16.vite.plugin.html">103.16.vite.plugin</a></li><li><a href="../html/103.16.vite.1.html">103.16.vite.1</a></li><li><a href="../html/103.16.vite.2.html">103.16.vite.2</a></li><li><a href="../html/103.17.polyfill.html">103.17.polyfill</a></li><li><a href="../html/104.1.binary.html">104.1.binary</a></li><li><a href="../html/104.2.binary.html">104.2.binary</a></li><li><a href="../html/105.skeleton.html">105.skeleton</a></li><li><a href="../html/106.1.react.html">106.1.react</a></li><li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="../html/106.3.react_router.html">106.3.react_router</a></li><li><a href="../html/106.4.redux.html">106.4.redux</a></li><li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="../html/106.6.redux-first-history.html">106.6.redux-first-history</a></li><li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="../html/106.8.dva.html">106.8.dva</a></li><li><a href="../html/106.9.umi.html">106.9.umi</a></li><li><a href="../html/106.10.ketang.html">106.10.ketang</a></li><li><a href="../html/106.11.antdesign.html">106.11.antdesign</a></li><li><a href="../html/106.12.antpro.html">106.12.antpro</a></li><li><a href="../html/106.13.router-6.html">106.13.router-6</a></li><li><a href="../html/106.14.ssr.html">106.14.ssr</a></li><li><a href="../html/106.15.nextjs.html">106.15.nextjs</a></li><li><a href="../html/106.16.1.cms.html">106.16.1.cms</a></li><li><a href="../html/106.16.2.cms.html">106.16.2.cms</a></li><li><a href="../html/106.16.3.cms.html">106.16.3.cms</a></li><li><a href="../html/106.16.4.cms.html">106.16.4.cms</a></li><li><a href="../html/106.16.mobx.html">106.16.mobx</a></li><li><a href="../html/106.17.fomily.html">106.17.fomily</a></li><li><a href="../html/107.fiber.html">107.fiber</a></li><li><a href="../html/108.http.html">108.http</a></li><li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="../html/109.3.dll.html">109.3.dll</a></li><li><a href="../html/110.nest.js.html">110.nest.js</a></li><li><a href="../html/111.xstate.html">111.xstate</a></li><li><a href="../html/112.Form.html">112.Form</a></li><li><a href="../html/113.redux-saga.html">113.redux-saga</a></li><li><a href="../html/114.react+typescript.html">114.react+typescript</a></li><li><a href="../html/115.immer.html">115.immer</a></li><li><a href="../html/116.pro5.html">116.pro5</a></li><li><a href="../html/117.css-loader.html">117.css-loader</a></li><li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li><li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li><li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li><li><a href="../html/120.create-react-app.html">120.create-react-app</a></li><li><a href="../html/121.react-scripts.html">121.react-scripts</a></li><li><a href="../html/122.react-optimize.html">122.react-optimize</a></li><li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="../html/124.next.js.html">124.next.js</a></li><li><a href="../html/125.1.linux.html">125.1.linux</a></li><li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li><li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li><li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li><li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li><li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li><li><a href="../html/125.10.nginx.html">125.10.nginx</a></li><li><a href="../html/125.11.docker.html">125.11.docker</a></li><li><a href="../html/125.12.ci.html">125.12.ci</a></li><li><a href="../html/125.13.k8s.html">125.13.k8s</a></li><li><a href="../html/125.14.k8s.html">125.14.k8s</a></li><li><a href="../html/125.15.k8s.html">125.15.k8s</a></li><li><a href="../html/125.16.k8s.html">125.16.k8s</a></li><li><a href="../html/126.11.react-1.html">126.11.react-1</a></li><li><a href="../html/126.12.react-2.html">126.12.react-2</a></li><li><a href="../html/126.12.react-3.html">126.12.react-3</a></li><li><a href="../html/126.12.react-4.html">126.12.react-4</a></li><li><a href="../html/126.12.react-5.html">126.12.react-5</a></li><li><a href="../html/126.12.react-6.html">126.12.react-6</a></li><li><a href="../html/126.12.react-7.html">126.12.react-7</a></li><li><a href="../html/126.12.react-8.html">126.12.react-8</a></li><li><a href="../html/127.frontend.html">127.frontend</a></li><li><a href="../html/128.rollup.html">128.rollup</a></li><li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="../html/130.health.html">130.health</a></li><li><a href="../html/131.hooks.html">131.hooks</a></li><li><a href="../html/132.keepalive.html">132.keepalive</a></li><li><a href="../html/133.vue-cli.html">133.vue-cli</a></li><li><a href="../html/134.react18.html">134.react18</a></li><li><a href="../html/134.2.react18.html">134.2.react18</a></li><li><a href="../html/134.3.react18.html">134.3.react18</a></li><li><a href="../html/135.function.html">135.function</a></li><li><a href="../html/136.toolkit.html">136.toolkit</a></li><li><a href="../html/137.lerna.html">137.lerna</a></li><li><a href="../html/138.create-vite.html">138.create-vite</a></li><li><a href="../html/139.cli.html">139.cli</a></li><li><a href="../html/140.antd.html">140.antd</a></li><li><a href="../html/141.react-dnd.html">141.react-dnd</a></li><li><a href="../html/142.1.link.html">142.1.link</a></li><li><a href="../html/143.1.gulp.html">143.1.gulp</a></li><li><a href="../html/143.2.stream.html">143.2.stream</a></li><li><a href="../html/143.3.gulp.html">143.3.gulp</a></li><li><a href="../html/144.1.closure.html">144.1.closure</a></li><li><a href="../html/144.2.v8.html">144.2.v8</a></li><li><a href="../html/144.3.gc.html">144.3.gc</a></li><li><a href="../html/145.react-router-v6.html">145.react-router-v6</a></li><li><a href="../html/146.browser.html">146.browser</a></li><li class="active"><a href="../html/147.lighthouse.html">147.lighthouse</a></li><li><a href="../html/148.1.basic.html">148.1.basic</a></li><li><a href="../html/148.2.basic .html">148.2.basic </a></li><li><a href="../html/148.3.basic.html">148.3.basic</a></li><li><a href="../html/148.4.basic.html">148.4.basic</a></li><li><a href="../html/148.5.basic.html">148.5.basic</a></li><li><a href="../html/149.1.vite.html">149.1.vite</a></li><li><a href="../html/149.2.vite.html">149.2.vite</a></li><li><a href="../html/149.3.vite.html">149.3.vite</a></li><li><a href="../html/149.4.vite.html">149.4.vite</a></li><li><a href="../html/150.react-window.html">150.react-window</a></li><li><a href="../html/151.react-query.html">151.react-query</a></li><li><a href="../html/152.useRequest.html">152.useRequest</a></li><li><a href="../html/153.transition.html">153.transition</a></li><li><a href="../html/154.emotion.html">154.emotion</a></li><li><a href="../html/155.1.formily.html">155.1.formily</a></li><li><a href="../html/155.2.formily.html">155.2.formily</a></li><li><a href="../html/155.3.formily.html">155.3.formily</a></li><li><a href="../html/155.3.1.mobx.usage.html">155.3.1.mobx.usage</a></li><li><a href="../html/155.3.2.mobx.source.html">155.3.2.mobx.source</a></li><li><a href="../html/156.vue-loader.html">156.vue-loader</a></li><li><a href="../html/103.11.mf.html">103.11.mf</a></li><li><a href="../html/157.1.react18.html">157.1.react18</a></li><li><a href="../html/158.umi4.html">158.umi4</a></li><li><a href="../html/159.rxjs.html">159.rxjs</a></li><li><a href="../html/159.rxjs2.html">159.rxjs2</a></li><li><a href="../html/160.bff.html">160.bff</a></li></ul>                        </div>
+
+                        
+<div class="warpper">
+    <div class="page-toc">
+        <ul><li><a href="#t01. 为什么要关注Web性能">1. 为什么要关注Web性能</a></li><li><a href="#t12. Lighthouse">2. Lighthouse</a></li><li><a href="#t23. Lighthouse性能指标">3. Lighthouse性能指标</a><ul><li><a href="#t33.1 FP和FCP">3.1 FP和FCP</a><ul><li><a href="#t43.1.1 记录FP和FCP">3.1.1 记录FP和FCP</a><ul><li><a href="#t53.1.1.1 安装依赖">3.1.1.1 安装依赖</a></li><li><a href="#t63.1.1.2 site\index.js">3.1.1.2 site\index.js</a></li><li><a href="#t73.1.1.3 delayConfig.js">3.1.1.3 delayConfig.js</a></li><li><a href="#t83.1.1.4 index.html">3.1.1.4 index.html</a></li><li><a href="#t93.1.1.5 perf.js">3.1.1.5 perf.js</a></li></ul></li><li><a href="#t103.1.2 改进FP和FCP">3.1.2 改进FP和FCP</a><ul><li><a href="#t113.1.2.1 site\index.js">3.1.2.1 site\index.js</a></li><li><a href="#t123.1.2.2 index.html">3.1.2.2 index.html</a></li></ul></li></ul></li><li><a href="#t133.2 .SI">3.2 .SI</a><ul><li><a href="#t143.2.1 如何改进SI">3.2.1 如何改进SI</a><ul><li><a href="#t153.2.1.1 最小化主线程工作">3.2.1.1 最小化主线程工作</a></li><li><a href="#t163.2.1.2 减少 JavaScript 执行时间">3.2.1.2 减少 JavaScript 执行时间</a></li><li><a href="#t173.2.1.3 确保文本在 webfont 加载期间保持可见">3.2.1.3 确保文本在 webfont 加载期间保持可见</a></li><li><a href="#t183.2.1.4 web workers">3.2.1.4 web workers</a></li><li><a href="#t193.2.1.5 避免强制同步布局和布局抖动">3.2.1.5 避免强制同步布局和布局抖动</a></li></ul></li></ul></li><li><a href="#t203.3 LCP">3.3 LCP</a><ul><li><a href="#t213.3.1 记录LCP">3.3.1 记录LCP</a><ul><li><a href="#t223.3.1.1 perf.js">3.3.1.1 perf.js</a></li></ul></li><li><a href="#t233.3.2 改进LCP">3.3.2 改进LCP</a></li></ul></li><li><a href="#t243.4. TTI">3.4. TTI</a><ul><li><a href="#t253.4.1 改进TTI">3.4.1 改进TTI</a></li></ul></li><li><a href="#t263.5 TBT">3.5 TBT</a><ul><li><a href="#t273.5.1 如何改进TBT">3.5.1 如何改进TBT</a></li></ul></li><li><a href="#t283.6 FID">3.6 FID</a><ul><li><a href="#t293.6.1 测试FID">3.6.1 测试FID</a><ul><li><a href="#t303.6.1.1 perf.js">3.6.1.1 perf.js</a></li></ul></li><li><a href="#t313.6.2 改进FID">3.6.2 改进FID</a></li></ul></li><li><a href="#t323.7 CLS">3.7 CLS</a><ul><li><a href="#t333.7.1 如何计算CLS">3.7.1 如何计算CLS</a><ul><li><a href="#t343.7.1.1 perf.js">3.7.1.1 perf.js</a></li></ul></li><li><a href="#t353.7.2 如何改进CLS">3.7.2 如何改进CLS</a><ul><li><a href="#t363.7.2.1 perf.js">3.7.2.1 perf.js</a></li></ul></li></ul></li></ul></li><li><a href="#t374. performance面板">4. performance面板</a><ul><li><a href="#t384.1 面板说明">4.1 面板说明</a></li><li><a href="#t394.2 面板说明">4.2 面板说明</a></li><li><a href="#t404.3 核心流程">4.3 核心流程</a><ul><li><a href="#t414.3.1 导航阶段">4.3.1 导航阶段</a></li><li><a href="#t424.3.2 解析HTML阶段">4.3.2 解析HTML阶段</a></li></ul></li></ul></li><li><a href="#t434. Lighthouse优化">4. Lighthouse优化</a><ul><li><a href="#t444.1 减少未使用的 JavaScript">4.1 减少未使用的 JavaScript</a></li><li><a href="#t454.2 采用新一代格式提供图片">4.2 采用新一代格式提供图片</a></li><li><a href="#t464.3 适当调整图片大小">4.3 适当调整图片大小</a></li><li><a href="#t474.4 推迟加载屏幕外图片">4.4 推迟加载屏幕外图片</a></li><li><a href="#t484.5 移除阻塞渲染的资源">4.5 移除阻塞渲染的资源</a></li><li><a href="#t494.6 减少未使用的 CSS">4.6 减少未使用的 CSS</a></li><li><a href="#t504.7 使用视频格式提供动画内容">4.7 使用视频格式提供动画内容</a></li><li><a href="#t514.8 预先连接到必要的来源">4.8 预先连接到必要的来源</a></li><li><a href="#t524.9 应避免向新型浏览器提供旧版JavaScript">4.9 应避免向新型浏览器提供旧版JavaScript</a></li><li><a href="#t534.10 确保文本在网页字体加载期间保持可见状态">4.10 确保文本在网页字体加载期间保持可见状态</a></li><li><a href="#t544.11 未使用被动式监听器来提高滚动性能">4.11 未使用被动式监听器来提高滚动性能</a></li><li><a href="#t554.12 图片元素没有明确的width和height">4.12 图片元素没有明确的width和height</a></li><li><a href="#t564.13 注册“unload”事件监听器">4.13 注册“unload”事件监听器</a></li><li><a href="#t574.14 最大限度地减少主线程工作">4.14 最大限度地减少主线程工作</a></li><li><a href="#t584.15 采用高效的缓存策略提供静态资源">4.15 采用高效的缓存策略提供静态资源</a></li><li><a href="#t594.16 缩短 JavaScript 执行用时">4.16 缩短 JavaScript 执行用时</a></li><li><a href="#t604.17 避免链接关键请求">4.17 避免链接关键请求</a></li><li><a href="#t614.18 请保持较低的请求数量和较小的传输大小">4.18 请保持较低的请求数量和较小的传输大小</a></li><li><a href="#t624.19 最大内容渲染时间元素">4.19 最大内容渲染时间元素</a></li><li><a href="#t634.20 请避免出现大幅度的布局偏移">4.20 请避免出现大幅度的布局偏移</a></li><li><a href="#t644.21 应避免出现长时间运行的主线程任务">4.21 应避免出现长时间运行的主线程任务</a></li><li><a href="#t654.22 避免使用未合成的动画">4.22 避免使用未合成的动画</a></li><li><a href="#t664.23 缩减 CSS">4.23 缩减 CSS</a></li><li><a href="#t674.24 缩减 JavaScript">4.24 缩减 JavaScript</a></li><li><a href="#t684.25 对图片进行高效编码">4.25 对图片进行高效编码</a></li><li><a href="#t694.26 启用文本压缩">4.26 启用文本压缩</a></li><li><a href="#t704.27 初始服务器响应用时较短">4.27 初始服务器响应用时较短</a></li><li><a href="#t714.28 避免多次网页重定向">4.28 避免多次网页重定向</a></li><li><a href="#t724.29 预加载关键请求">4.29 预加载关键请求</a></li><li><a href="#t734.30 使用 HTTP/2">4.30 使用 HTTP/2</a></li><li><a href="#t744.31 请移除 JavaScript 软件包中的重复模块">4.31 请移除 JavaScript 软件包中的重复模块</a></li><li><a href="#t754.32 预加载 LCP 元素所用图片">4.32 预加载 LCP 元素所用图片</a></li><li><a href="#t764.33 避免网络负载过大">4.33 避免网络负载过大</a></li><li><a href="#t774.34 避免 DOM 规模过大">4.34 避免 DOM 规模过大</a></li><li><a href="#t784.35 User Timing 标记和测量结果">4.35 User Timing 标记和测量结果</a></li><li><a href="#t794.36 尽量减少第三方使用">4.36 尽量减少第三方使用</a></li><li><a href="#t804.37 使用 Facade 延迟加载第三方资源">4.37 使用 Facade 延迟加载第三方资源</a></li><li><a href="#t814.38 Largest Contentful Paint 所对应的图片未被延迟加载">4.38 Largest Contentful Paint 所对应的图片未被延迟加载</a></li><li><a href="#t824.39 请勿使用 document.write()">4.39 请勿使用 document.write()</a></li><li><a href="#t834.40 具有包含 width 或 initial-scale 的  标记">4.40 具有包含 width 或 initial-scale 的  标记</a></li></ul></li><li><a href="#t845.参考">5.参考</a></li></ul>
+    </div>
+    <div class="content markdown-body">
+        <h2 id="t01. &#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x5173;&#x6CE8;Web&#x6027;&#x80FD;">1. &#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x5173;&#x6CE8;Web&#x6027;&#x80FD; <a href="#t01. &#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x5173;&#x6CE8;Web&#x6027;&#x80FD;"> # </a></h2>
+<ul>
+<li>Web&#x6027;&#x80FD;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5F71;&#x54CD;&#x4E1A;&#x52A1;&#x6307;&#x6807;&#xFF0C;&#x4F8B;&#x5982;&#x8F6C;&#x5316;&#x7387;&#x548C;&#x7528;&#x6237;&#x6EE1;&#x610F;&#x5EA6;</li>
+</ul>
+<h2 id="t12. Lighthouse">2. Lighthouse <a href="#t12. Lighthouse"> # </a></h2>
+<ul>
+<li><a href="https://www.npmjs.com/package/lighthouse">lighthouse</a>&#x662F;&#x4E00;&#x4E2A;&#x5F00;&#x6E90;&#x7684;&#x81EA;&#x52A8;&#x5316;&#x5DE5;&#x5177;&#xFF0C;&#x7528;&#x4E8E;&#x6539;&#x8FDB;&#x7F51;&#x7EDC;&#x5E94;&#x7528;&#x7684;&#x8D28;&#x91CF;</li>
+<li>Lighthouse&#x62A5;&#x544A;&#x5206;&#x6790;&#x4E86;&#x52A0;&#x8F7D;&#x9875;&#x9762;&#x751F;&#x547D;&#x5468;&#x671F;&#x4E2D;&#x7684;&#x5404;&#x79CD;&#x6027;&#x80FD;&#x6307;&#x6807;</li>
+<li><a href="https://www.webpagetest.org/">webpagetest</a>&#x662F;&#x4E00;&#x4E2A;&#x514D;&#x8D39;&#x7684;&#x7F51;&#x7AD9;&#x6027;&#x80FD;&#x6D4B;&#x8BD5;&#x5DE5;&#x5177;</li>
+</ul>
+<pre><code class="lang-js">lighthouse https:<span class="hljs-comment">//m.jd.com --locale zh --quiet --chrome-flags=&quot;--headless&quot;  --only-categories=performance  </span>
+</code></pre>
+<h2 id="t23. Lighthouse&#x6027;&#x80FD;&#x6307;&#x6807;">3. Lighthouse&#x6027;&#x80FD;&#x6307;&#x6807; <a href="#t23. Lighthouse&#x6027;&#x80FD;&#x6307;&#x6807;"> # </a></h2>
+<p><img src="https://static.zhufengpeixun.com/xing_neng_zhi_biao_1641712625539.jpg" alt></p>
+<h3 id="t33.1 FP&#x548C;FCP">3.1 FP&#x548C;FCP <a href="#t33.1 FP&#x548C;FCP"> # </a></h3>
+<ul>
+<li>First Paint(&#x9996;&#x6B21;&#x6E32;&#x67D3;)&#x8868;&#x793A;&#x4E86;&#x6D4F;&#x89C8;&#x5668;&#x4ECE;&#x5F00;&#x59CB;&#x8BF7;&#x6C42;&#x7F51;&#x7AD9;&#x5230;&#x5C4F;&#x5E55;&#x6E32;&#x67D3;&#x7B2C;&#x4E00;&#x4E2A;&#x50CF;&#x7D20;&#x70B9;&#x7684;&#x65F6;&#x95F4;</li>
+<li><a href="https://web.dev/first-contentful-paint">First Contentful Paint(&#x9996;&#x6B21;&#x5185;&#x5BB9;&#x6E32;&#x67D3;)</a>&#x8868;&#x793A;&#x6D4F;&#x89C8;&#x5668;&#x6E32;&#x67D3;&#x51FA;&#x7B2C;&#x4E00;&#x4E2A;&#x5185;&#x5BB9;&#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x8FD9;&#x4E2A;&#x5185;&#x5BB9;&#x53EF;&#x4EE5;&#x662F;&#x6587;&#x672C;&#x3001;&#x56FE;&#x7247;&#x6216;SVG&#x5143;&#x7D20;&#x7B49;&#xFF0C;&#x4E0D;&#x5305;&#x62EC;iframe&#x548C;&#x767D;&#x8272;&#x80CC;&#x666F;&#x7684;canvas&#x5143;&#x7D20;</li>
+</ul>
+<h4 id="t43.1.1 &#x8BB0;&#x5F55;FP&#x548C;FCP">3.1.1 &#x8BB0;&#x5F55;FP&#x548C;FCP <a href="#t43.1.1 &#x8BB0;&#x5F55;FP&#x548C;FCP"> # </a></h4>
+<ul>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Glossary/First_paint">First_paint</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Glossary/First_contentful_paint">First_contentful_paint</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Document/readyState">document.readyState</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/PerformanceObserver/PerformanceObserver">PerformanceObserver</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/PerformanceObserver/observe">PerformanceObserver.observe</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/PerformanceEntry/entryType">PerformanceEntry.entryType</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/PerformanceObserverEntryList">PerformanceObserverEntryList</a></li>
+</ul>
+<h5 id="t53.1.1.1 &#x5B89;&#x88C5;&#x4F9D;&#x8D56;">3.1.1.1 &#x5B89;&#x88C5;&#x4F9D;&#x8D56; <a href="#t53.1.1.1 &#x5B89;&#x88C5;&#x4F9D;&#x8D56;"> # </a></h5>
+<pre><code>npm install express morgan compression --save
+</code></pre><h5 id="t63.1.1.2 site\index.js">3.1.1.2 site\index.js <a href="#t63.1.1.2 site\index.js"> # </a></h5>
+<p>site\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;express&apos;</span>);
+<span class="hljs-keyword">const</span> logger = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;morgan&apos;</span>);
+<span class="hljs-keyword">const</span> delayConfig = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./delayConfig&apos;</span>);
+<span class="hljs-keyword">const</span> app = express();
+app.use(logger(<span class="hljs-string">&apos;dev&apos;</span>));
+app.use(<span class="hljs-function">(<span class="hljs-params">req, res, next</span>) =&gt;</span> {
+    <span class="hljs-keyword">let</span> url = req.url;
+    <span class="hljs-keyword">let</span> delay = delayConfig[url];
+    <span class="hljs-keyword">if</span> (delay) {
+        setTimeout(next, delay);
+    } <span class="hljs-keyword">else</span> {
+        next();
+    }
+});
+app.use(express.static(<span class="hljs-string">&apos;public&apos;</span>));
+app.listen(<span class="hljs-number">80</span>, () =&gt; <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`server started at 80`</span>));
+</code></pre>
+<h5 id="t73.1.1.3 delayConfig.js">3.1.1.3 delayConfig.js <a href="#t73.1.1.3 delayConfig.js"> # </a></h5>
+<p>site\delayConfig.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> delayConfig = {
+    <span class="hljs-string">&quot;/index.html&quot;</span>: <span class="hljs-number">100</span>
+}
+<span class="hljs-built_in">module</span>.exports = delayConfig;
+</code></pre>
+<h5 id="t83.1.1.4 index.html">3.1.1.4 index.html <a href="#t83.1.1.4 index.html"> # </a></h5>
+<p>site\public\index.html</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">&quot;X-UA-Compatible&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;IE=edge&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>lighthouse<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">canvas</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;width:100%;height:500px;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">canvas</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/perf.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<h5 id="t93.1.1.5 perf.js">3.1.1.5 perf.js <a href="#t93.1.1.5 perf.js"> # </a></h5>
+<p>site\public\perf.js</p>
+<pre><code class="lang-js">(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">ready</span>) </span>{
+    <span class="hljs-keyword">if</span> (<span class="hljs-built_in">document</span>.readyState === <span class="hljs-string">&quot;complete&quot;</span> || <span class="hljs-built_in">document</span>.readyState === <span class="hljs-string">&quot;interactive&quot;</span>) {
+        ready();
+    } <span class="hljs-keyword">else</span> {
+        <span class="hljs-built_in">document</span>.addEventListener(<span class="hljs-string">&quot;readystatechange&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+            <span class="hljs-keyword">if</span> (<span class="hljs-built_in">document</span>.readyState === <span class="hljs-string">&quot;complete&quot;</span>) {
+                ready();
+            }
+        });
+    }
+})(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">perf</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">var</span> data = {
+        <span class="hljs-attr">url</span>: <span class="hljs-built_in">window</span>.location.href,
+        <span class="hljs-attr">FP</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-attr">FCP</span>: <span class="hljs-number">0</span>
+    };
+    <span class="hljs-keyword">new</span> PerformanceObserver(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">entryList</span>) </span>{
+        <span class="hljs-keyword">var</span> entries = entryList.getEntries() || [];
+        entries.forEach(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">entry</span>) </span>{
+            <span class="hljs-keyword">if</span> (entry.name === <span class="hljs-string">&quot;first-paint&quot;</span>) {
+                data.FP = entry.startTime;
+                <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;&#x8BB0;&#x5F55;FP: &quot;</span> + data.FP);
+            } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (entry.name === <span class="hljs-string">&quot;first-contentful-paint&quot;</span>) {
+                data.FCP = entry.startTime;
+                <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;&#x8BB0;&#x5F55;FCP: &quot;</span> + data.FCP);
+            }
+        });
+    }).observe({ <span class="hljs-attr">type</span>: <span class="hljs-string">&quot;paint&quot;</span>, <span class="hljs-attr">buffered</span>: <span class="hljs-literal">true</span> });
+});
+</code></pre>
+<h4 id="t103.1.2 &#x6539;&#x8FDB;FP&#x548C;FCP">3.1.2 &#x6539;&#x8FDB;FP&#x548C;FCP <a href="#t103.1.2 &#x6539;&#x8FDB;FP&#x548C;FCP"> # </a></h4>
+<ul>
+<li>&#x52A0;&#x5FEB;&#x670D;&#x52A1;&#x5668;&#x54CD;&#x5E94;&#x901F;&#x5EA6;<ul>
+<li>&#x5347;&#x7EA7;&#x670D;&#x52A1;&#x5668;&#x914D;&#x7F6E;</li>
+<li>&#x5408;&#x7406;&#x8BBE;&#x7F6E;&#x7F13;&#x5B58;</li>
+<li>&#x4F18;&#x5316;&#x6570;&#x636E;&#x5E93;&#x7D22;&#x5F15;</li>
+</ul>
+</li>
+<li>&#x52A0;&#x5927;&#x670D;&#x52A1;&#x5668;&#x5E26;&#x5BBD;</li>
+<li>&#x670D;&#x52A1;&#x5668;&#x5F00;&#x542F;<code>gzip</code>&#x538B;&#x7F29;</li>
+<li>&#x5F00;&#x542F;&#x670D;&#x52A1;&#x5668;&#x7F13;&#x5B58;(redis)</li>
+<li>&#x907F;&#x514D;&#x91CD;&#x5B9A;&#x5411;&#x64CD;&#x4F5C;</li>
+<li>&#x4F7F;&#x7528;<code>dns-prefetch</code>&#x8FDB;&#x884C;DNS&#x8FDB;&#x884C;&#x9884;&#x89E3;&#x6790;</li>
+<li>&#x91C7;&#x7528;&#x57DF;&#x540D;&#x5206;&#x7247;&#x6280;&#x672F;&#x7A81;&#x7834;&#x540C;&#x57DF;6&#x4E2A;TCP&#x8FDE;&#x63A5;&#x9650;&#x5236;&#x6216;&#x8005;&#x91C7;&#x7528;HTTP2</li>
+<li>&#x4F7F;&#x7528;CDN&#x51CF;&#x5C11;&#x7F51;&#x7EDC;&#x8DF3;&#x8F6C;</li>
+<li>&#x538B;&#x7F29;JS&#x548C;CSS&#x548C;&#x56FE;&#x7247;&#x7B49;&#x8D44;&#x6E90;<ul>
+<li><a href="https://webpack.docschina.org/plugins/terser-webpack-plugin/">TerserWebpackPlugin</a></li>
+<li><a href="https://www.npmjs.com/package/purgecss-webpack-plugin">purgecss-webpack-plugin</a></li>
+</ul>
+</li>
+<li>&#x51CF;&#x5C11;HTTP&#x8BF7;&#x6C42;&#xFF0C;&#x5408;&#x5E76;JS&#x548C;CSS&#xFF0C;&#x5408;&#x7406;&#x5185;&#x5D4C;JS&#x548C;CSS</li>
+</ul>
+<h5 id="t113.1.2.1 site\index.js">3.1.2.1 site\index.js <a href="#t113.1.2.1 site\index.js"> # </a></h5>
+<p>site\index.js</p>
+<pre><code class="lang-diff">const express = require(&apos;express&apos;);
+const logger = require(&apos;morgan&apos;);
+<span class="hljs-addition">+const compression = require(&apos;compression&apos;)</span>
+const delayConfig = require(&apos;./delayConfig&apos;);
+const app = express();
+app.use(logger(&apos;dev&apos;));
+
+app.use((req, res, next) =&gt; {
+    let url = req.url;
+    let delay = delayConfig[url];
+    if (delay) {
+        setTimeout(next, delay);
+    } else {
+        next();
+    }
+});
+<span class="hljs-addition">+app.use(compression());</span>
+app.use(express.static(&apos;public&apos;, {
+    setHeaders
+}));
+function setHeaders(res, path) {
+    res.setHeader(&apos;cache-control&apos;, &apos;no-cache&apos;)
+}
+app.listen(80, () =&gt; console.log(`server started at 80`));
+</code></pre>
+<h5 id="t123.1.2.2 index.html">3.1.2.2 index.html <a href="#t123.1.2.2 index.html"> # </a></h5>
+<p>site\public\index.html</p>
+<pre><code class="lang-diff">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+<span class="hljs-addition">+   &lt;link rel=&quot;dns-prefetch&quot; href=&quot;//static.360buyimg.com&quot; /&gt;</span>
+    &lt;title&gt;lighthouse&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;img id=&quot;banner&quot; style=&quot;width:500px;height:300px;&quot; src=&quot;/1.png&quot; /&gt;&lt;br /&gt;
+<span class="hljs-addition">+   &lt;img src=&quot;https://pic0.iqiyipic.com/image/20220107/27/cb/v_165289132_m_601_480_270.jpg&quot; /&gt;</span>
+    &lt;img src=&quot;/2.png&quot; /&gt;
+    &lt;script src=&quot;/perf.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
+<h3 id="t133.2 .SI">3.2 .SI <a href="#t133.2 .SI"> # </a></h3>
+<ul>
+<li><a href="https://web.dev/speed-index/?utm_source=lighthouse&amp;utm_medium=cli">Speed Index(&#x901F;&#x5EA6;&#x6307;&#x6570;)</a>&#x8868;&#x660E;&#x4E86;&#x7F51;&#x9875;&#x5185;&#x5BB9;&#x7684;&#x53EF;&#x89C1;&#x586B;&#x5145;&#x901F;&#x5EA6;</li>
+<li>&#x901F;&#x5EA6;&#x6307;&#x6570;&#x8861;&#x91CF;&#x9875;&#x9762;&#x52A0;&#x8F7D;&#x671F;&#x95F4;&#x5185;&#x5BB9;&#x7684;&#x89C6;&#x89C9;&#x663E;&#x793A;&#x901F;&#x5EA6;</li>
+</ul>
+<h4 id="t143.2.1 &#x5982;&#x4F55;&#x6539;&#x8FDB;SI">3.2.1 &#x5982;&#x4F55;&#x6539;&#x8FDB;SI <a href="#t143.2.1 &#x5982;&#x4F55;&#x6539;&#x8FDB;SI"> # </a></h4>
+<h5 id="t153.2.1.1 &#x6700;&#x5C0F;&#x5316;&#x4E3B;&#x7EBF;&#x7A0B;&#x5DE5;&#x4F5C;">3.2.1.1 &#x6700;&#x5C0F;&#x5316;&#x4E3B;&#x7EBF;&#x7A0B;&#x5DE5;&#x4F5C; <a href="#t153.2.1.1 &#x6700;&#x5C0F;&#x5316;&#x4E3B;&#x7EBF;&#x7A0B;&#x5DE5;&#x4F5C;"> # </a></h5>
+<ul>
+<li><a href="https://web.dev/mainthread-work-breakdown/">&#x6700;&#x5C0F;&#x5316;&#x4E3B;&#x7EBF;&#x7A0B;&#x5DE5;&#x4F5C;</a></li>
+<li>&#x811A;&#x672C;<ul>
+<li><a href="https://web.dev/fast/#optimize-your-third-party-resources">&#x4F18;&#x5316;&#x7B2C;&#x4E09;&#x65B9;&#x7684;JS&#x811A;&#x672C;</a></li>
+<li><a href="https://developers.google.com/web/fundamentals/performance/rendering/debounce-your-input-handlers">&#x5BF9;&#x8F93;&#x5165;&#x8FDB;&#x884C;&#x9632;&#x6296;&#x5904;&#x7406;</a></li>
+<li><a href="https://web.dev/off-main-thread/">&#x4F7F;&#x7528;<code>web workers</code></a></li>
+</ul>
+</li>
+<li>&#x6837;&#x5F0F;&#x548C;&#x5E03;&#x5C40;  <ul>
+<li><a href="https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations">&#x7F29;&#x5C0F;&#x6837;&#x5F0F;&#x8BA1;&#x7B97;&#x7684;&#x8303;&#x56F4;&#x5E76;&#x964D;&#x4F4E;&#x5176;&#x590D;&#x6742;&#x6027;</a></li>
+<li><a href="https://developers.google.com/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing">&#x907F;&#x514D;&#x590D;&#x6742;&#x7684;&#x5E03;&#x5C40;&#x548C;<code>&#x5E03;&#x5C40;&#x6296;&#x52A8;</code></a></li>
+</ul>
+</li>
+<li>&#x6E32;&#x67D3;<ul>
+<li><a href="https://developers.google.com/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count">&#x575A;&#x6301;&#x4EC5;&#x5408;&#x6210;&#x5668;&#x7684;&#x5C5E;&#x6027;&#x548C;&#x7BA1;&#x7406;&#x5C42;&#x8BA1;&#x6570;</a></li>
+<li><a href="https://developers.google.com/web/fundamentals/performance/rendering/simplify-paint-complexity-and-reduce-paint-areas">&#x7B80;&#x5316;&#x7ED8;&#x5236;&#x7684;&#x590D;&#x6742;&#x5EA6;&#x3001;&#x51CF;&#x5C0F;&#x7ED8;&#x5236;&#x533A;&#x57DF;</a></li>
+</ul>
+</li>
+<li>&#x89E3;&#x6790;HTML&#x548C;CSS<ul>
+<li><a href="https://web.dev/extract-critical-css/">&#x63D0;&#x53D6;&#x5173;&#x952E;CSS</a></li>
+<li><a href="https://web.dev/minify-css/">&#x538B;&#x7F29;CSS</a></li>
+<li><a href="https://web.dev/defer-non-critical-css/">&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;&#x975E;&#x5173;&#x952E;&#x7684;CSS</a></li>
+</ul>
+</li>
+<li>&#x811A;&#x672C;&#x89E3;&#x6790;&#x548C;&#x7F16;&#x8BD1;<ul>
+<li><a href="https://web.dev/reduce-javascript-payloads-with-code-splitting/">&#x901A;&#x8FC7;&#x4EE3;&#x7801;&#x62C6;&#x5206;&#x51CF;&#x5C11;JS&#x7684;&#x8D1F;&#x8F7D;</a></li>
+<li><a href="https://web.dev/remove-unused-code/">&#x5220;&#x9664;&#x672A;&#x4F7F;&#x7528;&#x7684;JS</a></li>
+</ul>
+</li>
+<li>&#x5783;&#x573E;&#x6536;&#x96C6;<ul>
+<li><a href="https://web.dev/monitor-total-page-memory-usage/">&#x76D1;&#x63A7;&#x7F51;&#x9875;&#x7684;&#x603B;&#x5185;&#x5B58;&#x4F7F;&#x7528;&#x60C5;&#x51B5;</a></li>
+</ul>
+</li>
+</ul>
+<h5 id="t163.2.1.2 &#x51CF;&#x5C11; JavaScript &#x6267;&#x884C;&#x65F6;&#x95F4;">3.2.1.2 &#x51CF;&#x5C11; JavaScript &#x6267;&#x884C;&#x65F6;&#x95F4; <a href="#t163.2.1.2 &#x51CF;&#x5C11; JavaScript &#x6267;&#x884C;&#x65F6;&#x95F4;"> # </a></h5>
+<ul>
+<li><a href="https://web.dev/bootup-time/">&#x51CF;&#x5C11; JavaScript &#x6267;&#x884C;&#x65F6;&#x95F4;</a></li>
+<li><a href="https://web.dev/reduce-javascript-payloads-with-code-splitting/">&#x901A;&#x8FC7;&#x4EE3;&#x7801;&#x5206;&#x5272;&#x4EC5;&#x53D1;&#x9001;&#x7528;&#x6237;&#x9700;&#x8981;&#x7684;&#x4EE3;&#x7801;</a></li>
+<li><a href="https://web.dev/reduce-network-payloads-using-text-compression/">&#x538B;&#x7F29;&#x4EE3;&#x7801;</a></li>
+<li><a href="https://web.dev/remove-unused-code/">&#x5220;&#x9664;&#x672A;&#x4F7F;&#x7528;&#x4EE3;&#x7801;</a></li>
+<li><a href="https://web.dev/apply-instant-loading-with-prpl/">&#x4F7F;&#x7528;PRPL&#x6A21;&#x5F0F;&#x7F13;&#x5B58;&#x4F60;&#x7684;&#x4EE3;&#x7801;&#x6765;&#x51CF;&#x5C11;&#x7F51;&#x7EDC;&#x5F00;&#x9500;</a></li>
+</ul>
+<h5 id="t173.2.1.3 &#x786E;&#x4FDD;&#x6587;&#x672C;&#x5728; webfont &#x52A0;&#x8F7D;&#x671F;&#x95F4;&#x4FDD;&#x6301;&#x53EF;&#x89C1;">3.2.1.3 &#x786E;&#x4FDD;&#x6587;&#x672C;&#x5728; webfont &#x52A0;&#x8F7D;&#x671F;&#x95F4;&#x4FDD;&#x6301;&#x53EF;&#x89C1; <a href="#t173.2.1.3 &#x786E;&#x4FDD;&#x6587;&#x672C;&#x5728; webfont &#x52A0;&#x8F7D;&#x671F;&#x95F4;&#x4FDD;&#x6301;&#x53EF;&#x89C1;"> # </a></h5>
+<ul>
+<li><a href="https://web.dev/font-display/">&#x786E;&#x4FDD;&#x6587;&#x672C;&#x5728; <code>webfont</code> &#x52A0;&#x8F7D;&#x671F;&#x95F4;&#x4FDD;&#x6301;&#x53EF;&#x89C1;</a></li>
+<li>&#x5B57;&#x4F53;&#x901A;&#x5E38;&#x662F;&#x9700;&#x8981;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x624D;&#x80FD;&#x52A0;&#x8F7D;&#x7684;&#x5927;&#x6587;&#x4EF6;&#x3002;&#x4E00;&#x4E9B;&#x6D4F;&#x89C8;&#x5668;&#x5728;&#x5B57;&#x4F53;&#x52A0;&#x8F7D;&#x4E4B;&#x524D;&#x9690;&#x85CF;&#x6587;&#x672C;&#xFF0C;&#x5BFC;&#x81F4;&#x4E0D;&#x53EF;&#x89C1;&#x6587;&#x672C; (FOIT) &#x95EA;&#x70C1;&#x3002;</li>
+<li>&#x901A;&#x8FC7;&#x5305;&#x542B;font-display: swap&#x5728;&#x60A8;&#x7684;@font-face&#x98CE;&#x683C;&#x4E2D;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x5728;&#x5927;&#x591A;&#x6570;&#x73B0;&#x4EE3;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x907F;&#x514D; FOIT</li>
+</ul>
+<pre><code class="lang-css"><span class="hljs-keyword">@font-face</span> {
+  <span class="hljs-attribute">font-family</span>: <span class="hljs-string">&apos;Pacifico&apos;</span>;
+  <span class="hljs-attribute">font-style</span>: normal;
+  <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">400</span>;
+  <span class="hljs-attribute">src</span>: <span class="hljs-built_in">local</span>(<span class="hljs-string">&apos;Pacifico Regular&apos;</span>), <span class="hljs-built_in">local</span>(<span class="hljs-string">&apos;Pacifico-Regular&apos;</span>), <span class="hljs-built_in">url</span>(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-<span class="hljs-number">6</span>H6MmBp0u-.woff2) <span class="hljs-built_in">format</span>(<span class="hljs-string">&apos;woff2&apos;</span>);
+  <span class="hljs-attribute">font-display</span>: swap;
+}
+</code></pre>
+<h5 id="t183.2.1.4 web workers">3.2.1.4 web workers <a href="#t183.2.1.4 web workers"> # </a></h5>
+<p>site\public\worker.html</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">&quot;X-UA-Compatible&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;IE=edge&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>webworker<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">start</span>(<span class="hljs-params"></span>) </span>{
+            <span class="hljs-comment">//sum();</span>
+            <span class="hljs-keyword">const</span> worker = <span class="hljs-keyword">new</span> Worker(<span class="hljs-string">&apos;/worker.js&apos;</span>);
+            worker.postMessage(<span class="hljs-number">100000000</span>);
+            worker.addEventListener(<span class="hljs-string">&apos;message&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">event</span>) </span>{
+                <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;sum:&apos;</span>, event.data);
+            });
+        }
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sum</span>(<span class="hljs-params"></span>) </span>{
+            <span class="hljs-keyword">let</span> total = <span class="hljs-number">0</span>;
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">100000000</span>; i++) {
+                total += i;
+            }
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;sum:&apos;</span>, total);
+        }
+
+        start();
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>site\public\worker.js</p>
+<pre><code class="lang-js">self.addEventListener(<span class="hljs-string">&apos;message&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">event</span>) </span>{
+    <span class="hljs-keyword">let</span> total = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; event.data; i++) {
+        total += i;
+    }
+    self.postMessage(total);
+});
+
+</code></pre>
+<h5 id="t193.2.1.5 &#x907F;&#x514D;&#x5F3A;&#x5236;&#x540C;&#x6B65;&#x5E03;&#x5C40;&#x548C;&#x5E03;&#x5C40;&#x6296;&#x52A8;">3.2.1.5 &#x907F;&#x514D;&#x5F3A;&#x5236;&#x540C;&#x6B65;&#x5E03;&#x5C40;&#x548C;&#x5E03;&#x5C40;&#x6296;&#x52A8; <a href="#t193.2.1.5 &#x907F;&#x514D;&#x5F3A;&#x5236;&#x540C;&#x6B65;&#x5E03;&#x5C40;&#x548C;&#x5E03;&#x5C40;&#x6296;&#x52A8;"> # </a></h5>
+<p><img src="https://static.zhufengpeixun.com/frame_1641617840013.jpg" alt></p>
+<p><img src="https://static.zhufengpeixun.com/frame_1641617953109.png" alt></p>
+<p>&#x5F3A;&#x5236;&#x540C;&#x6B65;&#x5E03;&#x5C40;</p>
+<ul>
+<li>&#x6539;&#x53D8;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x7279;&#x6027;&#x6216;&#x8005;&#x4FEE;&#x6539;&#x5176;&#x5185;&#x5BB9;&#x6709;&#x65F6;&#x4E0D;&#x4EC5;&#x5F71;&#x54CD;&#x8BE5;&#x5143;&#x7D20;&#xFF0C;&#x6709;&#x65F6;&#x5019;&#x4F1A;&#x5BFC;&#x81F4;&#x7EA7;&#x8054;&#x7684;&#x53D8;&#x5316;&#xFF0C;&#x53EF;&#x80FD;&#x5F71;&#x54CD;&#x8BE5;&#x5143;&#x7D20;&#x7684;&#x5B50;&#x8282;&#x70B9;&#x3001;&#x5144;&#x5F1F;&#x8282;&#x70B9;&#x3001;&#x7236;&#x8282;&#x70B9;&#x7684;&#x6539;&#x53D8;&#xFF0C;&#x6240;&#x4EE5;&#x6BCF;&#x6B21;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#x65F6;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x90FD;&#x5FC5;&#x987B;&#x91CD;&#x65B0;&#x8BA1;&#x7B97;&#x8FD9;&#x4E9B;&#x6539;&#x53D8;&#x7684;&#x5F71;&#x54CD;</li>
+<li>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x7F16;&#x5199;&#x7684;&#x4EE3;&#x7801;&#x4E0D;&#x80FD;&#x8BA9;&#x6D4F;&#x89C8;&#x5668;&#x6709;&#x8DB3;&#x591F;&#x7684;&#x65F6;&#x95F4;&#x548C;&#x7A7A;&#x95F4;&#x6765;&#x8FDB;&#x884C;&#x4F18;&#x5316;&#xFF0C;&#x5F3A;&#x5236;&#x6D4F;&#x89C8;&#x5668;&#x6267;&#x884C;&#x5927;&#x91CF;&#x91CD;&#x65B0;&#x8BA1;&#x7B97;&#xFF0C;&#x5C31;&#x4F1A;&#x9020;&#x6210;&#x5E03;&#x5C40;&#x6296;&#x52A8;</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x63A5;&#x53E3;&#x5BF9;&#x8C61;</th>
+<th style="text-align:left">&#x5C5E;&#x6027;&#x540D;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Element</td>
+<td style="text-align:left">clientHeight, clientLeft, clientTop, clientWidth, focus, getBoundingClientRect, getClientRects, innerText, offsetHeight, offsetLeft, offsetParent, offsetTop, offsetTop, offsetWidth, outerText, scrollByLines, scrollByPages, scrollLeft, scrollHeight, scrollIntoView, scrollIntoViewIfNeeded, scrollTop, scrollWidth</td>
+</tr>
+<tr>
+<td style="text-align:left">MouseEvent</td>
+<td style="text-align:left">layerX layerY offsetX offsetY</td>
+</tr>
+<tr>
+<td style="text-align:left">Window</td>
+<td style="text-align:left">getComputedStyle scrollBy scrollTo scroll scrollY</td>
+</tr>
+<tr>
+<td style="text-align:left">Frame,Document,Image</td>
+<td style="text-align:left">height width</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">&quot;X-UA-Compatible&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;IE=edge&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>layout<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;root&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reflow</span>(<span class="hljs-params"></span>) </span>{
+            <span class="hljs-keyword">let</span> container = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;root&apos;</span>);
+            <span class="hljs-keyword">let</span> div1 = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&apos;div&apos;</span>);
+            div1.innerHTML = <span class="hljs-string">&apos;hello&apos;</span>;
+            container.appendChild(div1);
+            <span class="hljs-built_in">console</span>.log(container.offsetHeight);
+            <span class="hljs-keyword">let</span> div2 = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&apos;div&apos;</span>);
+            div2.innerHTML = <span class="hljs-string">&apos;world&apos;</span>;
+            container.appendChild(div2);
+            requestAnimationFrame(reflow);
+        }
+        requestAnimationFrame(reflow);
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<ul>
+<li>&#x6BCF;&#x6B21;&#x4FEE;&#x6539;DOM&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x5FC5;&#x987B;&#x5728;&#x8BFB;&#x53D6;&#x4EFB;&#x4F55;&#x5E03;&#x5C40;&#x4FE1;&#x606F;&#x4E4B;&#x524D;&#x5148;&#x91CD;&#x65B0;&#x8BA1;&#x7B97;&#x5E03;&#x5C40;&#xFF0C;&#x5BF9;&#x6027;&#x80FD;&#x7684;&#x635F;&#x8017;&#x5341;&#x5206;&#x5DE8;&#x5927;</li>
+<li>&#x907F;&#x514D;&#x5E03;&#x5C40;&#x6296;&#x52A8;&#x7684;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;&#x5C31;&#x662F;&#x4F7F;&#x7528;&#x4E0D;&#x4F1A;&#x5BFC;&#x81F4;&#x6D4F;&#x89C8;&#x5668;&#x91CD;&#x6392;&#x7684;&#x65B9;&#x5F0F;&#x7F16;&#x5199;&#x4EE3;&#x7801; &#x6BD4;&#x5982;&#x6279;&#x91CF;&#x7684;&#x8BFB;&#x53D6;&#x548C;&#x5199;&#x5165;&#x7B49;</li>
+</ul>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">&quot;X-UA-Compatible&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;IE=edge&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>layout<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+        <span class="hljs-selector-class">.box</span> {
+            <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;
+            <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid green;
+        }
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;box&quot;</span>&gt;</span>box1<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;box&quot;</span>&gt;</span>box2<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;box&quot;</span>&gt;</span>box3<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;box&quot;</span>&gt;</span>box4<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;box&quot;</span>&gt;</span>box5<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.bootcdn.net/ajax/libs/fastdom/1.0.10/fastdom.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+        <span class="hljs-keyword">let</span> boxes = <span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">&apos;.box&apos;</span>);
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; boxes.length; i++) {
+            <span class="hljs-keyword">const</span> box = boxes[i];
+            fastdom.measure(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+                <span class="hljs-keyword">const</span> offsetWidth = box.offsetWidth;
+                fastdom.mutate(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+                    box.style.width = offsetWidth + <span class="hljs-number">5</span> + <span class="hljs-string">&apos;px&apos;</span>;
+                });
+            });
+        }
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<h3 id="t203.3 LCP">3.3 LCP <a href="#t203.3 LCP"> # </a></h3>
+<ul>
+<li><a href="https://web.dev/lighthouse-largest-contentful-paint">Largest Contentful Paint(&#x6700;&#x5927;&#x5185;&#x5BB9;&#x7ED8;&#x5236;)</a>&#x6807;&#x8BB0;&#x4E86;&#x6E32;&#x67D3;&#x51FA;&#x6700;&#x5927;&#x6587;&#x672C;&#x6216;&#x56FE;&#x7247;&#x7684;&#x65F6;&#x95F4;</li>
+<li>&#x6700;&#x5927;&#x5185;&#x5BB9;&#x7ED8;&#x5236; (LCP) &#x662F;&#x6D4B;&#x91CF;&#x611F;&#x77E5;&#x52A0;&#x8F7D;&#x901F;&#x5EA6;&#x7684;&#x4E00;&#x4E2A;&#x4EE5;&#x7528;&#x6237;&#x4E3A;&#x4E2D;&#x5FC3;&#x7684;&#x91CD;&#x8981;&#x6307;&#x6807;</li>
+</ul>
+<p><img src="https://static.zhufengpeixun.com/lcp_1641570431540.svg" alt></p>
+<h4 id="t213.3.1 &#x8BB0;&#x5F55;LCP">3.3.1 &#x8BB0;&#x5F55;LCP <a href="#t213.3.1 &#x8BB0;&#x5F55;LCP"> # </a></h4>
+<h5 id="t223.3.1.1 perf.js">3.3.1.1 perf.js <a href="#t223.3.1.1 perf.js"> # </a></h5>
+<p>site\public\perf.js</p>
+<pre><code class="lang-diff">(function (ready) {
+    if (document.readyState <span class="hljs-comment">=== &quot;complete&quot; || document.readyState === &quot;interactive&quot;) {</span>
+        ready();
+    } else {
+        document.addEventListener(&quot;readystatechange&quot;, function () {
+            if (document.readyState <span class="hljs-comment">=== &quot;complete&quot;) {</span>
+                ready();
+            }
+        });
+    }
+})(function perf() {
+    var data = {
+        url: window.location.href,
+        FP: 0,
+        FCP: 0,
+<span class="hljs-addition">+       LCP: 0</span>
+    };
+    new PerformanceObserver(function (entryList) {
+        var entries = entryList.getEntries() || [];
+        entries.forEach(function (entry) {
+            if (entry.name <span class="hljs-comment">=== &quot;first-paint&quot;) {</span>
+                console.log(&quot;&#x8BB0;&#x5F55;FP: &quot; + (data.FP = entry.startTime));
+            } else if (entry.name <span class="hljs-comment">=== &quot;first-contentful-paint&quot;) {</span>
+                console.log(&quot;&#x8BB0;&#x5F55;FCP: &quot; + (data.FCP = entry.startTime));
+            }
+        });
+    }).observe({ type: &quot;paint&quot;, buffered: true });
+
+<span class="hljs-addition">+   new PerformanceObserver(function (entryList) {</span>
+<span class="hljs-addition">+       var entries = entryList.getEntries() || [];</span>
+<span class="hljs-addition">+       entries.forEach(function (entry) {</span>
+<span class="hljs-addition">+           if (entry.startTime &gt; data.LCP) {</span>
+<span class="hljs-addition">+               console.log(&quot;&#x8BB0;&#x5F55;LCP: &quot; + (data.LCP = entry.startTime));</span>
+<span class="hljs-addition">+           }</span>
+<span class="hljs-addition">+       });</span>
+<span class="hljs-addition">+   }).observe({ type: &quot;largest-contentful-paint&quot;, buffered: true });</span>
+});
+</code></pre>
+<h4 id="t233.3.2 &#x6539;&#x8FDB;LCP">3.3.2 &#x6539;&#x8FDB;LCP <a href="#t233.3.2 &#x6539;&#x8FDB;LCP"> # </a></h4>
+<ul>
+<li><a href="https://web.dev/lcp/#how-to-improve-largest-contentful-paint-on-your-site">&#x6539;&#x8FDB;LCP</a></li>
+<li><a href="https://web.dev/apply-instant-loading-with-prpl/">&#x4F7F;&#x7528; PRPL &#x6A21;&#x5F0F;&#x505A;&#x5230;&#x5373;&#x65F6;&#x52A0;&#x8F7D;</a><ul>
+<li>&#x63A8;&#x9001;(&#x6216;&#x9884;&#x52A0;&#x8F7D;)&#x6700;&#x91CD;&#x8981;&#x7684;&#x8D44;&#x6E90; Preload&#x662F;&#x4E00;&#x4E2A;&#x58F0;&#x660E;&#x6027;&#x7684;&#x83B7;&#x53D6;&#x8BF7;&#x6C42;&#xFF0C;&#x5B83;&#x544A;&#x8BC9;&#x6D4F;&#x89C8;&#x5668;&#x5C3D;&#x5FEB;&#x8BF7;&#x6C42;&#x8D44;&#x6E90;</li>
+<li>&#x5C3D;&#x5FEB;&#x6E32;&#x67D3;&#x521D;&#x59CB;&#x8DEF;&#x7EBF; &#x5185;&#x8054;&#x9996;&#x5C4F;JS&#x548C;CSS&#x63A8;&#x8350;&#x5176;&#x4F59;&#x90E8;&#x5206;</li>
+<li>&#x9884;&#x7F13;&#x5B58;&#x5269;&#x4F59;&#x8D44;&#x6E90; Service Worker</li>
+<li>&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;&#x5176;&#x4ED6;&#x8DEF;&#x7531;&#x548C;&#x975E;&#x5173;&#x952E;&#x8D44;&#x6E90;</li>
+</ul>
+</li>
+<li><a href="https://developers.google.com/web/fundamentals/performance/critical-rendering-path/">&#x4F18;&#x5316;&#x5173;&#x952E;&#x6E32;&#x67D3;&#x8DEF;&#x5F84;</a></li>
+<li><a href="https://web.dev/fast/#optimize-your-css">&#x4F18;&#x5316;&#x60A8;&#x7684; CSS</a></li>
+<li><a href="https://web.dev/fast/#optimize-your-images">&#x4F18;&#x5316;&#x60A8;&#x7684;&#x56FE;&#x50CF;</a></li>
+<li><a href="https://web.dev/fast/#optimize-web-fonts">&#x4F18;&#x5316;&#x7F51;&#x9875;&#x5B57;&#x4F53;</a></li>
+<li><a href="https://web.dev/fast/#optimize-your-javascript">&#x4F18;&#x5316;&#x60A8;&#x7684;JavaScript</a></li>
+</ul>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;preload&quot;</span> <span class="hljs-attr">as</span>=<span class="hljs-string">&quot;style&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;css/style.css&quot;</span>&gt;</span>
+</code></pre>
+<h3 id="t243.4. TTI">3.4. TTI <a href="#t243.4. TTI"> # </a></h3>
+<ul>
+<li><a href="https://web.dev/tti/">Time to Interactive(&#x53EF;&#x4EA4;&#x4E92;&#x65F6;&#x95F4;)</a>&#x6307;&#x6807;&#x6D4B;&#x91CF;&#x9875;&#x9762;&#x4ECE;&#x5F00;&#x59CB;&#x52A0;&#x8F7D;&#x5230;&#x4E3B;&#x8981;&#x5B50;&#x8D44;&#x6E90;&#x5B8C;&#x6210;&#x6E32;&#x67D3;&#xFF0C;&#x5E76;&#x80FD;&#x591F;&#x5FEB;&#x901F;&#x3001;&#x53EF;&#x9760;&#x5730;&#x54CD;&#x5E94;&#x7528;&#x6237;&#x8F93;&#x5165;&#x6240;&#x9700;&#x7684;&#x65F6;&#x95F4;</li>
+<li><a href="https://www.webpagetest.org/">webpagetest</a></li>
+<li>&#x867D;&#x7136; TTI &#x53EF;&#x4EE5;&#x5728;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x4E0B;&#x8FDB;&#x884C;&#x6D4B;&#x91CF;&#xFF0C;&#x4F46;&#x6211;&#x4EEC;&#x4E0D;&#x5EFA;&#x8BAE;&#x8FD9;&#x6837;&#x505A;&#xFF0C;&#x56E0;&#x4E3A;&#x7528;&#x6237;&#x4EA4;&#x4E92;&#x4F1A;&#x5F71;&#x54CD;&#x60A8;&#x7F51;&#x9875;&#x7684; TTI&#xFF0C;&#x4ECE;&#x800C;&#x5BFC;&#x81F4;&#x60A8;&#x7684;&#x62A5;&#x544A;&#x4E2D;&#x51FA;&#x73B0;&#x5927;&#x91CF;&#x5DEE;&#x5F02;&#x3002;&#x5982;&#x9700;&#x4E86;&#x89E3;&#x9875;&#x9762;&#x5728;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x4E2D;&#x7684;&#x4EA4;&#x4E92;&#x6027;&#xFF0C;&#x60A8;&#x5E94;&#x8BE5;&#x6D4B;&#x91CF;First Input Delay &#x9996;&#x6B21;&#x8F93;&#x5165;&#x5EF6;&#x8FDF; (FID)</li>
+</ul>
+<h4 id="t253.4.1 &#x6539;&#x8FDB;TTI">3.4.1 &#x6539;&#x8FDB;TTI <a href="#t253.4.1 &#x6539;&#x8FDB;TTI"> # </a></h4>
+<ul>
+<li><a href="https://web.dev/unminified-javascript/">&#x7F29;&#x5C0F;JavaScript</a></li>
+<li><a href="https://web.dev/uses-rel-preconnect/">&#x9884;&#x8FDE;&#x63A5;&#x5230;&#x6240;&#x9700;&#x7684;&#x6765;&#x6E90;</a></li>
+<li><a href="https://web.dev/uses-rel-preload/">&#x9884;&#x52A0;&#x8F7D;&#x5173;&#x952E;&#x8BF7;&#x6C42;</a></li>
+<li><a href="https://web.dev/third-party-summary/">&#x51CF;&#x5C11;&#x7B2C;&#x4E09;&#x65B9;&#x4EE3;&#x7801;&#x7684;&#x5F71;&#x54CD;</a></li>
+<li><a href="https://web.dev/critical-request-chains/">&#x6700;&#x5C0F;&#x5316;&#x5173;&#x952E;&#x8BF7;&#x6C42;&#x6DF1;&#x5EA6;</a></li>
+<li><a href="https://web.dev/bootup-time/">&#x51CF;&#x5C11; JavaScript &#x6267;&#x884C;&#x65F6;&#x95F4;</a></li>
+<li><a href="https://web.dev/mainthread-work-breakdown/">&#x6700;&#x5C0F;&#x5316;&#x4E3B;&#x7EBF;&#x7A0B;&#x5DE5;&#x4F5C;</a></li>
+<li><a href="https://web.dev/resource-summary/">&#x4FDD;&#x6301;&#x8F83;&#x4F4E;&#x7684;&#x8BF7;&#x6C42;&#x6570;&#x548C;&#x8F83;&#x5C0F;&#x7684;&#x4F20;&#x8F93;&#x5927;&#x5C0F;</a></li>
+</ul>
+<h3 id="t263.5 TBT">3.5 TBT <a href="#t263.5 TBT"> # </a></h3>
+<ul>
+<li><a href="https://web.dev/tbt/">total Blocking Time(&#x603B;&#x963B;&#x585E;&#x65F6;&#x95F4;)</a>&#x6307;&#x6807;&#x6D4B;&#x91CF;First Contentful Paint &#x9996;&#x6B21;&#x5185;&#x5BB9;&#x7ED8;&#x5236; (FCP)&#x4E0E;Time to Interactive &#x53EF;&#x4EA4;&#x4E92;&#x65F6;&#x95F4; (TTI)&#x4E4B;&#x95F4;&#x7684;&#x603B;&#x65F6;&#x95F4;&#xFF0C;&#x8FD9;&#x671F;&#x95F4;&#xFF0C;&#x4E3B;&#x7EBF;&#x7A0B;&#x88AB;&#x963B;&#x585E;&#x7684;&#x65F6;&#x95F4;&#x8FC7;&#x957F;&#xFF0C;&#x65E0;&#x6CD5;&#x4F5C;&#x51FA;&#x8F93;&#x5165;&#x54CD;&#x5E94;</li>
+<li>&#x867D;&#x7136; TBT &#x53EF;&#x4EE5;&#x5728;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x4E0B;&#x8FDB;&#x884C;&#x6D4B;&#x91CF;&#xFF0C;&#x4F46;&#x6211;&#x4EEC;&#x4E0D;&#x5EFA;&#x8BAE;&#x8FD9;&#x6837;&#x505A;&#xFF0C;&#x56E0;&#x4E3A;&#x7528;&#x6237;&#x4EA4;&#x4E92;&#x4F1A;&#x5F71;&#x54CD;&#x60A8;&#x7F51;&#x9875;&#x7684; TBT&#xFF0C;&#x4ECE;&#x800C;&#x5BFC;&#x81F4;&#x60A8;&#x7684;&#x62A5;&#x544A;&#x4E2D;&#x51FA;&#x73B0;&#x5927;&#x91CF;&#x5DEE;&#x5F02;&#x3002;&#x5982;&#x9700;&#x4E86;&#x89E3;&#x9875;&#x9762;&#x5728;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x4E2D;&#x7684;&#x4EA4;&#x4E92;&#x6027;&#xFF0C;&#x60A8;&#x5E94;&#x8BE5;&#x6D4B;&#x91CF;First Input Delay &#x9996;&#x6B21;&#x8F93;&#x5165;&#x5EF6;&#x8FDF; (FID)</li>
+</ul>
+<h4 id="t273.5.1 &#x5982;&#x4F55;&#x6539;&#x8FDB;TBT">3.5.1 &#x5982;&#x4F55;&#x6539;&#x8FDB;TBT <a href="#t273.5.1 &#x5982;&#x4F55;&#x6539;&#x8FDB;TBT"> # </a></h4>
+<ul>
+<li><a href="https://web.dev/third-party-summary/">&#x51CF;&#x5C11;&#x7B2C;&#x4E09;&#x65B9;&#x4EE3;&#x7801;&#x7684;&#x5F71;&#x54CD;</a></li>
+<li><a href="https://web.dev/bootup-time/">&#x51CF;&#x5C11; JavaScript &#x6267;&#x884C;&#x65F6;&#x95F4;</a></li>
+<li><a href="https://web.dev/mainthread-work-breakdown/">&#x6700;&#x5C0F;&#x5316;&#x4E3B;&#x7EBF;&#x7A0B;&#x5DE5;&#x4F5C;</a></li>
+<li><a href="https://web.dev/resource-summary/">&#x4FDD;&#x6301;&#x8F83;&#x4F4E;&#x7684;&#x8BF7;&#x6C42;&#x6570;&#x548C;&#x8F83;&#x5C0F;&#x7684;&#x4F20;&#x8F93;&#x5927;&#x5C0F;</a></li>
+</ul>
+<h3 id="t283.6 FID">3.6 FID <a href="#t283.6 FID"> # </a></h3>
+<ul>
+<li><a href="https://web.dev/fid/">&#x9996;&#x6B21;&#x8F93;&#x5165;&#x5EF6;&#x8FDF; (FID) </a>&#x662F;&#x6D4B;&#x91CF;&#x52A0;&#x8F7D;&#x54CD;&#x5E94;&#x5EA6;&#x7684;&#x4E00;&#x4E2A;&#x4EE5;&#x7528;&#x6237;&#x4E3A;&#x4E2D;&#x5FC3;&#x7684;&#x91CD;&#x8981;&#x6307;&#x6807;</li>
+<li>&#x56E0;&#x4E3A;&#x8BE5;&#x9879;&#x6307;&#x6807;&#x5C06;&#x7528;&#x6237;&#x5C1D;&#x8BD5;&#x4E0E;&#x65E0;&#x54CD;&#x5E94;&#x9875;&#x9762;&#x8FDB;&#x884C;&#x4EA4;&#x4E92;&#x65F6;&#x7684;&#x4F53;&#x9A8C;&#x8FDB;&#x884C;&#x4E86;&#x91CF;&#x5316;&#xFF0C;&#x4F4E; FID &#x6709;&#x52A9;&#x4E8E;&#x8BA9;&#x7528;&#x6237;&#x786E;&#x4FE1;&#x9875;&#x9762;&#x662F;&#x6709;&#x6548;&#x7684;</li>
+<li>&#x9996;&#x6B21;&#x8F93;&#x5165;&#x5EF6;&#x8FDF; (FID) &#x6307;&#x6807;&#x6709;&#x52A9;&#x4E8E;&#x8861;&#x91CF;&#x60A8;&#x7684;&#x7528;&#x6237;&#x5BF9;&#x7F51;&#x7AD9;&#x4EA4;&#x4E92;&#x6027;&#x548C;&#x54CD;&#x5E94;&#x5EA6;&#x7684;&#x7B2C;&#x4E00;&#x5370;&#x8C61;</li>
+<li>FID &#x6D4B;&#x91CF;&#x4ECE;&#x7528;&#x6237;&#x7B2C;&#x4E00;&#x6B21;&#x4E0E;&#x9875;&#x9762;&#x4EA4;&#x4E92;&#xFF08;&#x4F8B;&#x5982;&#x5F53;&#x4ED6;&#x4EEC;&#x5355;&#x51FB;&#x94FE;&#x63A5;&#x3001;&#x70B9;&#x6309;&#x6309;&#x94AE;&#x6216;&#x4F7F;&#x7528;&#x7531; JavaScript &#x9A71;&#x52A8;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x63A7;&#x4EF6;&#xFF09;&#x76F4;&#x5230;&#x6D4F;&#x89C8;&#x5668;&#x5BF9;&#x4EA4;&#x4E92;&#x4F5C;&#x51FA;&#x54CD;&#x5E94;&#xFF0C;&#x5E76;&#x5B9E;&#x9645;&#x80FD;&#x591F;&#x5F00;&#x59CB;&#x5904;&#x7406;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x6240;&#x7ECF;&#x8FC7;&#x7684;&#x65F6;&#x95F4;</li>
+</ul>
+<h4 id="t293.6.1 &#x6D4B;&#x8BD5;FID">3.6.1 &#x6D4B;&#x8BD5;FID <a href="#t293.6.1 &#x6D4B;&#x8BD5;FID"> # </a></h4>
+<h5 id="t303.6.1.1 perf.js">3.6.1.1 perf.js <a href="#t303.6.1.1 perf.js"> # </a></h5>
+<p>site\public\perf.js</p>
+<pre><code class="lang-diff">(function (ready) {
+    if (document.readyState <span class="hljs-comment">=== &quot;complete&quot; || document.readyState === &quot;interactive&quot;) {</span>
+        ready();
+    } else {
+        document.addEventListener(&quot;readystatechange&quot;, function () {
+            if (document.readyState <span class="hljs-comment">=== &quot;complete&quot;) {</span>
+                ready();
+            }
+        });
+    }
+})(function perf() {
+    var data = {
+        url: window.location.href,
+        FP: 0,
+        FCP: 0,
+        LCP: 0,
+<span class="hljs-addition">+       FID: 0</span>
+    };
+    new PerformanceObserver(function (entryList) {
+        var entries = entryList.getEntries() || [];
+        entries.forEach(function (entry) {
+            if (entry.name <span class="hljs-comment">=== &quot;first-paint&quot;) {</span>
+                console.log(&quot;&#x8BB0;&#x5F55;FP: &quot; + (data.FP = entry.startTime));
+            } else if (entry.name <span class="hljs-comment">=== &quot;first-contentful-paint&quot;) {</span>
+                console.log(&quot;&#x8BB0;&#x5F55;FCP: &quot; + (data.FCP = entry.startTime));
+            }
+        });
+    }).observe({ type: &quot;paint&quot;, buffered: true });
+
+    new PerformanceObserver(function (entryList) {
+        var entries = entryList.getEntries() || [];
+        entries.forEach(function (entry) {
+            if (entry.startTime &gt; data.LCP) {
+                console.log(&quot;&#x8BB0;&#x5F55;LCP: &quot; + (data.LCP = entry.startTime));
+            }
+        });
+    }).observe({ type: &quot;largest-contentful-paint&quot;, buffered: true });
+
+<span class="hljs-addition">+   new PerformanceObserver((entryList) =&gt; {</span>
+<span class="hljs-addition">+       for (const entry of entryList.getEntries()) {</span>
+<span class="hljs-addition">+           const FID = entry.processingStart - entry.startTime;</span>
+<span class="hljs-addition">+           console.log(&apos;FID:&apos;, FID, entry);</span>
+<span class="hljs-addition">+       }</span>
+<span class="hljs-addition">+   }).observe({ type: &apos;first-input&apos;, buffered: true });</span>
+});
+</code></pre>
+<h4 id="t313.6.2 &#x6539;&#x8FDB;FID">3.6.2 &#x6539;&#x8FDB;FID <a href="#t313.6.2 &#x6539;&#x8FDB;FID"> # </a></h4>
+<ul>
+<li><a href="https://web.dev/third-party-summary/">&#x51CF;&#x5C11;&#x7B2C;&#x4E09;&#x65B9;&#x4EE3;&#x7801;&#x7684;&#x5F71;&#x54CD;</a></li>
+<li><a href="https://web.dev/bootup-time/">&#x51CF;&#x5C11; JavaScript &#x6267;&#x884C;&#x65F6;&#x95F4;</a></li>
+<li><a href="https://web.dev/mainthread-work-breakdown/">&#x6700;&#x5C0F;&#x5316;&#x4E3B;&#x7EBF;&#x7A0B;&#x5DE5;&#x4F5C;</a></li>
+<li><a href="https://web.dev/resource-summary/">&#x4FDD;&#x6301;&#x8F83;&#x4F4E;&#x7684;&#x8BF7;&#x6C42;&#x6570;&#x548C;&#x8F83;&#x5C0F;&#x7684;&#x4F20;&#x8F93;&#x5927;&#x5C0F;</a></li>
+</ul>
+<h3 id="t323.7 CLS">3.7 CLS <a href="#t323.7 CLS"> # </a></h3>
+<ul>
+<li><a href="Cumulative Layout Shift(&#x7D2F;&#x79EF;&#x5E03;&#x5C40;&#x504F;&#x79FB;">https://web.dev/cls/</a>)&#x662F;&#x6D4B;&#x91CF;&#x89C6;&#x89C9;&#x7A33;&#x5B9A;&#x6027;&#x7684;&#x4E00;&#x4E2A;&#x4EE5;&#x7528;&#x6237;&#x4E3A;&#x4E2D;&#x5FC3;&#x7684;&#x91CD;&#x8981;&#x6307;&#x6807;</li>
+<li>CLS &#x6D4B;&#x91CF;&#x6574;&#x4E2A;&#x9875;&#x9762;&#x751F;&#x547D;&#x5468;&#x671F;&#x5185;&#x53D1;&#x751F;&#x7684;&#x6240;&#x6709;&#x610F;&#x5916;&#x5E03;&#x5C40;&#x504F;&#x79FB;&#x4E2D;&#x6700;&#x5927;&#x4E00;&#x8FDE;&#x4E32;&#x7684;&#x5E03;&#x5C40;&#x504F;&#x79FB;&#x5206;&#x6570;</li>
+</ul>
+<h4 id="t333.7.1 &#x5982;&#x4F55;&#x8BA1;&#x7B97;CLS">3.7.1 &#x5982;&#x4F55;&#x8BA1;&#x7B97;CLS <a href="#t333.7.1 &#x5982;&#x4F55;&#x8BA1;&#x7B97;CLS"> # </a></h4>
+<h5 id="t343.7.1.1 perf.js">3.7.1.1 perf.js <a href="#t343.7.1.1 perf.js"> # </a></h5>
+<p>site\public\perf.js</p>
+<pre><code class="lang-diff">(function (ready) {
+    if (document.readyState <span class="hljs-comment">=== &quot;complete&quot; || document.readyState === &quot;interactive&quot;) {</span>
+        ready();
+    } else {
+        document.addEventListener(&quot;readystatechange&quot;, function () {
+            if (document.readyState <span class="hljs-comment">=== &quot;complete&quot;) {</span>
+                ready();
+            }
+        });
+    }
+})(function perf() {
+    var data = {
+        url: window.location.href,
+        FP: 0,
+        FCP: 0,
+        LCP: 0,
+        FID: 0,
+        CLS: 0
+    };
+    new PerformanceObserver(function (entryList) {
+        var entries = entryList.getEntries() || [];
+        entries.forEach(function (entry) {
+            if (entry.name <span class="hljs-comment">=== &quot;first-paint&quot;) {</span>
+                console.log(&quot;&#x8BB0;&#x5F55;FP: &quot; + (data.FP = entry.startTime));
+            } else if (entry.name <span class="hljs-comment">=== &quot;first-contentful-paint&quot;) {</span>
+                console.log(&quot;&#x8BB0;&#x5F55;FCP: &quot; + (data.FCP = entry.startTime));
+            }
+        });
+    }).observe({ type: &quot;paint&quot;, buffered: true });
+
+    new PerformanceObserver(function (entryList) {
+        var entries = entryList.getEntries() || [];
+        entries.forEach(function (entry) {
+            if (entry.startTime &gt; data.LCP) {
+                console.log(&quot;&#x8BB0;&#x5F55;LCP: &quot; + (data.LCP = entry.startTime));
+            }
+        });
+    }).observe({ type: &quot;largest-contentful-paint&quot;, buffered: true });
+
+    new PerformanceObserver((entryList) =&gt; {
+        for (const entry of entryList.getEntries()) {
+            const FID = entry.processingStart - entry.startTime;
+            console.log(&apos;FID:&apos;, FID, entry);
+        }
+    }).observe({ type: &apos;first-input&apos;, buffered: true });
+
+<span class="hljs-addition">+   new PerformanceObserver((entryList) =&gt; {</span>
+<span class="hljs-addition">+       var entries = entryList.getEntries() || [];</span>
+<span class="hljs-addition">+       entries.forEach(function (entry) {</span>
+<span class="hljs-addition">+           console.log(&apos;entry&apos;, entry);</span>
+<span class="hljs-addition">+           if (!entry.hadRecentInput) {</span>
+<span class="hljs-addition">+               data.CLS += entry.value;</span>
+<span class="hljs-addition">+               console.log(&quot;CLS: &quot; + data.CLS);</span>
+<span class="hljs-addition">+           }</span>
+<span class="hljs-addition">+       });</span>
+<span class="hljs-addition">+   }).observe({ type: &apos;layout-shift&apos;, buffered: true });</span>
+});
+</code></pre>
+<h4 id="t353.7.2 &#x5982;&#x4F55;&#x6539;&#x8FDB;CLS">3.7.2 &#x5982;&#x4F55;&#x6539;&#x8FDB;CLS <a href="#t353.7.2 &#x5982;&#x4F55;&#x6539;&#x8FDB;CLS"> # </a></h4>
+<ul>
+<li>&#x59CB;&#x7EC8;&#x5728;&#x60A8;&#x7684;&#x56FE;&#x50CF;&#x548C;&#x89C6;&#x9891;&#x5143;&#x7D20;&#x4E0A;&#x5305;&#x542B;&#x5C3A;&#x5BF8;&#x5C5E;&#x6027;</li>
+<li>&#x9996;&#x9009;&#x8F6C;&#x6362;&#x52A8;&#x753B;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x89E6;&#x53D1;&#x5E03;&#x5C40;&#x504F;&#x79FB;&#x7684;&#x5C5E;&#x6027;&#x52A8;&#x753B;</li>
+<li>&#x9664;&#x975E;&#x662F;&#x5BF9;&#x7528;&#x6237;&#x4EA4;&#x4E92;&#x505A;&#x51FA;&#x54CD;&#x5E94;&#xFF0C;&#x5426;&#x5219;&#x5207;&#x52FF;&#x5728;&#x73B0;&#x6709;&#x5185;&#x5BB9;&#x7684;&#x4E0A;&#x65B9;&#x63D2;&#x5165;&#x5185;&#x5BB9;</li>
+</ul>
+<h5 id="t363.7.2.1 perf.js">3.7.2.1 perf.js <a href="#t363.7.2.1 perf.js"> # </a></h5>
+<p>site\public\perf.js</p>
+<pre><code class="lang-diff">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;lighthouse&lt;/title&gt;
+<span class="hljs-addition">+   &lt;style&gt;</span>
+<span class="hljs-addition">+       @keyframes grow {</span>
+<span class="hljs-addition">+           from {</span>
+<span class="hljs-addition">+               /**transform: scaleY(0);**/</span>
+<span class="hljs-addition">+               height: 200px;</span>
+<span class="hljs-addition">+           }</span>
+<span class="hljs-addition">+           to {</span>
+<span class="hljs-addition">+               /**transform: scaleY(2);**/</span>
+<span class="hljs-addition">+               height: 500px;</span>
+<span class="hljs-addition">+           }</span>
+<span class="hljs-addition">+       }</span>
+<span class="hljs-addition">+       #banner {</span>
+<span class="hljs-addition">+           animation: grow 3s infinite;</span>
+<span class="hljs-addition">+       }</span>
+<span class="hljs-addition">+   &lt;/style&gt;</span>
+&lt;/head&gt;
+
+&lt;body&gt;
+<span class="hljs-addition">+   &lt;img id=&quot;banner&quot; style=&quot;width:500px;height:300px;&quot; src=&quot;/1.png&quot; /&gt;&lt;br /&gt;</span>
+<span class="hljs-addition">+   &lt;img src=&quot;/2.png&quot; /&gt;</span>
+    &lt;script src=&quot;/perf.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h2 id="t374. performance&#x9762;&#x677F;">4. performance&#x9762;&#x677F; <a href="#t374. performance&#x9762;&#x677F;"> # </a></h2>
+<h3 id="t384.1 &#x9762;&#x677F;&#x8BF4;&#x660E;">4.1 &#x9762;&#x677F;&#x8BF4;&#x660E; <a href="#t384.1 &#x9762;&#x677F;&#x8BF4;&#x660E;"> # </a></h3>
+<p><img src="https://static.zhufengpeixun.com/mian_ban_shuo_ming_1641712214460.png" alt></p>
+<h3 id="t394.2 &#x9762;&#x677F;&#x8BF4;&#x660E;">4.2 &#x9762;&#x677F;&#x8BF4;&#x660E; <a href="#t394.2 &#x9762;&#x677F;&#x8BF4;&#x660E;"> # </a></h3>
+<p><img src="https://static.zhufengpeixun.com/performance_1641712250550.png" alt></p>
+<h3 id="t404.3 &#x6838;&#x5FC3;&#x6D41;&#x7A0B;">4.3 &#x6838;&#x5FC3;&#x6D41;&#x7A0B; <a href="#t404.3 &#x6838;&#x5FC3;&#x6D41;&#x7A0B;"> # </a></h3>
+<h4 id="t414.3.1 &#x5BFC;&#x822A;&#x9636;&#x6BB5;">4.3.1 &#x5BFC;&#x822A;&#x9636;&#x6BB5; <a href="#t414.3.1 &#x5BFC;&#x822A;&#x9636;&#x6BB5;"> # </a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x4E8B;&#x4EF6;</th>
+<th style="text-align:left">&#x542B;&#x4E49;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">beforeunload</td>
+<td style="text-align:left">&#x4E8B;&#x4EF6;&#x89E6;&#x53D1;&#x4E8E; window&#x3001;document &#x548C;&#x5B83;&#x4EEC;&#x7684;&#x8D44;&#x6E90;&#x5373;&#x5C06;&#x5378;&#x8F7D;&#x65F6;</td>
+</tr>
+<tr>
+<td style="text-align:left">navigationstart</td>
+<td style="text-align:left">&#x76F8;&#x540C;&#x7684;&#x6D4F;&#x89C8;&#x73AF;&#x5883;&#x4E0B;&#x5378;&#x8F7D;&#x524D;&#x4E00;&#x4E2A;&#x6587;&#x6863;&#x7ED3;&#x675F;&#x4E4B;&#x65F6;</td>
+</tr>
+<tr>
+<td style="text-align:left">pagehide</td>
+<td style="text-align:left">&#x5F53;&#x6D4F;&#x89C8;&#x5668;&#x5728;&#x663E;&#x793A;&#x4E0E;&#x4F1A;&#x8BDD;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x4E0D;&#x540C;&#x7684;&#x9875;&#x9762;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x9690;&#x85CF;&#x5F53;&#x524D;&#x9875;&#x9762;&#x65F6;, pagehide(&#x9875;&#x9762;&#x9690;&#x85CF;)&#x4E8B;&#x4EF6;&#x4F1A;&#x88AB;&#x53D1;&#x9001;&#x5230;&#x4E00;&#x4E2A;Window</td>
+</tr>
+<tr>
+<td style="text-align:left">visibilitychange</td>
+<td style="text-align:left">&#x5F53;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x67D0;&#x4E2A;&#x6807;&#x7B7E;&#x9875;&#x5207;&#x6362;&#x5230;&#x540E;&#x53F0;&#xFF0C;&#x6216;&#x4ECE;&#x540E;&#x53F0;&#x5207;&#x6362;&#x5230;&#x524D;&#x53F0;&#x65F6;&#x5C31;&#x4F1A;&#x89E6;&#x53D1;&#x8BE5;&#x6D88;&#x606F;</td>
+</tr>
+<tr>
+<td style="text-align:left">unload</td>
+<td style="text-align:left">&#x5F53;&#x6587;&#x6863;&#x6216;&#x4E00;&#x4E2A;&#x5B50;&#x8D44;&#x6E90;&#x6B63;&#x5728;&#x88AB;&#x5378;&#x8F7D;&#x65F6;, &#x89E6;&#x53D1; unload&#x4E8B;&#x4EF6;</td>
+</tr>
+<tr>
+<td style="text-align:left">unloadEventEnd</td>
+<td style="text-align:left">&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x7ED3;&#x675F;&#x4E4B;&#x65F6;</td>
+</tr>
+<tr>
+<td style="text-align:left">send request</td>
+<td style="text-align:left">&#x53D1;&#x9001;&#x8BF7;&#x6C42;</td>
+</tr>
+<tr>
+<td style="text-align:left">receive data</td>
+<td style="text-align:left">&#x63A5;&#x6536;&#x54CD;&#x5E94;</td>
+</tr>
+<tr>
+<td style="text-align:left">commitNavigationEnd</td>
+<td style="text-align:left">&#x63D0;&#x4EA4;&#x672C;&#x6B21;&#x5BFC;&#x822A;&#x7ED3;&#x675F;</td>
+</tr>
+<tr>
+<td style="text-align:left">domLoading</td>
+<td style="text-align:left">&#x89E3;&#x6790;&#x5668;&#x5F00;&#x59CB;&#x5DE5;&#x4F5C;&#x65F6;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="t424.3.2 &#x89E3;&#x6790;HTML&#x9636;&#x6BB5;">4.3.2 &#x89E3;&#x6790;HTML&#x9636;&#x6BB5; <a href="#t424.3.2 &#x89E3;&#x6790;HTML&#x9636;&#x6BB5;"> # </a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x4E8B;&#x4EF6;</th>
+<th style="text-align:left">&#x542B;&#x4E49;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">receive data</td>
+<td style="text-align:left">&#x63A5;&#x6536;&#x6570;&#x636E;</td>
+</tr>
+<tr>
+<td style="text-align:left">complete loading</td>
+<td style="text-align:left">&#x5B8C;&#x6210;&#x52A0;&#x8F7D;</td>
+</tr>
+<tr>
+<td style="text-align:left">parseHTML</td>
+<td style="text-align:left">&#x89E3;&#x6790;HTML</td>
+</tr>
+<tr>
+<td style="text-align:left">recalculateStyle</td>
+<td style="text-align:left">&#x91CD;&#x65B0;&#x8BA1;&#x7B97;&#x6837;&#x5F0F;</td>
+</tr>
+<tr>
+<td style="text-align:left">layout</td>
+<td style="text-align:left">&#x5E03;&#x5C40;</td>
+</tr>
+<tr>
+<td style="text-align:left">update layer tree</td>
+<td style="text-align:left">&#x66F4;&#x65B0;&#x56FE;&#x5C42;&#x6811;</td>
+</tr>
+<tr>
+<td style="text-align:left">paint</td>
+<td style="text-align:left">&#x7ED8;&#x5236;</td>
+</tr>
+<tr>
+<td style="text-align:left">raster</td>
+<td style="text-align:left">GPU&#x5149;&#x6805;&#x5316;</td>
+</tr>
+<tr>
+<td style="text-align:left">compositor</td>
+<td style="text-align:left">&#x590D;&#x5408;&#x56FE;&#x5C42;</td>
+</tr>
+<tr>
+<td style="text-align:left">display</td>
+<td style="text-align:left">&#x663E;&#x793A;</td>
+</tr>
+<tr>
+<td style="text-align:left">dominteractive</td>
+<td style="text-align:left">&#x4E3B;&#x6587;&#x6863;&#x7684;&#x89E3;&#x6790;&#x5668;&#x7ED3;&#x675F;&#x5DE5;&#x4F5C;&#x65F6;</td>
+</tr>
+<tr>
+<td style="text-align:left">readystatechange</td>
+<td style="text-align:left">interactive&#xFF08;&#x53EF;&#x4EA4;&#x4E92;&#xFF09;</td>
+</tr>
+<tr>
+<td style="text-align:left">domContentLoadedEventStart</td>
+<td style="text-align:left">&#x6240;&#x6709;&#x7684;&#x9700;&#x8981;&#x88AB;&#x8FD0;&#x884C;&#x7684;&#x811A;&#x672C;&#x5DF2;&#x7ECF;&#x88AB;&#x89E3;&#x6790;&#x4E4B;&#x65F6;</td>
+</tr>
+<tr>
+<td style="text-align:left">DOMContentLoaded</td>
+<td style="text-align:left">&#x5F53;&#x521D;&#x59CB;&#x7684; HTML &#x6587;&#x6863;&#x88AB;&#x5B8C;&#x5168;&#x52A0;&#x8F7D;&#x548C;&#x89E3;&#x6790;&#x5B8C;&#x6210;&#x4E4B;&#x540E;&#xFF0C;DOMContentLoaded &#x4E8B;&#x4EF6;&#x88AB;&#x89E6;&#x53D1;&#xFF0C;&#x800C;&#x65E0;&#x9700;&#x7B49;&#x5F85;&#x6837;&#x5F0F;&#x8868;&#x3001;&#x56FE;&#x50CF;&#x548C;&#x5B50;&#x6846;&#x67B6;&#x7684;&#x5B8C;&#x5168;&#x52A0;&#x8F7D;</td>
+</tr>
+<tr>
+<td style="text-align:left">domContentLoadedEventEnd</td>
+<td style="text-align:left">&#x8FD9;&#x4E2A;&#x65F6;&#x523B;&#x4E3A;&#x6240;&#x6709;&#x9700;&#x8981;&#x5C3D;&#x65E9;&#x6267;&#x884C;&#x7684;&#x811A;&#x672C;&#x4E0D;&#x7BA1;&#x662F;&#x5426;&#x6309;&#x987A;&#x5E8F;&#xFF0C;&#x90FD;&#x5DF2;&#x7ECF;&#x6267;&#x884C;&#x5B8C;&#x6BD5;</td>
+</tr>
+<tr>
+<td style="text-align:left">domComplete</td>
+<td style="text-align:left">&#x4E3B;&#x6587;&#x6863;&#x7684;&#x89E3;&#x6790;&#x5668;&#x7ED3;&#x675F;&#x5DE5;&#x4F5C;</td>
+</tr>
+<tr>
+<td style="text-align:left">readystatechange</td>
+<td style="text-align:left">complete&#xFF08;&#x5B8C;&#x6210;&#xFF09;</td>
+</tr>
+<tr>
+<td style="text-align:left">loadEventStart</td>
+<td style="text-align:left">load&#x4E8B;&#x4EF6;&#x88AB;&#x73B0;&#x5728;&#x7684;&#x6587;&#x6863;&#x89E6;&#x53D1;&#x4E4B;&#x65F6;</td>
+</tr>
+<tr>
+<td style="text-align:left">load</td>
+<td style="text-align:left">&#x5F53;&#x6574;&#x4E2A;&#x9875;&#x9762;&#x53CA;&#x6240;&#x6709;&#x4F9D;&#x8D56;&#x8D44;&#x6E90;&#x5982;&#x6837;&#x5F0F;&#x8868;&#x548C;&#x56FE;&#x7247;&#x90FD;&#x5DF2;&#x5B8C;&#x6210;&#x52A0;&#x8F7D;&#x65F6;&#xFF0C;&#x5C06;&#x89E6;&#x53D1;load&#x4E8B;&#x4EF6;</td>
+</tr>
+<tr>
+<td style="text-align:left">loadEventEnd</td>
+<td style="text-align:left">load&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x88AB;&#x7EC8;&#x6B62;</td>
+</tr>
+<tr>
+<td style="text-align:left">pageshow</td>
+<td style="text-align:left">&#x5F53;&#x4E00;&#x6761;&#x4F1A;&#x8BDD;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x88AB;&#x6267;&#x884C;&#x7684;&#x65F6;&#x5019;&#x5C06;&#x4F1A;&#x89E6;&#x53D1;&#x9875;&#x9762;&#x663E;&#x793A;(pageshow)&#x4E8B;&#x4EF6;</td>
+</tr>
+</tbody>
+</table>
+<p>main.html</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">&quot;X-UA-Compatible&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;IE=edge&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>hello<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+            <span class="hljs-selector-id">#posts</span> {
+                <span class="hljs-attribute">width</span>: <span class="hljs-number">300px</span>;
+                <span class="hljs-attribute">height</span>: <span class="hljs-number">300px</span>;
+                <span class="hljs-attribute">background-color</span>: green;
+            }
+
+            <span class="hljs-selector-class">.post</span> {
+                <span class="hljs-attribute">width</span>: <span class="hljs-number">300px</span>;
+                <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;
+                <span class="hljs-attribute">background-color</span>: red;
+            }
+        </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;posts&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">addPost</span>(<span class="hljs-params"></span>) </span>{
+            <span class="hljs-keyword">const</span> posts = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;posts&apos;</span>);
+            <span class="hljs-keyword">const</span> element = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&apos;div&apos;</span>);
+            element.className = <span class="hljs-string">&apos;post&apos;</span>;
+            element.innerHTML = <span class="hljs-string">&apos;post&apos;</span>;
+            posts.appendChild(element);
+        }
+        addPost()   
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-js">    <span class="hljs-built_in">document</span>.addEventListener(<span class="hljs-string">&apos;readystatechange&apos;</span>, (event) =&gt; {
+        <span class="hljs-built_in">console</span>.log(event, <span class="hljs-built_in">document</span>.readyState);
+    });
+</code></pre>
+<h2 id="t434. Lighthouse&#x4F18;&#x5316;">4. Lighthouse&#x4F18;&#x5316; <a href="#t434. Lighthouse&#x4F18;&#x5316;"> # </a></h2>
+<h3 id="t444.1 &#x51CF;&#x5C11;&#x672A;&#x4F7F;&#x7528;&#x7684; JavaScript">4.1 &#x51CF;&#x5C11;&#x672A;&#x4F7F;&#x7528;&#x7684; JavaScript <a href="#t444.1 &#x51CF;&#x5C11;&#x672A;&#x4F7F;&#x7528;&#x7684; JavaScript"> # </a></h3>
+<ul>
+<li><a href="https://web.dev/unused-javascript/?utm_source=lighthouse&amp;utm_medium=cli">Remove unused JavaScript</a></li>
+<li>&#x8BF7;&#x51CF;&#x5C11;&#x672A;&#x4F7F;&#x7528;&#x7684; JavaScript&#xFF0C;&#x5E76;&#x7B49;&#x5230;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x65F6;&#x518D;&#x52A0;&#x8F7D;&#x811A;&#x672C;&#xFF0C;&#x4EE5;&#x51CF;&#x5C11;&#x7F51;&#x7EDC;&#x6D3B;&#x52A8;&#x8017;&#x7528;&#x7684;&#x5B57;&#x8282;&#x6570;<h3 id="t454.2 &#x91C7;&#x7528;&#x65B0;&#x4E00;&#x4EE3;&#x683C;&#x5F0F;&#x63D0;&#x4F9B;&#x56FE;&#x7247;">4.2 &#x91C7;&#x7528;&#x65B0;&#x4E00;&#x4EE3;&#x683C;&#x5F0F;&#x63D0;&#x4F9B;&#x56FE;&#x7247; <a href="#t454.2 &#x91C7;&#x7528;&#x65B0;&#x4E00;&#x4EE3;&#x683C;&#x5F0F;&#x63D0;&#x4F9B;&#x56FE;&#x7247;"> # </a></h3>
+</li>
+<li><a href="https://web.dev/uses-webp-images/?utm_source=lighthouse&amp;utm_medium=cli">Serve images in modern formats</a></li>
+<li>WebP &#x548C; AVIF &#x7B49;&#x56FE;&#x7247;&#x683C;&#x5F0F;&#x7684;&#x538B;&#x7F29;&#x6548;&#x679C;&#x901A;&#x5E38;&#x4F18;&#x4E8E; PNG &#x6216; JPEG&#xFF0C;&#x56E0;&#x800C;&#x4E0B;&#x8F7D;&#x901F;&#x5EA6;&#x66F4;&#x5FEB;&#xFF0C;&#x6D88;&#x8017;&#x7684;&#x6570;&#x636E;&#x6D41;&#x91CF;&#x66F4;&#x5C11;</li>
+</ul>
+<h3 id="t464.3 &#x9002;&#x5F53;&#x8C03;&#x6574;&#x56FE;&#x7247;&#x5927;&#x5C0F;">4.3 &#x9002;&#x5F53;&#x8C03;&#x6574;&#x56FE;&#x7247;&#x5927;&#x5C0F; <a href="#t464.3 &#x9002;&#x5F53;&#x8C03;&#x6574;&#x56FE;&#x7247;&#x5927;&#x5C0F;"> # </a></h3>
+<ul>
+<li><a href="https://web.dev/uses-responsive-images/?utm_source=lighthouse&amp;utm_medium=cli">Properly size images</a></li>
+<li>&#x63D0;&#x4F9B;&#x5927;&#x5C0F;&#x5408;&#x9002;&#x7684;&#x56FE;&#x7247;&#x53EF;&#x8282;&#x7701;&#x79FB;&#x52A8;&#x6570;&#x636E;&#x7F51;&#x7EDC;&#x6D41;&#x91CF;&#x5E76;&#x7F29;&#x77ED;&#x52A0;&#x8F7D;&#x7528;&#x65F6;</li>
+</ul>
+<h3 id="t474.4 &#x63A8;&#x8FDF;&#x52A0;&#x8F7D;&#x5C4F;&#x5E55;&#x5916;&#x56FE;&#x7247;">4.4 &#x63A8;&#x8FDF;&#x52A0;&#x8F7D;&#x5C4F;&#x5E55;&#x5916;&#x56FE;&#x7247; <a href="#t474.4 &#x63A8;&#x8FDF;&#x52A0;&#x8F7D;&#x5C4F;&#x5E55;&#x5916;&#x56FE;&#x7247;"> # </a></h3>
+<ul>
+<li><a href="https://web.dev/offscreen-images/?utm_source=lighthouse&amp;utm_medium=cli">Defer offscreen images</a></li>
+<li>&#x5EFA;&#x8BAE;&#x60A8;&#x5728;&#x6240;&#x6709;&#x5173;&#x952E;&#x8D44;&#x6E90;&#x52A0;&#x8F7D;&#x5B8C;&#x6BD5;&#x540E;&#x63A8;&#x8FDF;&#x52A0;&#x8F7D;&#x5C4F;&#x5E55;&#x5916;&#x56FE;&#x7247;&#x548C;&#x5904;&#x4E8E;&#x9690;&#x85CF;&#x72B6;&#x6001;&#x7684;&#x56FE;&#x7247;&#xFF0C;&#x4ECE;&#x800C;&#x7F29;&#x77ED;&#x53EF;&#x4EA4;&#x4E92;&#x524D;&#x7684;&#x8017;&#x65F6;</li>
+</ul>
+<h3 id="t484.5 &#x79FB;&#x9664;&#x963B;&#x585E;&#x6E32;&#x67D3;&#x7684;&#x8D44;&#x6E90;">4.5 &#x79FB;&#x9664;&#x963B;&#x585E;&#x6E32;&#x67D3;&#x7684;&#x8D44;&#x6E90; <a href="#t484.5 &#x79FB;&#x9664;&#x963B;&#x585E;&#x6E32;&#x67D3;&#x7684;&#x8D44;&#x6E90;"> # </a></h3>
+<ul>
+<li><a href="https://web.dev/render-blocking-resources/?utm_source=lighthouse&amp;utm_medium=cli">Eliminate render-blocking resources</a></li>
+<li>&#x8D44;&#x6E90;&#x963B;&#x6B62;&#x4E86;&#x7CFB;&#x7EDF;&#x5BF9;&#x60A8;&#x7F51;&#x9875;&#x7684;&#x9996;&#x6B21;&#x6E32;&#x67D3;&#x3002;&#x5EFA;&#x8BAE;&#x4EE5;&#x5185;&#x5D4C;&#x65B9;&#x5F0F;&#x63D0;&#x4F9B;&#x5173;&#x952E;&#x7684; JS/CSS&#xFF0C;&#x5E76;&#x63A8;&#x8FDF;&#x63D0;&#x4F9B;&#x6240;&#x6709;&#x975E;&#x5173;&#x952E;&#x7684; JS/&#x6837;&#x5F0F;</li>
+</ul>
+<h3 id="t494.6 &#x51CF;&#x5C11;&#x672A;&#x4F7F;&#x7528;&#x7684; CSS">4.6 &#x51CF;&#x5C11;&#x672A;&#x4F7F;&#x7528;&#x7684; CSS <a href="#t494.6 &#x51CF;&#x5C11;&#x672A;&#x4F7F;&#x7528;&#x7684; CSS"> # </a></h3>
+<ul>
+<li><a href="https://web.dev/unused-css-rules/?utm_source=lighthouse&amp;utm_medium=cli">Remove unused CSS</a></li>
+<li>&#x8BF7;&#x4ECE;&#x6837;&#x5F0F;&#x8868;&#x4E2D;&#x51CF;&#x5C11;&#x672A;&#x4F7F;&#x7528;&#x7684;&#x89C4;&#x5219;&#xFF0C;&#x5E76;&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;&#x9996;&#x5C4F;&#x5185;&#x5BB9;&#x672A;&#x7528;&#x5230;&#x7684; CSS&#xFF0C;&#x4EE5;&#x51CF;&#x5C11;&#x7F51;&#x7EDC;&#x6D3B;&#x52A8;&#x8017;&#x7528;&#x7684;&#x5B57;&#x8282;&#x6570;</li>
+</ul>
+<h3 id="t504.7 &#x4F7F;&#x7528;&#x89C6;&#x9891;&#x683C;&#x5F0F;&#x63D0;&#x4F9B;&#x52A8;&#x753B;&#x5185;&#x5BB9;">4.7 &#x4F7F;&#x7528;&#x89C6;&#x9891;&#x683C;&#x5F0F;&#x63D0;&#x4F9B;&#x52A8;&#x753B;&#x5185;&#x5BB9; <a href="#t504.7 &#x4F7F;&#x7528;&#x89C6;&#x9891;&#x683C;&#x5F0F;&#x63D0;&#x4F9B;&#x52A8;&#x753B;&#x5185;&#x5BB9;"> # </a></h3>
+<ul>
+<li><a href="https://web.dev/efficient-animated-content/?utm_source=lighthouse&amp;utm_medium=cli">Use video formats for animated content</a></li>
+<li>&#x4F7F;&#x7528;&#x5927;&#x578B; GIF &#x63D0;&#x4F9B;&#x52A8;&#x753B;&#x5185;&#x5BB9;&#x4F1A;&#x5BFC;&#x81F4;&#x6548;&#x7387;&#x4F4E;&#x4E0B;&#x3002;&#x5EFA;&#x8BAE;&#x60A8;&#x6539;&#x7528; MPEG4/WebM &#x89C6;&#x9891;&#xFF08;&#x6765;&#x63D0;&#x4F9B;&#x52A8;&#x753B;&#xFF09;&#x548C; PNG/WebP&#xFF08;&#x6765;&#x63D0;&#x4F9B;&#x9759;&#x6001;&#x56FE;&#x7247;&#xFF09;&#x4EE5;&#x51CF;&#x5C11;&#x7F51;&#x7EDC;&#x6D3B;&#x52A8;&#x6D88;&#x8017;&#x7684;&#x5B57;&#x8282;&#x6570;</li>
+</ul>
+<h3 id="t514.8 &#x9884;&#x5148;&#x8FDE;&#x63A5;&#x5230;&#x5FC5;&#x8981;&#x7684;&#x6765;&#x6E90;">4.8 &#x9884;&#x5148;&#x8FDE;&#x63A5;&#x5230;&#x5FC5;&#x8981;&#x7684;&#x6765;&#x6E90; <a href="#t514.8 &#x9884;&#x5148;&#x8FDE;&#x63A5;&#x5230;&#x5FC5;&#x8981;&#x7684;&#x6765;&#x6E90;"> # </a></h3>
+<ul>
+<li><a href="https://web.dev/uses-rel-preconnect/?utm_source=lighthouse&amp;utm_medium=cli">Preconnect to required origins</a></li>
+<li>&#x5EFA;&#x8BAE;&#x6DFB;&#x52A0; <code>preconnect</code> &#x6216; <code>dns-prefetch</code> &#x8D44;&#x6E90;&#x63D0;&#x793A;&#xFF0C;&#x4EE5;&#x5C3D;&#x65E9;&#x4E0E;&#x91CD;&#x8981;&#x7684;&#x7B2C;&#x4E09;&#x65B9;&#x6765;&#x6E90;&#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;</li>
+</ul>
+<h3 id="t524.9 &#x5E94;&#x907F;&#x514D;&#x5411;&#x65B0;&#x578B;&#x6D4F;&#x89C8;&#x5668;&#x63D0;&#x4F9B;&#x65E7;&#x7248;JavaScript">4.9 &#x5E94;&#x907F;&#x514D;&#x5411;&#x65B0;&#x578B;&#x6D4F;&#x89C8;&#x5668;&#x63D0;&#x4F9B;&#x65E7;&#x7248;JavaScript <a href="#t524.9 &#x5E94;&#x907F;&#x514D;&#x5411;&#x65B0;&#x578B;&#x6D4F;&#x89C8;&#x5668;&#x63D0;&#x4F9B;&#x65E7;&#x7248;JavaScript"> # </a></h3>
+<ul>
+<li><a href="https://philipwalton.com/articles/deploying-es2015-code-in-production-today/">Deploying ES2015+ Code in Production Today</a></li>
+<li>Polyfill &#x548C; transform &#x8BA9;&#x65E7;&#x7248;&#x6D4F;&#x89C8;&#x5668;&#x80FD;&#x591F;&#x4F7F;&#x7528;&#x65B0;&#x7684; JavaScript &#x529F;&#x80FD;&#x3002;&#x4E0D;&#x8FC7;&#xFF0C;&#x5176;&#x4E2D;&#x7684;&#x5F88;&#x591A;&#x51FD;&#x6570;&#x5BF9;&#x65B0;&#x578B;&#x6D4F;&#x89C8;&#x5668;&#x800C;&#x8A00;&#x5E76;&#x975E;&#x5FC5;&#x9700;&#x3002;&#x5BF9;&#x4E8E;&#x6253;&#x5305;&#x7684; JavaScript&#xFF0C;&#x8BF7;&#x91C7;&#x7528;&#x73B0;&#x4EE3;&#x811A;&#x672C;&#x90E8;&#x7F72;&#x7B56;&#x7565;&#xFF0C;&#x4EE5;&#x4FBF;&#x5229;&#x7528; module/nomodule &#x529F;&#x80FD;&#x68C0;&#x6D4B;&#x673A;&#x5236;&#x6765;&#x51CF;&#x5C11;&#x4F20;&#x9001;&#x5230;&#x65B0;&#x578B;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x4EE3;&#x7801;&#x91CF;&#xFF0C;&#x540C;&#x65F6;&#x4FDD;&#x7559;&#x5BF9;&#x65E7;&#x7248;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x652F;&#x6301;</li>
+</ul>
+<h3 id="t534.10 &#x786E;&#x4FDD;&#x6587;&#x672C;&#x5728;&#x7F51;&#x9875;&#x5B57;&#x4F53;&#x52A0;&#x8F7D;&#x671F;&#x95F4;&#x4FDD;&#x6301;&#x53EF;&#x89C1;&#x72B6;&#x6001;">4.10 &#x786E;&#x4FDD;&#x6587;&#x672C;&#x5728;&#x7F51;&#x9875;&#x5B57;&#x4F53;&#x52A0;&#x8F7D;&#x671F;&#x95F4;&#x4FDD;&#x6301;&#x53EF;&#x89C1;&#x72B6;&#x6001; <a href="#t534.10 &#x786E;&#x4FDD;&#x6587;&#x672C;&#x5728;&#x7F51;&#x9875;&#x5B57;&#x4F53;&#x52A0;&#x8F7D;&#x671F;&#x95F4;&#x4FDD;&#x6301;&#x53EF;&#x89C1;&#x72B6;&#x6001;"> # </a></h3>
+<ul>
+<li><a href="https://web.dev/font-display/?utm_source=lighthouse&amp;utm_medium=cli">Ensure text remains visible during webfont load</a></li>
+<li>&#x5229;&#x7528; font-display &#x8FD9;&#x9879; CSS &#x529F;&#x80FD;&#xFF0C;&#x786E;&#x4FDD;&#x6587;&#x672C;&#x5728;&#x7F51;&#x9875;&#x5B57;&#x4F53;&#x52A0;&#x8F7D;&#x671F;&#x95F4;&#x59CB;&#x7EC8;&#x5BF9;&#x7528;&#x6237;&#x53EF;&#x89C1;</li>
+</ul>
+<h3 id="t544.11 &#x672A;&#x4F7F;&#x7528;&#x88AB;&#x52A8;&#x5F0F;&#x76D1;&#x542C;&#x5668;&#x6765;&#x63D0;&#x9AD8;&#x6EDA;&#x52A8;&#x6027;&#x80FD;">4.11 &#x672A;&#x4F7F;&#x7528;&#x88AB;&#x52A8;&#x5F0F;&#x76D1;&#x542C;&#x5668;&#x6765;&#x63D0;&#x9AD8;&#x6EDA;&#x52A8;&#x6027;&#x80FD; <a href="#t544.11 &#x672A;&#x4F7F;&#x7528;&#x88AB;&#x52A8;&#x5F0F;&#x76D1;&#x542C;&#x5668;&#x6765;&#x63D0;&#x9AD8;&#x6EDA;&#x52A8;&#x6027;&#x80FD;"> # </a></h3>
+<ul>
+<li><a href="https://web.dev/uses-passive-event-listeners/?utm_source=lighthouse&amp;utm_medium=cli">Use passive listeners to improve scrolling performance</a></li>
+<li>&#x5EFA;&#x8BAE;&#x60A8;&#x5C06;&#x89E6;&#x6478;&#x548C;&#x6EDA;&#x8F6E;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668;&#x6807;&#x8BB0;&#x4E3A; <code>passive</code>&#xFF0C;&#x4EE5;&#x63D0;&#x9AD8;&#x9875;&#x9762;&#x7684;&#x6EDA;&#x52A8;&#x6027;&#x80FD;,<code>passive</code>&#x4E0D;&#x4F1A;&#x5BF9;&#x4E8B;&#x4EF6;&#x7684;&#x9ED8;&#x8BA4;&#x884C;&#x4E3A;&#x8BF4; no</li>
+</ul>
+<h3 id="t554.12 &#x56FE;&#x7247;&#x5143;&#x7D20;&#x6CA1;&#x6709;&#x660E;&#x786E;&#x7684;width&#x548C;height">4.12 &#x56FE;&#x7247;&#x5143;&#x7D20;&#x6CA1;&#x6709;&#x660E;&#x786E;&#x7684;width&#x548C;height <a href="#t554.12 &#x56FE;&#x7247;&#x5143;&#x7D20;&#x6CA1;&#x6709;&#x660E;&#x786E;&#x7684;width&#x548C;height"> # </a></h3>
+<ul>
+<li><a href="https://web.dev/optimize-cls/?utm_source=lighthouse&amp;utm_medium=cli#images-without-dimensions"></a></li>
+<li>&#x8BF7;&#x4E3A;&#x56FE;&#x7247;&#x5143;&#x7D20;&#x8BBE;&#x7F6E;&#x660E;&#x786E;&#x7684;&#x5BBD;&#x5EA6;&#x503C;&#x548C;&#x9AD8;&#x5EA6;&#x503C;&#xFF0C;&#x4EE5;&#x51CF;&#x5C11;&#x5E03;&#x5C40;&#x504F;&#x79FB;&#x5E76;&#x6539;&#x5584; CLS</li>
+</ul>
+<h3 id="t564.13 &#x6CE8;&#x518C;&#x201C;unload&#x201D;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668;">4.13 &#x6CE8;&#x518C;&#x201C;unload&#x201D;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668; <a href="#t564.13 &#x6CE8;&#x518C;&#x201C;unload&#x201D;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668;"> # </a></h3>
+<ul>
+<li><a href="https://developers.google.com/web/updates/2018/07/page-lifecycle-api?utm_source=lighthouse&amp;utm_medium=cli#the-unload-event">Legacy lifecycle APIs to avoid</a></li>
+<li><code>unload</code>&#x4E8B;&#x4EF6;&#x4E0D;&#x4F1A;&#x53EF;&#x9760;&#x5730;&#x89E6;&#x53D1;&#xFF0C;&#x800C;&#x4E14;&#x76D1;&#x542C;&#x8BE5;&#x4E8B;&#x4EF6;&#x53EF;&#x80FD;&#x4F1A;&#x59A8;&#x788D;&#x7CFB;&#x7EDF;&#x5B9E;&#x65BD;&#x201C;&#x5F80;&#x8FD4;&#x7F13;&#x5B58;&#x201D;&#x4E4B;&#x7C7B;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x4F18;&#x5316;&#x7B56;&#x7565;&#x3002;&#x5EFA;&#x8BAE;&#x60A8;&#x6539;&#x7528;<code>pagehide</code>&#x6216;<code>visibilitychange</code>&#x4E8B;&#x4EF6;</li>
+</ul>
+<h3 id="t574.14 &#x6700;&#x5927;&#x9650;&#x5EA6;&#x5730;&#x51CF;&#x5C11;&#x4E3B;&#x7EBF;&#x7A0B;&#x5DE5;&#x4F5C;">4.14 &#x6700;&#x5927;&#x9650;&#x5EA6;&#x5730;&#x51CF;&#x5C11;&#x4E3B;&#x7EBF;&#x7A0B;&#x5DE5;&#x4F5C; <a href="#t574.14 &#x6700;&#x5927;&#x9650;&#x5EA6;&#x5730;&#x51CF;&#x5C11;&#x4E3B;&#x7EBF;&#x7A0B;&#x5DE5;&#x4F5C;"> # </a></h3>
+<ul>
+<li><a href="https://web.dev/mainthread-work-breakdown/?utm_source=lighthouse&amp;utm_medium=cli">Minimize main thread work</a></li>
+<li>&#x5EFA;&#x8BAE;&#x60A8;&#x51CF;&#x5C11;&#x4E3A;&#x89E3;&#x6790;&#x3001;&#x7F16;&#x8BD1;&#x548C;&#x6267;&#x884C; JS &#x800C;&#x82B1;&#x8D39;&#x7684;&#x65F6;&#x95F4;&#x3002;&#x60A8;&#x53EF;&#x80FD;&#x4F1A;&#x53D1;&#x73B0;&#xFF0C;&#x63D0;&#x4F9B;&#x8F83;&#x5C0F;&#x7684; JS &#x8D1F;&#x8F7D;&#x6709;&#x52A9;&#x4E8E;&#x5B9E;&#x73B0;&#x6B64;&#x76EE;&#x6807;</li>
+</ul>
+<h3 id="t584.15 &#x91C7;&#x7528;&#x9AD8;&#x6548;&#x7684;&#x7F13;&#x5B58;&#x7B56;&#x7565;&#x63D0;&#x4F9B;&#x9759;&#x6001;&#x8D44;&#x6E90;">4.15 &#x91C7;&#x7528;&#x9AD8;&#x6548;&#x7684;&#x7F13;&#x5B58;&#x7B56;&#x7565;&#x63D0;&#x4F9B;&#x9759;&#x6001;&#x8D44;&#x6E90; <a href="#t584.15 &#x91C7;&#x7528;&#x9AD8;&#x6548;&#x7684;&#x7F13;&#x5B58;&#x7B56;&#x7565;&#x63D0;&#x4F9B;&#x9759;&#x6001;&#x8D44;&#x6E90;"> # </a></h3>
+<ul>
+<li><a href="https://web.dev/uses-long-cache-ttl/?utm_source=lighthouse&amp;utm_medium=cli">Serve static assets with an efficient cache policy</a></li>
+<li>&#x5EF6;&#x957F;&#x7F13;&#x5B58;&#x671F;&#x9650;&#x53EF;&#x52A0;&#x5FEB;&#x91CD;&#x8BBF;&#x60A8;&#x7F51;&#x9875;&#x7684;&#x901F;&#x5EA6;</li>
+</ul>
+<h3 id="t594.16 &#x7F29;&#x77ED; JavaScript &#x6267;&#x884C;&#x7528;&#x65F6;">4.16 &#x7F29;&#x77ED; JavaScript &#x6267;&#x884C;&#x7528;&#x65F6; <a href="#t594.16 &#x7F29;&#x77ED; JavaScript &#x6267;&#x884C;&#x7528;&#x65F6;"> # </a></h3>
+<ul>
+<li><a href="https://web.dev/bootup-time/?utm_source=lighthouse&amp;utm_medium=cli">Reduce JavaScript execution time</a></li>
+<li>&#x5EFA;&#x8BAE;&#x60A8;&#x51CF;&#x5C11;&#x4E3A;&#x89E3;&#x6790;&#x3001;&#x7F16;&#x8BD1;&#x548C;&#x6267;&#x884C; JS &#x800C;&#x82B1;&#x8D39;&#x7684;&#x65F6;&#x95F4;&#x3002;&#x60A8;&#x53EF;&#x80FD;&#x4F1A;&#x53D1;&#x73B0;&#xFF0C;&#x63D0;&#x4F9B;&#x8F83;&#x5C0F;&#x7684; JS &#x8D1F;&#x8F7D;&#x6709;&#x52A9;&#x4E8E;&#x5B9E;&#x73B0;&#x6B64;&#x76EE;&#x6807;</li>
+</ul>
+<h3 id="t604.17 &#x907F;&#x514D;&#x94FE;&#x63A5;&#x5173;&#x952E;&#x8BF7;&#x6C42;">4.17 &#x907F;&#x514D;&#x94FE;&#x63A5;&#x5173;&#x952E;&#x8BF7;&#x6C42; <a href="#t604.17 &#x907F;&#x514D;&#x94FE;&#x63A5;&#x5173;&#x952E;&#x8BF7;&#x6C42;"> # </a></h3>
+<ul>
+<li><a href="https://web.dev/critical-request-chains/?utm_source=lighthouse&amp;utm_medium=cli">Avoid chaining critical requests</a></li>
+<li>&#x4E0B;&#x9762;&#x7684;&#x5173;&#x952E;&#x8BF7;&#x6C42;&#x94FE;&#x663E;&#x793A;&#x4E86;&#x4EE5;&#x9AD8;&#x4F18;&#x5148;&#x7EA7;&#x52A0;&#x8F7D;&#x7684;&#x8D44;&#x6E90;&#x3002;&#x8BF7;&#x8003;&#x8651;&#x7F29;&#x77ED;&#x94FE;&#x957F;&#x3001;&#x7F29;&#x51CF;&#x8D44;&#x6E90;&#x7684;&#x4E0B;&#x8F7D;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#xFF0C;&#x6216;&#x8005;&#x63A8;&#x8FDF;&#x4E0B;&#x8F7D;&#x4E0D;&#x5FC5;&#x8981;&#x7684;&#x8D44;&#x6E90;&#xFF0C;&#x4ECE;&#x800C;&#x63D0;&#x9AD8;&#x7F51;&#x9875;&#x52A0;&#x8F7D;&#x901F;&#x5EA6;</li>
+</ul>
+<h3 id="t614.18 &#x8BF7;&#x4FDD;&#x6301;&#x8F83;&#x4F4E;&#x7684;&#x8BF7;&#x6C42;&#x6570;&#x91CF;&#x548C;&#x8F83;&#x5C0F;&#x7684;&#x4F20;&#x8F93;&#x5927;&#x5C0F;">4.18 &#x8BF7;&#x4FDD;&#x6301;&#x8F83;&#x4F4E;&#x7684;&#x8BF7;&#x6C42;&#x6570;&#x91CF;&#x548C;&#x8F83;&#x5C0F;&#x7684;&#x4F20;&#x8F93;&#x5927;&#x5C0F; <a href="#t614.18 &#x8BF7;&#x4FDD;&#x6301;&#x8F83;&#x4F4E;&#x7684;&#x8BF7;&#x6C42;&#x6570;&#x91CF;&#x548C;&#x8F83;&#x5C0F;&#x7684;&#x4F20;&#x8F93;&#x5927;&#x5C0F;"> # </a></h3>
+<ul>
+<li><a href="https://web.dev/use-lighthouse-for-performance-budgets/?utm_source=lighthouse&amp;utm_medium=cli">Use Lighthouse for performance budgets</a></li>
+<li><a href="https://www.performancebudget.io/">performancebudget</a></li>
+<li>&#x82E5;&#x8981;&#x8BBE;&#x7F6E;&#x9875;&#x9762;&#x8D44;&#x6E90;&#x6570;&#x91CF;&#x548C;&#x5927;&#x5C0F;&#x7684;&#x9884;&#x7B97;&#xFF0C;&#x8BF7;&#x6DFB;&#x52A0; budget.json &#x6587;&#x4EF6;</li>
+</ul>
+<h3 id="t624.19 &#x6700;&#x5927;&#x5185;&#x5BB9;&#x6E32;&#x67D3;&#x65F6;&#x95F4;&#x5143;&#x7D20;">4.19 &#x6700;&#x5927;&#x5185;&#x5BB9;&#x6E32;&#x67D3;&#x65F6;&#x95F4;&#x5143;&#x7D20; <a href="#t624.19 &#x6700;&#x5927;&#x5185;&#x5BB9;&#x6E32;&#x67D3;&#x65F6;&#x95F4;&#x5143;&#x7D20;"> # </a></h3>
+<ul>
+<li><a href="https://web.dev/lighthouse-largest-contentful-paint/?utm_source=lighthouse&amp;utm_medium=cli">Largest Contentful Paint</a></li>
+<li>&#x8FD9;&#x662F;&#x6B64;&#x89C6;&#x53E3;&#x5185;&#x6E32;&#x67D3;&#x7684;&#x6700;&#x5927;&#x5185;&#x5BB9;&#x5143;&#x7D20;</li>
+</ul>
+<h3 id="t634.20 &#x8BF7;&#x907F;&#x514D;&#x51FA;&#x73B0;&#x5927;&#x5E45;&#x5EA6;&#x7684;&#x5E03;&#x5C40;&#x504F;&#x79FB;">4.20 &#x8BF7;&#x907F;&#x514D;&#x51FA;&#x73B0;&#x5927;&#x5E45;&#x5EA6;&#x7684;&#x5E03;&#x5C40;&#x504F;&#x79FB; <a href="#t634.20 &#x8BF7;&#x907F;&#x514D;&#x51FA;&#x73B0;&#x5927;&#x5E45;&#x5EA6;&#x7684;&#x5E03;&#x5C40;&#x504F;&#x79FB;"> # </a></h3>
+<ul>
+<li>&#x8FD9;&#x4E9B; DOM &#x5143;&#x7D20;&#x5BF9;&#x8BE5;&#x7F51;&#x9875;&#x7684; CLS &#x5F71;&#x54CD;&#x6700;&#x5927;</li>
+</ul>
+<h3 id="t644.21 &#x5E94;&#x907F;&#x514D;&#x51FA;&#x73B0;&#x957F;&#x65F6;&#x95F4;&#x8FD0;&#x884C;&#x7684;&#x4E3B;&#x7EBF;&#x7A0B;&#x4EFB;&#x52A1;">4.21 &#x5E94;&#x907F;&#x514D;&#x51FA;&#x73B0;&#x957F;&#x65F6;&#x95F4;&#x8FD0;&#x884C;&#x7684;&#x4E3B;&#x7EBF;&#x7A0B;&#x4EFB;&#x52A1; <a href="#t644.21 &#x5E94;&#x907F;&#x514D;&#x51FA;&#x73B0;&#x957F;&#x65F6;&#x95F4;&#x8FD0;&#x884C;&#x7684;&#x4E3B;&#x7EBF;&#x7A0B;&#x4EFB;&#x52A1;"> # </a></h3>
+<ul>
+<li><a href="https://web.dev/long-tasks-devtools/?utm_source=lighthouse&amp;utm_medium=cli">Are long JavaScript tasks delaying your Time to Interactive?</a></li>
+<li>&#x5217;&#x51FA;&#x4E86;&#x4E3B;&#x7EBF;&#x7A0B;&#x4E2D;&#x8FD0;&#x884C;&#x65F6;&#x95F4;&#x6700;&#x957F;&#x7684;&#x4EFB;&#x52A1;&#xFF0C;&#x6709;&#x52A9;&#x4E8E;&#x8BC6;&#x522B;&#x51FA;&#x5BFC;&#x81F4;&#x8F93;&#x5165;&#x5EF6;&#x8FDF;&#x7684;&#x6700;&#x4E3B;&#x8981;&#x539F;&#x56E0;</li>
+</ul>
+<h3 id="t654.22 &#x907F;&#x514D;&#x4F7F;&#x7528;&#x672A;&#x5408;&#x6210;&#x7684;&#x52A8;&#x753B;">4.22 &#x907F;&#x514D;&#x4F7F;&#x7528;&#x672A;&#x5408;&#x6210;&#x7684;&#x52A8;&#x753B; <a href="#t654.22 &#x907F;&#x514D;&#x4F7F;&#x7528;&#x672A;&#x5408;&#x6210;&#x7684;&#x52A8;&#x753B;"> # </a></h3>
+<ul>
+<li><a href="https://web.dev/non-composited-animations/?utm_source=lighthouse&amp;utm_medium=cli">Avoid non-composited animations</a></li>
+<li>&#x672A;&#x5408;&#x6210;&#x7684;&#x52A8;&#x753B;&#x53EF;&#x80FD;&#x4F1A;&#x5361;&#x987F;&#x5E76;&#x589E;&#x52A0; CLS</li>
+</ul>
+<h3 id="t664.23 &#x7F29;&#x51CF; CSS">4.23 &#x7F29;&#x51CF; CSS <a href="#t664.23 &#x7F29;&#x51CF; CSS"> # </a></h3>
+<ul>
+<li><a href="https://web.dev/unminified-css/?utm_source=lighthouse&amp;utm_medium=cli">Minify CSS</a></li>
+<li>&#x7F29;&#x51CF; CSS &#x6587;&#x4EF6;&#x5927;&#x5C0F;&#x53EF;&#x7F29;&#x51CF;&#x7F51;&#x7EDC;&#x8D1F;&#x8F7D;&#x89C4;&#x6A21;</li>
+</ul>
+<h3 id="t674.24 &#x7F29;&#x51CF; JavaScript">4.24 &#x7F29;&#x51CF; JavaScript <a href="#t674.24 &#x7F29;&#x51CF; JavaScript"> # </a></h3>
+<ul>
+<li><a href="https://web.dev/unminified-javascript/?utm_source=lighthouse&amp;utm_medium=cli">Minify JavaScript</a></li>
+<li>&#x5982;&#x679C;&#x7F29;&#x51CF; JavaScript &#x6587;&#x4EF6;&#x5927;&#x5C0F;&#xFF0C;&#x5219;&#x65E2;&#x80FD;&#x7F29;&#x51CF;&#x8D1F;&#x8F7D;&#x89C4;&#x6A21;&#xFF0C;&#x53C8;&#x80FD;&#x7F29;&#x77ED;&#x811A;&#x672C;&#x89E3;&#x6790;&#x7528;&#x65F6;</li>
+</ul>
+<h3 id="t684.25 &#x5BF9;&#x56FE;&#x7247;&#x8FDB;&#x884C;&#x9AD8;&#x6548;&#x7F16;&#x7801;">4.25 &#x5BF9;&#x56FE;&#x7247;&#x8FDB;&#x884C;&#x9AD8;&#x6548;&#x7F16;&#x7801; <a href="#t684.25 &#x5BF9;&#x56FE;&#x7247;&#x8FDB;&#x884C;&#x9AD8;&#x6548;&#x7F16;&#x7801;"> # </a></h3>
+<ul>
+<li><a href="https://web.dev/uses-optimized-images/?utm_source=lighthouse&amp;utm_medium=cli">Efficiently encode images</a></li>
+<li>&#x5982;&#x679C;&#x56FE;&#x7247;&#x7ECF;&#x8FC7;&#x4E86;&#x4F18;&#x5316;&#xFF0C;&#x5219;&#x52A0;&#x8F7D;&#x901F;&#x5EA6;&#x4F1A;&#x66F4;&#x5FEB;&#xFF0C;&#x4E14;&#x6D88;&#x8017;&#x7684;&#x79FB;&#x52A8;&#x6570;&#x636E;&#x7F51;&#x7EDC;&#x6D41;&#x91CF;&#x4F1A;&#x66F4;&#x5C11;</li>
+</ul>
+<h3 id="t694.26 &#x542F;&#x7528;&#x6587;&#x672C;&#x538B;&#x7F29;">4.26 &#x542F;&#x7528;&#x6587;&#x672C;&#x538B;&#x7F29; <a href="#t694.26 &#x542F;&#x7528;&#x6587;&#x672C;&#x538B;&#x7F29;"> # </a></h3>
+<ul>
+<li><a href="https://web.dev/uses-text-compression/?utm_source=lighthouse&amp;utm_medium=cli">Enable text compression</a></li>
+<li>&#x5BF9;&#x4E8E;&#x6587;&#x672C;&#x8D44;&#x6E90;&#xFF0C;&#x5E94;&#x5148;&#x538B;&#x7F29;&#xFF08;gzip&#x3001;deflate &#x6216; brotli&#xFF09;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x63D0;&#x4F9B;&#xFF0C;&#x4EE5;&#x6700;&#x5927;&#x9650;&#x5EA6;&#x5730;&#x51CF;&#x5C11;&#x7F51;&#x7EDC;&#x6D3B;&#x52A8;&#x6D88;&#x8017;&#x7684;&#x5B57;&#x8282;&#x603B;&#x6570;</li>
+</ul>
+<h3 id="t704.27 &#x521D;&#x59CB;&#x670D;&#x52A1;&#x5668;&#x54CD;&#x5E94;&#x7528;&#x65F6;&#x8F83;&#x77ED;">4.27 &#x521D;&#x59CB;&#x670D;&#x52A1;&#x5668;&#x54CD;&#x5E94;&#x7528;&#x65F6;&#x8F83;&#x77ED; <a href="#t704.27 &#x521D;&#x59CB;&#x670D;&#x52A1;&#x5668;&#x54CD;&#x5E94;&#x7528;&#x65F6;&#x8F83;&#x77ED;"> # </a></h3>
+<ul>
+<li><a href="https://web.dev/time-to-first-byte/?utm_source=lighthouse&amp;utm_medium=cli">Reduce server response times (TTFB)</a></li>
+<li>&#x8BF7;&#x786E;&#x4FDD;&#x670D;&#x52A1;&#x5668;&#x54CD;&#x5E94;&#x4E3B;&#x6587;&#x6863;&#x7684;&#x7528;&#x65F6;&#x8F83;&#x77ED;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x4F1A;&#x5F71;&#x54CD;&#x5230;&#x6240;&#x6709;&#x5176;&#x4ED6;&#x8BF7;&#x6C42;&#x7684;&#x54CD;&#x5E94;&#x65F6;&#x95F4;</li>
+</ul>
+<h3 id="t714.28 &#x907F;&#x514D;&#x591A;&#x6B21;&#x7F51;&#x9875;&#x91CD;&#x5B9A;&#x5411;">4.28 &#x907F;&#x514D;&#x591A;&#x6B21;&#x7F51;&#x9875;&#x91CD;&#x5B9A;&#x5411; <a href="#t714.28 &#x907F;&#x514D;&#x591A;&#x6B21;&#x7F51;&#x9875;&#x91CD;&#x5B9A;&#x5411;"> # </a></h3>
+<ul>
+<li><a href="https://web.dev/redirects/?utm_source=lighthouse&amp;utm_medium=cli">Avoid multiple page redirects</a></li>
+<li>&#x91CD;&#x5B9A;&#x5411;&#x4F1A;&#x5728;&#x7F51;&#x9875;&#x53EF;&#x52A0;&#x8F7D;&#x524D;&#x5F15;&#x5165;&#x66F4;&#x591A;&#x5EF6;&#x8FDF;</li>
+</ul>
+<h3 id="t724.29 &#x9884;&#x52A0;&#x8F7D;&#x5173;&#x952E;&#x8BF7;&#x6C42;">4.29 &#x9884;&#x52A0;&#x8F7D;&#x5173;&#x952E;&#x8BF7;&#x6C42; <a href="#t724.29 &#x9884;&#x52A0;&#x8F7D;&#x5173;&#x952E;&#x8BF7;&#x6C42;"> # </a></h3>
+<ul>
+<li><a href="https://web.dev/uses-rel-preload/?utm_source=lighthouse&amp;utm_medium=cli">Preload key requests</a></li>
+<li>&#x5EFA;&#x8BAE;&#x4F7F;&#x7528; <code>&lt;link rel=preload&gt;</code> &#x6765;&#x4F18;&#x5148;&#x63D0;&#x53D6;&#x5F53;&#x524D;&#x5728;&#x7F51;&#x9875;&#x52A0;&#x8F7D;&#x540E;&#x671F;&#x8BF7;&#x6C42;&#x7684;&#x8D44;&#x6E90;</li>
+</ul>
+<h3 id="t734.30 &#x4F7F;&#x7528; HTTP/2">4.30 &#x4F7F;&#x7528; HTTP/2 <a href="#t734.30 &#x4F7F;&#x7528; HTTP/2"> # </a></h3>
+<ul>
+<li><a href="https://web.dev/uses-http2/?utm_source=lighthouse&amp;utm_medium=cli">Does not use HTTP/2 for all of its resources</a></li>
+<li>HTTP/2 &#x63D0;&#x4F9B;&#x4E86;&#x8BB8;&#x591A;&#x4F18;&#x4E8E; HTTP/1.1 &#x7684;&#x76CA;&#x5904;&#xFF0C;&#x5305;&#x62EC;&#x4E8C;&#x8FDB;&#x5236;&#x6807;&#x5934;&#x548C;&#x591A;&#x8DEF;&#x590D;&#x7528;</li>
+</ul>
+<h3 id="t744.31 &#x8BF7;&#x79FB;&#x9664; JavaScript &#x8F6F;&#x4EF6;&#x5305;&#x4E2D;&#x7684;&#x91CD;&#x590D;&#x6A21;&#x5757;">4.31 &#x8BF7;&#x79FB;&#x9664; JavaScript &#x8F6F;&#x4EF6;&#x5305;&#x4E2D;&#x7684;&#x91CD;&#x590D;&#x6A21;&#x5757; <a href="#t744.31 &#x8BF7;&#x79FB;&#x9664; JavaScript &#x8F6F;&#x4EF6;&#x5305;&#x4E2D;&#x7684;&#x91CD;&#x590D;&#x6A21;&#x5757;"> # </a></h3>
+<ul>
+<li>&#x4ECE;&#x8F6F;&#x4EF6;&#x5305;&#x4E2D;&#x79FB;&#x9664;&#x91CD;&#x590D;&#x7684;&#x5927;&#x578B; JavaScript &#x6A21;&#x5757;&#x53EF;&#x51CF;&#x5C11;&#x7F51;&#x7EDC;&#x4F20;&#x8F93;&#x65F6;&#x4E0D;&#x5FC5;&#x8981;&#x7684;&#x6D41;&#x91CF;&#x6D88;&#x8017;</li>
+</ul>
+<h3 id="t754.32 &#x9884;&#x52A0;&#x8F7D; LCP &#x5143;&#x7D20;&#x6240;&#x7528;&#x56FE;&#x7247;">4.32 &#x9884;&#x52A0;&#x8F7D; LCP &#x5143;&#x7D20;&#x6240;&#x7528;&#x56FE;&#x7247; <a href="#t754.32 &#x9884;&#x52A0;&#x8F7D; LCP &#x5143;&#x7D20;&#x6240;&#x7528;&#x56FE;&#x7247;"> # </a></h3>
+<ul>
+<li><a href="https://web.dev/optimize-lcp/?utm_source=lighthouse&amp;utm_medium=cli#preload-important-resources">&#x4F18;&#x5316; Largest Contentful Paint &#x6700;&#x5927;&#x5185;&#x5BB9;&#x7ED8;&#x5236;</a></li>
+<li>&#x8BF7;&#x9884;&#x52A0;&#x8F7D; Largest Contentful Paint (LCP) &#x5143;&#x7D20;&#x6240;&#x7528;&#x7684;&#x56FE;&#x7247;&#xFF0C;&#x4EE5;&#x7F29;&#x77ED;&#x60A8;&#x7684; LCP &#x7528;&#x65F6;</li>
+</ul>
+<h3 id="t764.33 &#x907F;&#x514D;&#x7F51;&#x7EDC;&#x8D1F;&#x8F7D;&#x8FC7;&#x5927;">4.33 &#x907F;&#x514D;&#x7F51;&#x7EDC;&#x8D1F;&#x8F7D;&#x8FC7;&#x5927; <a href="#t764.33 &#x907F;&#x514D;&#x7F51;&#x7EDC;&#x8D1F;&#x8F7D;&#x8FC7;&#x5927;"> # </a></h3>
+<ul>
+<li><a href="https://web.dev/total-byte-weight/?utm_source=lighthouse&amp;utm_medium=cli">Avoid enormous network payloads</a></li>
+<li>&#x7F51;&#x7EDC;&#x8D1F;&#x8F7D;&#x8FC7;&#x5927;&#x4E0D;&#x4EC5;&#x4F1A;&#x8BA9;&#x7528;&#x6237;&#x4ED8;&#x51FA;&#x771F;&#x91D1;&#x767D;&#x94F6;&#xFF0C;&#x8FD8;&#x6781;&#x6709;&#x53EF;&#x80FD;&#x4F1A;&#x5EF6;&#x957F;&#x52A0;&#x8F7D;&#x7528;&#x65F6;</li>
+</ul>
+<h3 id="t774.34 &#x907F;&#x514D; DOM &#x89C4;&#x6A21;&#x8FC7;&#x5927;">4.34 &#x907F;&#x514D; DOM &#x89C4;&#x6A21;&#x8FC7;&#x5927; <a href="#t774.34 &#x907F;&#x514D; DOM &#x89C4;&#x6A21;&#x8FC7;&#x5927;"> # </a></h3>
+<ul>
+<li><a href="https://web.dev/dom-size/?utm_source=lighthouse&amp;utm_medium=cli">Avoid an excessive DOM size</a></li>
+<li>&#x5927;&#x578B; DOM &#x4F1A;&#x589E;&#x52A0;&#x5185;&#x5B58;&#x4F7F;&#x7528;&#x91CF;&#x3001;&#x5BFC;&#x81F4;&#x6837;&#x5F0F;&#x8BA1;&#x7B97;&#x7528;&#x65F6;&#x5EF6;&#x957F;&#xFF0C;&#x5E76;&#x4EA7;&#x751F;&#x9AD8;&#x6602;&#x7684;&#x5E03;&#x5C40;&#x91CD;&#x6392;&#x6210;&#x672C;</li>
+</ul>
+<h3 id="t784.35 User Timing &#x6807;&#x8BB0;&#x548C;&#x6D4B;&#x91CF;&#x7ED3;&#x679C;">4.35 User Timing &#x6807;&#x8BB0;&#x548C;&#x6D4B;&#x91CF;&#x7ED3;&#x679C; <a href="#t784.35 User Timing &#x6807;&#x8BB0;&#x548C;&#x6D4B;&#x91CF;&#x7ED3;&#x679C;"> # </a></h3>
+<ul>
+<li><a href="https://web.dev/user-timings/?utm_source=lighthouse&amp;utm_medium=cli">User Timing marks and measures</a></li>
+<li>&#x5EFA;&#x8BAE;&#x4F7F;&#x7528; User Timing API &#x68C0;&#x6D4B;&#x60A8;&#x7684;&#x5E94;&#x7528;&#xFF0C;&#x4ECE;&#x800C;&#x8861;&#x91CF;&#x5E94;&#x7528;&#x5728;&#x5173;&#x952E;&#x7528;&#x6237;&#x4F53;&#x9A8C;&#x4E2D;&#x7684;&#x5B9E;&#x9645;&#x6027;&#x80FD;</li>
+</ul>
+<h3 id="t794.36 &#x5C3D;&#x91CF;&#x51CF;&#x5C11;&#x7B2C;&#x4E09;&#x65B9;&#x4F7F;&#x7528;">4.36 &#x5C3D;&#x91CF;&#x51CF;&#x5C11;&#x7B2C;&#x4E09;&#x65B9;&#x4F7F;&#x7528; <a href="#t794.36 &#x5C3D;&#x91CF;&#x51CF;&#x5C11;&#x7B2C;&#x4E09;&#x65B9;&#x4F7F;&#x7528;"> # </a></h3>
+<ul>
+<li><a href="https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/?utm_source=lighthouse&amp;utm_medium=cli">Loading Third-Party JavaScript</a></li>
+<li>&#x7B2C;&#x4E09;&#x65B9;&#x4EE3;&#x7801;&#x53EF;&#x80FD;&#x4F1A;&#x663E;&#x8457;&#x5F71;&#x54CD;&#x52A0;&#x8F7D;&#x6027;&#x80FD;&#x3002;&#x8BF7;&#x9650;&#x5236;&#x5197;&#x4F59;&#x7B2C;&#x4E09;&#x65B9;&#x63D0;&#x4F9B;&#x5546;&#x7684;&#x6570;&#x91CF;&#xFF0C;&#x5E76;&#x5C1D;&#x8BD5;&#x5728;&#x9875;&#x9762;&#x5B8C;&#x6210;&#x4E3B;&#x8981;&#x52A0;&#x8F7D;&#x540E;&#x518D;&#x52A0;&#x8F7D;&#x7B2C;&#x4E09;&#x65B9;&#x4EE3;&#x7801;</li>
+</ul>
+<h3 id="t804.37 &#x4F7F;&#x7528; Facade &#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;&#x7B2C;&#x4E09;&#x65B9;&#x8D44;&#x6E90;">4.37 &#x4F7F;&#x7528; Facade &#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;&#x7B2C;&#x4E09;&#x65B9;&#x8D44;&#x6E90; <a href="#t804.37 &#x4F7F;&#x7528; Facade &#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;&#x7B2C;&#x4E09;&#x65B9;&#x8D44;&#x6E90;"> # </a></h3>
+<ul>
+<li><a href="https://web.dev/third-party-facades/?utm_source=lighthouse&amp;utm_medium=cli">Lazy load third-party resources with facades</a></li>
+<li>&#x60A8;&#x53EF;&#x4EE5;&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;&#x67D0;&#x4E9B;&#x7B2C;&#x4E09;&#x65B9;&#x5D4C;&#x5165;&#x4EE3;&#x7801;&#x3002;&#x4E0D;&#x59A8;&#x8003;&#x8651;&#x4F7F;&#x7528; Facade &#x66FF;&#x6362;&#x8FD9;&#x4E9B;&#x4EE3;&#x7801;&#xFF0C;&#x76F4;&#x5230;&#x60A8;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x5B83;&#x4EEC;&#x4E3A;&#x6B62;</li>
+</ul>
+<h3 id="t814.38 Largest Contentful Paint &#x6240;&#x5BF9;&#x5E94;&#x7684;&#x56FE;&#x7247;&#x672A;&#x88AB;&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;">4.38 Largest Contentful Paint &#x6240;&#x5BF9;&#x5E94;&#x7684;&#x56FE;&#x7247;&#x672A;&#x88AB;&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D; <a href="#t814.38 Largest Contentful Paint &#x6240;&#x5BF9;&#x5E94;&#x7684;&#x56FE;&#x7247;&#x672A;&#x88AB;&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;"> # </a></h3>
+<ul>
+<li><a href="https://web.dev/lcp-lazy-loading/?utm_source=lighthouse&amp;utm_medium=cli">The performance effects of too much lazy-loading</a></li>
+<li>&#x88AB;&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;&#x7684;&#x9996;&#x5C4F;&#x56FE;&#x7247;&#x4F1A;&#x5728;&#x9875;&#x9762;&#x751F;&#x547D;&#x5468;&#x671F;&#x5185;&#x7684;&#x8F83;&#x665A;&#x65F6;&#x95F4;&#x5448;&#x73B0;&#xFF0C;&#x8FD9;&#x53EF;&#x80FD;&#x4F1A;&#x81F4;&#x4F7F;&#x7CFB;&#x7EDF;&#x5EF6;&#x8FDF;&#x6E32;&#x67D3;&#x6700;&#x5927;&#x5185;&#x5BB9;&#x5143;&#x7D20;</li>
+</ul>
+<h3 id="t824.39 &#x8BF7;&#x52FF;&#x4F7F;&#x7528; document.write()">4.39 &#x8BF7;&#x52FF;&#x4F7F;&#x7528; document.write() <a href="#t824.39 &#x8BF7;&#x52FF;&#x4F7F;&#x7528; document.write()"> # </a></h3>
+<ul>
+<li><a href="https://web.dev/no-document-write/?utm_source=lighthouse&amp;utm_medium=cli">Uses document.write()</a></li>
+<li>&#x5BF9;&#x4E8E;&#x8FDE;&#x63A5;&#x901F;&#x5EA6;&#x8F83;&#x6162;&#x7684;&#x7528;&#x6237;&#xFF0C;&#x901A;&#x8FC7; <code>document.write()</code> &#x52A8;&#x6001;&#x6CE8;&#x5165;&#x7684;&#x5916;&#x90E8;&#x811A;&#x672C;&#x53EF;&#x5C06;&#x7F51;&#x9875;&#x52A0;&#x8F7D;&#x5EF6;&#x8FDF;&#x6570;&#x5341;&#x79D2;</li>
+</ul>
+<h3 id="t834.40 &#x5177;&#x6709;&#x5305;&#x542B; width &#x6216; initial-scale &#x7684;  &#x6807;&#x8BB0;">4.40 &#x5177;&#x6709;&#x5305;&#x542B; width &#x6216; initial-scale &#x7684;  &#x6807;&#x8BB0; <a href="#t834.40 &#x5177;&#x6709;&#x5305;&#x542B; width &#x6216; initial-scale &#x7684;  &#x6807;&#x8BB0;"> # </a></h3>
+<ul>
+<li><a href="https://web.dev/viewport/?utm_source=lighthouse&amp;utm_medium=cli">Does not have a <meta name="viewport"> tag with width or initial-scale</a></li>
+<li><code>&lt;meta name=&quot;viewport&quot;&gt;</code> &#x4E0D;&#x4EC5;&#x4F1A;&#x9488;&#x5BF9;&#x79FB;&#x52A8;&#x8BBE;&#x5907;&#x5C4F;&#x5E55;&#x5C3A;&#x5BF8;&#x4F18;&#x5316;&#x60A8;&#x7684;&#x5E94;&#x7528;&#xFF0C;&#x8FD8;&#x4F1A;&#x963B;&#x6B62;&#x7CFB;&#x7EDF;&#x5728;&#x54CD;&#x5E94;&#x7528;&#x6237;&#x8F93;&#x5165;&#x524D;&#x51FA;&#x73B0; 300 &#x6BEB;&#x79D2;&#x7684;&#x5EF6;&#x8FDF;</li>
+</ul>
+<h2 id="t845.&#x53C2;&#x8003;">5.&#x53C2;&#x8003; <a href="#t845.&#x53C2;&#x8003;"> # </a></h2>
+<ul>
+<li><a href="http://www.ruanyifeng.com/blog/2018/07/web-worker.html">web-worker</a></li>
+<li><a href="https://crux-compare.netlify.app">https://crux-compare.netlify.app</a></li>
+<li><a href="https://web.dev">https://web.dev</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/performance_property">https://developer.mozilla.org/zh-CN/docs/Web/API/performance_property</a></li>
+<li><a href="https://www.jianshu.com/p/84a86e41eb2b">IntersectionObserver&#x61D2;&#x52A0;&#x8F7D;</a></li>
+<li><a href="https://app.requestmetrics.com">https://app.requestmetrics.com</a></li>
+<li><a href="https://www.performancebudget.io/">performancebudget</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Document/readystatechange_event">readystatechange_event</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Document/readyState">readyState</a></li>
+</ul>
+
+    </div>
+</div>
+
+<script src="./assets/js/jquerymin_1645176580555.js"></script>
+<script src="./assets/js/bootstrapmin_1645176554753.js"></script>
+
+<script>
+$('.warpper .page-toc ul ul li a').on('click',function(){
+  $('.warpper .page-toc ul ul li a').removeClass('my-active')
+  $(this).addClass('my-active')
+})
+$('.logo').on('mouseenter',function(){
+  $('.nav').height('450px');
+})
+$('.nav').on('mouseleave',function(){
+  $('.nav').height('80px');
+})
+$('.logo').on('click',function(){
+  $('.nav').css('display','none');
+ $('.warpper').css('padding','0px');
+})
+</script>
+</body>
+</html>
