@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>笔记</title>
+    <title>夜空中最亮的星</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
     <link
       rel="stylesheet"
@@ -22,8 +22,8 @@
   </head>
   <body>
     <div class="nav">
-      <div class="logo">笔记</div>
-      <ul class="mynavlist">
+      <div class="logo">前端文档</div>
+      <ul id="mynavlist">
         <li class="active"><a href="./index.html">0.api</a></li>
         <li><a href="./0.Async.html">0.Async</a></li>
         <li><a href="./0.module.html">0.module</a></li>
@@ -1575,21 +1575,7 @@ strip-flowtype src/**/*.js
     </div>
     <script src="./assets/js/jquerymin_1645176580555.js"></script>
     <script src="./assets/js/bootstrapmin_1645176554753.js"></script>
-    <script>
-      $(".warpper .page-toc ul ul li a").on("click", function () {
-        $(".warpper .page-toc ul ul li a").removeClass("my-active");
-        $(this).addClass("my-active");
-      });
-      $(".logo").on("mouseenter", function () {
-        $(".nav").height("450px");
-      });
-      $(".nav").on("mouseleave", function () {
-        $(".nav").height("80px");
-      });
-      $(".logo").on("click", function () {
-        $(".nav").css("display", "none");
-        $(".warpper").css("padding", "0px");
-      });
-    </script>
+    
+    <script src="./assets/js/nav.js"></script>
   </body>
 </html>
