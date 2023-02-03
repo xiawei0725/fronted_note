@@ -506,6 +506,20 @@ html {
     position: fixed;
     width: 100%
 }
+.nav_search_li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0;
+}
+#nav_search {
+    height: 32px;
+    line-height: 32px;
+    outline: none;
+    padding-left: 8px;
+    border: 1px solid #4b545f;
+    border-radius: 4px;
+}
 @media screen and (min-width:479px) {
     .nav {
         position: fixed;
