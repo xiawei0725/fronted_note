@@ -510,7 +510,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 8px 0;
+    margin: 8px;
 }
 #nav_search {
     height: 32px;
@@ -519,6 +519,20 @@ html {
     padding-left: 8px;
     border: 1px solid #4b545f;
     border-radius: 4px;
+    width: 100%;
+    font-size: 14px;
+    color: #333;
+}
+.svg-collapse-icon {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    cursor: pointer;
+    transition: all 300ms;
+}
+.svg-collapse-icon.iscollapse {
+    transform: rotate(180deg);
+    right: 10px;
 }
 @media screen and (min-width:479px) {
     .nav {
@@ -527,7 +541,9 @@ html {
         bottom: 0;
         left: 0;
         width: 200px;
-        overflow-y: auto;
+        overflow-y: hidden;
+        display: flex;
+        flex-direction: column;
     }
     .nav .logo {
         text-align: center;
@@ -535,15 +551,21 @@ html {
     #mynavlist {
         display: flex;
         flex-direction: column;
-        overflow: hidden;
+        overflow-y: auto;
         height: auto;
+        flex: 1;
+        height: 1%;
     }
     #mynavlist li.active {
         background-color: #4b545f;
     }
     .warpper {
+        position: relative;
         padding-top: 0;
         padding-left: 200px;
+    }
+    #mynavlist::-webkit-scrollbar {
+        display: none;
     }
 }
 @media screen and (max-width:479px) {
